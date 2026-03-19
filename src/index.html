@@ -1553,28 +1553,43 @@ async function runSyncToClaude() {
   showToast('Synced ' + installed + ' items to Claude Code!', 'success');
 }
 
-// Update All - pulls latest from GitHub repo, then syncs to Claude
-const DEFAULT_UPDATE_REPO = ''; // Set your repo here: 'owner/repo'
+// Update All - pulls latest from source GitHub repos, then syncs to Claude
+const DARKNITE_REPO = 'dfnine9/darknite';
+const SOURCE_REPOS = [
+  'anthropics/claude-code',
+  'anthropics/courses',
+  'anthropics/anthropic-cookbook',
+  'anthropics/prompt-eng-interactive-tutorial',
+  'AntiguardAI/antigravity-awesome',
+  'nicholasgriffintn/claude-code-skills',
+  'buildwithclaude/claude-skills',
+  'composio-skills/composio-skills',
+  'feiskyer/awesome-claude-code',
+  'statchamber/trading-skills',
+  'jeff-cloud/claude-code-skills',
+  'washincode/skills',
+  'nanobanana/claude-skills',
+  'apify/claude-skills',
+  'nerdzao/claude-code-elite',
+  'wshobson/claude-agents'
+];
 
 async function runUpdateAll() {
-  // If no darknite API, can't install
   if (!window.darknite || !window.darknite.install) {
     showToast('Update requires the DarkNite desktop app', 'error');
     return;
   }
 
-  // Show update modal
   document.getElementById('update-overlay').classList.add('show');
   const bar = document.getElementById('update-bar');
   const status = document.getElementById('update-status');
   const log = document.getElementById('update-log');
   bar.style.width = '0%';
-  status.textContent = 'Checking for updates...';
+  status.textContent = 'Starting update from source repos...';
   status.style.color = 'var(--text-dim)';
   log.style.display = 'block';
   log.innerHTML = '';
 
-  // Count built-in items
   const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
   const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
   const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
@@ -1583,39 +1598,61 @@ async function runUpdateAll() {
   document.getElementById('us-commands').textContent = cc;
   document.getElementById('us-total').textContent = sc + ac + cc;
 
-  // If we have a default repo, try to pull from it first
-  if (DEFAULT_UPDATE_REPO && window.darknite.scanRepo) {
-    log.innerHTML += '<div class="new">Scanning ' + DEFAULT_UPDATE_REPO + ' for updates...</div>';
-    const scanResult = await window.darknite.scanRepo(DEFAULT_UPDATE_REPO);
+  // Phase 1: Pull from DarkNite repo first (our master copy)
+  let totalPulled = 0;
+  log.innerHTML += '<div class="new">Phase 1: Checking DarkNite master repo (' + DARKNITE_REPO + ')...</div>';
+  try {
+    const scanResult = await window.darknite.scanRepo(DARKNITE_REPO);
     if (scanResult.success && scanResult.items.length > 0) {
-      log.innerHTML += '<div class="ok">Found ' + scanResult.items.length + ' items on GitHub</div>';
+      log.innerHTML += '<div class="ok">Found ' + scanResult.items.length + ' items in DarkNite repo</div>';
       const [owner, repo] = scanResult.repo.split('/');
-      let pulled = 0;
       for (let i = 0; i < scanResult.items.length; i++) {
         const item = scanResult.items[i];
-        const pct = Math.round(((i+1)/scanResult.items.length)*50);
-        bar.style.width = pct + '%';
-        if (i % 10 === 0) status.textContent = 'Pulling from GitHub... ' + (i+1) + '/' + scanResult.items.length;
+        bar.style.width = Math.round(((i+1)/scanResult.items.length)*20) + '%';
+        if (i % 10 === 0) status.textContent = 'Pulling DarkNite repo... ' + (i+1) + '/' + scanResult.items.length;
         try {
-          const fileResult = await window.darknite.fetchFile(owner, repo, item.path);
-          if (fileResult.success) {
-            await window.darknite.install(item.type, item.id, fileResult.content);
-            pulled++;
-            if (i < 20 || i % 50 === 0) log.innerHTML += '<div class="new">[PULL] ' + item.id + '</div>';
-          }
+          const f = await window.darknite.fetchFile(owner, repo, item.path);
+          if (f.success) { await window.darknite.install(item.type, item.id, f.content); totalPulled++; }
         } catch(e) {}
-        if (i % 30 === 0) log.scrollTop = log.scrollHeight;
       }
-      log.innerHTML += '<div class="ok">Pulled ' + pulled + ' updates from GitHub</div>';
+      log.innerHTML += '<div class="ok">Pulled ' + totalPulled + ' from DarkNite repo</div>';
     } else {
-      log.innerHTML += '<div class="skip">No repo configured or no items found - using built-in data</div>';
+      log.innerHTML += '<div class="skip">DarkNite repo empty or unreachable - continuing with sources</div>';
     }
-  } else {
-    log.innerHTML += '<div class="skip">No update repo configured - syncing built-in library</div>';
+  } catch(e) { log.innerHTML += '<div class="skip">DarkNite repo scan failed - continuing</div>'; }
+
+  // Phase 2: Scan all original source repos for new/updated items
+  log.innerHTML += '<div class="new">Phase 2: Scanning ' + SOURCE_REPOS.length + ' source repos for updates...</div>';
+  let reposDone = 0;
+  for (const repoStr of SOURCE_REPOS) {
+    reposDone++;
+    const pct = 20 + Math.round((reposDone / SOURCE_REPOS.length) * 40);
+    bar.style.width = pct + '%';
+    status.textContent = 'Scanning ' + repoStr + ' (' + reposDone + '/' + SOURCE_REPOS.length + ')';
+    log.innerHTML += '<div class="new">Scanning ' + repoStr + '...</div>';
+    log.scrollTop = log.scrollHeight;
+    try {
+      const scanResult = await window.darknite.scanRepo(repoStr);
+      if (scanResult.success && scanResult.items.length > 0) {
+        const [owner, repo] = scanResult.repo.split('/');
+        let repoPulled = 0;
+        for (const item of scanResult.items) {
+          try {
+            const f = await window.darknite.fetchFile(owner, repo, item.path);
+            if (f.success) { await window.darknite.install(item.type, item.id, f.content); repoPulled++; totalPulled++; }
+          } catch(e) {}
+        }
+        log.innerHTML += '<div class="ok">' + repoStr + ': pulled ' + repoPulled + ' items</div>';
+      } else {
+        log.innerHTML += '<div class="skip">' + repoStr + ': no .claude/ items found</div>';
+      }
+    } catch(e) {
+      log.innerHTML += '<div class="skip">' + repoStr + ': failed (' + (e.message||'error') + ')</div>';
+    }
   }
 
-  // Now sync all built-in items to Claude
-  log.innerHTML += '<div class="new">Syncing built-in library to Claude Code...</div>';
+  // Phase 3: Sync all built-in items to Claude Code
+  log.innerHTML += '<div class="new">Phase 3: Syncing built-in library (' + (sc+ac+cc) + ' items) to Claude Code...</div>';
   const allItems = [];
   if (JARVIS_DATA.skills) JARVIS_DATA.skills.filter(s => s.c).forEach(s => allItems.push({id:s.id,c:s.c,type:'skill'}));
   if (JARVIS_DATA.agents) JARVIS_DATA.agents.filter(a => a.c).forEach(a => allItems.push({id:a.id,c:a.c,type:'agent'}));
@@ -1624,23 +1661,23 @@ async function runUpdateAll() {
   let installed = 0, failed = 0;
   for (let i = 0; i < allItems.length; i++) {
     const item = allItems[i];
-    const pct = 50 + Math.round(((i+1)/allItems.length)*50);
+    const pct = 60 + Math.round(((i+1)/allItems.length)*40);
     bar.style.width = pct + '%';
-    if (i % 50 === 0) status.textContent = 'Installing... ' + (i+1) + '/' + allItems.length + ' (' + pct + '%)';
+    if (i % 100 === 0) status.textContent = 'Installing to Claude... ' + (i+1) + '/' + allItems.length;
     try {
       const r = await window.darknite.install(item.type, item.id, item.c);
-      if (r.success) { installed++; if (i < 20 || i % 200 === 0) log.innerHTML += '<div class="ok">[SYNC] ' + item.id + '</div>'; }
-      else failed++;
+      if (r.success) installed++; else failed++;
     } catch(e) { failed++; }
-    if (i % 100 === 0) log.scrollTop = log.scrollHeight;
+    if (i % 200 === 0) log.scrollTop = log.scrollHeight;
   }
 
   bar.style.width = '100%';
-  status.textContent = 'Update complete! ' + installed + ' synced' + (failed > 0 ? ', ' + failed + ' failed' : '');
+  status.textContent = 'Update complete! Pulled ' + totalPulled + ' from GitHub, synced ' + installed + ' to Claude';
   status.style.color = 'var(--green)';
   log.innerHTML += '<div class="ok">--- UPDATE COMPLETE ---</div>';
+  log.innerHTML += '<div class="ok">GitHub pulls: ' + totalPulled + ' | Claude synced: ' + installed + (failed > 0 ? ' | Failed: ' + failed : '') + '</div>';
   log.scrollTop = log.scrollHeight;
-  showToast('Updated ' + installed + ' capabilities!', 'success');
+  showToast('Updated! ' + totalPulled + ' pulled, ' + installed + ' synced to Claude', 'success');
 }
 
 // Legacy functions for modal buttons
