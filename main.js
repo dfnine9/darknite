@@ -131,6 +131,41 @@ function createWindow() {
 
   Menu.setApplicationMenu(null);
   mainWindow.loadFile(path.join(__dirname, 'src', 'index.html'));
+
+  // Inject data directly into page after load (bypasses asar/script tag issues on Mac)
+  mainWindow.webContents.on('did-finish-load', () => {
+    try {
+      const dataPath = path.join(process.resourcesPath, 'dashboard-data.js');
+      console.log('[Main] Injecting data from:', dataPath);
+      if (fs.existsSync(dataPath)) {
+        const src = fs.readFileSync(dataPath, 'utf8');
+        console.log('[Main] Data file size:', src.length);
+        mainWindow.webContents.executeJavaScript(src + '; console.log("[Injected] _JARVIS_RAW loaded:", window._JARVIS_RAW.skills.length, "skills");')
+          .then(() => {
+            // Tell renderer to re-init with the injected data
+            mainWindow.webContents.executeJavaScript(`
+              if (window._JARVIS_RAW && window._JARVIS_RAW.skills && window._JARVIS_RAW.skills.length > 0) {
+                JARVIS_DATA = window._JARVIS_RAW;
+                if (typeof init === 'function') init();
+                console.log('[Injected] Re-initialized with', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents.length, 'agents,', JARVIS_DATA.commands.length, 'commands');
+              }
+            `);
+          })
+          .catch(e => console.error('[Main] executeJavaScript failed:', e.message));
+      } else {
+        console.log('[Main] Data file not at resourcesPath, trying __dirname');
+        const altPath = path.join(__dirname, 'src', 'dashboard-data.js');
+        if (fs.existsSync(altPath)) {
+          const src = fs.readFileSync(altPath, 'utf8');
+          mainWindow.webContents.executeJavaScript(src).then(() => {
+            mainWindow.webContents.executeJavaScript('if(window._JARVIS_RAW){JARVIS_DATA=window._JARVIS_RAW;if(typeof init==="function")init();}');
+          });
+        }
+      }
+    } catch (e) {
+      console.error('[Main] Data injection failed:', e.message);
+    }
+  });
 }
 
 // HTTPS GET with redirect following
