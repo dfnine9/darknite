@@ -2,19 +2,19 @@ const { contextBridge, ipcRenderer } = require('electron');
 const fs = require('fs');
 const path = require('path');
 
-// Load JARVIS_DATA directly via Node.js fs (sandbox: false enables this)
+// Pre-load data via Node.js fs as backup for script tag
 let JARVIS_DATA_CACHE = null;
 try {
   const dataPath = path.join(__dirname, 'src', 'dashboard-data.js');
   console.log('[Preload] Loading data from:', dataPath);
   const src = fs.readFileSync(dataPath, 'utf8');
-  console.log('[Preload] File read OK, size:', src.length, 'chars');
-  const fn = new Function(src + '; return JARVIS_DATA;');
-  JARVIS_DATA_CACHE = fn();
-  console.log('[Preload] JARVIS_DATA parsed:', JARVIS_DATA_CACHE.skills?.length, 'skills,', JARVIS_DATA_CACHE.agents?.length, 'agents,', JARVIS_DATA_CACHE.commands?.length, 'commands');
+  console.log('[Preload] File read OK, size:', src.length);
+  // Extract JSON after "window._JARVIS_RAW = "
+  const jsonStr = src.substring(src.indexOf('{'));
+  JARVIS_DATA_CACHE = JSON.parse(jsonStr);
+  console.log('[Preload] Parsed:', JARVIS_DATA_CACHE.skills?.length, 'skills,', JARVIS_DATA_CACHE.agents?.length, 'agents,', JARVIS_DATA_CACHE.commands?.length, 'commands');
 } catch (e) {
-  console.error('[Preload] FAILED to load data:', e.message);
-  JARVIS_DATA_CACHE = { skills: [], agents: [], commands: [] };
+  console.warn('[Preload] fs load failed (script tag will handle it):', e.message);
 }
 
 contextBridge.exposeInMainWorld('darknite', {

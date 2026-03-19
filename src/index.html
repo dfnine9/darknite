@@ -1250,9 +1250,10 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<script src="dashboard-data.js"></script>
 <script>
-// Data loaded async from main process via IPC
-let JARVIS_DATA = { skills: [], agents: [], commands: [] };
+// Get data from script tag (window._JARVIS_RAW) or preload
+var JARVIS_DATA = window._JARVIS_RAW || { skills: [], agents: [], commands: [] };
 const CATEGORIES = {
   'AI / ML': ['ai-', 'ml-', 'llm-', 'langchain', 'rag-', 'embedding', 'nlp-', 'agent-', 'agentic', 'prompt-', 'fine-tuning'],
   'Frontend': ['react-', 'nextjs', 'vue-', 'angular-', 'svelte', 'frontend', 'tailwind', 'css-', 'ui-', 'shadcn', 'expo-'],
@@ -1854,18 +1855,20 @@ console.log("DarkNite API available:", !!window.darknite);
 if (window.darknite) console.log("Methods:", Object.keys(window.darknite));
 else console.warn("WARNING: window.darknite not found - preload.js may not have loaded");
 
-// Load data from preload and init
-if (window.darknite && window.darknite.getData) {
-  const data = window.darknite.getData();
-  if (data && data.skills && data.skills.length > 0) {
-    JARVIS_DATA = data;
-    console.log('JARVIS_DATA loaded:', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents.length, 'agents,', JARVIS_DATA.commands.length, 'commands');
-  } else {
-    console.error('getData returned empty — check preload logs');
+// Source 1: script tag (window._JARVIS_RAW) — already assigned above
+// Source 2: preload (Node.js fs) — backup if script tag failed on Mac
+if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
+  if (window.darknite && window.darknite.getData) {
+    try {
+      const data = window.darknite.getData();
+      if (data && data.skills && data.skills.length > 0) {
+        JARVIS_DATA = data;
+        console.log('[Preload backup] loaded:', JARVIS_DATA.skills.length, 'skills');
+      }
+    } catch(e) { console.warn('[Preload backup] failed:', e.message); }
   }
-} else {
-  console.error('darknite.getData not available');
 }
+console.log('[Init] JARVIS_DATA:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
 runBootSequence();
 init();
 </script>
