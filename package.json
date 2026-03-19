@@ -1,6 +1,6 @@
 {
   "name": "darknite",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "DarkNite Command Center - Powered by JARVIS. 7,219 AI skills, agents, and commands.",
   "main": "main.js",
   "author": "DarkNite",
@@ -69,6 +69,9 @@
       "main.js",
       "preload.js",
       "src/**/*"
+    ],
+    "asarUnpack": [
+      "src/dashboard-data.js"
     ]
   },
   "devDependencies": {

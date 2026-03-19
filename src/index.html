@@ -1252,6 +1252,13 @@
 
 <script src="dashboard-data.js"></script>
 <script>
+// Verify data loaded
+if (typeof JARVIS_DATA === 'undefined') {
+  console.error('FATAL: JARVIS_DATA not loaded from dashboard-data.js');
+  document.body.innerHTML = '<div style="color:#f5c518;background:#000;padding:40px;font-family:monospace;font-size:16px"><h1>DarkNite - Data Load Error</h1><p>dashboard-data.js failed to load. The app data file may be corrupted.</p><p>Try re-downloading from GitHub releases.</p></div>';
+} else {
+  console.log('JARVIS_DATA loaded:', (JARVIS_DATA.skills||[]).length, 'skills,', (JARVIS_DATA.agents||[]).length, 'agents,', (JARVIS_DATA.commands||[]).length, 'commands');
+}
 const CATEGORIES = {
   'AI / ML': ['ai-', 'ml-', 'llm-', 'langchain', 'rag-', 'embedding', 'nlp-', 'agent-', 'agentic', 'prompt-', 'fine-tuning'],
   'Frontend': ['react-', 'nextjs', 'vue-', 'angular-', 'svelte', 'frontend', 'tailwind', 'css-', 'ui-', 'shadcn', 'expo-'],

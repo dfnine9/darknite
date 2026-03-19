@@ -7,6 +7,9 @@ const https = require('https');
 
 let mainWindow;
 
+// === MEMORY (handle 49MB data file) ===
+app.commandLine.appendSwitch('js-flags', '--max-old-space-size=4096');
+
 // === GPU ACCELERATION ===
 app.commandLine.appendSwitch('enable-gpu-rasterization');
 app.commandLine.appendSwitch('enable-zero-copy');
