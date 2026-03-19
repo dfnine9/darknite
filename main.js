@@ -7,6 +7,15 @@ const https = require('https');
 
 let mainWindow;
 
+// === GPU ACCELERATION (NVIDIA 3060) ===
+app.commandLine.appendSwitch('enable-gpu-rasterization');
+app.commandLine.appendSwitch('enable-zero-copy');
+app.commandLine.appendSwitch('enable-hardware-overlays', 'single-fullscreen,single-on-top,underlay');
+app.commandLine.appendSwitch('enable-features', 'VaapiVideoDecoder,VaapiVideoEncoder,CanvasOopRasterization');
+app.commandLine.appendSwitch('ignore-gpu-blocklist');
+app.commandLine.appendSwitch('enable-accelerated-video-decode');
+app.commandLine.appendSwitch('enable-accelerated-mjpeg-decode');
+
 // === AUTO-UPDATER ===
 autoUpdater.autoDownload = true;
 autoUpdater.autoInstallOnAppQuit = true;
@@ -36,18 +45,21 @@ autoUpdater.on('update-downloaded', (info) => {
   console.log('[AutoUpdate] Update downloaded:', info.version);
   if (mainWindow) {
     mainWindow.webContents.send('update-status', { status: 'ready', version: info.version });
+    // Only show dialog after boot animation (delay 5s to let boot finish)
+    setTimeout(() => {
+      dialog.showMessageBox(mainWindow, {
+        type: 'info',
+        title: 'DarkNite Update',
+        message: `Version ${info.version} is ready to install.`,
+        detail: 'The update will be installed when you close the app.',
+        buttons: ['Restart Now', 'Later']
+      }).then((result) => {
+        if (result.response === 0) {
+          autoUpdater.quitAndInstall();
+        }
+      });
+    }, 5000);
   }
-  dialog.showMessageBox(mainWindow, {
-    type: 'info',
-    title: 'DarkNite Update',
-    message: `Version ${info.version} is ready to install.`,
-    detail: 'The update will be installed when you close the app.',
-    buttons: ['Restart Now', 'Later']
-  }).then((result) => {
-    if (result.response === 0) {
-      autoUpdater.quitAndInstall();
-    }
-  });
 });
 
 autoUpdater.on('error', (err) => {
@@ -84,7 +96,9 @@ function createWindow() {
     webPreferences: {
       preload: preloadPath,
       nodeIntegration: false,
-      contextIsolation: true
+      contextIsolation: true,
+      backgroundThrottling: false,
+      offscreen: false
     }
   });
 

@@ -1183,11 +1183,11 @@
   <div class="modal gh-modal">
     <button class="modal-close" onclick="document.getElementById('update-overlay').classList.remove('show')">&times;</button>
     <div class="modal-top">
-      <h2>Sync to Claude Code</h2>
+      <h2 id="update-modal-title">Sync Capabilities</h2>
       <span class="modal-type-tag skill">UPDATE SYSTEM</span>
     </div>
     <div class="modal-body">
-      <div class="modal-desc">Install or update all DarkNite capabilities directly into your Claude Code setup at <code style="color:var(--yellow)">~/.claude/</code></div>
+      <div class="modal-desc" id="update-modal-desc">Install or update all DarkNite capabilities directly into Claude Code (<code style="color:var(--yellow)">~/.claude/</code>) or Cursor (<code style="color:#7c3aed">~/.cursor/</code>)</div>
       <div class="update-stats" id="update-stats">
         <div class="update-stat">Skills: <strong id="us-skills">0</strong></div>
         <div class="update-stat">Agents: <strong id="us-agents">0</strong></div>
@@ -1197,8 +1197,9 @@
       <div class="update-progress"><div class="update-bar" id="update-bar"></div></div>
       <div id="update-status" style="font-size:13px;color:var(--text-dim);margin-bottom:12px;">Ready to sync</div>
       <div class="modal-btn-row">
-        <button class="modal-action-btn" id="sync-all-btn" onclick="syncAllToClaude()">Sync All to Claude Code</button>
-        <button class="modal-copy-btn" id="sync-new-btn" onclick="syncNewOnly()">Install New Only</button>
+        <button class="modal-action-btn" id="sync-all-btn" style="background:#2563eb;" onclick="runSyncTo('claude')">Sync All to Claude</button>
+        <button class="modal-action-btn" id="sync-cursor-btn" style="background:#7c3aed;" onclick="runSyncTo('cursor')">Sync All to Cursor</button>
+        <button class="modal-action-btn" id="sync-both-btn" style="background:#059669;" onclick="runSyncTo('both')">Sync All to Both</button>
         <button class="modal-close-btn" onclick="document.getElementById('update-overlay').classList.remove('show')">Close</button>
       </div>
       <div class="update-log" id="update-log" style="display:none"></div>
@@ -1628,7 +1629,7 @@ async function runUpdateAll() {
         if (i % 10 === 0) status.textContent = 'Pulling DarkNite repo... ' + (i+1) + '/' + scanResult.items.length;
         try {
           const f = await window.darknite.fetchFile(owner, repo, item.path);
-          if (f.success) { await window.darknite.install(item.type, item.id, f.content); totalPulled++; }
+          if (f.success) { await window.darknite.install(item.type, item.id, f.content, 'both'); totalPulled++; }
         } catch(e) {}
       }
       log.innerHTML += '<div class="ok">Pulled ' + totalPulled + ' from DarkNite repo</div>';
@@ -1655,7 +1656,7 @@ async function runUpdateAll() {
         for (const item of scanResult.items) {
           try {
             const f = await window.darknite.fetchFile(owner, repo, item.path);
-            if (f.success) { await window.darknite.install(item.type, item.id, f.content); repoPulled++; totalPulled++; }
+            if (f.success) { await window.darknite.install(item.type, item.id, f.content, 'both'); repoPulled++; totalPulled++; }
           } catch(e) {}
         }
         log.innerHTML += '<div class="ok">' + repoStr + ': pulled ' + repoPulled + ' items</div>';
@@ -1668,18 +1669,16 @@ async function runUpdateAll() {
   }
 
   bar.style.width = '100%';
-  status.textContent = 'Update complete! Pulled ' + totalPulled + ' items from GitHub source repos';
+  status.textContent = 'Update complete! Pulled ' + totalPulled + ' items from GitHub to Claude + Cursor';
   status.style.color = 'var(--green)';
   log.innerHTML += '<div class="ok">--- UPDATE COMPLETE ---</div>';
-  log.innerHTML += '<div class="ok">Pulled ' + totalPulled + ' items from source repos to ~/.claude/</div>';
-  log.innerHTML += '<div class="new">Use "Sync Claude" to push all built-in items to Claude Code</div>';
+  log.innerHTML += '<div class="ok">Pulled ' + totalPulled + ' items to both ~/.claude/ and ~/.cursor/</div>';
   log.scrollTop = log.scrollHeight;
   showToast('Updated ' + totalPulled + ' items from GitHub!', 'success');
 }
 
-// Legacy functions for modal buttons
+// Legacy wrappers (kept for compatibility)
 function openUpdateModal() {
-
   const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
   const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
   const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
@@ -1691,80 +1690,10 @@ function openUpdateModal() {
   document.getElementById('update-status').textContent = 'Ready to sync';
   document.getElementById('update-log').style.display = 'none';
   document.getElementById('update-log').innerHTML = '';
-  document.getElementById('sync-all-btn').disabled = false;
-  document.getElementById('sync-new-btn').disabled = false;
   document.getElementById('update-overlay').classList.add('show');
 }
 
-async function syncAllToClaude() { runSyncToClaude(); }
-
-async function syncNewOnly() {
-  await runSync(true);
-}
-
-async function runSync(newOnly) {
-  if (!window.darknite || !window.darknite.install) {
-    showToast('Sync requires the desktop app', 'error');
-    return;
-  }
-
-  document.getElementById('sync-all-btn').disabled = true;
-  document.getElementById('sync-new-btn').disabled = true;
-  const log = document.getElementById('update-log');
-  log.style.display = 'block';
-  log.innerHTML = '';
-  const bar = document.getElementById('update-bar');
-  const status = document.getElementById('update-status');
-
-  // Collect all items with content
-  const allItems = [];
-  if (JARVIS_DATA.skills) JARVIS_DATA.skills.filter(s => s.c).forEach(s => allItems.push({...s, type: 'skill'}));
-  if (JARVIS_DATA.agents) JARVIS_DATA.agents.filter(a => a.c).forEach(a => allItems.push({...a, type: 'agent'}));
-  if (JARVIS_DATA.commands) JARVIS_DATA.commands.filter(c => c.c).forEach(c => allItems.push({...c, type: 'command'}));
-
-  let installed = 0, skipped = 0, failed = 0;
-  const total = allItems.length;
-
-  status.textContent = (newOnly ? 'Installing new items' : 'Syncing all items') + '... 0/' + total;
-
-  for (let i = 0; i < allItems.length; i++) {
-    const item = allItems[i];
-    const pct = Math.round(((i + 1) / total) * 100);
-    bar.style.width = pct + '%';
-
-    if (i % 10 === 0) {
-      status.textContent = (newOnly ? 'Installing' : 'Syncing') + '... ' + (i + 1) + '/' + total + ' (' + pct + '%)';
-    }
-
-    try {
-      const result = await window.darknite.install(item.type, item.id, item.c);
-      if (result.success) {
-        installed++;
-        if (i < 50 || i % 50 === 0) {
-          log.innerHTML += '<div class="' + (newOnly ? 'new' : 'ok') + '">[' + item.type.toUpperCase() + '] ' + item.id + ' -> installed</div>';
-        }
-      } else {
-        failed++;
-        log.innerHTML += '<div style="color:#ef4444">[FAIL] ' + item.id + ': ' + result.error + '</div>';
-      }
-    } catch(e) {
-      failed++;
-    }
-
-    // Keep log scrolled to bottom
-    if (i % 20 === 0) log.scrollTop = log.scrollHeight;
-  }
-
-  bar.style.width = '100%';
-  status.textContent = 'Sync complete! ' + installed + ' installed, ' + failed + ' failed';
-  status.style.color = 'var(--green)';
-  log.innerHTML += '<div class="ok">--- SYNC COMPLETE: ' + installed + ' installed, ' + skipped + ' skipped, ' + failed + ' failed ---</div>';
-  log.scrollTop = log.scrollHeight;
-
-  showToast('Synced ' + installed + ' capabilities to Claude Code!', 'success');
-  document.getElementById('sync-all-btn').disabled = false;
-  document.getElementById('sync-new-btn').disabled = false;
-}
+// (legacy runSync removed - use runSyncTo('claude'|'cursor'|'both') instead)
 
 // ===== GITHUB INTEGRATION =====
 function openGitHubModal() {
@@ -1814,13 +1743,27 @@ function vetAndInstall(type, id, content, source, btn) {
   document.getElementById('vet-badges').innerHTML = badges;
   document.getElementById('vet-content').textContent = content.substring(0, 3000) + (content.length > 3000 ? '\n...truncated...' : '');
   document.getElementById('vet-warnings').innerHTML = risks.length > 0 ? '<div style="padding:10px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);border-radius:8px;margin-bottom:12px;font-size:12px;color:#ef4444"><strong>Potential Risks:</strong><br>' + risks.join('<br>') + '</div>' : '';
+  // Replace single install with 3 target buttons
   const ib = document.getElementById('vet-install-btn');
-  ib.onclick = async () => {
-    const result = await window.darknite.install(type, id, content);
-    if (result.success) { showToast('Installed ' + fmtName(id) + ' to Claude Code!', 'success'); if (btn) { btn.textContent = 'Installed'; btn.className = 'gh-dl-btn installed'; } }
-    else showToast('Install failed: ' + result.error, 'error');
-    document.getElementById('vet-overlay').classList.remove('show');
-  };
+  ib.innerHTML = '';
+  const btnRow = document.createElement('div');
+  btnRow.style.cssText = 'display:flex;gap:8px;';
+  ['claude','cursor','both'].forEach(target => {
+    const b = document.createElement('button');
+    b.className = 'modal-action-btn';
+    b.style.background = target === 'claude' ? '#2563eb' : target === 'cursor' ? '#7c3aed' : '#059669';
+    b.style.cssText += 'padding:10px 16px;border:none;color:#fff;border-radius:8px;font-weight:700;font-size:12px;cursor:pointer;font-family:BatmanForever,sans-serif;';
+    const label = target === 'both' ? 'Claude + Cursor' : target === 'cursor' ? 'Cursor' : 'Claude';
+    b.textContent = 'Install to ' + label;
+    b.onclick = async () => {
+      const result = await window.darknite.install(type, id, content, target);
+      if (result.success) { showToast('Installed ' + fmtName(id) + ' to ' + label + '!', 'success'); if (btn) { btn.textContent = 'Installed'; btn.className = 'gh-dl-btn installed'; } }
+      else showToast('Install failed: ' + (result.error||'unknown'), 'error');
+      document.getElementById('vet-overlay').classList.remove('show');
+    };
+    btnRow.appendChild(b);
+  });
+  ib.appendChild(btnRow);
   document.getElementById('vet-overlay').classList.add('show');
 }
 
@@ -1872,16 +1815,37 @@ function runBootSequence() {
   // Single DOM write
   setTimeout(() => { codeEl.innerHTML = allHTML; }, 800);
 
-  // Status updates
-  setTimeout(() => { if(statusEl) statusEl.textContent = 'LOADING CAPABILITIES'; }, 1400);
-  setTimeout(() => { if(statusEl) statusEl.textContent = 'DECRYPTING VAULT'; }, 2100);
-  setTimeout(() => { if(statusEl) { statusEl.textContent = 'SYSTEM READY'; statusEl.style.color = 'rgba(245,197,24,0.6)'; } }, 2700);
+  // Status updates with auto-update check woven in
+  setTimeout(() => { if(statusEl) statusEl.textContent = 'LOADING CAPABILITIES'; }, 1200);
+  setTimeout(() => { if(statusEl) statusEl.textContent = 'CHECKING FOR UPDATES'; }, 1800);
+  setTimeout(() => {
+    // Trigger auto-update check during boot
+    if (window.darknite && window.darknite.checkForAppUpdate) {
+      window.darknite.checkForAppUpdate().then(() => {
+        console.log('[Boot] Auto-update check fired');
+      }).catch(() => {});
+    }
+  }, 1900);
+  setTimeout(() => { if(statusEl) statusEl.textContent = 'DECRYPTING VAULT'; }, 2400);
+  setTimeout(() => { if(statusEl) statusEl.textContent = 'GPU ACCELERATION ACTIVE'; }, 2800);
+  setTimeout(() => { if(statusEl) { statusEl.textContent = 'SYSTEM READY'; statusEl.style.color = 'rgba(245,197,24,0.6)'; } }, 3200);
+
+  // Listen for update status during boot
+  if (window.darknite && window.darknite.onUpdateStatus) {
+    window.darknite.onUpdateStatus((data) => {
+      if (bootScreen.style.display !== 'none') {
+        if (data.status === 'available') { if(statusEl) statusEl.textContent = 'UPDATE v' + data.version + ' FOUND'; }
+        else if (data.status === 'downloading') { if(statusEl) statusEl.textContent = 'DOWNLOADING UPDATE ' + (data.percent||0) + '%'; }
+        else if (data.status === 'ready') { if(statusEl) statusEl.textContent = 'UPDATE READY - WILL INSTALL ON RESTART'; }
+      }
+    });
+  }
 
   // Fade out
   setTimeout(() => {
     bootScreen.classList.add('fade-out');
     setTimeout(() => { bootScreen.style.display = 'none'; }, 800);
-  }, 3000);
+  }, 3600);
 }
 
 // Debug: check if darknite API loaded
