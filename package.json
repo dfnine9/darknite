@@ -80,8 +80,6 @@
     "electron-builder": "^26.0.0"
   },
   "dependencies": {
-    "electron-updater": "^6.8.3",
-    "png-to-ico": "^3.0.1",
-    "sharp": "^0.34.5"
+    "electron-updater": "^6.8.3"
   }
 }
