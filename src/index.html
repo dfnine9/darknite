@@ -1478,8 +1478,12 @@ async function installCapability(type, id, target) {
 
   if (window.darknite && window.darknite.install) {
     const r = await window.darknite.install(type, id, orig.c, target);
-    if (r.success) showToast('Installed ' + fmtName(id) + ' to ' + targetLabel + '!', 'success');
-    else showToast('Install failed: ' + (r.error || 'unknown'), 'error');
+    if (r.success) {
+      const paths = r.results ? r.results.map(x => x.path).join(', ') : '';
+      showToast('Installed ' + fmtName(id) + ' to ' + targetLabel + (paths ? ' → ' + paths : '') , 'success');
+      console.log('[Install]', fmtName(id), 'written to:', paths);
+    }
+    else showToast('Install failed: ' + (r.error || r.results?.map(x=>x.error).join(', ') || 'unknown'), 'error');
   } else {
     const blob = new Blob([orig.c], { type: 'text/markdown' });
     const a = document.createElement('a');
@@ -1559,8 +1563,8 @@ async function runSyncToClaude(target) {
     if (i % 20 === 0) document.getElementById('update-status').textContent = 'Syncing to ' + targetLabel + '... ' + (i+1) + '/' + allItems.length + ' (' + pct + '%)';
     try {
       const r = await window.darknite.install(item.type, item.id, item.c, target);
-      if (r.success) { installed++; if (i < 30 || i % 100 === 0) log.innerHTML += '<div class="ok">[' + item.type.toUpperCase() + '] ' + item.id + '</div>'; }
-      else { failed++; log.innerHTML += '<div style="color:#ef4444">[FAIL] ' + item.id + '</div>'; }
+      if (r.success) { installed++; const p = r.results?.[0]?.path||''; if (i < 30 || i % 100 === 0) log.innerHTML += '<div class="ok">[' + item.type.toUpperCase() + '] ' + item.id + (i===0?' → '+p:'') + '</div>'; }
+      else { failed++; log.innerHTML += '<div style="color:#ef4444">[FAIL] ' + item.id + ': ' + (r.error||r.results?.map(x=>x.error).join(',')||'') + '</div>'; }
     } catch(e) { failed++; }
     if (i % 50 === 0) log.scrollTop = log.scrollHeight;
   }

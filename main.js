@@ -201,6 +201,12 @@ function installToDir(baseDir, type, id, content) {
     throw new Error('Unknown type: ' + type);
   }
   fs.writeFileSync(destPath, content, 'utf8');
+  // Verify the file was actually written
+  if (!fs.existsSync(destPath)) {
+    throw new Error('File was not written: ' + destPath);
+  }
+  const stat = fs.statSync(destPath);
+  console.log('[Install] Written:', destPath, '(' + stat.size + ' bytes)');
   return destPath;
 }
 
