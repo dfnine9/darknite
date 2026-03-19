@@ -107,30 +107,61 @@ function httpGet(url, opts = {}) {
   });
 }
 
-// IPC: Install capability to ~/.claude/
-ipcMain.handle('install-capability', async (event, { type, id, content }) => {
+// Helper: install to a specific base directory
+function installToDir(baseDir, type, id, content) {
+  let destPath;
+  if (type === 'skill') {
+    const skillDir = path.join(baseDir, 'skills', id);
+    fs.mkdirSync(skillDir, { recursive: true });
+    destPath = path.join(skillDir, 'SKILL.md');
+  } else if (type === 'agent') {
+    fs.mkdirSync(path.join(baseDir, 'agents'), { recursive: true });
+    destPath = path.join(baseDir, 'agents', id + '.md');
+  } else if (type === 'command') {
+    const cleanId = id.replace(/^commands\//, '');
+    fs.mkdirSync(path.join(baseDir, 'commands'), { recursive: true });
+    destPath = path.join(baseDir, 'commands', cleanId + '.md');
+  } else {
+    throw new Error('Unknown type: ' + type);
+  }
+  fs.writeFileSync(destPath, content, 'utf8');
+  return destPath;
+}
+
+// IPC: Install capability (supports target: 'claude', 'cursor', 'both')
+ipcMain.handle('install-capability', async (event, { type, id, content, target }) => {
   try {
-    const claudeDir = path.join(os.homedir(), '.claude');
-    let destPath;
-    if (type === 'skill') {
-      const skillDir = path.join(claudeDir, 'skills', id);
-      fs.mkdirSync(skillDir, { recursive: true });
-      destPath = path.join(skillDir, 'SKILL.md');
-    } else if (type === 'agent') {
-      fs.mkdirSync(path.join(claudeDir, 'agents'), { recursive: true });
-      destPath = path.join(claudeDir, 'agents', id + '.md');
-    } else if (type === 'command') {
-      const cleanId = id.replace(/^commands\//, '');
-      fs.mkdirSync(path.join(claudeDir, 'commands'), { recursive: true });
-      destPath = path.join(claudeDir, 'commands', cleanId + '.md');
-    } else {
-      return { success: false, error: 'Unknown type: ' + type };
+    const results = [];
+    const targets = target === 'both' ? ['claude', 'cursor'] : [target || 'claude'];
+
+    for (const t of targets) {
+      const baseDir = t === 'cursor'
+        ? path.join(os.homedir(), '.cursor')
+        : path.join(os.homedir(), '.claude');
+      try {
+        const destPath = installToDir(baseDir, type, id, content);
+        results.push({ target: t, success: true, path: destPath });
+      } catch (err) {
+        results.push({ target: t, success: false, error: err.message });
+      }
     }
-    fs.writeFileSync(destPath, content, 'utf8');
-    return { success: true, path: destPath };
+    return { success: results.every(r => r.success), results };
   } catch (err) {
     return { success: false, error: err.message };
   }
+});
+
+// IPC: Detect which editors are installed
+ipcMain.handle('detect-editors', async () => {
+  const home = os.homedir();
+  const editors = [];
+  if (fs.existsSync(path.join(home, '.claude')) || true) {
+    editors.push({ id: 'claude', name: 'Claude Code', dir: path.join(home, '.claude'), installed: true });
+  }
+  const cursorDir = path.join(home, '.cursor');
+  const cursorExists = fs.existsSync(cursorDir);
+  editors.push({ id: 'cursor', name: 'Cursor', dir: cursorDir, installed: cursorExists });
+  return editors;
 });
 
 // IPC: Scan a GitHub repo

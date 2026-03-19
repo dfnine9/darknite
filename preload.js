@@ -1,8 +1,8 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('darknite', {
-  install: async (type, id, content) => {
-    return await ipcRenderer.invoke('install-capability', { type, id, content });
+  install: async (type, id, content, target) => {
+    return await ipcRenderer.invoke('install-capability', { type, id, content, target: target || 'claude' });
   },
   scanRepo: async (repoUrl) => {
     return await ipcRenderer.invoke('github-scan-repo', repoUrl);
@@ -15,6 +15,9 @@ contextBridge.exposeInMainWorld('darknite', {
   },
   getAppVersion: async () => {
     return await ipcRenderer.invoke('get-app-version');
+  },
+  detectEditors: async () => {
+    return await ipcRenderer.invoke('detect-editors');
   },
   onUpdateStatus: (callback) => {
     ipcRenderer.on('update-status', (event, data) => callback(data));

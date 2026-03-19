@@ -1027,10 +1027,14 @@
     <div class="profile-status"></div>
   </div>
 
-  <div style="padding:6px 14px 8px;display:flex;gap:6px;border-bottom:1px solid var(--border);">
+  <div style="padding:6px 14px 4px;display:flex;gap:6px;">
     <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="runUpdateAll()">Update All</button>
-    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="runSyncToClaude()">Sync Claude</button>
     <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="openGitHubModal()">GitHub</button>
+  </div>
+  <div style="padding:2px 14px 8px;display:flex;gap:6px;border-bottom:1px solid var(--border);">
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="runSyncTo('claude')">Sync Claude</button>
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#7c3aed;border-color:#7c3aed;" onclick="runSyncTo('cursor')">Sync Cursor</button>
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#059669;border-color:#059669;" onclick="runSyncTo('both')">Sync Both</button>
   </div>
 
   <nav class="sidebar-nav">
@@ -1449,30 +1453,35 @@ function openModal(type, id) {
         <div class="modal-meta-item"><strong>Type:</strong> ${type}</div>
       </div>
       <div class="modal-btn-row">
-        <button class="modal-action-btn" onclick="installCapability('${type}','${esc(id)}')">Install to Claude Code</button>
-        <button class="modal-copy-btn" onclick="copyCapability('${type}','${esc(id)}')">Copy Content</button>
+        <button class="modal-action-btn" onclick="installCapability('${type}','${esc(id)}','claude')">Install to Claude</button>
+        <button class="modal-action-btn" style="background:#7c3aed;" onclick="installCapability('${type}','${esc(id)}','cursor')">Install to Cursor</button>
+        <button class="modal-action-btn" style="background:#059669;" onclick="installCapability('${type}','${esc(id)}','both')">Install Both</button>
+        <button class="modal-copy-btn" onclick="copyCapability('${type}','${esc(id)}')">Copy</button>
         <button class="modal-close-btn" onclick="document.getElementById('modal-overlay').classList.remove('show')">Close</button>
       </div>
     </div>`;
   document.getElementById('modal-overlay').classList.add('show');
 }
 
-async function installCapability(type, id) {
+async function installCapability(type, id, target) {
+  target = target || 'claude';
   const src = type === 'skill' ? JARVIS_DATA.skills : type === 'agent' ? JARVIS_DATA.agents : JARVIS_DATA.commands;
   const orig = src.find(s => s.id === id);
   if (!orig || !orig.c) { showToast('No content available', 'error'); return; }
 
+  const targetLabel = target === 'both' ? 'Claude + Cursor' : target === 'cursor' ? 'Cursor' : 'Claude';
+
   if (window.darknite && window.darknite.install) {
-    const r = await window.darknite.install(type, id, orig.c);
-    if (r.success) showToast('Installed ' + fmtName(id) + ' to Claude Code!', 'success');
-    else showToast('Install failed: ' + r.error, 'error');
+    const r = await window.darknite.install(type, id, orig.c, target);
+    if (r.success) showToast('Installed ' + fmtName(id) + ' to ' + targetLabel + '!', 'success');
+    else showToast('Install failed: ' + (r.error || 'unknown'), 'error');
   } else {
     const blob = new Blob([orig.c], { type: 'text/markdown' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = type === 'skill' ? 'SKILL.md' : id.replace(/^commands\//, '') + '.md';
     a.click();
-    showToast('Downloaded ' + fmtName(id) + ' - place in ~/.claude/' + (type === 'skill' ? 'skills/' + id + '/' : type + 's/'), 'info');
+    showToast('Downloaded ' + fmtName(id) + ' - place in ~/.' + target + '/' + (type === 'skill' ? 'skills/' + id + '/' : type + 's/'), 'info');
   }
 }
 
@@ -1505,14 +1514,19 @@ document.addEventListener('keydown', e => {
 
 // ===== UPDATE / SYNC SYSTEM =====
 
-// Sync all built-in DarkNite items to ~/.claude/
-async function runSyncToClaude() {
+// Sync wrapper
+function runSyncTo(target) { runSyncToClaude(target); }
+
+// Sync all built-in DarkNite items to target editor
+async function runSyncToClaude(target) {
+  target = target || 'claude';
+  const targetLabel = target === 'both' ? 'Claude + Cursor' : target === 'cursor' ? 'Cursor' : 'Claude';
+
   if (!window.darknite || !window.darknite.install) {
     showToast('Sync requires the DarkNite desktop app', 'error');
     return;
   }
   document.getElementById('update-overlay').classList.add('show');
-  // Set counts
   const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
   const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
   const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
@@ -1521,11 +1535,11 @@ async function runSyncToClaude() {
   document.getElementById('us-commands').textContent = cc;
   document.getElementById('us-total').textContent = sc + ac + cc;
   document.getElementById('update-bar').style.width = '0%';
-  document.getElementById('update-status').textContent = 'Starting sync...';
+  document.getElementById('update-status').textContent = 'Syncing to ' + targetLabel + '...';
   document.getElementById('update-status').style.color = 'var(--text-dim)';
   const log = document.getElementById('update-log');
   log.style.display = 'block';
-  log.innerHTML = '';
+  log.innerHTML = '<div class="new">Target: ' + targetLabel + '</div>';
 
   const allItems = [];
   if (JARVIS_DATA.skills) JARVIS_DATA.skills.filter(s => s.c).forEach(s => allItems.push({id:s.id, c:s.c, type:'skill'}));
@@ -1537,16 +1551,16 @@ async function runSyncToClaude() {
     const item = allItems[i];
     const pct = Math.round(((i+1)/allItems.length)*100);
     document.getElementById('update-bar').style.width = pct + '%';
-    if (i % 20 === 0) document.getElementById('update-status').textContent = 'Syncing... ' + (i+1) + '/' + allItems.length + ' (' + pct + '%)';
+    if (i % 20 === 0) document.getElementById('update-status').textContent = 'Syncing to ' + targetLabel + '... ' + (i+1) + '/' + allItems.length + ' (' + pct + '%)';
     try {
-      const r = await window.darknite.install(item.type, item.id, item.c);
+      const r = await window.darknite.install(item.type, item.id, item.c, target);
       if (r.success) { installed++; if (i < 30 || i % 100 === 0) log.innerHTML += '<div class="ok">[' + item.type.toUpperCase() + '] ' + item.id + '</div>'; }
       else { failed++; log.innerHTML += '<div style="color:#ef4444">[FAIL] ' + item.id + '</div>'; }
     } catch(e) { failed++; }
     if (i % 50 === 0) log.scrollTop = log.scrollHeight;
   }
   document.getElementById('update-bar').style.width = '100%';
-  document.getElementById('update-status').textContent = 'Done! ' + installed + ' synced, ' + failed + ' failed';
+  document.getElementById('update-status').textContent = 'Done! ' + installed + ' synced to ' + targetLabel + (failed > 0 ? ', ' + failed + ' failed' : '');
   document.getElementById('update-status').style.color = 'var(--green)';
   log.innerHTML += '<div class="ok">--- COMPLETE ---</div>';
   log.scrollTop = log.scrollHeight;
