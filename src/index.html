@@ -44,13 +44,15 @@
   body {
     font-family: 'BatmanForever', 'Rajdhani', sans-serif;
     font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: geometricPrecision;
     background: var(--bg-dark);
     color: var(--text);
     min-height: 100vh;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    image-rendering: -webkit-optimize-contrast;
     display: flex;
     overflow-x: hidden;
     border: 1px solid rgba(245, 197, 24, 0.15);
@@ -1032,9 +1034,9 @@
     <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="openGitHubModal()">GitHub</button>
   </div>
   <div style="padding:2px 14px 8px;display:flex;gap:6px;border-bottom:1px solid var(--border);">
-    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;" onclick="runSyncTo('claude')">Sync Claude</button>
-    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#7c3aed;border-color:#7c3aed;" onclick="runSyncTo('cursor')">Sync Cursor</button>
-    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#059669;border-color:#059669;" onclick="runSyncTo('both')">Sync Both</button>
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#2563eb;border-color:#2563eb;" onclick="runSyncTo('claude')">Sync to Claude</button>
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#7c3aed;border-color:#7c3aed;" onclick="runSyncTo('cursor')">Sync to Cursor</button>
+    <button class="sidebar-btn-secondary" style="flex:1;padding:8px 0;font-size:11px;margin:0;background:#059669;border-color:#059669;" onclick="runSyncTo('both')">Sync to Both</button>
   </div>
 
   <nav class="sidebar-nav">
@@ -1453,9 +1455,9 @@ function openModal(type, id) {
         <div class="modal-meta-item"><strong>Type:</strong> ${type}</div>
       </div>
       <div class="modal-btn-row">
-        <button class="modal-action-btn" onclick="installCapability('${type}','${esc(id)}','claude')">Install to Claude</button>
+        <button class="modal-action-btn" style="background:#2563eb;" onclick="installCapability('${type}','${esc(id)}','claude')">Install to Claude</button>
         <button class="modal-action-btn" style="background:#7c3aed;" onclick="installCapability('${type}','${esc(id)}','cursor')">Install to Cursor</button>
-        <button class="modal-action-btn" style="background:#059669;" onclick="installCapability('${type}','${esc(id)}','both')">Install Both</button>
+        <button class="modal-action-btn" style="background:#059669;" onclick="installCapability('${type}','${esc(id)}','both')">Install to Claude + Cursor</button>
         <button class="modal-copy-btn" onclick="copyCapability('${type}','${esc(id)}')">Copy</button>
         <button class="modal-close-btn" onclick="document.getElementById('modal-overlay').classList.remove('show')">Close</button>
       </div>
@@ -1564,7 +1566,7 @@ async function runSyncToClaude(target) {
   document.getElementById('update-status').style.color = 'var(--green)';
   log.innerHTML += '<div class="ok">--- COMPLETE ---</div>';
   log.scrollTop = log.scrollHeight;
-  showToast('Synced ' + installed + ' items to Claude Code!', 'success');
+  showToast('Synced ' + installed + ' items to ' + targetLabel + '!', 'success');
 }
 
 // Update All - pulls latest from source GitHub repos, then syncs to Claude

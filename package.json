@@ -1,6 +1,6 @@
 {
   "name": "darknite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "DarkNite Command Center - Powered by JARVIS. 7,219 AI skills, agents, and commands.",
   "main": "main.js",
   "author": "DarkNite",
@@ -8,7 +8,9 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --win",
-    "build-portable": "electron-builder --win portable"
+    "build-portable": "electron-builder --win portable",
+    "build-mac": "electron-builder --mac",
+    "build-all": "electron-builder --win --mac"
   },
   "build": {
     "appId": "com.darknite.commandcenter",
@@ -28,6 +30,10 @@
         {
           "target": "nsis",
           "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
         }
       ],
       "icon": "src/icon.ico",
@@ -36,8 +42,32 @@
     "nsis": {
       "oneClick": true,
       "allowToChangeInstallationDirectory": false,
-      "artifactName": "DarkNite-Setup-${version}.exe",
+      "artifactName": "DarkNite-Installer-${version}.exe",
       "shortcutName": "DarkNite"
+    },
+    "portable": {
+      "artifactName": "DarkNite-${version}.exe"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        },
+        {
+          "target": "zip",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "src/icon.png",
+      "category": "public.app-category.developer-tools",
+      "artifactName": "DarkNite-${version}-mac.${ext}",
+      "identity": null
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "icon": "src/icon.png",
+      "artifactName": "DarkNite-${version}-linux.${ext}"
     },
     "files": [
       "main.js",

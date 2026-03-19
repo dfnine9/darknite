@@ -218,9 +218,7 @@ ipcMain.handle('github-fetch-file', async (event, { owner, repo, filePath }) => 
 
 app.whenReady().then(() => {
   createWindow();
-  // Check for app updates after launch
-  setTimeout(() => {
-    autoUpdater.checkForUpdates().catch(() => {});
-  }, 5000);
+  // Check for updates immediately during boot animation (not after)
+  autoUpdater.checkForUpdates().catch(() => {});
 });
 app.on('window-all-closed', () => app.quit());
