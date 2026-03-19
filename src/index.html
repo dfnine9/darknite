@@ -1651,33 +1651,14 @@ async function runUpdateAll() {
     }
   }
 
-  // Phase 3: Sync all built-in items to Claude Code
-  log.innerHTML += '<div class="new">Phase 3: Syncing built-in library (' + (sc+ac+cc) + ' items) to Claude Code...</div>';
-  const allItems = [];
-  if (JARVIS_DATA.skills) JARVIS_DATA.skills.filter(s => s.c).forEach(s => allItems.push({id:s.id,c:s.c,type:'skill'}));
-  if (JARVIS_DATA.agents) JARVIS_DATA.agents.filter(a => a.c).forEach(a => allItems.push({id:a.id,c:a.c,type:'agent'}));
-  if (JARVIS_DATA.commands) JARVIS_DATA.commands.filter(c => c.c).forEach(c => allItems.push({id:c.id,c:c.c,type:'command'}));
-
-  let installed = 0, failed = 0;
-  for (let i = 0; i < allItems.length; i++) {
-    const item = allItems[i];
-    const pct = 60 + Math.round(((i+1)/allItems.length)*40);
-    bar.style.width = pct + '%';
-    if (i % 100 === 0) status.textContent = 'Installing to Claude... ' + (i+1) + '/' + allItems.length;
-    try {
-      const r = await window.darknite.install(item.type, item.id, item.c);
-      if (r.success) installed++; else failed++;
-    } catch(e) { failed++; }
-    if (i % 200 === 0) log.scrollTop = log.scrollHeight;
-  }
-
   bar.style.width = '100%';
-  status.textContent = 'Update complete! Pulled ' + totalPulled + ' from GitHub, synced ' + installed + ' to Claude';
+  status.textContent = 'Update complete! Pulled ' + totalPulled + ' items from GitHub source repos';
   status.style.color = 'var(--green)';
   log.innerHTML += '<div class="ok">--- UPDATE COMPLETE ---</div>';
-  log.innerHTML += '<div class="ok">GitHub pulls: ' + totalPulled + ' | Claude synced: ' + installed + (failed > 0 ? ' | Failed: ' + failed : '') + '</div>';
+  log.innerHTML += '<div class="ok">Pulled ' + totalPulled + ' items from source repos to ~/.claude/</div>';
+  log.innerHTML += '<div class="new">Use "Sync Claude" to push all built-in items to Claude Code</div>';
   log.scrollTop = log.scrollHeight;
-  showToast('Updated! ' + totalPulled + ' pulled, ' + installed + ' synced to Claude', 'success');
+  showToast('Updated ' + totalPulled + ' items from GitHub!', 'success');
 }
 
 // Legacy functions for modal buttons
