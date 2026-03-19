@@ -1854,26 +1854,20 @@ console.log("DarkNite API available:", !!window.darknite);
 if (window.darknite) console.log("Methods:", Object.keys(window.darknite));
 else console.warn("WARNING: window.darknite not found - preload.js may not have loaded");
 
-// Run boot then load data and init
-runBootSequence();
-(async function loadAndInit() {
-  if (window.darknite && window.darknite.getData) {
-    try {
-      const data = await window.darknite.getData();
-      if (data && data.skills) {
-        JARVIS_DATA = data;
-        console.log('JARVIS_DATA loaded:', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents.length, 'agents,', JARVIS_DATA.commands.length, 'commands');
-      } else {
-        console.error('getData returned empty data');
-      }
-    } catch(e) {
-      console.error('Failed to load data:', e);
-    }
+// Load data from preload and init
+if (window.darknite && window.darknite.getData) {
+  const data = window.darknite.getData();
+  if (data && data.skills && data.skills.length > 0) {
+    JARVIS_DATA = data;
+    console.log('JARVIS_DATA loaded:', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents.length, 'agents,', JARVIS_DATA.commands.length, 'commands');
   } else {
-    console.warn('darknite.getData not available — data may be loaded via script tag');
+    console.error('getData returned empty — check preload logs');
   }
-  init();
-})();
+} else {
+  console.error('darknite.getData not available');
+}
+runBootSequence();
+init();
 </script>
 </body>
 </html>

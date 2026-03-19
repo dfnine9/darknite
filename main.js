@@ -123,6 +123,7 @@ function createWindow() {
       preload: preloadPath,
       nodeIntegration: false,
       contextIsolation: true,
+      sandbox: false,
       backgroundThrottling: false,
       offscreen: false
     }
