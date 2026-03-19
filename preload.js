@@ -9,5 +9,14 @@ contextBridge.exposeInMainWorld('darknite', {
   },
   fetchFile: async (owner, repo, filePath) => {
     return await ipcRenderer.invoke('github-fetch-file', { owner, repo, filePath });
+  },
+  checkForAppUpdate: async () => {
+    return await ipcRenderer.invoke('check-for-app-update');
+  },
+  getAppVersion: async () => {
+    return await ipcRenderer.invoke('get-app-version');
+  },
+  onUpdateStatus: (callback) => {
+    ipcRenderer.on('update-status', (event, data) => callback(data));
   }
 });

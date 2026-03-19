@@ -1,4 +1,5 @@
-const { app, BrowserWindow, Menu, ipcMain } = require('electron');
+const { app, BrowserWindow, Menu, ipcMain, dialog } = require('electron');
+const { autoUpdater } = require('electron-updater');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
@@ -6,9 +7,70 @@ const https = require('https');
 
 let mainWindow;
 
+// === AUTO-UPDATER ===
+autoUpdater.autoDownload = true;
+autoUpdater.autoInstallOnAppQuit = true;
+
+autoUpdater.on('checking-for-update', () => {
+  console.log('[AutoUpdate] Checking for updates...');
+});
+
+autoUpdater.on('update-available', (info) => {
+  console.log('[AutoUpdate] Update available:', info.version);
+  if (mainWindow) {
+    mainWindow.webContents.send('update-status', { status: 'available', version: info.version });
+  }
+});
+
+autoUpdater.on('update-not-available', () => {
+  console.log('[AutoUpdate] App is up to date');
+});
+
+autoUpdater.on('download-progress', (progress) => {
+  if (mainWindow) {
+    mainWindow.webContents.send('update-status', { status: 'downloading', percent: Math.round(progress.percent) });
+  }
+});
+
+autoUpdater.on('update-downloaded', (info) => {
+  console.log('[AutoUpdate] Update downloaded:', info.version);
+  if (mainWindow) {
+    mainWindow.webContents.send('update-status', { status: 'ready', version: info.version });
+  }
+  dialog.showMessageBox(mainWindow, {
+    type: 'info',
+    title: 'DarkNite Update',
+    message: `Version ${info.version} is ready to install.`,
+    detail: 'The update will be installed when you close the app.',
+    buttons: ['Restart Now', 'Later']
+  }).then((result) => {
+    if (result.response === 0) {
+      autoUpdater.quitAndInstall();
+    }
+  });
+});
+
+autoUpdater.on('error', (err) => {
+  console.log('[AutoUpdate] Error:', err.message);
+});
+
+// IPC: Manual check for app updates
+ipcMain.handle('check-for-app-update', async () => {
+  try {
+    autoUpdater.checkForUpdates();
+    return { success: true };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+});
+
+// IPC: Get current app version
+ipcMain.handle('get-app-version', () => {
+  return app.getVersion();
+});
+
 function createWindow() {
   const preloadPath = path.join(__dirname, 'preload.js');
-  console.log('Preload path:', preloadPath, 'exists:', fs.existsSync(preloadPath));
 
   mainWindow = new BrowserWindow({
     width: 1400,
@@ -28,9 +90,6 @@ function createWindow() {
 
   Menu.setApplicationMenu(null);
   mainWindow.loadFile(path.join(__dirname, 'src', 'index.html'));
-
-  // Open dev tools to see errors (remove in production)
-  // mainWindow.webContents.openDevTools();
 }
 
 // HTTPS GET with redirect following
@@ -126,5 +185,11 @@ ipcMain.handle('github-fetch-file', async (event, { owner, repo, filePath }) => 
   }
 });
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+  // Check for app updates after launch
+  setTimeout(() => {
+    autoUpdater.checkForUpdates().catch(() => {});
+  }, 5000);
+});
 app.on('window-all-closed', () => app.quit());

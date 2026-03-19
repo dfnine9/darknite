@@ -1,14 +1,14 @@
 {
   "name": "darknite",
   "version": "1.0.0",
-  "description": "DarkNite Command Center - Powered by JARVIS. 6,710+ AI skills, agents, and commands.",
+  "description": "DarkNite Command Center - Powered by JARVIS. 7,219 AI skills, agents, and commands.",
   "main": "main.js",
   "author": "DarkNite",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win portable",
-    "build-installer": "electron-builder --win nsis"
+    "build": "electron-builder --win",
+    "build-portable": "electron-builder --win portable"
   },
   "build": {
     "appId": "com.darknite.commandcenter",
@@ -16,20 +16,28 @@
     "directories": {
       "output": "dist"
     },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "dfnine9",
+        "repo": "darknite"
+      }
+    ],
     "win": {
       "target": [
         {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
+          "target": "nsis",
+          "arch": ["x64"]
         }
       ],
       "icon": "src/icon.ico",
       "signAndEditExecutable": false
     },
-    "portable": {
-      "artifactName": "DarkNite-Setup.exe"
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": false,
+      "artifactName": "DarkNite-Setup-${version}.exe",
+      "shortcutName": "DarkNite"
     },
     "files": [
       "main.js",
@@ -42,6 +50,7 @@
     "electron-builder": "^26.0.0"
   },
   "dependencies": {
+    "electron-updater": "^6.8.3",
     "png-to-ico": "^3.0.1",
     "sharp": "^0.34.5"
   }
