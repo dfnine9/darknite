@@ -90,6 +90,23 @@ ipcMain.handle('get-app-version', () => {
   return app.getVersion();
 });
 
+// IPC: Load JARVIS_DATA from dashboard-data.js (works on all platforms)
+let cachedJarvisData = null;
+ipcMain.handle('get-jarvis-data', async () => {
+  if (cachedJarvisData) return cachedJarvisData;
+  try {
+    const dataPath = path.join(__dirname, 'src', 'dashboard-data.js');
+    const src = fs.readFileSync(dataPath, 'utf8');
+    const fn = new Function(src + '; return JARVIS_DATA;');
+    cachedJarvisData = fn();
+    console.log('[Main] Loaded JARVIS_DATA:', cachedJarvisData.skills?.length, 'skills,', cachedJarvisData.agents?.length, 'agents,', cachedJarvisData.commands?.length, 'commands');
+    return cachedJarvisData;
+  } catch (e) {
+    console.error('[Main] Failed to load dashboard-data.js:', e.message);
+    return { skills: [], agents: [], commands: [] };
+  }
+});
+
 function createWindow() {
   const preloadPath = path.join(__dirname, 'preload.js');
 

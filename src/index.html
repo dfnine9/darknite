@@ -1250,15 +1250,9 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
-<script src="dashboard-data.js"></script>
 <script>
-// Verify data loaded
-if (typeof JARVIS_DATA === 'undefined') {
-  console.error('FATAL: JARVIS_DATA not loaded from dashboard-data.js');
-  document.body.innerHTML = '<div style="color:#f5c518;background:#000;padding:40px;font-family:monospace;font-size:16px"><h1>DarkNite - Data Load Error</h1><p>dashboard-data.js failed to load. The app data file may be corrupted.</p><p>Try re-downloading from GitHub releases.</p></div>';
-} else {
-  console.log('JARVIS_DATA loaded:', (JARVIS_DATA.skills||[]).length, 'skills,', (JARVIS_DATA.agents||[]).length, 'agents,', (JARVIS_DATA.commands||[]).length, 'commands');
-}
+// Data loaded async from main process via IPC
+let JARVIS_DATA = { skills: [], agents: [], commands: [] };
 const CATEGORIES = {
   'AI / ML': ['ai-', 'ml-', 'llm-', 'langchain', 'rag-', 'embedding', 'nlp-', 'agent-', 'agentic', 'prompt-', 'fine-tuning'],
   'Frontend': ['react-', 'nextjs', 'vue-', 'angular-', 'svelte', 'frontend', 'tailwind', 'css-', 'ui-', 'shadcn', 'expo-'],
@@ -1860,9 +1854,26 @@ console.log("DarkNite API available:", !!window.darknite);
 if (window.darknite) console.log("Methods:", Object.keys(window.darknite));
 else console.warn("WARNING: window.darknite not found - preload.js may not have loaded");
 
-// Run boot then init
+// Run boot then load data and init
 runBootSequence();
-setTimeout(init, 100);
+(async function loadAndInit() {
+  if (window.darknite && window.darknite.getData) {
+    try {
+      const data = await window.darknite.getData();
+      if (data && data.skills) {
+        JARVIS_DATA = data;
+        console.log('JARVIS_DATA loaded:', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents.length, 'agents,', JARVIS_DATA.commands.length, 'commands');
+      } else {
+        console.error('getData returned empty data');
+      }
+    } catch(e) {
+      console.error('Failed to load data:', e);
+    }
+  } else {
+    console.warn('darknite.getData not available — data may be loaded via script tag');
+  }
+  init();
+})();
 </script>
 </body>
 </html>

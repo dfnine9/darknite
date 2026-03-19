@@ -1,6 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('darknite', {
+  getData: () => ipcRenderer.invoke('get-jarvis-data'),
   install: async (type, id, content, target) => {
     return await ipcRenderer.invoke('install-capability', { type, id, content, target: target || 'claude' });
   },
