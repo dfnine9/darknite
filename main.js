@@ -298,6 +298,39 @@ ipcMain.handle('github-fetch-file', async (event, { owner, repo, filePath }) => 
   }
 });
 
+// IPC: Open a folder in the system file manager
+ipcMain.handle('open-folder', async (event, folderPath) => {
+  try {
+    const { shell } = require('electron');
+    if (fs.existsSync(folderPath)) {
+      shell.openPath(folderPath);
+      return { success: true };
+    }
+    return { success: false, error: 'Folder does not exist: ' + folderPath };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+});
+
+// IPC: Verify install - count files in ~/.claude/ and ~/.cursor/
+ipcMain.handle('verify-install', async () => {
+  const results = {};
+  for (const editor of ['claude', 'cursor']) {
+    const base = path.join(os.homedir(), '.' + editor);
+    const counts = { skills: 0, agents: 0, commands: 0, path: base, exists: fs.existsSync(base) };
+    try {
+      const skillsDir = path.join(base, 'skills');
+      if (fs.existsSync(skillsDir)) counts.skills = fs.readdirSync(skillsDir).filter(f => !f.startsWith('.')).length;
+      const agentsDir = path.join(base, 'agents');
+      if (fs.existsSync(agentsDir)) counts.agents = fs.readdirSync(agentsDir).filter(f => f.endsWith('.md')).length;
+      const cmdsDir = path.join(base, 'commands');
+      if (fs.existsSync(cmdsDir)) counts.commands = fs.readdirSync(cmdsDir).filter(f => f.endsWith('.md')).length;
+    } catch(e) {}
+    results[editor] = counts;
+  }
+  return results;
+});
+
 app.whenReady().then(() => {
   createWindow();
   // Check for updates immediately during boot animation (not after)

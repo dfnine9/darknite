@@ -58,6 +58,12 @@ contextBridge.exposeInMainWorld('darknite', {
   detectEditors: async () => {
     return await ipcRenderer.invoke('detect-editors');
   },
+  openFolder: async (folderPath) => {
+    return await ipcRenderer.invoke('open-folder', folderPath);
+  },
+  verifyInstall: async () => {
+    return await ipcRenderer.invoke('verify-install');
+  },
   onUpdateStatus: (callback) => {
     ipcRenderer.on('update-status', (event, data) => callback(data));
   }

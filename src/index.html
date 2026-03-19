@@ -1247,6 +1247,19 @@
   </div>
 </div>
 
+<!-- Install Success Guide Modal -->
+<div class="modal-overlay" id="guide-overlay" onclick="if(event.target.id==='guide-overlay')event.target.classList.remove('show')">
+  <div class="modal gh-modal">
+    <button class="modal-close" onclick="document.getElementById('guide-overlay').classList.remove('show')">&times;</button>
+    <div class="modal-top">
+      <h2 style="color:var(--green)">Install Complete</h2>
+      <span class="modal-type-tag skill">VERIFIED</span>
+    </div>
+    <div class="modal-body" id="guide-body">
+    </div>
+  </div>
+</div>
+
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
@@ -1480,8 +1493,9 @@ async function installCapability(type, id, target) {
     const r = await window.darknite.install(type, id, orig.c, target);
     if (r.success) {
       const paths = r.results ? r.results.map(x => x.path).join(', ') : '';
-      showToast('Installed ' + fmtName(id) + ' to ' + targetLabel + (paths ? ' → ' + paths : '') , 'success');
+      showToast('Installed ' + fmtName(id) + ' to ' + targetLabel, 'success');
       console.log('[Install]', fmtName(id), 'written to:', paths);
+      showInstallGuide(target, 1);
     }
     else showToast('Install failed: ' + (r.error || r.results?.map(x=>x.error).join(', ') || 'unknown'), 'error');
   } else {
@@ -1504,6 +1518,43 @@ async function copyCapability(type, id) {
   } catch(e) { showToast('Copy failed: ' + e.message, 'error'); }
 }
 
+async function showInstallGuide(target, count) {
+  const targetLabel = target === 'both' ? 'Claude Code + Cursor' : target === 'cursor' ? 'Cursor' : 'Claude Code';
+  let verifyHtml = '';
+  if (window.darknite && window.darknite.verifyInstall) {
+    const v = await window.darknite.verifyInstall();
+    verifyHtml = '<div style="display:flex;gap:16px;margin:16px 0;">';
+    for (const [ed, c] of Object.entries(v)) {
+      const total = c.skills + c.agents + c.commands;
+      verifyHtml += '<div style="flex:1;background:rgba(245,197,24,0.05);border:1px solid rgba(245,197,24,0.15);border-radius:10px;padding:14px;text-align:center">';
+      verifyHtml += '<div style="font-size:11px;color:var(--text-dim);text-transform:uppercase;margin-bottom:6px">' + ed + '</div>';
+      verifyHtml += '<div style="font-size:28px;font-weight:900;color:' + (total > 0 ? 'var(--green)' : '#ef4444') + '">' + total + '</div>';
+      verifyHtml += '<div style="font-size:10px;color:var(--text-dim)">' + c.skills + ' skills · ' + c.agents + ' agents · ' + c.commands + ' cmds</div>';
+      if (c.exists) verifyHtml += '<button onclick="window.darknite.openFolder(\'' + c.path.replace(/\\/g,'\\\\') + '\')" style="margin-top:8px;padding:6px 12px;background:transparent;border:1px solid rgba(245,197,24,0.3);color:var(--yellow);border-radius:6px;font-size:10px;cursor:pointer;font-family:BatmanForever,sans-serif">Open Folder</button>';
+      verifyHtml += '</div>';
+    }
+    verifyHtml += '</div>';
+  }
+  document.getElementById('guide-body').innerHTML = `
+    <div style="text-align:center;margin-bottom:16px">
+      <div style="font-size:48px;margin-bottom:8px">✅</div>
+      <div style="font-size:16px;font-weight:700;color:var(--text)">${count.toLocaleString()} items installed to ${targetLabel}</div>
+    </div>
+    ${verifyHtml}
+    <div style="background:rgba(245,197,24,0.06);border:1px solid rgba(245,197,24,0.15);border-radius:10px;padding:16px;margin:12px 0">
+      <div style="font-weight:700;color:var(--yellow);margin-bottom:10px;font-size:14px">How to use your new skills:</div>
+      <div style="font-size:13px;color:var(--text-dim);line-height:1.8">
+        <strong style="color:var(--text)">Claude Code:</strong> Open any terminal → run <code style="color:var(--yellow);background:rgba(245,197,24,0.1);padding:2px 6px;border-radius:4px">claude</code> → skills are loaded automatically<br>
+        <strong style="color:var(--text)">Cursor:</strong> Open Cursor IDE → skills are available in your AI assistant<br><br>
+        <span style="color:var(--yellow)">Skills activate automatically</span> when the context matches. Try asking: <em>"use the react-expert skill"</em> or <em>"review my code with code-reviewer"</em>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:16px">
+      <button onclick="document.getElementById('guide-overlay').classList.remove('show')" style="padding:12px 32px;background:var(--yellow);color:#000;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;font-family:BatmanForever,sans-serif">Got it</button>
+    </div>`;
+  document.getElementById('guide-overlay').classList.add('show');
+}
+
 function showToast(msg, type) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -1515,7 +1566,7 @@ function showToast(msg, type) {
 function closeModal(e) { if (e.target.id === 'modal-overlay') e.target.classList.remove('show'); }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { document.getElementById('modal-overlay').classList.remove('show'); document.getElementById('gh-overlay').classList.remove('show'); document.getElementById('vet-overlay').classList.remove('show'); document.getElementById('update-overlay').classList.remove('show'); }
+  if (e.key === 'Escape') { document.getElementById('modal-overlay').classList.remove('show'); document.getElementById('gh-overlay').classList.remove('show'); document.getElementById('vet-overlay').classList.remove('show'); document.getElementById('update-overlay').classList.remove('show'); document.getElementById('guide-overlay').classList.remove('show'); }
   if (e.key === '/' && document.activeElement !== document.getElementById('search')) { e.preventDefault(); document.getElementById('search').focus(); }
 });
 
@@ -1574,6 +1625,8 @@ async function runSyncToClaude(target) {
   log.innerHTML += '<div class="ok">--- COMPLETE ---</div>';
   log.scrollTop = log.scrollHeight;
   showToast('Synced ' + installed + ' items to ' + targetLabel + '!', 'success');
+  // Show install guide after a short delay
+  setTimeout(() => showInstallGuide(target, installed), 1500);
 }
 
 // Update All - pulls latest from source GitHub repos, then syncs to Claude
