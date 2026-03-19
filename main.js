@@ -7,14 +7,20 @@ const https = require('https');
 
 let mainWindow;
 
-// === GPU ACCELERATION (NVIDIA 3060) ===
+// === GPU ACCELERATION ===
 app.commandLine.appendSwitch('enable-gpu-rasterization');
 app.commandLine.appendSwitch('enable-zero-copy');
-app.commandLine.appendSwitch('enable-hardware-overlays', 'single-fullscreen,single-on-top,underlay');
-app.commandLine.appendSwitch('enable-features', 'VaapiVideoDecoder,VaapiVideoEncoder,CanvasOopRasterization');
 app.commandLine.appendSwitch('ignore-gpu-blocklist');
 app.commandLine.appendSwitch('enable-accelerated-video-decode');
-app.commandLine.appendSwitch('enable-accelerated-mjpeg-decode');
+if (process.platform === 'win32') {
+  // Windows-specific flags (NVIDIA 3060 etc.)
+  app.commandLine.appendSwitch('enable-hardware-overlays', 'single-fullscreen,single-on-top,underlay');
+  app.commandLine.appendSwitch('enable-features', 'VaapiVideoDecoder,VaapiVideoEncoder,CanvasOopRasterization');
+  app.commandLine.appendSwitch('enable-accelerated-mjpeg-decode');
+} else if (process.platform === 'darwin') {
+  // macOS Metal acceleration
+  app.commandLine.appendSwitch('enable-features', 'CanvasOopRasterization,Metal');
+}
 
 // === AUTO-UPDATER ===
 autoUpdater.autoDownload = true;
