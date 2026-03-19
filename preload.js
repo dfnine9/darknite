@@ -9,8 +9,9 @@ try {
   console.log('[Preload] Loading data from:', dataPath);
   const src = fs.readFileSync(dataPath, 'utf8');
   console.log('[Preload] File read OK, size:', src.length);
-  // Extract JSON after "window._JARVIS_RAW = "
-  const jsonStr = src.substring(src.indexOf('{'));
+  // Extract JSON after "window._JARVIS_RAW = " and before trailing semicolon
+  let jsonStr = src.substring(src.indexOf('{'));
+  if (jsonStr.endsWith(';\n') || jsonStr.endsWith(';')) jsonStr = jsonStr.replace(/;\s*$/, '');
   JARVIS_DATA_CACHE = JSON.parse(jsonStr);
   console.log('[Preload] Parsed:', JARVIS_DATA_CACHE.skills?.length, 'skills,', JARVIS_DATA_CACHE.agents?.length, 'agents,', JARVIS_DATA_CACHE.commands?.length, 'commands');
 } catch (e) {

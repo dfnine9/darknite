@@ -71,6 +71,9 @@
       "src/**/*"
     ],
     "asar": true,
+    "asarUnpack": [
+      "src/dashboard-data.js"
+    ],
     "extraResources": [
       {
         "from": "src/dashboard-data.js",
