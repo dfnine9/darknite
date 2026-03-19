@@ -1,0 +1,48 @@
+{
+  "name": "darknite",
+  "version": "1.0.0",
+  "description": "DarkNite Command Center - Powered by JARVIS. 6,710+ AI skills, agents, and commands.",
+  "main": "main.js",
+  "author": "DarkNite",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable",
+    "build-installer": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.darknite.commandcenter",
+    "productName": "DarkNite",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "DarkNite-Setup.exe"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "dependencies": {
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5"
+  }
+}
