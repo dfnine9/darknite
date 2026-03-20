@@ -70,16 +70,7 @@
       "preload.js",
       "src/**/*"
     ],
-    "asar": true,
-    "asarUnpack": [
-      "src/dashboard-data.js"
-    ],
-    "extraResources": [
-      {
-        "from": "src/dashboard-data.js",
-        "to": "dashboard-data.js"
-      }
-    ]
+    "asar": true
   },
   "devDependencies": {
     "electron": "^35.0.0",
