@@ -1,5 +1,15 @@
 # DarkNite Changelog
 
+## v11.0 (2026-03-21)
+- 54 new skills: AI, Cloud, Security, Frontend, Backend, Data, Mobile, Testing, DevOps, Web3, Architecture
+- 12 new agents: AI pair programmer, architecture reviewer, chaos engineer, etc
+- 24 new commands: profile-performance, scan-vulnerabilities, scaffold-microservice, etc
+- Total: 6,428 capabilities (4,957 skills, 903 agents, 568 commands)
+- Base64 data encoding — zero HTML tag contamination, works on Mac and Windows
+- 1 script open, 1 script close — guaranteed clean parse everywhere
+- Removed duplicate antigravity-awesome-- prefixes from v9.0
+- Cleaned up all old releases, single clean GitHub release
+
 ## v8.0 (2026-03-20)
 - All 7,219 capabilities embedded inline in HTML — no external file loading
 - Escaped all `</script>` tags in embedded data for cross-platform compatibility
