@@ -1883,58 +1883,47 @@ console.log("DarkNite API available:", !!window.darknite);
 if (window.darknite) console.log("Methods:", Object.keys(window.darknite));
 else console.warn("WARNING: window.darknite not found - preload.js may not have loaded");
 
-// Load data from main process — two strategies:
-// 1. Fetch from temp JSON file (avoids IPC serialization limits on large data)
-// 2. Fall back to direct IPC transfer
+// Load data — Strategy 1: preload.js already decoded it (fastest, no IPC)
+// Strategy 2: IPC fallback
 async function loadDataAndInit() {
   runBootSequence();
 
-  if (window.darknite) {
-    // Strategy 1: Fetch from temp file (main process decodes data.b64 and writes JSON to disk)
-    if (window.darknite.getDataPath) {
-      try {
-        console.log('[Init] Getting data file path...');
-        const pathResult = await window.darknite.getDataPath();
-        if (pathResult.success && pathResult.path) {
-          console.log('[Init] Fetching data from:', pathResult.path);
-          const resp = await fetch('file://' + pathResult.path);
-          if (resp.ok) {
-            const data = await resp.json();
-            if (data && data.skills && data.skills.length > 0) {
-              JARVIS_DATA = data;
-              console.log('[Init] Loaded via fetch:', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
-            }
-          }
-        }
-      } catch (e) {
-        console.warn('[Init] Fetch strategy failed:', e.message);
+  // Strategy 1: getData() — preload.js read data.b64 directly via Node.js (no IPC)
+  if (window.darknite && window.darknite.getData) {
+    try {
+      const data = window.darknite.getData();
+      if (data && data.skills && data.skills.length > 0) {
+        JARVIS_DATA = data;
+        console.log('[Init] Loaded via preload getData():', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
+      } else {
+        console.warn('[Init] getData() returned empty data');
       }
+    } catch (e) {
+      console.warn('[Init] getData() failed:', e.message);
     }
+  }
 
-    // Strategy 2: Direct IPC transfer (fallback)
-    if ((!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) && window.darknite.loadData) {
-      try {
-        console.log('[Init] Trying direct IPC load...');
-        const result = await window.darknite.loadData();
-        if (result.success && result.data) {
-          JARVIS_DATA = result.data;
-          console.log('[Init] Loaded via IPC:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
-        } else {
-          console.error('[Init] IPC load failed:', result.error);
-        }
-      } catch (e) {
-        console.error('[Init] IPC load error:', e.message);
+  // Strategy 2: IPC fallback (main process reads data.b64)
+  if ((!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) && window.darknite && window.darknite.loadData) {
+    try {
+      console.log('[Init] Trying IPC fallback...');
+      const result = await window.darknite.loadData();
+      if (result.success && result.data) {
+        JARVIS_DATA = result.data;
+        console.log('[Init] Loaded via IPC:', JARVIS_DATA.skills?.length, 'skills');
+      } else {
+        console.error('[Init] IPC failed:', result.error);
       }
+    } catch (e) {
+      console.error('[Init] IPC error:', e.message);
     }
-  } else {
-    console.warn('[Init] darknite API not available');
   }
 
   if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
-    console.error('[Init] No data loaded! Skills list is empty.');
+    console.error('[Init] FATAL: No data loaded! Check DevTools console (Cmd+Shift+I) for errors.');
   }
 
-  console.log('[Init] Final JARVIS_DATA:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
+  console.log('[Init] Final:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
   init();
 }
 loadDataAndInit();
