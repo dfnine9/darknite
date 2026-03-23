@@ -28,6 +28,9 @@ contextBridge.exposeInMainWorld('darknite', {
   loadData: async () => {
     return await ipcRenderer.invoke('load-data');
   },
+  getDataPath: async () => {
+    return await ipcRenderer.invoke('get-data-path');
+  },
   onUpdateStatus: (callback) => {
     ipcRenderer.on('update-status', (event, data) => callback(data));
   }

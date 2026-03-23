@@ -76,34 +76,60 @@ autoUpdater.on('error', (err) => {
 });
 
 // IPC: Load capability data from data.b64 file
+// Use original-fs to bypass Electron's ASAR interception (critical for large files on macOS)
+const origFs = require('original-fs');
+
+// Decode data.b64 at startup and write JSON to temp file for reliable renderer access
+let dataJsonPath = null;
+
+function prepareDataFile() {
+  const possiblePaths = [
+    path.join(process.resourcesPath || '', 'app.asar.unpacked', 'src', 'data.b64'),
+    path.join(__dirname, 'src', 'data.b64'),
+    path.join(__dirname, '..', 'src', 'data.b64'),
+    path.join(process.resourcesPath || '', 'src', 'data.b64')
+  ];
+
+  console.log('[load-data] Searching paths:', possiblePaths);
+
+  for (const p of possiblePaths) {
+    try {
+      const isUnpacked = p.includes('app.asar.unpacked');
+      const fsModule = isUnpacked ? origFs : fs;
+      if (fsModule.existsSync(p)) {
+        const b64 = fsModule.readFileSync(p, 'utf8').trim();
+        if (b64.startsWith('version ')) {
+          console.log('[load-data] Skipped LFS pointer at:', p);
+          continue;
+        }
+        console.log('[load-data] Read from:', p, '(' + b64.length + ' chars)');
+        const json = Buffer.from(b64, 'base64').toString('utf8');
+        // Write decoded JSON to temp file so renderer can fetch it without IPC size limits
+        dataJsonPath = path.join(os.tmpdir(), 'darknite-data.json');
+        fs.writeFileSync(dataJsonPath, json, 'utf8');
+        console.log('[load-data] Wrote temp JSON:', dataJsonPath, '(' + json.length + ' bytes)');
+        return true;
+      }
+    } catch (e) {
+      console.log('[load-data] Skipped:', p, e.message);
+    }
+  }
+  console.error('[load-data] data.b64 not found in any expected location');
+  return false;
+}
+
+// IPC: Get path to decoded data JSON (renderer fetches it directly)
+ipcMain.handle('get-data-path', async () => {
+  if (!dataJsonPath) prepareDataFile();
+  return dataJsonPath ? { success: true, path: dataJsonPath } : { success: false, error: 'data.b64 not found' };
+});
+
+// IPC: Load data directly via IPC (fallback for small datasets or if fetch fails)
 ipcMain.handle('load-data', async () => {
   try {
-    // Try multiple possible paths (packaged vs dev, asar vs unpacked)
-    const possiblePaths = [
-      path.join(__dirname, 'src', 'data.b64'),
-      path.join(__dirname, '..', 'src', 'data.b64'),
-      path.join(process.resourcesPath, 'app.asar.unpacked', 'src', 'data.b64'),
-      path.join(process.resourcesPath, 'src', 'data.b64')
-    ];
-
-    let b64 = null;
-    for (const p of possiblePaths) {
-      try {
-        if (fs.existsSync(p)) {
-          b64 = fs.readFileSync(p, 'utf8').trim();
-          console.log('[load-data] Read from:', p, '(' + b64.length + ' chars)');
-          break;
-        }
-      } catch (e) {
-        console.log('[load-data] Skipped:', p, e.message);
-      }
-    }
-
-    if (!b64) {
-      return { success: false, error: 'data.b64 not found in any expected location' };
-    }
-
-    const json = Buffer.from(b64, 'base64').toString('utf8');
+    if (!dataJsonPath) prepareDataFile();
+    if (!dataJsonPath) return { success: false, error: 'data.b64 not found' };
+    const json = fs.readFileSync(dataJsonPath, 'utf8');
     const data = JSON.parse(json);
     console.log('[load-data] Parsed:', data.skills?.length, 'skills,', data.agents?.length, 'agents,', data.commands?.length, 'commands');
     return { success: true, data };
@@ -318,6 +344,8 @@ ipcMain.handle('verify-install', async () => {
 });
 
 app.whenReady().then(() => {
+  // Decode data.b64 before window loads so it's ready when renderer asks for it
+  prepareDataFile();
   createWindow();
   // Check for updates immediately during boot animation (not after)
   autoUpdater.checkForUpdates().catch(() => {});
