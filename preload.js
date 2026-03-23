@@ -25,6 +25,9 @@ contextBridge.exposeInMainWorld('darknite', {
   verifyInstall: async () => {
     return await ipcRenderer.invoke('verify-install');
   },
+  loadData: async () => {
+    return await ipcRenderer.invoke('load-data');
+  },
   onUpdateStatus: (callback) => {
     ipcRenderer.on('update-status', (event, data) => callback(data));
   }
