@@ -70,7 +70,10 @@
       "preload.js",
       "src/**/*"
     ],
-    "asar": true
+    "asar": true,
+    "asarUnpack": [
+      "src/data.b64"
+    ]
   },
   "devDependencies": {
     "electron": "^35.0.0",

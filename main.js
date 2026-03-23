@@ -75,6 +75,44 @@ autoUpdater.on('error', (err) => {
   console.log('[AutoUpdate] Error:', err.message);
 });
 
+// IPC: Load capability data from data.b64 file
+ipcMain.handle('load-data', async () => {
+  try {
+    // Try multiple possible paths (packaged vs dev, asar vs unpacked)
+    const possiblePaths = [
+      path.join(__dirname, 'src', 'data.b64'),
+      path.join(__dirname, '..', 'src', 'data.b64'),
+      path.join(process.resourcesPath, 'app.asar.unpacked', 'src', 'data.b64'),
+      path.join(process.resourcesPath, 'src', 'data.b64')
+    ];
+
+    let b64 = null;
+    for (const p of possiblePaths) {
+      try {
+        if (fs.existsSync(p)) {
+          b64 = fs.readFileSync(p, 'utf8').trim();
+          console.log('[load-data] Read from:', p, '(' + b64.length + ' chars)');
+          break;
+        }
+      } catch (e) {
+        console.log('[load-data] Skipped:', p, e.message);
+      }
+    }
+
+    if (!b64) {
+      return { success: false, error: 'data.b64 not found in any expected location' };
+    }
+
+    const json = Buffer.from(b64, 'base64').toString('utf8');
+    const data = JSON.parse(json);
+    console.log('[load-data] Parsed:', data.skills?.length, 'skills,', data.agents?.length, 'agents,', data.commands?.length, 'commands');
+    return { success: true, data };
+  } catch (err) {
+    console.error('[load-data] Error:', err.message);
+    return { success: false, error: err.message };
+  }
+});
+
 // IPC: Manual check for app updates
 ipcMain.handle('check-for-app-update', async () => {
   try {
