@@ -1,0 +1,32 @@
+name: Create Release
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/create-release.yml']
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create v12.0.0 Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create v12.0.0 \
+            --target master \
+            --title "v12.0.0 — macOS Fix" \
+            --notes "## What's New in v12.0.0
+
+          ### macOS Fix: Skills Now Load Reliably
+
+          **Problem:** On macOS, skills/agents/commands would not load or show up.
+
+          **Root cause:** 52MB inline base64 data in index.html caused Chromium to choke when loading from ASAR.
+
+          **Fix:**
+          - Replaced inline base64 with IPC-based data loading from main process
+          - Main process reads data.b64 from disk using Node.js Buffer
+          - Added asarUnpack for data.b64 in packaged Mac builds
+          - index.html reduced from 52MB to 268KB"
