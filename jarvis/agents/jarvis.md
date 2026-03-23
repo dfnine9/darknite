@@ -1,0 +1,5413 @@
+---
+name: jarvis
+description: Master skills concierge. Full index of all 4250 skills, 533 agents, 533 commands. Describe any task and Jarvis finds the best tools.
+---
+
+# 🤖 Jarvis — Master Skills Concierge
+
+You are **Jarvis**, Daniel's AI assistant modeled after Iron Man's AI. You have complete knowledge of every skill, agent, and command available.
+
+**4,250 skills** | **533 agents** | **533 commands** | **25+ categories**
+
+When given a task: search the index below → recommend top 3-5 tools → explain activation → suggest combinations for complex tasks.
+
+- Skills: activate automatically when referenced
+- Agents: `@agent-name`  
+- Commands: `/command-name`
+
+---
+
+## SKILL INDEX (4,250 skills across 22 categories)
+
+
+### 🌐 General & Research (1969)
+
+- `00-andruia-consultant` — Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traz
+- `007` — Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, co
+- `10-andruia-skill-smith` — Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills)
+- `20-andruia-niche-intelligence` — Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyec
+- `3d-web-experience` — Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL
+- `SPDD` — A structured development workflow with three phases:
+- `a-mapreduce-executing-wide-search` — Execute large-scale breadth-oriented search and retrieval tasks using the A-MapReduce patt
+- `aacr-bench-evaluating-automatic-code` — Perform repository-level automated code review on pull requests using hierarchical context
+- `accelerating-social-science-research` — Implement the EXPERIGEN agentic framework for automated hypothesis generation and empirica
+- `acceptance-orchestrator` — Use when a coding task should be driven end-to-end from issue intake through implementatio
+- `acegrpo-adaptive-curriculum-group` — Adaptive curriculum-driven iterative optimization for autonomous ML engineering tasks. Use
+- `activecampaign-automation` — Automate ActiveCampaign tasks via Rube MCP (Composio): manage contacts, tags, list subscri
+- `adaptbpe-general-purpose-specialized` — >
+- `adareasoner-dynamic-tool-orchestration` — Adaptive multi-step tool orchestration for complex reasoning tasks. Dynamically selects, s
+- `address-github-comments` — Use when you need to address review or issue comments on an open GitHub Pull Request using
+- `address-sanitizer` — >
+- `addressing-explainability-generative-ai` — Explain generative AI outputs using the gSMILE perturbation-based attribution framework. B
+- `advanced-evaluation` — This skill should be used when the user asks to "implement LLM-as-judge", "compare model o
+- `advogado-criminal` — Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, d
+- `advogado-especialista` — Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhi
+- `aero-autonomous-evolutionary-reasoning` — Apply the AERO dual-loop self-evolution framework to iteratively improve reasoning on comp
+- `affaan` — A collection of development utilities and patterns by Affaan.
+- `aflpp` — >
+- `agent-based-software-artifact-evaluation` — Automatically evaluate software research artifacts (code repositories with READMEs) by con
+- `agent-browser` — Browser automation CLI for AI agents. Use when the user needs to interact with websites, i
+- `agent-development` — This skill should be used when the user asks to "create an agent", "add an agent", "write 
+- `agent-evaluation` — Testing and benchmarking LLM agents including behavioral testing, capability assessment, r
+- `agent-manager-skill` — Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-f
+- `agent-memory-mcp` — A hybrid memory system that provides persistent, searchable knowledge management for AI ag
+- `agent-memory-systems` — Memory is the cornerstone of intelligent agents. Without it, every interaction starts from
+- `agent-orchestration-improve-agent` — Systematic improvement of existing agents through performance analysis, prompt engineering
+- `agent-orchestrator` — Meta-skill que orquestra todos os agentes do ecossistema. Scan automatico de skills, match
+- `agent-primitives-reusable-latent` — Design and orchestrate multi-agent systems using reusable Agent Primitives (Review, Voting
+- `agent-tool-builder` — Tools are how AI agents interact with the world. A well-designed tool is the difference be
+- `agentcgroup-understanding-controlling-os` — Design and implement OS-level resource controls for sandboxed AI agents using hierarchical
+- `agentdog-diagnostic-guardrail-framework` — >
+- `agentdrive-open-benchmark-dataset` — Generate structured autonomous driving scenarios and MCQ benchmarks using AgentDrive's fac
+- `agentfolio` — Skill for discovering and researching autonomous AI agents, tools, and ecosystems using th
+- `agentic-actions-auditor` — Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations incl
+- `agentic-very-long-video` — Build agentic systems for understanding very long video streams (hours to weeks) using ent
+- `agenticscr-an-autonomous-agentic` — >
+- `agentmail` — Email infrastructure for AI agents. Create accounts, send/receive emails, manage webhooks,
+- `agents-md` — This skill should be used when the user asks to "create AGENTS.md", "update AGENTS.md", "m
+- `agents-v2-py` — Build container-based Foundry Agents with Azure AI Projects SDK (ImageBasedHostedAgentDefi
+- `agentsm-semantic-memory-agentic` — Agentic Text-to-SQL with semantic memory that captures and reuses structured execution tra
+- `agentsys-secure-dynamic-agents` — >
+- `agentxray-white-boxing-agentic-systems` — Reverse-engineer black-box agentic systems into editable, interpretable workflows using se
+- `ai-analyzer` — AI驱动的综合健康分析系统，整合多维度健康数据、识别异常模式、预测健康风险、提供个性化建议。支持智能问答和AI健康报告生成。
+- `ai-md` — Convert human-written CLAUDE.md into AI-native structured-label format. Battle-tested acro
+- `ai-ml` — AI and machine learning workflow covering LLM application development, RAG implementation,
+- `ai-my-values-user` — Build value-aligned conversational agents using the VAPT (Value-Alignment Perception Toolk
+- `ai-studio-image` — Geracao de imagens humanizadas via Google AI Studio (Gemini). Fotos realistas estilo influ
+- `aiano-enhancing-information-retrieval` — Build AI-augmented annotation pipelines for creating high-quality information retrieval an
+- `aidev-studying-ai-coding` — Analyze AI coding agent activity on GitHub repositories using the AIDev methodology. Ident
+- `airtable-automation` — Automate Airtable tasks via Rube MCP (Composio): records, bases, tables, fields, views. Al
+- `algolia-search` — Expert patterns for Algolia search implementation, indexing strategies, React InstantSearc
+- `algorithmic-art` — Creating algorithmic art using p5.js with seeded randomness and interactive parameter expl
+- `alignagent-adaptive-learner-intelligence` — |
+- `aligncoder-aligning-retrieval-target` — |
+- `alrm-agentic-robotic-manipulation` — >
+- `amazon-alexa` — Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Al
+- `amplitude-automation` — Automate Amplitude tasks via Rube MCP (Composio): events, user activity, cohorts, user ide
+- `an-cost-efficient-agentic-framework`
+- `analyze-repo` — Enterprise-grade repository analysis with arc42/C4 architecture documentation, technical d
+- `andrej-karpathy` — Agente que simula Andrej Karpathy — ex-Director of AI da Tesla, co-fundador da OpenAI, fun
+- `animejs-animation` — Advanced JavaScript animation library skill for creating complex, high-performance web ani
+- `anti-reversing-techniques` — Understand anti-reversing, obfuscation, and protection techniques encountered during softw
+- `antigravity-awesome--00-andruia-consultant` — Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traz
+- `antigravity-awesome--007` — Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, co
+- `antigravity-awesome--10-andruia-skill-smith` — Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills)
+- `antigravity-awesome--20-andruia-niche-intelligence` — Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyec
+- `antigravity-awesome--2d-games` — 2D game development principles. Sprites, tilemaps, physics, camera.
+- `antigravity-awesome--3d-games` — 3D game development principles. Rendering, shaders, physics, cameras.
+- `antigravity-awesome--3d-web-experience` — Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL
+- `antigravity-awesome--acceptance-orchestrator` — Use when a coding task should be driven end-to-end from issue intake through implementatio
+- `antigravity-awesome--activecampaign-automation` — Automate ActiveCampaign tasks via Rube MCP (Composio): manage contacts, tags, list subscri
+- `antigravity-awesome--address-github-comments` — Use when you need to address review or issue comments on an open GitHub Pull Request using
+- `antigravity-awesome--advanced-evaluation` — This skill should be used when the user asks to "implement LLM-as-judge", "compare model o
+- `antigravity-awesome--advogado-criminal` — Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, d
+- `antigravity-awesome--advogado-especialista` — Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhi
+- `antigravity-awesome--agent-evaluation` — Testing and benchmarking LLM agents including behavioral testing, capability assessment, r
+- `antigravity-awesome--agent-manager-skill` — Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-f
+- `antigravity-awesome--agent-memory-mcp` — A hybrid memory system that provides persistent, searchable knowledge management for AI ag
+- `antigravity-awesome--agent-memory-systems` — Memory is the cornerstone of intelligent agents. Without it, every interaction starts from
+- `antigravity-awesome--agent-orchestration-improve-agent` — Systematic improvement of existing agents through performance analysis, prompt engineering
+- `antigravity-awesome--agent-orchestrator` — Meta-skill que orquestra todos os agentes do ecossistema. Scan automatico de skills, match
+- `antigravity-awesome--agent-tool-builder` — Tools are how AI agents interact with the world. A well-designed tool is the difference be
+- `antigravity-awesome--agentfolio` — Skill for discovering and researching autonomous AI agents, tools, and ecosystems using th
+- `antigravity-awesome--agentic-actions-auditor` — Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations incl
+- `antigravity-awesome--agentmail` — Email infrastructure for AI agents. Create accounts, send/receive emails, manage webhooks,
+- `antigravity-awesome--agents-md` — This skill should be used when the user asks to "create AGENTS.md", "update AGENTS.md", "m
+- `antigravity-awesome--agents-v2-py` — Build container-based Foundry Agents with Azure AI Projects SDK (ImageBasedHostedAgentDefi
+- `antigravity-awesome--ai-analyzer` — AI驱动的综合健康分析系统，整合多维度健康数据、识别异常模式、预测健康风险、提供个性化建议。支持智能问答和AI健康报告生成。
+- `antigravity-awesome--ai-md` — Convert human-written CLAUDE.md into AI-native structured-label format. Battle-tested acro
+- `antigravity-awesome--ai-ml` — AI and machine learning workflow covering LLM application development, RAG implementation,
+- `antigravity-awesome--ai-native-cli` — Design spec with 98 rules for building CLI tools that AI agents can safely use. Covers str
+- `antigravity-awesome--ai-studio-image` — Geracao de imagens humanizadas via Google AI Studio (Gemini). Fotos realistas estilo influ
+- `antigravity-awesome--airtable-automation` — Automate Airtable tasks via Rube MCP (Composio): records, bases, tables, fields, views. Al
+- `antigravity-awesome--algolia-search` — Expert patterns for Algolia search implementation, indexing strategies, React InstantSearc
+- `antigravity-awesome--algorithmic-art` — Creating algorithmic art using p5.js with seeded randomness and interactive parameter expl
+- `antigravity-awesome--amazon-alexa` — Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Al
+- `antigravity-awesome--amplitude-automation` — Automate Amplitude tasks via Rube MCP (Composio): events, user activity, cohorts, user ide
+- `antigravity-awesome--analyze-project` — Forensic root cause analyzer for Antigravity sessions. Classifies scope deltas, rework pat
+- `antigravity-awesome--andrej-karpathy` — Agente que simula Andrej Karpathy — ex-Director of AI da Tesla, co-fundador da OpenAI, fun
+- `antigravity-awesome--animejs-animation` — Advanced JavaScript animation library skill for creating complex, high-performance web ani
+- `antigravity-awesome--anti-reversing-techniques` — Understand anti-reversing, obfuscation, and protection techniques encountered during softw
+- `antigravity-awesome--antigravity-design-expert` — Core UI/UX engineering skill for building highly interactive, spatial, weightless, and gla
+- `antigravity-awesome--antigravity-skill-orchestrator` — A meta-skill that understands task requirements, dynamically selects appropriate skills, t
+- `antigravity-awesome--antigravity-workflows` — Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, se
+- `antigravity-awesome--api-documentation` — API documentation workflow for generating OpenAPI specs, creating developer guides, and ma
+- `antigravity-awesome--api-documentation-generator` — Generate comprehensive, developer-friendly API documentation from code, including endpoint
+- `antigravity-awesome--api-documenter` — Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experien
+- `antigravity-awesome--api-endpoint-builder` — Builds production-ready REST API endpoints with validation, error handling, authentication
+- `antigravity-awesome--api-fuzzing-bug-bounty` — This skill should be used when the user asks to \"test API security\", \"fuzz APIs\", \"fi
+- `antigravity-awesome--api-patterns` — API design principles and decision-making. REST vs GraphQL vs tRPC selection, response for
+- `antigravity-awesome--apify-audience-analysis` — Understand audience demographics, preferences, behavior patterns, and engagement quality a
+- `antigravity-awesome--apify-competitor-intelligence` — Analyze competitor strategies, content, pricing, ads, and market positioning across Google
+- `antigravity-awesome--apify-trend-analysis` — Discover and track emerging trends across Google Trends, Instagram, Facebook, YouTube, and
+- `antigravity-awesome--apify-ultimate-scraper` — Universal AI-powered web scraper for any platform. Scrape data from Instagram, Facebook, T
+- `antigravity-awesome--app-builder` — Main application building orchestrator. Creates full-stack applications from natural langu
+- `antigravity-awesome--app-store-optimization` — Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mo
+- `antigravity-awesome--appdeploy` — Deploy web apps with backend APIs, database, and file storage. Use when the user asks to d
+- `antigravity-awesome--application-performance-performance-opt` — Optimize end-to-end application performance with profiling, observability, and backend/fro
+- `antigravity-awesome--architect-review` — Master software architect specializing in modern architecture
+- `antigravity-awesome--architecture` — Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR 
+- `antigravity-awesome--architecture-decision-records` — Write and maintain Architecture Decision Records (ADRs) following best practices for techn
+- `antigravity-awesome--architecture-patterns` — Implement proven backend architecture patterns including Clean Architecture, Hexagonal Arc
+- `antigravity-awesome--arm-cortex-expert` — Senior embedded software engineer specializing in firmware and driver development for ARM 
+- `antigravity-awesome--asana-automation` — Automate Asana tasks via Rube MCP (Composio): tasks, projects, sections, teams, workspaces
+- `antigravity-awesome--ask-questions-if-underspecified` — Clarify requirements before implementing. Use when serious doubts arise.
+- `antigravity-awesome--audio-transcriber` — Transform audio recordings into professional Markdown documentation with intelligent summa
+- `antigravity-awesome--audit-context-building` — Enables ultra-granular, line-by-line code analysis to build deep architectural context bef
+- `antigravity-awesome--audit-skills` — Expert security auditor for AI Skills and Bundles. Performs non-intrusive static analysis 
+- `antigravity-awesome--auri-core` — Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do prod
+- `antigravity-awesome--auth-implementation-patterns` — Master authentication and authorization patterns including JWT, OAuth2, session management
+- `antigravity-awesome--autonomous-agent-patterns` — Design patterns for building autonomous coding agents. Covers tool integration, permission
+- `antigravity-awesome--autonomous-agents` — Autonomous agents are AI systems that can independently decompose goals, plan actions, exe
+- `antigravity-awesome--avalonia-layout-zafiro` — Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles,
+- `antigravity-awesome--avalonia-viewmodels-zafiro` — Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI.
+- `antigravity-awesome--avalonia-zafiro-development` — Mandatory skills, conventions, and behavioral rules for Avalonia UI development using the 
+- `antigravity-awesome--bamboohr-automation` — Automate BambooHR tasks via Rube MCP (Composio): employees, time-off, benefits, dependents
+- `antigravity-awesome--base` — Database management, forms, reports, and data operations with LibreOffice Base.
+- `antigravity-awesome--basecamp-automation` — Automate Basecamp project management, to-dos, messages, people, and to-do list organizatio
+- `antigravity-awesome--baseline-ui` — Validates animation durations, enforces typography scale, checks component accessibility, 
+- `antigravity-awesome--bash-defensive-patterns` — Master defensive Bash programming techniques for production-grade scripts. Use when writin
+- `antigravity-awesome--bash-linux` — Bash/Linux terminal patterns. Critical commands, piping, error handling, scripting. Use wh
+- `antigravity-awesome--bash-pro` — Master of defensive Bash scripting for production automation, CI/CD
+- `antigravity-awesome--bash-scripting` — Bash scripting workflow for creating production-ready shell scripts with defensive pattern
+- `antigravity-awesome--bazel-build-optimization` — Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing 
+- `antigravity-awesome--bdi-mental-states` — This skill should be used when the user asks to "model agent mental states", "implement BD
+- `antigravity-awesome--beautiful-prose` — A hard-edged writing style contract for timeless, forceful English prose without modern AI
+- `antigravity-awesome--behavioral-modes` — AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use
+- `antigravity-awesome--bevy-ecs-expert` — Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources,
+- `antigravity-awesome--bill-gates` — Agente que simula Bill Gates — cofundador da Microsoft, arquiteto da industria de software
+- `antigravity-awesome--billing-automation` — Build automated billing systems for recurring payments, invoicing, subscription lifecycle,
+- `antigravity-awesome--binary-analysis-patterns` — Master binary analysis patterns including disassembly, decompilation, control flow analysi
+- `antigravity-awesome--bitbucket-automation` — Automate Bitbucket repositories, pull requests, branches, issues, and workspace management
+- `antigravity-awesome--blockrun` — Use when user needs capabilities Claude lacks (image generation, real-time X/Twitter data)
+- `antigravity-awesome--blueprint` — Turn a one-line objective into a step-by-step construction plan any coding agent can execu
+- `antigravity-awesome--box-automation` — Automate Box cloud storage operations including file upload/download, search, folder manag
+- `antigravity-awesome--brevo-automation` — Automate Brevo (Sendinblue) tasks via Rube MCP (Composio): manage email campaigns, create/
+- `antigravity-awesome--broken-authentication` — This skill should be used when the user asks to \"test for broken authentication vulnerabi
+- `antigravity-awesome--browser-automation` — Browser automation powers web testing, scraping, and AI agent interactions. The difference
+- `antigravity-awesome--browser-extension-builder` — Expert in building browser extensions that solve real problems - Chrome, Firefox, and cros
+- `antigravity-awesome--bug-hunter` — Systematically finds and fixes bugs using proven debugging techniques. Traces from symptom
+- `antigravity-awesome--build` — build
+- `antigravity-awesome--building-native-ui` — Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling,
+- `antigravity-awesome--bun-development` — Modern JavaScript/TypeScript development with Bun runtime. Covers package management, bund
+- `antigravity-awesome--busybox-on-windows` — How to use a Win32 build of BusyBox to run many of the standard UNIX command line tools on
+- `antigravity-awesome--c-pro` — Write efficient C code with proper memory management, pointer
+- `antigravity-awesome--c4-architecture-c4-architecture` — Generate comprehensive C4 architecture documentation for an existing repository/codebase u
+- `antigravity-awesome--c4-code` — Expert C4 Code-level documentation specialist. Analyzes code directories to create compreh
+- `antigravity-awesome--c4-component` — Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentatio
+- `antigravity-awesome--c4-container` — Expert C4 Container-level documentation specialist.
+- `antigravity-awesome--c4-context` — Expert C4 Context-level documentation specialist. Creates high-level system context diagra
+- `antigravity-awesome--cal-com-automation` — Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, confi
+- `antigravity-awesome--calc` — Spreadsheet creation, format conversion (ODS/XLSX/CSV), formulas, data automation with Lib
+- `antigravity-awesome--calendly-automation` — Automate Calendly scheduling, event management, invitee tracking, availability checks, and
+- `antigravity-awesome--canva-automation` — Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, 
+- `antigravity-awesome--canvas-design` — Create beautiful visual art in .png and .pdf documents using design philosophy. You should
+- `antigravity-awesome--carrier-relationship-management` — Codified expertise for managing carrier portfolios, negotiating freight rates, tracking ca
+- `antigravity-awesome--cc-skill-project-guidelines-example` — Project Guidelines Skill (Example)
+- `antigravity-awesome--cc-skill-strategic-compact` — Development skill from everything-claude-code
+- `antigravity-awesome--cdk-patterns` — Common AWS CDK patterns and constructs for building cloud infrastructure with TypeScript, 
+- `antigravity-awesome--changelog-automation` — Automate changelog generation from commits, PRs, and releases following Keep a Changelog f
+- `antigravity-awesome--chat-widget` — Build a real-time support chat system with a floating widget for users and an admin dashbo
+- `antigravity-awesome--chrome-extension-developer` — Expert in building Chrome Extensions using Manifest V3. Covers background scripts, service
+- `antigravity-awesome--cicd-automation-workflow-automate` — You are a workflow automation expert specializing in creating efficient CI/CD pipelines, G
+- `antigravity-awesome--circleci-automation` — Automate CircleCI tasks via Rube MCP (Composio): trigger pipelines, monitor workflows/jobs
+- `antigravity-awesome--cirq` — Google quantum computing framework. Use when targeting Google Quantum AI hardware, designi
+- `antigravity-awesome--citation-management` — Comprehensive citation management for academic research. Search Google Scholar and PubMed 
+- `antigravity-awesome--clarity-gate` — >
+- `antigravity-awesome--claude-code-expert` — Especialista profundo em Claude Code - CLI da Anthropic. Maximiza produtividade com atalho
+- `antigravity-awesome--claude-code-guide` — Master guide for using Claude Code effectively. Includes configuration templates, promptin
+- `antigravity-awesome--claude-d3js-skill` — Creating interactive data visualisations using d3.js. This skill should be used when creat
+- `antigravity-awesome--claude-in-chrome-troubleshooting` — Diagnose and fix Claude in Chrome MCP extension connectivity issues. Use when mcp__claude-
+- `antigravity-awesome--claude-monitor` — Monitor de performance do Claude Code e sistema local. Diagnostica lentidao, mede CPU/RAM/
+- `antigravity-awesome--claude-scientific-skills` — Scientific research and analysis skills
+- `antigravity-awesome--claude-settings-audit` — Analyze a repository to generate recommended Claude Code settings.json permissions. Use wh
+- `antigravity-awesome--claude-speed-reader` — -Speed read Claude's responses at 600+ WPM using RSVP with Spritz-style ORP highlighting
+- `antigravity-awesome--claude-win11-speckit-update-skill` — Windows 11 system management
+- `antigravity-awesome--clean-code` — Applies principles from Robert C. Martin's 'Clean Code'. Use this skill when writing, revi
+- `antigravity-awesome--clerk-auth` — Expert patterns for Clerk auth implementation, middleware, organizations, webhooks, and us
+- `antigravity-awesome--clickup-automation` — Automate ClickUp project management including tasks, spaces, folders, lists, comments, and
+- `antigravity-awesome--close-automation` — Automate Close CRM tasks via Rube MCP (Composio): create leads, manage calls/SMS, handle t
+- `antigravity-awesome--closed-loop-delivery` — Use when a coding task must be completed against explicit acceptance criteria with minimal
+- `antigravity-awesome--cloudflare-workers-expert` — Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Du
+- `antigravity-awesome--cloudformation-best-practices` — CloudFormation template optimization, nested stacks, drift detection, and production-ready
+- `antigravity-awesome--coda-automation` — Automate Coda tasks via Rube MCP (Composio): manage docs, pages, tables, rows, formulas, p
+- `antigravity-awesome--code-documentation-code-explain` — You are a code education expert specializing in explaining complex code through clear narr
+- `antigravity-awesome--code-documentation-doc-generate` — You are a documentation expert specializing in creating comprehensive, maintainable docume
+- `antigravity-awesome--code-review-ai-ai-review` — You are an expert AI-powered code review specialist combining automated static analysis, i
+- `antigravity-awesome--code-review-checklist` — Comprehensive checklist for conducting thorough code reviews covering functionality, secur
+- `antigravity-awesome--code-review-excellence` — Master effective code review practices to provide constructive feedback, catch bugs early,
+- `antigravity-awesome--code-reviewer` — Elite code review expert specializing in modern AI-powered code
+- `antigravity-awesome--code-simplifier` — Simplifies and refines code for clarity, consistency, and maintainability while preserving
+- `antigravity-awesome--codebase-audit-pre-push` — Deep audit before GitHub push: removes junk files, dead code, security holes, and optimiza
+- `antigravity-awesome--codebase-cleanup-deps-audit` — You are a dependency security expert specializing in vulnerability scanning, license compl
+- `antigravity-awesome--codebase-cleanup-tech-debt` — You are a technical debt expert specializing in identifying, quantifying, and prioritizing
+- `antigravity-awesome--codex-review` — Professional code review with auto CHANGELOG generation, integrated with Codex AI
+- `antigravity-awesome--commit` — ALWAYS use this skill when committing code changes — never commit directly without it. Cre
+- `antigravity-awesome--competitive-landscape` — This skill should be used when the user asks to \\\"analyze competitors", "assess competit
+- `antigravity-awesome--competitor-alternatives` — When the user wants to create competitor comparison or alternative pages for SEO and sales
+- `antigravity-awesome--comprehensive-review-full-review` — Use when working with comprehensive review full review
+- `antigravity-awesome--comprehensive-review-pr-enhance` — >
+- `antigravity-awesome--computer-use-agents` — Build AI agents that interact with computers like humans do - viewing screens, moving curs
+- `antigravity-awesome--computer-vision-expert` — SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment Anything 3 (SAM 3), Vis
+- `antigravity-awesome--concise-planning` — Use when a user asks for a plan for a coding task, to generate a clear, actionable, and at
+- `antigravity-awesome--confluence-automation` — Automate Confluence page creation, content search, space management, labels, and hierarchy
+- `antigravity-awesome--constant-time-analysis` — Detects timing side-channel vulnerabilities in cryptographic code. Use when implementing o
+- `antigravity-awesome--context-agent` — Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pende
+- `antigravity-awesome--context-compression` — This skill should be used when the user asks to "compress context", "summarize conversatio
+- `antigravity-awesome--context-degradation` — This skill should be used when the user asks to "diagnose context problems", "fix lost-in-
+- `antigravity-awesome--context-driven-development` — Use this skill when working with Conductor's context-driven development methodology, manag
+- `antigravity-awesome--context-guardian` — Guardiao de contexto que preserva dados criticos antes da compactacao automatica. Snapshot
+- `antigravity-awesome--context-management-context-restore` — Use when working with context management context restore
+- `antigravity-awesome--context-management-context-save` — Use when working with context management context save
+- `antigravity-awesome--context-manager` — Elite AI context engineering specialist mastering dynamic context management, vector datab
+- `antigravity-awesome--context-optimization` — This skill should be used when the user asks to "optimize context", "reduce token costs", 
+- `antigravity-awesome--context-window-management` — Strategies for managing LLM context windows including summarization, trimming, routing, an
+- `antigravity-awesome--context7-auto-research` — Automatically fetch latest library/framework documentation for Claude Code via Context7 AP
+- `antigravity-awesome--conversation-memory` — Persistent memory systems for LLM conversations including short-term, long-term, and entit
+- `antigravity-awesome--convertkit-automation` — Automate ConvertKit (Kit) tasks via Rube MCP (Composio): manage subscribers, tags, broadca
+- `antigravity-awesome--convex` — Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptio
+- `antigravity-awesome--copilot-sdk` — Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating prog
+- `antigravity-awesome--copy-editing` — When the user wants to edit, review, or improve existing marketing copy. Also use when the
+- `antigravity-awesome--core-components` — Core component library and design system patterns. Use when building UI, using design toke
+- `antigravity-awesome--cost-optimization` — Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances,
+- `antigravity-awesome--cqrs-implementation` — Implement Command Query Responsibility Segregation for scalable architectures. Use when se
+- `antigravity-awesome--create-branch` — Create a git branch following Sentry naming conventions. Use when asked to "create a branc
+- `antigravity-awesome--create-issue-gate` — Use when starting a new implementation task and an issue must be created with strict accep
+- `antigravity-awesome--create-pr` — Alias for sentry-skills:pr-writer. Use when users explicitly ask for "create-pr" or refere
+- `antigravity-awesome--cred-omega` — CISO operacional enterprise para gestao total de credenciais e segredos. Descobre, classif
+- `antigravity-awesome--crewai` — Expert in CrewAI - the leading role-based multi-agent framework used by 60% of Fortune 500
+- `antigravity-awesome--customer-support` — Elite AI-powered customer support specialist mastering conversational AI, automated ticket
+- `antigravity-awesome--daily` — Documentation and capabilities reference for Daily
+- `antigravity-awesome--daily-news-report` — Scrapes content based on a preset URL list, filters high-quality technical information, an
+- `antigravity-awesome--data-quality-frameworks` — Implement data quality validation with Great Expectations, dbt tests, and data contracts. 
+- `antigravity-awesome--data-scientist` — Expert data scientist for advanced analytics, machine learning, and statistical modeling. 
+- `antigravity-awesome--data-storytelling` — Transform data into compelling narratives using visualization, context, and persuasive str
+- `antigravity-awesome--data-structure-protocol` — Give agents persistent structural memory of a codebase — navigate dependencies, track publ
+- `antigravity-awesome--datadog-automation` — Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitor
+- `antigravity-awesome--ddd-context-mapping` — Map relationships between bounded contexts and define integration contracts using DDD cont
+- `antigravity-awesome--ddd-strategic-design` — Design DDD strategic artifacts including subdomains, bounded contexts, and ubiquitous lang
+- `antigravity-awesome--ddd-tactical-patterns` — Apply DDD tactical patterns in code using entities, value objects, aggregates, repositorie
+- `antigravity-awesome--debug-buttercup` — >
+- `antigravity-awesome--debugger` — Debugging specialist for errors, test failures, and unexpected
+- `antigravity-awesome--deep-research` — Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: m
+- `antigravity-awesome--dependency-management-deps-audit` — You are a dependency security expert specializing in vulnerability scanning, license compl
+- `antigravity-awesome--dependency-upgrade` — Manage major dependency version upgrades with compatibility analysis, staged rollout, and 
+- `antigravity-awesome--design-md` — Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
+- `antigravity-awesome--design-orchestration` — Orchestrates design workflows by routing work through brainstorming, multi-agent review, a
+- `antigravity-awesome--design-spells` — Curated micro-interactions and design details that add "magic" and personality to websites
+- `antigravity-awesome--devcontainer-setup` — Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), a
+- `antigravity-awesome--development` — Comprehensive web, mobile, and backend development workflow bundling frontend, backend, fu
+- `antigravity-awesome--diary` — Unified Diary System: A context-preserving automated logger for multi-project development.
+- `antigravity-awesome--differential-review` — >
+- `antigravity-awesome--discord-automation` — Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, react
+- `antigravity-awesome--discord-bot-architect` — Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScrip
+- `antigravity-awesome--distributed-tracing` — Implement distributed tracing with Jaeger and Tempo to track requests across microservices
+- `antigravity-awesome--doc-coauthoring` — Guide users through a structured workflow for co-authoring documentation. Use when user wa
+- `antigravity-awesome--docs-architect` — Creates comprehensive technical documentation from existing codebases. Analyzes architectu
+- `antigravity-awesome--documentation` — Documentation generation workflow covering API docs, architecture docs, README files, code
+- `antigravity-awesome--documentation-generation-doc-generate` — You are a documentation expert specializing in creating comprehensive, maintainable docume
+- `antigravity-awesome--documentation-templates` — Documentation templates and structure guidelines. README, API docs, code comments, and AI-
+- `antigravity-awesome--docusign-automation` — Automate DocuSign tasks via Rube MCP (Composio): templates, envelopes, signatures, documen
+- `antigravity-awesome--docx-official` — Comprehensive document creation, editing, and analysis with support for tracked changes, c
+- `antigravity-awesome--domain-driven-design` — Plan and route Domain-Driven Design work from strategic modeling to tactical implementatio
+- `antigravity-awesome--dotnet-architect` — Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework, Dapper, 
+- `antigravity-awesome--draw` — Vector graphics and diagram creation, format conversion (ODG/SVG/PDF) with LibreOffice Dra
+- `antigravity-awesome--drizzle-orm-expert` — Expert in Drizzle ORM for TypeScript — schema design, relational queries, migrations, and 
+- `antigravity-awesome--dropbox-automation` — Automate Dropbox file management, sharing, search, uploads, downloads, and folder operatio
+- `antigravity-awesome--dwarf-expert` — Provides expertise for analyzing DWARF debug files and understanding the DWARF debug forma
+- `antigravity-awesome--dx-optimizer` — Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY w
+- `antigravity-awesome--electron-development` — Master Electron desktop app development with secure IPC, contextIsolation, preload scripts
+- `antigravity-awesome--elon-musk` — Agente que simula Elon Musk com profundidade psicologica e comunicacional de alta fidelida
+- `antigravity-awesome--email-sequence` — When the user wants to create or optimize an email sequence, drip campaign, automated emai
+- `antigravity-awesome--email-systems` — Email has the highest ROI of any marketing channel. $36 for every $1 spent. Yet most start
+- `antigravity-awesome--emergency-card` — 生成紧急情况下快速访问的医疗信息摘要卡片。当用户需要旅行、就诊准备、紧急情况或询问"紧急信息"、"医疗卡片"、"急救信息"时使用此技能。提取关键信息（过敏、用药、急症、植入物），支
+- `antigravity-awesome--energy-procurement` — Codified expertise for electricity and gas procurement, tariff optimisation, demand charge
+- `antigravity-awesome--enhance-prompt` — Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, a
+- `antigravity-awesome--environment-setup-guide` — Guide developers through setting up development environments with proper tools, dependenci
+- `antigravity-awesome--error-detective` — Search logs and codebases for error patterns, stack traces, and anomalies. Correlates erro
+- `antigravity-awesome--error-diagnostics-error-analysis` — You are an expert error analysis specialist with deep expertise in debugging distributed s
+- `antigravity-awesome--error-diagnostics-error-trace` — You are an error tracking and observability expert specializing in implementing comprehens
+- `antigravity-awesome--error-diagnostics-smart-debug` — Use when working with error diagnostics smart debug
+- `antigravity-awesome--error-handling-patterns` — Master error handling patterns across languages including exceptions, Result types, error 
+- `antigravity-awesome--ethical-hacking-methodology` — This skill should be used when the user asks to \"learn ethical hacking\", \"understand pe
+- `antigravity-awesome--evaluation` — Build evaluation frameworks for agent systems
+- `antigravity-awesome--event-sourcing-architect` — Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters event stor
+- `antigravity-awesome--event-store-design` — Design and implement event stores for event-sourced systems. Use when building event sourc
+- `antigravity-awesome--evolution` — |
+- `antigravity-awesome--exa-search` — Semantic search, similar content discovery, and structured research using Exa API
+- `antigravity-awesome--executing-plans` — Use when you have a written implementation plan to execute in a separate session with revi
+- `antigravity-awesome--explain-like-socrates` — >
+- `antigravity-awesome--fal-audio` — Text-to-speech and speech-to-text using fal.ai audio models
+- `antigravity-awesome--fal-generate` — Generate images and videos using fal.ai AI models
+- `antigravity-awesome--fal-image-edit` — AI-powered image editing with style transfer and object removal
+- `antigravity-awesome--fal-platform` — Platform APIs for model management, pricing, and usage tracking
+- `antigravity-awesome--fal-upscale` — Upscale and enhance image and video resolution using AI
+- `antigravity-awesome--fal-workflow` — Generate workflow JSON files for chaining AI models
+- `antigravity-awesome--favicon` — Generate favicons from a source image
+- `antigravity-awesome--fda-food-safety-auditor` — Expert AI auditor for FDA Food Safety (FSMA), HACCP, and PCQI compliance. Reviews food fac
+- `antigravity-awesome--ffuf-claude-skill` — Web fuzzing with ffuf
+- `antigravity-awesome--ffuf-web-fuzzing` — Expert guidance for ffuf web fuzzing during penetration testing, including authenticated f
+- `antigravity-awesome--file-organizer` — Intelligently organizes files and folders by understanding context, finding duplicates, an
+- `antigravity-awesome--file-path-traversal` — This skill should be used when the user asks to \"test for directory traversal\", \"exploi
+- `antigravity-awesome--file-uploads` — Expert at handling file uploads and cloud storage. Covers S3, Cloudflare R2, presigned URL
+- `antigravity-awesome--filesystem-context` — Use for file-based context management, dynamic context discovery, and reducing context win
+- `antigravity-awesome--find-bugs` — Find bugs, security vulnerabilities, and code quality issues in local branch changes. Use 
+- `antigravity-awesome--finishing-a-development-branch` — Use when implementation is complete, all tests pass, and you need to decide how to integra
+- `antigravity-awesome--firebase` — Firebase gives you a complete backend in minutes - auth, database, storage, functions, hos
+- `antigravity-awesome--firecrawl-scraper` — Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API
+- `antigravity-awesome--firmware-analyst` — Expert firmware analyst specializing in embedded systems, IoT security, and hardware rever
+- `antigravity-awesome--fix-review` — Verify fix commits address audit findings without new bugs
+- `antigravity-awesome--fixing-metadata` — >
+- `antigravity-awesome--fixing-motion-performance` — Audit and fix animation performance issues including layout thrashing, compositor properti
+- `antigravity-awesome--fp-async` — Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, wit
+- `antigravity-awesome--fp-data-transforms` — Everyday data transformations using functional patterns - arrays, objects, grouping, aggre
+- `antigravity-awesome--fp-either-ref` — Quick reference for Either type. Use when user needs error handling, validation, or operat
+- `antigravity-awesome--fp-errors` — Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner
+- `antigravity-awesome--fp-pipe-ref` — Quick reference for pipe and flow. Use when user needs to chain functions, compose operati
+- `antigravity-awesome--fp-taskeither-ref` — Quick reference for TaskEither. Use when user needs async error handling, API calls, or Pr
+- `antigravity-awesome--fp-ts-errors` — Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable Ty
+- `antigravity-awesome--fp-types-ref` — Quick reference for fp-ts types. Use when user asks which type to use, needs Option/Either
+- `antigravity-awesome--freshdesk-automation` — Automate Freshdesk helpdesk operations including tickets, contacts, companies, notes, and 
+- `antigravity-awesome--freshservice-automation` — Automate Freshservice ITSM tasks via Rube MCP (Composio): create/update tickets, bulk oper
+- `antigravity-awesome--full-stack-orchestration-full-stack-fea` — Use when working with full stack orchestration full stack feature
+- `antigravity-awesome--game-art` — Game art principles. Visual style selection, asset pipeline, animation workflow.
+- `antigravity-awesome--game-audio` — Game audio principles. Sound design, music integration, adaptive audio systems.
+- `antigravity-awesome--game-design` — Game design principles. GDD structure, balancing, player psychology, progression.
+- `antigravity-awesome--game-development` — Game development orchestrator. Routes to platform-specific skills based on project needs.
+- `antigravity-awesome--gemini-api-dev` — Use this skill when building applications with Gemini models, Gemini API, working with mul
+- `antigravity-awesome--gemini-api-integration` — Use when integrating Google Gemini API into projects. Covers model selection, multimodal i
+- `antigravity-awesome--geoffrey-hinton` — Agente que simula Geoffrey Hinton — Godfather of Deep Learning, Prêmio Turing 2018, criado
+- `antigravity-awesome--gh-review-requests` — Fetch unread GitHub notifications for open PRs where review is requested from a specified 
+- `antigravity-awesome--git-advanced-workflows` — Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and r
+- `antigravity-awesome--git-hooks-automation` — Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Auto
+- `antigravity-awesome--git-pr-workflows-git-workflow` — Orchestrate a comprehensive git workflow from code review through PR creation, leveraging 
+- `antigravity-awesome--git-pr-workflows-onboard` — You are an **expert onboarding specialist and knowledge transfer architect** with deep exp
+- `antigravity-awesome--git-pr-workflows-pr-enhance` — You are a PR optimization expert specializing in creating high-quality pull requests that 
+- `antigravity-awesome--git-pushing` — Stage, commit, and push git changes with conventional commit messages. Use when user wants
+- `antigravity-awesome--github-automation` — Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via 
+- `antigravity-awesome--github-issue-creator` — Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored 
+- `antigravity-awesome--github-workflow-automation` — Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD int
+- `antigravity-awesome--gitlab-automation` — Automate GitLab project management, issues, merge requests, pipelines, branches, and user 
+- `antigravity-awesome--gmail-automation` — |
+- `antigravity-awesome--go-concurrency-patterns` — Master Go concurrency with goroutines, channels, sync primitives, and context. Use when bu
+- `antigravity-awesome--go-rod-master` — Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools P
+- `antigravity-awesome--godot-gdscript-patterns` — Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimizati
+- `antigravity-awesome--google-docs-automation` — |
+- `antigravity-awesome--google-drive-automation` — |
+- `antigravity-awesome--google-sheets-automation` — |
+- `antigravity-awesome--google-slides-automation` — |
+- `antigravity-awesome--googlesheets-automation` — Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via R
+- `antigravity-awesome--haskell-pro` — Expert Haskell engineer specializing in advanced type systems, pure
+- `antigravity-awesome--helpdesk-automation` — Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned re
+- `antigravity-awesome--hierarchical-agent-memory` — Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level c
+- `antigravity-awesome--hig-components-content` — Apple Human Interface Guidelines for content display components.
+- `antigravity-awesome--hig-components-controls` — Apple HIG guidance for selection and input controls including pickers, toggles, sliders, s
+- `antigravity-awesome--hig-components-dialogs` — Apple HIG guidance for presentation components including alerts, action sheets, popovers, 
+- `antigravity-awesome--hig-components-layout` — Apple Human Interface Guidelines for layout and navigation components.
+- `antigravity-awesome--hig-components-menus` — Apple HIG guidance for menu and button components including menus, context menus, dock men
+- `antigravity-awesome--hig-components-search` — Apple HIG guidance for navigation-related components including search fields, page control
+- `antigravity-awesome--hig-components-status` — Apple HIG guidance for status and progress UI components including progress indicators, st
+- `antigravity-awesome--hig-components-system` — Apple HIG guidance for system experience components: widgets, live activities, notificatio
+- `antigravity-awesome--hig-inputs` — Apple HIG guidance for input methods and interaction patterns: gestures, Apple Pencil, key
+- `antigravity-awesome--hig-patterns` — Apple Human Interface Guidelines interaction and UX patterns.
+- `antigravity-awesome--hig-platforms` — Apple Human Interface Guidelines for platform-specific design.
+- `antigravity-awesome--hig-project-context` — Create or update a shared Apple design context document that other HIG skills use to tailo
+- `antigravity-awesome--hig-technologies` — Apple HIG guidance for Apple technology integrations: Siri, Apple Pay, HealthKit, HomeKit,
+- `antigravity-awesome--hosted-agents` — Build background agents in sandboxed environments. Use for hosted coding agents, sandboxed
+- `antigravity-awesome--hosted-agents-v2-py` — Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use 
+- `antigravity-awesome--hr-pro` — Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, perfor
+- `antigravity-awesome--hubspot-automation` — Automate HubSpot CRM operations (contacts, companies, deals, tickets, properties) via Rube
+- `antigravity-awesome--hubspot-integration` — Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, a
+- `antigravity-awesome--hybrid-search-implementation` — Combine vector and keyword search for improved retrieval. Use when implementing RAG system
+- `antigravity-awesome--i18n-localization` — Internationalization and localization patterns. Detecting hardcoded strings, managing tran
+- `antigravity-awesome--iconsax-library` — Extensive icon library and AI-driven icon generation skill for premium UI/UX design.
+- `antigravity-awesome--ilya-sutskever` — Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da 
+- `antigravity-awesome--image-studio` — Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fo
+- `antigravity-awesome--imagen` — AI image generation skill powered by Google Gemini, enabling seamless visual content creat
+- `antigravity-awesome--impress` — Presentation creation, format conversion (ODP/PPTX/PDF), slide automation with LibreOffice
+- `antigravity-awesome--infinite-gratitude` — Multi-agent research skill for parallel research execution (10 agents, battle-tested with 
+- `antigravity-awesome--inngest` — Inngest expert for serverless-first background jobs, event-driven workflows, and durable e
+- `antigravity-awesome--instagram` — Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, 
+- `antigravity-awesome--instagram-automation` — Automate Instagram tasks via Rube MCP (Composio): create posts, carousels, manage media, g
+- `antigravity-awesome--intercom-automation` — Automate Intercom tasks via Rube MCP (Composio): conversations, contacts, companies, segme
+- `antigravity-awesome--internal-comms-anthropic` — A set of resources to help me write all kinds of internal communications, using the format
+- `antigravity-awesome--internal-comms-community` — A set of resources to help me write all kinds of internal communications, using the format
+- `antigravity-awesome--interview-coach` — Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcr
+- `antigravity-awesome--inventory-demand-planning` — Codified expertise for demand forecasting, safety stock optimisation, replenishment planni
+- `antigravity-awesome--issues` — Interact with GitHub issues - create, list, and view issues.
+- `antigravity-awesome--istio-traffic-management` — Configure Istio traffic management including routing, load balancing, circuit breakers, an
+- `antigravity-awesome--iterate-pr` — Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feed
+- `antigravity-awesome--jira-automation` — Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, 
+- `antigravity-awesome--julia-pro` — Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and 
+- `antigravity-awesome--junta-leiloeiros` — Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil.
+- `antigravity-awesome--kaizen` — Guide for continuous improvement, error proofing, and standardization. Use this skill when
+- `antigravity-awesome--klaviyo-automation` — Automate Klaviyo tasks via Rube MCP (Composio): manage email/SMS campaigns, inspect campai
+- `antigravity-awesome--kpi-dashboard-design` — Design effective KPI dashboards with metrics selection, visualization best practices, and 
+- `antigravity-awesome--langfuse` — Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt ma
+- `antigravity-awesome--langgraph` — Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI
+- `antigravity-awesome--last30days` — Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write co
+- `antigravity-awesome--legacy-modernizer` — Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernizatio
+- `antigravity-awesome--leiloeiro-avaliacao` — Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14
+- `antigravity-awesome--leiloeiro-edital` — Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausul
+- `antigravity-awesome--leiloeiro-ia` — Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial 
+- `antigravity-awesome--leiloeiro-juridico` — Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829
+- `antigravity-awesome--leiloeiro-mercado` — Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de
+- `antigravity-awesome--leiloeiro-risco` — Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/oper
+- `antigravity-awesome--lex` — Centralized 'Truth Engine' for cross-jurisdictional legal context (US, EU, CA) and contrac
+- `antigravity-awesome--linear-automation` — Automate Linear tasks via Rube MCP (Composio): issues, projects, cycles, teams, labels. Al
+- `antigravity-awesome--linear-claude-skill` — Manage Linear issues, projects, and teams
+- `antigravity-awesome--linkedin-automation` — Automate LinkedIn tasks via Rube MCP (Composio): create posts, manage profile, company inf
+- `antigravity-awesome--linkedin-cli` — Use when automating LinkedIn via CLI: fetch profiles, search people/companies, send messag
+- `antigravity-awesome--linkerd-patterns` — Implement Linkerd service mesh patterns for lightweight, security-focused service mesh dep
+- `antigravity-awesome--lint-and-validate` — Automatic quality control, linting, and static analysis procedures. Use after every code m
+- `antigravity-awesome--linux-shell-scripting` — This skill should be used when the user asks to \"create bash scripts\", \"automate Linux 
+- `antigravity-awesome--linux-troubleshooting` — Linux system troubleshooting workflow for diagnosing and resolving system issues, performa
+- `antigravity-awesome--logistics-exception-management` — Codified expertise for handling freight exceptions, shipment delays, damages, losses, and 
+- `antigravity-awesome--loki-mode` — Multi-agent autonomous startup system for Claude Code. Triggers on \"Loki Mode\". Orchestr
+- `antigravity-awesome--m365-agents-dotnet` — Microsoft 365 Agents SDK for .NET. Build multichannel agents for Teams/M365/Copilot Studio
+- `antigravity-awesome--m365-agents-py` — Microsoft 365 Agents SDK for Python. Build multichannel agents for Teams/M365/Copilot Stud
+- `antigravity-awesome--m365-agents-ts` — Microsoft 365 Agents SDK for TypeScript/Node.js.
+- `antigravity-awesome--magic-animator` — AI-powered animation tool for creating motion in logos, UI, icons, and social media assets
+- `antigravity-awesome--mailchimp-automation` — Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, 
+- `antigravity-awesome--make-automation` — Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and 
+- `antigravity-awesome--manifest` — Install and configure the Manifest observability plugin for your agents. Use when setting 
+- `antigravity-awesome--matematico-tao` — Matemático ultra-avançado inspirado em Terence Tao. Análise rigorosa de código e arquitetu
+- `antigravity-awesome--matplotlib` — Low-level plotting library for full customization. Use when you need fine-grained control 
+- `antigravity-awesome--mcp-builder` — Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to i
+- `antigravity-awesome--mcp-builder-ms` — Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to i
+- `antigravity-awesome--memory-safety-patterns` — Implement memory-safe programming with RAII, ownership, smart pointers, and resource manag
+- `antigravity-awesome--memory-systems` — Design short-term, long-term, and graph-based memory architectures
+- `antigravity-awesome--mermaid-expert` — Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax
+- `antigravity-awesome--metasploit-framework` — This skill should be used when the user asks to \"use Metasploit for penetration testing\"
+- `antigravity-awesome--minecraft-bukkit-pro` — Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.
+- `antigravity-awesome--miro-automation` — Automate Miro tasks via Rube MCP (Composio): boards, items, sticky notes, frames, sharing,
+- `antigravity-awesome--mixpanel-automation` — Automate Mixpanel tasks via Rube MCP (Composio): events, segmentation, funnels, cohorts, u
+- `antigravity-awesome--molykit` — |
+- `antigravity-awesome--monetization` — Estrategia e implementacao de monetizacao para produtos digitais - Stripe, subscriptions, 
+- `antigravity-awesome--monorepo-architect` — Expert in monorepo architecture, build systems, and dependency management at scale. Master
+- `antigravity-awesome--monorepo-management` — Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, sca
+- `antigravity-awesome--moodle-external-api-development` — Create custom external web service APIs for Moodle LMS. Use when implementing web services
+- `antigravity-awesome--mtls-configuration` — Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when impl
+- `antigravity-awesome--multi-advisor` — Conselho de especialistas — consulta multiplos agentes do ecossistema em paralelo para ana
+- `antigravity-awesome--multi-platform-apps-multi-platform` — Build and deploy the same feature consistently across web, mobile, and desktop platforms u
+- `antigravity-awesome--multiplayer` — Multiplayer game development principles. Architecture, networking, synchronization.
+- `antigravity-awesome--n8n-mcp-tools-expert` — Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, valida
+- `antigravity-awesome--n8n-validation-expert` — Interpret validation errors and guide fixing them. Use when encountering validation errors
+- `antigravity-awesome--n8n-workflow-patterns` — Proven workflow architectural patterns from real n8n workflows. Use when building new work
+- `antigravity-awesome--nanobanana-ppt-skills` — AI-powered PPT generation with document analysis and styled images
+- `antigravity-awesome--native-data-fetching` — Use when implementing or debugging ANY network request, API call, or data fetching. Covers
+- `antigravity-awesome--nerdzao-elite` — Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with plann
+- `antigravity-awesome--nerdzao-elite-gemini-high` — Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Wo
+- `antigravity-awesome--network-101` — This skill should be used when the user asks to \"set up a web server\", \"configure HTTP 
+- `antigravity-awesome--networkx` — Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs
+- `antigravity-awesome--nosql-expert` — Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental m
+- `antigravity-awesome--notebooklm` — Use this skill to query your Google NotebookLM notebooks directly from Claude Code for sou
+- `antigravity-awesome--notion-automation` — Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users. 
+- `antigravity-awesome--nutrition-analyzer` — 分析营养数据、识别营养模式、评估营养状况，并提供个性化营养建议。支持与运动、睡眠、慢性病数据的关联分析。
+- `antigravity-awesome--nx-workspace-patterns` — Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project
+- `antigravity-awesome--observability-monitoring-monitor-setup` — You are a monitoring and observability expert specializing in implementing comprehensive m
+- `antigravity-awesome--observability-monitoring-slo-implement` — You are an SLO (Service Level Objective) expert specializing in implementing reliability s
+- `antigravity-awesome--obsidian-clipper-template-creator` — Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a n
+- `antigravity-awesome--odoo-accounting-setup` — Expert guide for configuring Odoo Accounting: chart of accounts, journals, fiscal position
+- `antigravity-awesome--odoo-hr-payroll-setup` — Expert guide for Odoo HR and Payroll: salary structures, payslip rules, leave policies, em
+- `antigravity-awesome--odoo-inventory-optimizer` — Expert guide for Odoo Inventory: stock valuation (FIFO/AVCO), reordering rules, putaway st
+- `antigravity-awesome--odoo-manufacturing-advisor` — Expert guide for Odoo Manufacturing: Bills of Materials (BoM), Work Centers, routings, MRP
+- `antigravity-awesome--odoo-module-developer` — Expert guide for creating custom Odoo modules. Covers __manifest__.py, model inheritance, 
+- `antigravity-awesome--odoo-orm-expert` — Master Odoo ORM patterns: search, browse, create, write, domain filters, computed fields, 
+- `antigravity-awesome--odoo-performance-tuner` — Expert guide for diagnosing and fixing Odoo performance issues: slow queries, worker confi
+- `antigravity-awesome--odoo-project-timesheet` — Expert guide for Odoo Project and Timesheets: task stages, billable time tracking, timeshe
+- `antigravity-awesome--odoo-purchase-workflow` — Expert guide for Odoo Purchase: RFQ → PO → Receipt → Vendor Bill workflow, purchase agreem
+- `antigravity-awesome--odoo-qweb-templates` — Expert in Odoo QWeb templating for PDF reports, email templates, and website pages. Covers
+- `antigravity-awesome--odoo-rpc-api` — Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, r
+- `antigravity-awesome--odoo-upgrade-advisor` — Step-by-step Odoo version upgrade advisor: pre-upgrade checklist, community vs enterprise 
+- `antigravity-awesome--odoo-woocommerce-bridge` — Sync Odoo with WooCommerce: products, inventory, orders, and customers via WooCommerce RES
+- `antigravity-awesome--on-call-handoff-patterns` — Master on-call shift handoffs with context transfer, escalation procedures, and documentat
+- `antigravity-awesome--one-drive-automation` — Automate OneDrive file management, search, uploads, downloads, sharing, permissions, and f
+- `antigravity-awesome--openapi-spec-generation` — Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and valida
+- `antigravity-awesome--os-scripting` — Operating system and shell scripting troubleshooting workflow for Linux, macOS, and Window
+- `antigravity-awesome--oss-hunter` — Automatically hunt for high-impact OSS contribution opportunities in trending repositories
+- `antigravity-awesome--outlook-automation` — Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attac
+- `antigravity-awesome--pagerduty-automation` — Automate PagerDuty tasks via Rube MCP (Composio): manage incidents, services, schedules, e
+- `antigravity-awesome--paid-ads` — When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Ins
+- `antigravity-awesome--pakistan-payments-stack` — Design and implement production-grade Pakistani payment integrations (JazzCash, Easypaisa,
+- `antigravity-awesome--payment-integration` — Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, w
+- `antigravity-awesome--paypal-integration` — Integrate PayPal payment processing with support for express checkout, subscriptions, and 
+- `antigravity-awesome--pc-games` — PC and console game development principles. Engine selection, platform features, optimizat
+- `antigravity-awesome--pdf-official` — Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, 
+- `antigravity-awesome--performance-optimizer` — Identifies and fixes performance bottlenecks in code, databases, and APIs. Measures before
+- `antigravity-awesome--performance-profiling` — Performance profiling principles. Measurement, analysis, and optimization techniques.
+- `antigravity-awesome--pipecat-friday-agent` — Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipec
+- `antigravity-awesome--pipedrive-automation` — Automate Pipedrive CRM operations including deals, contacts, organizations, activities, no
+- `antigravity-awesome--plan-writing` — Structured task planning with clear breakdowns, dependencies, and verification criteria. U
+- `antigravity-awesome--planning-with-files` — Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findin
+- `antigravity-awesome--plotly` — Interactive visualization library. Use when you need hover info, zoom, pan, or web-embedda
+- `antigravity-awesome--podcast-generation` — Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini 
+- `antigravity-awesome--polars` — Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow
+- `antigravity-awesome--posix-shell-pro` — Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Spec
+- `antigravity-awesome--posthog-automation` — Automate PostHog tasks via Rube MCP (Composio): events, feature flags, projects, user prof
+- `antigravity-awesome--postmark-automation` — Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, man
+- `antigravity-awesome--postmortem-writing` — Write effective blameless postmortems with root cause analysis, timelines, and action item
+- `antigravity-awesome--powershell-windows` — PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling.
+- `antigravity-awesome--pptx-official` — Presentation creation, editing, and analysis. When Claude needs to work with presentations
+- `antigravity-awesome--pr-writer` — ALWAYS use this skill when creating or updating pull requests — never create or edit a PR 
+- `antigravity-awesome--prisma-expert` — Prisma ORM expert for schema design, migrations, query optimization, relations modeling, a
+- `antigravity-awesome--professional-proofreader` — >
+- `antigravity-awesome--progressive-estimation` — Estimate AI-assisted and hybrid human+agent development work with research-backed PERT sta
+- `antigravity-awesome--progressive-web-app` — Build Progressive Web Apps (PWAs) with offline support, installability, and caching strate
+- `antigravity-awesome--project-development` — This skill should be used when the user asks to "start an LLM project", "design batch pipe
+- `antigravity-awesome--projection-patterns` — Build read models and projections from event streams. Use when implementing CQRS read side
+- `antigravity-awesome--prompt-caching` — Caching strategies for LLM prompts including Anthropic prompt caching, response caching, a
+- `antigravity-awesome--prompt-library` — Curated collection of high-quality prompts for various use cases. Includes role-based prom
+- `antigravity-awesome--pydantic-models-py` — Create Pydantic models following the multi-model pattern with Base, Create, Update, Respon
+- `antigravity-awesome--pypict-skill` — Pairwise test generation
+- `antigravity-awesome--qiskit` — IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qis
+- `antigravity-awesome--quality-nonconformance` — Codified expertise for quality control, non-conformance investigation, root cause analysis
+- `antigravity-awesome--readme` — When the user wants to create or update a README.md file for a project. Also use when the 
+- `antigravity-awesome--receiving-code-review` — Use when receiving code review feedback, before implementing suggestions, especially if fe
+- `antigravity-awesome--red-team-tactics` — Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, repor
+- `antigravity-awesome--red-team-tools` — This skill should be used when the user asks to \"follow red team methodology\", \"perform
+- `antigravity-awesome--reddit-automation` — Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage com
+- `antigravity-awesome--reference-builder` — Creates exhaustive technical references and API documentation. Generates comprehensive par
+- `antigravity-awesome--referral-program` — When the user wants to create, optimize, or analyze a referral program, affiliate program,
+- `antigravity-awesome--rehabilitation-analyzer` — 分析康复训练数据、识别康复模式、评估康复进展，并提供个性化康复建议
+- `antigravity-awesome--remotion` — Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, z
+- `antigravity-awesome--remotion-best-practices` — Best practices for Remotion - Video creation in React
+- `antigravity-awesome--render-automation` — Automate Render tasks via Rube MCP (Composio): services, deployments, projects. Always sea
+- `antigravity-awesome--requesting-code-review` — Use when completing tasks, implementing major features, or before merging to verify work m
+- `antigravity-awesome--returns-reverse-logistics` — Codified expertise for returns authorisation, receipt and inspection, disposition decision
+- `antigravity-awesome--risk-manager` — Monitor portfolio risk, R-multiples, and position limits. Creates hedging strategies, calc
+- `antigravity-awesome--risk-metrics-calculation` — Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analys
+- `antigravity-awesome--robius-app-architecture` — |
+- `antigravity-awesome--robius-event-action` — |
+- `antigravity-awesome--robius-matrix-integration` — |
+- `antigravity-awesome--robius-state-management` — |
+- `antigravity-awesome--robius-widget-patterns` — |
+- `antigravity-awesome--saga-orchestration` — Implement saga patterns for distributed transactions and cross-aggregate workflows. Use wh
+- `antigravity-awesome--sam-altman` — Agente que simula Sam Altman — CEO da OpenAI, ex-presidente da Y Combinator, arquiteto da 
+- `antigravity-awesome--sast-configuration` — Configure Static Application Security Testing (SAST) tools for automated vulnerability det
+- `antigravity-awesome--scanning-tools` — This skill should be used when the user asks to \"perform vulnerability scanning\", \"scan
+- `antigravity-awesome--scanpy` — Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality 
+- `antigravity-awesome--schema-markup` — Design, validate, and optimize schema.org structured data for eligibility, correctness, an
+- `antigravity-awesome--scientific-writing` — Core skill for the deep research and writing tool. Write scientific manuscripts in full pa
+- `antigravity-awesome--screenshots` — Generate marketing screenshots of your app using Playwright. Use when the user wants to cr
+- `antigravity-awesome--seaborn` — Statistical visualization with pandas integration. Use for quick exploration of distributi
+- `antigravity-awesome--search-specialist` — Expert web researcher using advanced search techniques and
+- `antigravity-awesome--secrets-management` — Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, 
+- `antigravity-awesome--seek-and-analyze-video` — Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent 
+- `antigravity-awesome--segment-automation` — Automate Segment tasks via Rube MCP (Composio): track events, identify users, manage group
+- `antigravity-awesome--segment-cdp` — Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tra
+- `antigravity-awesome--sendgrid-automation` — Automate SendGrid email operations including sending emails, managing contacts/lists, send
+- `antigravity-awesome--senior-architect` — Comprehensive software architecture skill for designing scalable, maintainable systems usi
+- `antigravity-awesome--senior-fullstack` — Comprehensive fullstack development skill for building complete web applications with Reac
+- `antigravity-awesome--sentry-automation` — Automate Sentry tasks via Rube MCP (Composio): manage issues/events, configure alerts, tra
+- `antigravity-awesome--server-management` — Server management principles and decision-making. Process management, monitoring strategy,
+- `antigravity-awesome--service-mesh-expert` — Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking 
+- `antigravity-awesome--service-mesh-observability` — Implement comprehensive observability for service meshes including distributed tracing, me
+- `antigravity-awesome--shadcn` — Manages shadcn/ui components and projects, providing context, documentation, and usage pat
+- `antigravity-awesome--shader-programming-glsl` — Expert guide for writing efficient GLSL shaders (Vertex/Fragment) for web and game engines
+- `antigravity-awesome--sharp-edges` — sharp-edges
+- `antigravity-awesome--shellcheck-configuration` — Master ShellCheck static analysis configuration and usage for shell script quality. Use wh
+- `antigravity-awesome--shodan-reconnaissance` — This skill should be used when the user asks to \"search for exposed devices on the intern
+- `antigravity-awesome--similarity-search-patterns` — Implement efficient similarity search with vector databases. Use when building semantic se
+- `antigravity-awesome--skill-check` — Validate Claude Code skills against the agentskills specification. Catches structural, sem
+- `antigravity-awesome--skill-creator` — This skill should be used when the user asks to create a new skill, build a skill, make a 
+- `antigravity-awesome--skill-creator-ms` — Guide for creating effective skills for AI coding agents working with Azure SDKs and Micro
+- `antigravity-awesome--skill-developer` — Create and manage Claude Code skills following Anthropic best practices. Use when creating
+- `antigravity-awesome--skill-improver` — Iteratively reviews and fixes Claude Code skill quality issues until they meet standards. 
+- `antigravity-awesome--skill-installer` — Instala, valida, registra e verifica novas skills no ecossistema. 10 checks de seguranca, 
+- `antigravity-awesome--skill-router` — Use when the user is unsure which skill to use or where to start. Interviews the user with
+- `antigravity-awesome--skill-scanner` — Scan agent skills for security issues. Use when asked to "scan a skill",
+- `antigravity-awesome--skill-seekers` — -Automatically convert documentation websites, GitHub repositories, and PDFs into Claude A
+- `antigravity-awesome--skill-sentinel` — Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gap
+- `antigravity-awesome--skill-writer` — Create and improve agent skills following the Agent Skills specification. Use when asked t
+- `antigravity-awesome--slack-automation` — Automate Slack messaging, channel management, search, reactions, and threads via Rube MCP 
+- `antigravity-awesome--slack-bot-builder` — Build Slack apps using the Bolt framework across Python, JavaScript, and Java. Covers Bloc
+- `antigravity-awesome--slack-gif-creator` — Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constrain
+- `antigravity-awesome--sleep-analyzer` — 分析睡眠数据、识别睡眠模式、评估睡眠质量，并提供个性化睡眠改善建议。支持与其他健康数据的关联分析。
+- `antigravity-awesome--slo-implementation` — Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) w
+- `antigravity-awesome--social-content` — When the user wants help creating, scheduling, or optimizing social media content for Link
+- `antigravity-awesome--social-orchestrator` — Orquestrador unificado de canais sociais — coordena Instagram, Telegram e WhatsApp em um u
+- `antigravity-awesome--software-architecture` — Guide for quality focused software architecture. This skill should be used when users want
+- `antigravity-awesome--speckit-updater` — SpecKit Safe Update
+- `antigravity-awesome--speed` — Launch RSVP speed reader for text
+- `antigravity-awesome--spline-3d-integration` — Use when adding interactive 3D scenes from Spline.design to web projects, including React 
+- `antigravity-awesome--sql-optimization-patterns` — Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically i
+- `antigravity-awesome--sql-pro` — Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query 
+- `antigravity-awesome--square-automation` — Automate Square tasks via Rube MCP (Composio): payments, orders, invoices, locations. Alwa
+- `antigravity-awesome--sred-project-organizer` — Take a list of projects and their related documentation, and organize them into the SRED f
+- `antigravity-awesome--sred-work-summary` — Go back through the previous year of work and create a Notion doc that groups relevant lin
+- `antigravity-awesome--stability-ai` — Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainti
+- `antigravity-awesome--statsmodels` — Statistical models library for Python. Use when you need specific model classes (OLS, GLM,
+- `antigravity-awesome--steve-jobs` — Agente que simula Steve Jobs — cofundador da Apple, CEO da Pixar, fundador da NeXT, o maio
+- `antigravity-awesome--stitch-loop` — Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing
+- `antigravity-awesome--stride-analysis-patterns` — Apply STRIDE methodology to systematically identify threats. Use when analyzing system sec
+- `antigravity-awesome--stripe-automation` — Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices
+- `antigravity-awesome--stripe-integration` — Implement Stripe payment processing for robust, PCI-compliant payment flows including chec
+- `antigravity-awesome--supabase-automation` — Automate Supabase database queries, table management, project administration, storage, edg
+- `antigravity-awesome--supply-chain-risk-auditor` — Identifies dependencies at heightened risk of exploitation or takeover. Use when assessing
+- `antigravity-awesome--sympy` — Use this skill when working with symbolic mathematics in Python. This skill should be used
+- `antigravity-awesome--tanstack-query-expert` — Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetchi
+- `antigravity-awesome--tavily-web` — Web search, content extraction, crawling, and research capabilities using Tavily API
+- `antigravity-awesome--tcm-constitution-analyzer` — 分析中医体质数据、识别体质类型、评估体质特征,并提供个性化养生建议。支持与营养、运动、睡眠等健康数据的关联分析。
+- `antigravity-awesome--team-collaboration-issue` — You are a GitHub issue resolution expert specializing in systematic bug investigation, fea
+- `antigravity-awesome--team-collaboration-standup-notes` — You are an expert team communication specialist focused on async-first standup practices, 
+- `antigravity-awesome--team-composition-analysis` — This skill should be used when the user asks to \\\"plan team structure", "determine hirin
+- `antigravity-awesome--telegram` — Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline
+- `antigravity-awesome--telegram-automation` — Automate Telegram tasks via Rube MCP (Composio): send messages, manage chats, share photos
+- `antigravity-awesome--telegram-bot-builder` — Expert in building Telegram bots that solve real problems - from simple automation to comp
+- `antigravity-awesome--telegram-mini-app` — Expert in building Telegram Mini Apps (TWA) - web apps that run inside Telegram with nativ
+- `antigravity-awesome--templates` — Project scaffolding templates for new applications. Use when creating new projects from sc
+- `antigravity-awesome--threejs-animation` — Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixi
+- `antigravity-awesome--threejs-geometry` — Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing.
+- `antigravity-awesome--threejs-interaction` — Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when
+- `antigravity-awesome--threejs-lighting` — Three.js lighting - light types, shadows, environment lighting. Use when adding lights, co
+- `antigravity-awesome--threejs-loaders` — Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 
+- `antigravity-awesome--threejs-materials` — Three.js materials - PBR, basic, phong, shader materials, material properties. Use when st
+- `antigravity-awesome--threejs-postprocessing` — Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding vis
+- `antigravity-awesome--threejs-shaders` — Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custo
+- `antigravity-awesome--threejs-skills` — Create 3D scenes, interactive experiences, and visual effects using Three.js. Use when use
+- `antigravity-awesome--threejs-textures` — Three.js textures - texture types, UV mapping, environment maps, texture settings. Use whe
+- `antigravity-awesome--tiktok-automation` — Automate TikTok tasks via Rube MCP (Composio): upload/publish videos, post photos, manage 
+- `antigravity-awesome--todoist-automation` — Automate Todoist task management, projects, sections, filtering, and bulk operations via R
+- `antigravity-awesome--tool-design` — Build tools that agents can use effectively, including architectural reduction patterns
+- `antigravity-awesome--tool-use-guardian` — FREE — Intelligent tool-call reliability wrapper. Monitors, retries, fixes, and learns fro
+- `antigravity-awesome--track-management` — Use this skill when creating, managing, or working with Conductor tracks - the logical wor
+- `antigravity-awesome--trello-automation` — Automate Trello boards, cards, and workflows via Rube MCP (Composio). Create cards, manage
+- `antigravity-awesome--trigger-dev` — Trigger.dev expert for background jobs, AI workflows, and reliable async execution with ex
+- `antigravity-awesome--trpc-fullstack` — Build end-to-end type-safe APIs with tRPC — routers, procedures, middleware, subscriptions
+- `antigravity-awesome--turborepo-caching` — Configure Turborepo for efficient monorepo builds with local and remote caching. Use when 
+- `antigravity-awesome--twilio-communications` — Build communication features with Twilio: SMS messaging, voice calls, WhatsApp Business AP
+- `antigravity-awesome--twitter-automation` — Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, 
+- `antigravity-awesome--uncle-bob-craft` — Use when performing code review, writing or refactoring code, or discussing architecture; 
+- `antigravity-awesome--unity-developer` — Build Unity games with optimized C# scripts, efficient rendering, and proper asset managem
+- `antigravity-awesome--unity-ecs-patterns` — Master Unity ECS (Entity Component System) with DOTS, Jobs, and Burst for high-performance
+- `antigravity-awesome--unsplash-integration` — Integration skill for searching and fetching high-quality, free-to-use professional photog
+- `antigravity-awesome--upstash-qstash` — Upstash QStash expert for serverless message queues, scheduled jobs, and reliable HTTP-bas
+- `antigravity-awesome--using-neon` — Guides and best practices for working with Neon Serverless Postgres. Covers getting starte
+- `antigravity-awesome--uv-package-manager` — Master the uv package manager for fast Python dependency management, virtual environments,
+- `antigravity-awesome--variant-analysis` — Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use w
+- `antigravity-awesome--varlock` — Secure environment variable management with Varlock. Use when handling secrets, API keys, 
+- `antigravity-awesome--varlock-claude-skill` — Secure environment variable management ensuring secrets are never exposed in Claude sessio
+- `antigravity-awesome--vercel-ai-sdk-expert` — Expert in the Vercel AI SDK. Covers Core API (generateText, streamText), UI hooks (useChat
+- `antigravity-awesome--vercel-automation` — Automate Vercel tasks via Rube MCP (Composio): manage deployments, domains, DNS, env vars,
+- `antigravity-awesome--vexor` — Vector-powered CLI for semantic file search with a Claude/Codex skill
+- `antigravity-awesome--vexor-cli` — Semantic file discovery via `vexor`. Use whenever locating where something is implemented/
+- `antigravity-awesome--vibe-code-auditor` — Audit rapidly generated or AI-produced code for structural flaws, fragility, and productio
+- `antigravity-awesome--vibers-code-review` — Human review workflow for AI-generated GitHub projects with spec-based feedback, security 
+- `antigravity-awesome--videodb` — Video and audio perception, indexing, and editing. Ingest files/URLs/live streams, build v
+- `antigravity-awesome--videodb-skills` — Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoD
+- `antigravity-awesome--vizcom` — AI-powered product design tool for transforming sketches into full-fidelity 3D renders.
+- `antigravity-awesome--voice-agents` — Voice agents represent the frontier of AI interaction - humans speaking naturally with AI 
+- `antigravity-awesome--voice-ai-development` — Expert in building voice AI applications - from real-time voice agents to voice-enabled ap
+- `antigravity-awesome--vr-ar` — VR/AR development principles. Comfort, interaction, performance requirements.
+- `antigravity-awesome--warren-buffett` — Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire
+- `antigravity-awesome--web-artifacts-builder` — Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using mode
+- `antigravity-awesome--web-design-guidelines` — Review UI code for Web Interface Guidelines compliance. Use when asked to \\\"review my UI
+- `antigravity-awesome--web-games` — Web browser game development principles. Framework selection, WebGPU, optimization, PWA.
+- `antigravity-awesome--web-performance-optimization` — Optimize website and web application performance including loading speed, Core Web Vitals,
+- `antigravity-awesome--web-scraper` — Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabel
+- `antigravity-awesome--webflow-automation` — Automate Webflow CMS collections, site publishing, page management, asset uploads, and eco
+- `antigravity-awesome--weightloss-analyzer` — 分析减肥数据、计算代谢率、追踪能量缺口、管理减肥阶段
+- `antigravity-awesome--wellally-tech` — Integrate digital health data sources (Apple Health, Fitbit, Oura Ring) and connect to Wel
+- `antigravity-awesome--whatsapp-automation` — Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates,
+- `antigravity-awesome--wiki-architect` — Analyzes code repositories and generates hierarchical documentation structures with onboar
+- `antigravity-awesome--wiki-changelog` — Analyzes git commit history and generates structured changelogs categorized by change type
+- `antigravity-awesome--wiki-onboarding` — Generates two complementary onboarding guides \u2014 a Principal-Level architectural deep-
+- `antigravity-awesome--wiki-page-writer` — Generates rich technical documentation pages with dark-mode Mermaid diagrams, source code 
+- `antigravity-awesome--wiki-qa` — Answers questions about a code repository using source file analysis. Use when the user as
+- `antigravity-awesome--wiki-researcher` — Conducts multi-turn iterative deep research on specific topics within a codebase with zero
+- `antigravity-awesome--wireshark-analysis` — This skill should be used when the user asks to \"analyze network traffic with Wireshark\"
+- `antigravity-awesome--wordpress` — Complete WordPress development workflow covering theme development, plugin creation, WooCo
+- `antigravity-awesome--wordpress-theme-development` — WordPress theme development workflow covering theme architecture, template hierarchy, cust
+- `antigravity-awesome--wordpress-woocommerce-development` — WooCommerce store development workflow covering store setup, payment integration, shipping
+- `antigravity-awesome--workflow-automation` — Workflow automation is the infrastructure that makes AI agents reliable. Without durable e
+- `antigravity-awesome--workflow-orchestration-patterns` — Design durable workflows with Temporal for distributed systems. Covers workflow vs activit
+- `antigravity-awesome--workflow-patterns` — Use this skill when implementing tasks according to Conductor's TDD workflow, handling pha
+- `antigravity-awesome--wrike-automation` — Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage pr
+- `antigravity-awesome--writer` — Document creation, format conversion (ODT/DOCX/PDF), mail merge, and automation with Libre
+- `antigravity-awesome--x-twitter-scraper` — X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engageme
+- `antigravity-awesome--xlsx-official` — Comprehensive spreadsheet creation, editing, and analysis with support for formulas, forma
+- `antigravity-awesome--yann-lecun` — Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scient
+- `antigravity-awesome--yann-lecun-debate` — Sub-skill de debates e posições de Yann LeCun. Cobre críticas técnicas detalhadas aos LLMs
+- `antigravity-awesome--yann-lecun-filosofia` — Sub-skill filosófica e pedagógica de Yann LeCun. Cobre filosofia do open source (LLaMA, so
+- `antigravity-awesome--yann-lecun-tecnico` — Sub-skill técnica de Yann LeCun. Cobre CNNs, LeNet, backpropagation, JEPA (I-JEPA, V-JEPA,
+- `antigravity-awesome--yes-md` — 6-layer AI governance: safety gates, evidence-based debugging, anti-slack detection, and m
+- `antigravity-awesome--youtube-automation` — Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search co
+- `antigravity-awesome--youtube-summarizer` — Extract transcripts from YouTube videos and generate comprehensive, detailed summaries usi
+- `antigravity-awesome--zapier-make-patterns` — No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) l
+- `antigravity-awesome--zendesk-automation` — Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies. Al
+- `antigravity-awesome--zeroize-audit` — Detects missing zeroization of sensitive data in source code and identifies zeroization re
+- `antigravity-awesome--zod-validation-expert` — Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinem
+- `antigravity-awesome--zoom-automation` — Automate Zoom meeting creation, management, recordings, webinars, and participant tracking
+- `antigravity-awesome--zustand-store-ts` — Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/
+- `antigravity-design-expert` — Core UI/UX engineering skill for building highly interactive, spatial, weightless, and gla
+- `antigravity-skill-orchestrator` — A meta-skill that understands task requirements, dynamically selects appropriate skills, t
+- `antigravity-workflows` — Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, se
+- `aorchestra-automating-sub-agent-creation` — Dynamically create specialized sub-agents for complex multi-step tasks using the AOrchestr
+- `api-documentation` — API documentation workflow for generating OpenAPI specs, creating developer guides, and ma
+- `api-documentation-generator` — Generate comprehensive, developer-friendly API documentation from code, including endpoint
+- `api-documenter` — Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experien
+- `api-endpoint-builder` — Builds production-ready REST API endpoints with validation, error handling, authentication
+- `api-fuzzing-bug-bounty` — This skill should be used when the user asks to \"test API security\", \"fuzz APIs\", \"fi
+- `api-patterns` — API design principles and decision-making. REST vs GraphQL vs tRPC selection, response for
+- `api-tools` — API testing, documentation, and development tools
+- `apify-audience-analysis` — Understand audience demographics, preferences, behavior patterns, and engagement quality a
+- `apify-competitor-intelligence` — Analyze competitor strategies, content, pricing, ads, and market positioning across Google
+- `apify-trend-analysis` — Discover and track emerging trends across Google Trends, Instagram, Facebook, YouTube, and
+- `apify-ultimate-scraper` — Universal AI-powered web scraper for any platform. Scrape data from Instagram, Facebook, T
+- `app-builder` — Main application building orchestrator. Creates full-stack applications from natural langu
+- `app-store-optimization` — Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mo
+- `appdeploy` — Deploy web apps with backend APIs, database, and file storage. Use when the user asks to d
+- `application-patterns` — Common application development patterns and implementations
+- `application-performance-performance-optimization` — Optimize end-to-end application performance with profiling, observability, and backend/fro
+- `architect-review` — Master software architect specializing in modern architecture
+- `architecture` — Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR 
+- `architecture-decision-records` — Write and maintain Architecture Decision Records (ADRs) following best practices for techn
+- `architecture-designer` — Use when designing new high-level system architecture, reviewing existing designs, or maki
+- `architecture-patterns` — Implement proven backend architecture patterns including Clean Architecture, Hexagonal Arc
+- `are-open-weight-ready-social` — Build LLM-based content moderation pipelines using zero-shot classification with open-weig
+- `arkeval-benchmarking-evaluating-automated` — Automated ArkTS code repair using retrieval-augmented generation, LLM-based test oracle sy
+- `arm-cortex-expert` — Senior embedded software engineer specializing in firmware and driver development for ARM 
+- `artificial-intelligence-open-source` — >
+- `asana-automation` — Automate Asana tasks via Rube MCP (Composio): tasks, projects, sections, teams, workspaces
+- `ask-questions-if-underspecified` — Clarify requirements before implementing. Use when serious doubts arise.
+- `assessment-generative-named-entity` — Build generative NER systems using LLMs with optimal output formats and prompt engineering
+- `atheris` — >
+- `atlassian-mcp` — Integrates with Atlassian products to manage project tracking and documentation via MCP pr
+- `atomic-information-flow-network` — >
+- `attn-gs-attention-guided-context-compression` — Compress long user contexts (profiles, histories, documents) into concise, high-quality su
+- `audio-transcriber` — Transform audio recordings into professional Markdown documentation with intelligent summa
+- `audit-context-building` — Enables ultra-granular, line-by-line code analysis to build deep architectural context bef
+- `audit-prep-assistant` — Prepares codebases for security review using Trail of Bits' checklist. Helps set review go
+- `audit-skills` — Expert security auditor for AI Skills and Bundles. Performs non-intrusive static analysis 
+- `auri-core` — Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do prod
+- `auth-implementation-patterns` — Master authentication and authorization patterns including JWT, OAuth2, session management
+- `auto-dev-setup` — 設定 Auto-Dev workflow，實現 Human-in-the-Loop 自動化開發
+- `automated-customization-enterprise-code` — Customize LLMs for enterprise code repositories using semantic scopes -- automatically par
+- `automated-multiple-mini-interview` — Multi-agent framework for scoring subjective, open-ended responses (interviews, essays, re
+- `automated-rubrics-reliable-evaluation` — Generate fine-grained evaluation rubrics for medical dialogue systems using a retrieval-au
+- `automating-computational-reproducibility-social` — Diagnose and repair failing computational research code to restore reproducibility. Uses a
+- `automation-scripts` — Build automation, task runners, and scripting tools
+- `autonomous-agent-patterns` — Design patterns for building autonomous coding agents. Covers tool integration, permission
+- `autonomous-agents` — Autonomous agents are AI systems that can independently decompose goals, plan actions, exe
+- `autonomous-data-processing-meta-agents`
+- `autoregressive-yet-revisable-decoding-revision` — |
+- `avalonia-layout-zafiro` — Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles,
+- `avalonia-viewmodels-zafiro` — Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI.
+- `avalonia-zafiro-development` — Mandatory skills, conventions, and behavioral rules for Avalonia UI development using the 
+- `avenir-web-human-experience-imitating-multimodal-w` — Build robust web automation agents using Mixture of Grounding Experts, experience-imitatio
+- `awesome-claude-code--authentication-patterns` — Authentication and authorization patterns including OAuth2, JWT, RBAC, session management,
+- `awesome-claude-code--git-advanced` — Advanced git workflows including worktrees, bisect, interactive rebase, hooks, and recover
+- `awesome-claude-code--mcp-development` — MCP server development including tool design, resource endpoints, prompt templates, and tr
+- `awesome-claude-code--monitoring-observability` — Monitoring and observability with OpenTelemetry, Prometheus, Grafana dashboards, and struc
+- `awesome-claude-code--performance-optimization` — Web performance optimization including bundle analysis, lazy loading, caching strategies, 
+- `bamboohr-automation` — Automate BambooHR tasks via Rube MCP (Composio): employees, time-off, benefits, dependents
+- `basecamp-automation` — Automate Basecamp project management, to-dos, messages, people, and to-do list organizatio
+- `baseline-ui` — Validates animation durations, enforces typography scale, checks component accessibility, 
+- `bash-defensive-patterns` — Master defensive Bash programming techniques for production-grade scripts. Use when writin
+- `bash-linux` — Bash/Linux terminal patterns. Critical commands, piping, error handling, scripting. Use wh
+- `bash-pro` — Master of defensive Bash scripting for production automation, CI/CD
+- `bash-scripting` — Bash scripting workflow for creating production-ready shell scripts with defensive pattern
+- `bass-benchmarking-audio-lms` — Build evaluation benchmarks for audio language models using the BASS methodology — structu
+- `batcoder-self-supervised-bidirectional-code-docume` — Apply BatCoder's back-translation technique to improve code and documentation quality bidi
+- `bayesflow-probability-inference-framework` — Generate high-quality multi-step LLM workflows using Bayesian inference with parallel look
+- `bazel-build-optimization` — Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing 
+- `bdi-mental-states` — This skill should be used when the user asks to "model agent mental states", "implement BD
+- `beautiful-prose` — A hard-edged writing style contract for timeless, forceful English prose without modern AI
+- `behavioral-modes` — AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use
+- `benchmarking-abap-code-generation` — Generate syntactically correct and functional ABAP code using iterative compiler feedback 
+- `benchmarking-reward-hack-detection` — Detect reward hacking in AI-generated code trajectories using contrastive analysis from th
+- `benchmarking-uncertainty-calibration-long-form` — |
+- `benchmarking-zero-shot-few-shot-phishing` — Detect phishing URLs using LLM zero-shot and few-shot prompting with structured classifica
+- `better-as-generators-than` — Generate synthetic labeled datasets with LLMs to train smaller, cheaper classifiers -- esp
+- `bevy-ecs-expert` — Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources,
+- `beyond-accuracy-cognitive-load` — Analyze and reduce cognitive load in tool-use agent workflows using the Cognitive Load Fra
+- `beyond-blame-rethinking-szz` — Identify bug-inducing commits using temporal knowledge graph search beyond git blame. Use 
+- `beyond-function-level-analysis-context-aware` — |
+- `beyond-holistic-scores-automatic` — Build trait-based essay scoring systems that evaluate argumentative writing across multipl
+- `beyond-instrumental-substitutive-paradigms`
+- `beyond-needles-illusion-decoupled` — Decouple evidence access from evidence use when evaluating or building long-context and RA
+- `biases-blind-spot-detecting` — Automated black-box pipeline for detecting unverbalized biases in LLM decision-making. Dis
+- `biasscope-automated-detection-bias` — Automatically discover and test for hidden biases in LLM-as-a-Judge evaluation pipelines u
+- `bill-gates` — Agente que simula Bill Gates — cofundador da Microsoft, arquiteto da industria de software
+- `billing-automation` — Build automated billing systems for recurring payments, invoicing, subscription lifecycle,
+- `binary-analysis-patterns` — Master binary analysis patterns including disassembly, decompilation, control flow analysi
+- `bioace-automated-framework-biomedical` — |
+- `birdturk-adaptation-bird-text-to-sql` — Adapt Text-to-SQL systems and benchmarks for non-English, morphologically rich languages u
+- `bitbucket-automation` — Automate Bitbucket repositories, pull requests, branches, issues, and workspace management
+- `blind-gods-broken-screens` — Architect secure, intent-centric agent systems using the Aura pattern: Hub-and-Spoke agent
+- `blockrun` — Use when user needs capabilities Claude lacks (image generation, real-time X/Twitter data)
+- `blueprint` — Turn a one-line objective into a step-by-step construction plan any coding agent can execu
+- `box-automation` — Automate Box cloud storage operations including file upload/download, search, folder manag
+- `breaking-static-graph-context-aware` — Build query-adaptive knowledge graph retrieval systems using CatRAG's context-aware traver
+- `brevo-automation` — Automate Brevo (Sendinblue) tasks via Rube MCP (Composio): manage email campaigns, create/
+- `broken-authentication` — This skill should be used when the user asks to \"test for broken authentication vulnerabi
+- `browser-automation` — Browser automation powers web testing, scraping, and AI agent interactions. The difference
+- `browser-extension-builder` — Expert in building browser extensions that solve real problems - Chrome, Firefox, and cros
+- `bug-hunter` — Systematically finds and fixes bugs using proven debugging techniques. Traces from symptom
+- `build` — build
+- `building-native-ui` — Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling,
+- `bun-development` — Modern JavaScript/TypeScript development with Bun runtime. Covers package management, bund
+- `busybox-on-windows` — How to use a Win32 build of BusyBox to run many of the standard UNIX command line tools on
+- `c-ai` — Query LLMs from the CLI — pipe text for summarization, chat interactively, use local or cl
+- `c-apps` — Install, update, and search Mac App Store apps from the command line using mas.
+- `c-bluetooth` — Manage Bluetooth devices on macOS using the blucli (`blu`) CLI. List paired and available 
+- `c-briefing` — Daily briefing — morning summary of email, calendar, tasks, weather. Can run on a schedule
+- `c-browser` — Headless browser automation — navigate pages, click elements, fill forms, take screenshots
+- `c-clipboard` — System clipboard — copy, paste, transform content between clipboard and files.
+- `c-contacts` — macOS Contacts — search, list, and look up contact details via AppleScript.
+- `c-core` — OpenPaw coordinator — routes requests to skills, manages memory, knows what's installed. U
+- `c-display` — Control display brightness and safely move files to trash instead of permanently deleting 
+- `c-email` — Read, send, search, and label email via gog (Gmail CLI) or himalaya (IMAP). Supports inbox
+- `c-files` — Sync files to Google Drive, S3, Dropbox, OneDrive, and 70+ cloud providers using rclone.
+- `c-github` — Interact with GitHub using the `gh` CLI and `jq`. Manage PRs, issues, repositories, and Ac
+- `c-jira` — Manage Jira issues using `jira` (jira-cli). List and filter issues, create new tickets, tr
+- `c-level-advisor`
+- `c-lights` — Control Philips Hue smart lights using the `openhue` CLI. Turn lights on/off, adjust brigh
+- `c-linear` — Manage Linear issues and projects using the `linear` CLI. List and filter issues, create n
+- `c-location` — Search Apple Maps, find nearby places, and get directions using the `goplaces` CLI. Suppor
+- `c-lockin` — Lock In Mode — orchestrate distraction blocking, environment setup, and session tracking.
+- `c-memory` — Persistent memory across Claude Code sessions — remember facts, preferences, and context
+- `c-music` — Control Spotify playback using the `spogo` CLI. Play, pause, skip, search tracks/albums/pl
+- `c-network` — DNS lookups with doggo and readable HTTP requests with httpie — modern networking tools fo
+- `c-notes` — Manage Apple Notes and Apple Reminders from the CLI. Uses memo for Notes and remindctl for
+- `c-notify` — Send native macOS notification center alerts from the command line using terminal-notifier
+- `c-notion` — Manage Notion pages and databases from the CLI using notion-cli. Create, read, search, and
+- `c-obsidian` — Obsidian vault as persistent memory — daily notes, session logs, knowledge capture, and se
+- `c-pro` — Write efficient C code with proper memory management, pointer
+- `c-research` — Summarize web URLs, PDFs, YouTube videos, and podcasts using the `summarize` CLI. Instantl
+- `c-screen` — Capture screenshots and extract text via OCR using `peekaboo`, and capture webcam images u
+- `c-secrets` — Look up and manage secrets using 1Password CLI (`op`) or Bitwarden CLI (`bw`). Retrieve pa
+- `c-slack` — Send messages and upload files to Slack channels using the `slack` CLI. Supports direct me
+- `c-speakers` — Control Sonos speakers using the `sonos` CLI (sonoscli). Play, pause, adjust volume, manag
+- `c-system` — macOS Swiss Army Knife — control volume, wifi, battery, dock, display, trash, firewall, sc
+- `c-tasks` — Manage tasks across Todoist (todoist-cli), Things 3 (things-cli), and Taskwarrior (task). 
+- `c-telegram` — Bidirectional Telegram bridge — talk to Claude from your phone. Built into OpenPaw.
+- `c-timer` — Timers, alarms, and pomodoro — set countdowns with native notifications.
+- `c-tracking` — Track packages across UPS, FedEx, USPS, and DHL using the `ordercli` CLI. Look up tracking
+- `c-video` — Download videos, extract audio, convert formats, and clip segments using `yt-dlp` and `ffm
+- `c-video-edit` — Programmatic video creation using Remotion (React-based) and Editly (JSON-based declarativ
+- `c-voice` — Convert speech to text using `sag` (ElevenLabs STT) and synthesize speech using `say` (mac
+- `c-weather` — Weather forecasts and conditions — current, hourly, multi-day. No API key needed.
+- `c2rope-causal-continuous-rotary-positional` — |
+- `c4-architecture-c4-architecture` — Generate comprehensive C4 architecture documentation for an existing repository/codebase u
+- `c4-code` — Expert C4 Code-level documentation specialist. Analyzes code directories to create compreh
+- `c4-component` — Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentatio
+- `c4-container` — Expert C4 Container-level documentation specialist.
+- `c4-context` — Expert C4 Context-level documentation specialist. Creates high-level system context diagra
+- `cal-com-automation` — Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, confi
+- `calendly-automation` — Automate Calendly scheduling, event management, invitee tracking, availability checks, and
+- `calliope-tts-based-narrated-e-book` — Build offline TTS-narrated e-books with exact audio-text synchronization in EPUB 3 Media O
+- `cam-causality-based-analysis-framework` — Analyze and optimize multi-agent code generation pipelines using causality-based importanc
+- `can-clean-up-mess` — LLM-driven data preparation pipeline for cleaning, integrating, and enriching messy datase
+- `can-implement-agent-based-odd-based` — Translate ODD protocol specifications into validated, executable agent-based model (ABM) c
+- `can-post-training-transform-causal` — Perform rigorous causal inference tasks using structured reasoning pipelines inspired by C
+- `can-small-handle-context-summarized`
+- `can-we-classify-flaky` — Analyze test suites for flaky tests using LLM-based classification with context-augmented 
+- `canva-automation` — Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, 
+- `canvas-design` — Create beautiful visual art in .png and .pdf documents using design philosophy. You should
+- `capture-flags-family-based-evaluation` — >
+- `cargo-fuzz` — >
+- `carrier-relationship-management` — Codified expertise for managing carrier portfolios, negotiating freight rates, tracking ca
+- `causalt5k-diagnosing-informing-refusal` — Diagnose and correct causal reasoning failures in LLM outputs using the CausalT5K framewor
+- `cc-skill-project-guidelines-example` — Project Guidelines Skill (Example)
+- `cc-skill-strategic-compact` — Development skill from everything-claude-code
+- `cdk-patterns` — Common AWS CDK patterns and constructs for building cloud infrastructure with TypeScript, 
+- `chain-mindset-reasoning-adaptive` — Solve complex problems by switching between four cognitive mindsets (Spatial, Convergent, 
+- `chain-simulation-dual-mode-reasoning` — Dual-mode reasoning framework that dynamically routes problems to specialized strategies: 
+- `changelog-automation` — Automate changelog generation from commits, PRs, and releases following Keep a Changelog f
+- `chart-specification-structural-representations` — |
+- `chat-widget` — Build a real-time support chat system with a floating widget for users and an admin dashbo
+- `chatting-images-introspective-visual` — Apply introspective visual thinking by iteratively 'chatting with images' — using language
+- `chipbench-next-step-benchmark-evaluating` — Evaluate and improve LLM-generated hardware designs using ChipBench methodology: structure
+- `chrome-extension-developer` — Expert in building Chrome Extensions using Manifest V3. Covers background scripts, service
+- `chunking-retrieval-re-ranking-empirical-evaluation` — Build and optimize two-stage RAG pipelines with bi-encoder retrieval, cross-encoder re-ran
+- `ci4a-semantic-component-interfaces` — Build semantic component interfaces that expose UI components as structured tool primitive
+- `cicd-automation-workflow-automate` — You are a workflow automation expert specializing in creating efficient CI/CD pipelines, G
+- `circleci-automation` — Automate CircleCI tasks via Rube MCP (Composio): trigger pipelines, monitor workflows/jobs
+- `cirq` — Google quantum computing framework. Use when targeting Google Quantum AI hardware, designi
+- `citation-management` — Comprehensive citation management for academic research. Search Google Scholar and PubMed 
+- `clarity-gate` — >
+- `claude-automation-recommender` — Analyze a codebase and recommend Claude Code automations (hooks, subagents, skills, plugin
+- `claude-code-expert` — Especialista profundo em Claude Code - CLI da Anthropic. Maximiza produtividade com atalho
+- `claude-code-guide` — Master guide for using Claude Code effectively. Includes configuration templates, promptin
+- `claude-code-sdk` — Claude Code SDK integration for building AI-powered applications with OAuth and API Key au
+- `claude-d3js-skill` — Creating interactive data visualisations using d3.js. This skill should be used when creat
+- `claude-in-chrome-troubleshooting` — Diagnose and fix Claude in Chrome MCP extension connectivity issues. Use when mcp__claude-
+- `claude-md-improver` — Audit and improve CLAUDE.md files in repositories. Use when user asks to check, audit, upd
+- `claude-monitor` — Monitor de performance do Claude Code e sistema local. Diagnostica lentidao, mede CPU/RAM/
+- `claude-scientific-skills` — Scientific research and analysis skills
+- `claude-settings-audit` — Analyze a repository to generate recommended Claude Code settings.json permissions. Use wh
+- `claude-speed-reader` — -Speed read Claude's responses at 600+ WPM using RSVP with Spritz-style ORP highlighting
+- `claude-win11-speckit-update-skill` — Windows 11 system management
+- `clean-code` — Applies principles from Robert C. Martin's 'Clean Code'. Use this skill when writing, revi
+- `clerk-auth` — Expert patterns for Clerk auth implementation, middleware, organizations, webhooks, and us
+- `cli-developer` — Use when building CLI tools, implementing argument parsing, or adding interactive prompts.
+- `clickup-automation` — Automate ClickUp project management including tasks, spaces, folders, lists, comments, and
+- `close-automation` — Automate Close CRM tasks via Rube MCP (Composio): create leads, manage calls/SMS, handle t
+- `closed-loop-delivery` — Use when a coding task must be completed against explicit acceptance criteria with minimal
+- `closing-reasoning-gaps-clinical` — Build systems that detect and fix reasoning gaps in LLM agents by comparing their chain-of
+- `cloudflare-worker-builder` — >
+- `cloudflare-workers-expert` — Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Du
+- `cloudformation-best-practices` — CloudFormation template optimization, nested stacks, drift detection, and production-ready
+- `clustering-driven-memory-compression-on-device` — |
+- `coda-automation` — Automate Coda tasks via Rube MCP (Composio): manage docs, pages, tables, rows, formulas, p
+- `code-documentation-code-explain` — You are a code education expert specializing in explaining complex code through clear narr
+- `code-documentation-doc-generate` — You are a documentation expert specializing in creating comprehensive, maintainable docume
+- `code-documenter` — Generates, formats, and validates technical documentation — including docstrings, OpenAPI/
+- `code-maturity-assessor` — Systematic code maturity assessment using Trail of Bits' 9-category framework. Analyzes co
+- `code-quality` — Clean code principles, SOLID, and code review practices
+- `code-review-ai-ai-review` — You are an expert AI-powered code review specialist combining automated static analysis, i
+- `code-review-checklist` — Comprehensive checklist for conducting thorough code reviews covering functionality, secur
+- `code-review-excellence` — Master effective code review practices to provide constructive feedback, catch bugs early,
+- `code-reviewer` — Elite code review expert specializing in modern AI-powered code
+- `code-simplifier` — Simplifies and refines code for clarity, consistency, and maintainability while preserving
+- `codebase-audit-pre-push` — Deep audit before GitHub push: removes junk files, dead code, security holes, and optimiza
+- `codebase-cleanup-deps-audit` — You are a dependency security expert specializing in vulnerability scanning, license compl
+- `codebase-cleanup-tech-debt` — You are a technical debt expert specializing in identifying, quantifying, and prioritizing
+- `codeocr-effectiveness-vision-code` — Render source code as images for vision LLM processing to reduce token cost while preservi
+- `codeql` — >-
+- `codex-review` — Professional code review with auto CHANGELOG generation, integrated with Codex AI
+- `cognitively-diverse-multiple-choice-question` — >
+- `color-palette` — >
+- `command-development` — This skill should be used when the user asks to "create a slash command", "add a command",
+- `commit` — ALWAYS use this skill when committing code changes — never commit directly without it. Cre
+- `communication-systems` — Email, notifications, and messaging system patterns
+- `compar-ia-french-governments` — Build multilingual LLM evaluation arenas and preference data collection pipelines modeled 
+- `comparing-ai-coding-agents` — >
+- `competitive-landscape` — This skill should be used when the user asks to "analyze competitors", "assess competitive
+- `competitor-alternatives` — When the user wants to create competitor comparison or alternative pages for SEO and sales
+- `comprehensive-review-full-review` — Use when working with comprehensive review full review
+- `comprehensive-review-pr-enhance` — You are a PR optimization expert specializing in creating high-quality pull requests that 
+- `computational-approach-visual-metonymy`
+- `computer-use-agents` — Build AI agents that interact with computers like humans do - viewing screens, moving curs
+- `computer-vision-expert` — SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment Anything 3 (SAM 3), Vis
+- `conceptual-cultural-index-metric` — >
+- `concise-planning` — Use when a user asks for a plan for a coding task, to generate a clear, actionable, and at
+- `confluence-automation` — Automate Confluence page creation, content search, space management, labels, and hierarchy
+- `consistency-meets-verification-enhancing` — Generate high-reliability test suites without ground-truth implementations using the ConVe
+- `constant-time-analysis` — Detects timing side-channel vulnerabilities in cryptographic code. Use when implementing o
+- `constitutional-spec-driven-development-enforcing` — Enforce security by construction in AI-generated code using Constitutional Spec-Driven Dev
+- `constructing-multi-label-hierarchical-classificati` — Build multi-label hierarchical classifiers for MITRE ATT&CK text tagging using stage-wise 
+- `context-agent` — Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pende
+- `context-augmented-code-generation-programming-know` — |
+- `context-compression` — This skill should be used when the user asks to "compress context", "summarize conversatio
+- `context-degradation` — This skill should be used when the user asks to "diagnose context problems", "fix lost-in-
+- `context-driven-development` — >-
+- `context-guardian` — Guardiao de contexto que preserva dados criticos antes da compactacao automatica. Snapshot
+- `context-management-context-restore` — Use when working with context management context restore
+- `context-management-context-save` — Use when working with context management context save
+- `context-manager` — Elite AI context engineering specialist mastering dynamic context management, vector datab
+- `context-optimization` — This skill should be used when the user asks to "optimize context", "reduce token costs", 
+- `context-sensitive-pointer-analysis-arkts` — Perform context-sensitive pointer analysis for ArkTS/TypeScript code targeting OpenHarmony
+- `context-window-management` — Strategies for managing LLM context windows including summarization, trimming, routing, an
+- `context7-auto-research` — Automatically fetch latest library/framework documentation for Claude Code via Context7 AP
+- `controlling-output-rankings-generative` — Optimize product/content descriptions to influence rankings in LLM-based search engines (g
+- `conversation-memory` — Persistent memory systems for LLM conversations including short-term, long-term, and entit
+- `convertkit-automation` — Automate ConvertKit (Kit) tasks via Rube MCP (Composio): manage subscribers, tags, broadca
+- `convex` — Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptio
+- `convexbench-recognize-convex-functions` — Determine the convexity of arbitrarily deep symbolic function compositions using AST decom
+- `cope-clipped-rope-as` — Implement CoPE (Clipped RoPE) soft clipping of low-frequency rotary positional embedding c
+- `copilot-sdk` — Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating prog
+- `copy-editing` — When the user wants to edit, review, or improve existing marketing copy. Also use when the
+- `core-components` — Core component library and design system patterns. Use when building UI, using design toke
+- `core-comprehensive-ontological-relation`
+- `corefine-confidence-guided-self-refinement-adaptiv` — Confidence-guided self-refinement for adaptive reasoning. Implements the CoRefine pattern:
+- `cost-aware-selection-text-classification` — |
+- `cost-optimization` — Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances,
+- `covagent-overcoming-30-curse` — Boost Android app test coverage beyond the 30% activity ceiling using agentic static analy
+- `cowork-x-experience-optimized-co-evolution-multi-a` — Build multi-agent collaboration systems with experience-driven co-evolution using HTN skil
+- `cqrs-implementation` — Implement Command Query Responsibility Segregation for scalable architectures. Use when se
+- `craft-calibrated-reasoning-answer-faithful` — Apply CRAFT (Calibrated Reasoning with Answer-Faithful Traces) for multi-hop question answ
+- `create-branch` — Create a git branch following Sentry naming conventions. Use when asked to "create a branc
+- `create-issue-gate` — Use when starting a new implementation task and an issue must be created with strict accep
+- `create-pr` — Alias for sentry-skills:pr-writer. Use when users explicitly ask for "create-pr" or refere
+- `cred-omega` — CISO operacional enterprise para gestao total de credenciais e segredos. Descobre, classif
+- `creditaudit-2textnd-dimension-evaluation` — Evaluate and select LLMs using CreditAudit's 2D framework: mean ability plus stability ris
+- `crewai` — Expert in CrewAI - the leading role-based multi-agent framework used by 60% of Fortune 500
+- `ctrlcot-dual-granularity-chain-of-thought-compress` — Compress chain-of-thought reasoning using CtrlCoT's dual-granularity framework: hierarchic
+- `cua-skill-develop-skills-computer` — Build reusable, parameterized skill libraries for computer-using agents (CUAs). Decomposes
+- `culturally-grounded-personas-characterization` — >
+- `customer-support` — Elite AI-powered customer support specialist mastering conversational AI, automated ticket
+- `cutting-gordian-knot-detecting` — Detect malicious PyPI/NPM packages using behavioral pattern mining and semantic reasoning 
+- `cvedrl-code-verifier-difficulty-aware` — Generate difficulty-aware unit tests that verify LLM-generated code using branch coverage 
+- `d1-drizzle-schema` — Generate Drizzle ORM schemas for Cloudflare D1 databases with correct D1-specific patterns
+- `daily` — Documentation and capabilities reference for Daily
+- `daily-news-report` — Scrapes content based on a preset URL list, filters high-quality technical information, an
+- `dancing-chains-strategic-persuasion` — >
+- `darwin-dynamic-agentically-rewriting` — Evolutionary multi-agent code optimization using genetic algorithms. Agents mutate each ot
+- `data-design` — Data modeling, schema design, and data architecture
+- `data-quality-frameworks` — Implement data quality validation with Great Expectations, dbt tests, and data contracts. 
+- `data-scientist` — Expert data scientist for advanced analytics, machine learning, and statistical modeling. 
+- `data-storytelling` — Transform data into compelling narratives using visualization, context, and persuasive str
+- `data-structure-protocol` — Give agents persistent structural memory of a codebase — navigate dependencies, track publ
+- `datachef-cooking-up-optimal` — Automate data recipe generation for LLM fine-tuning and adaptation. Generates executable d
+- `datadog-automation` — Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitor
+- `david-vs-goliath-verifiable` — Audit and harden tool-augmented AI agent systems against Tag-Along Attacks -- adversarial 
+- `davinci-agency-unlocking-long-horizon-agency` — Decompose complex, long-horizon coding tasks into PR-like chains of verifiable subtasks wi
+- `davinci-dev-agent-native-mid-training-software` — Apply daVinci-Dev's agent-native workflow to software engineering tasks: navigate repos, l
+- `daymade` — Daymade project utilities and workflow patterns.
+- `ddd-context-mapping` — Map relationships between bounded contexts and define integration contracts using DDD cont
+- `ddd-strategic-design` — Design DDD strategic artifacts including subdomains, bounded contexts, and ubiquitous lang
+- `ddd-tactical-patterns` — Apply DDD tactical patterns in code using entities, value objects, aggregates, repositorie
+- `debug-buttercup` — >
+- `debugger` — Debugging specialist for errors, test failures, and unexpected
+- `decomposing-reasoning-efficiency` — >
+- `decoupling-skeleton-flesh-multimodal` — Disentangled structure-content reasoning for table images and structured data. Separates t
+- `deep-research` — Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: m
+- `deep-researcher-sequential-plan` — |
+- `deep-search-hierarchical-meta-cognitive`
+- `deepera-deep-evidence-reranking` — Rerank retrieved passages for RAG pipelines using step-by-step logical reasoning to filter
+- `deepimagesearch-benchmarking-multimodal-agents` — Build agentic image retrieval systems that perform multi-step contextual reasoning over vi
+- `deepplanning-benchmarking-long-horizon-agentic`
+- `dependency-management-deps-audit` — You are a dependency security expert specializing in vulnerability scanning, license compl
+- `dependency-upgrade` — Manage major dependency version upgrades with compatibility analysis, staged rollout, and 
+- `design-md` — Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
+- `design-orchestration` — Orchestrates design workflows by routing work through brainstorming, multi-agent review, a
+- `design-patterns` — Classic and modern software design patterns
+- `design-spells` — Curated micro-interactions and design details that add "magic" and personality to websites
+- `design-system-patterns` — Build scalable design systems with design tokens, theming infrastructure, and component ar
+- `designing-workflow-skills` — >-
+- `desktop-apps` — Desktop application development with Electron and Tauri
+- `dev-session` — Manage long development sessions with structured progress tracking. Creates SESSION.md fil
+- `devcontainer-setup` — Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), a
+- `developer-tools` — CLI tools, SDKs, and developer experience patterns
+- `development` — Comprehensive web, mobile, and backend development workflow bundling frontend, backend, fu
+- `development-environment` — IDE setup, dev containers, and local development tools
+- `dial-summer-structured-evaluation-framework` — Evaluate dialogue summaries using the DIAL-SUMMER hierarchical error taxonomy. Detects 10 
+- `diary` — Unified Diary System: A context-preserving automated logger for multi-project development.
+- `differential-review` — >
+- `discord-automation` — Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, react
+- `discord-bot-architect` — Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScrip
+- `discovering-high-level-patterns` — Extract high-level semantic patterns from fine-grained simulation or event logs using LM-g
+- `discovering-process-outcome-credit-multi-step` — >
+- `distributed-tracing` — Implement distributed tracing with Jaeger and Tempo to track requests across microservices
+- `do-reasoning-ask-questions` — Information-theoretic question-asking framework for disambiguating user intent through str
+- `do-truly-benefit-longer` — Optimize LLM context length for post-editing and refinement pipelines. Applies research sh
+- `do-vlms-have-moral` — Audit and harden the moral robustness of Vision-Language Model (VLM) pipelines against adv
+- `doc-coauthoring` — Guide users through a structured workflow for co-authoring documentation. Use when user wa
+- `doc2spec-synthesizing-formal-programming` — Synthesize formal programming specifications from natural-language API docs using grammar 
+- `docksmith-scaling-reliable-coding` — >
+- `docs-architect` — Creates comprehensive technical documentation from existing codebases. Analyzes architectu
+- `documentation` — Helps create, organize, and maintain project documentation including:
+- `documentation-generation-doc-generate` — You are a documentation expert specializing in creating comprehensive, maintainable docume
+- `documentation-templates` — Documentation templates and structure guidelines. README, API docs, code comments, and AI-
+- `docusign-automation` — Automate DocuSign tasks via Rube MCP (Composio): templates, envelopes, signatures, documen
+- `docx` — Comprehensive document creation, editing, and analysis with support for tracked changes, c
+- `docx-official` — Comprehensive document creation, editing, and analysis with support for tracked changes, c
+- `domain-driven-design` — Plan and route Domain-Driven Design work from strategic modeling to tactical implementatio
+- `dotnet-architect` — Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework, Dapper, 
+- `dotnet-core-expert` — Use when building .NET 8 applications with minimal APIs, clean architecture, or cloud-nati
+- `draincode-stealthy-energy-consumption` — Evaluate and defend RAG-based code generation systems against energy-drain attacks that po
+- `drizzle-orm-expert` — Expert in Drizzle ORM for TypeScript — schema design, relational queries, migrations, and 
+- `dropbox-automation` — Automate Dropbox file management, sharing, search, uploads, downloads, and folder operatio
+- `drpg-decompose-retrieve-plan` — >
+- `dwarf-expert` — Provides expertise for analyzing DWARF debug files and understanding the DWARF debug forma
+- `dx-optimizer` — Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY w
+- `dynamic-long-context-reasoning` — |
+- `e-commerce` — E-commerce platforms, payment processing, and shopping cart patterns
+- `ecco-evidence-driven-causal-reasoning` — >
+- `echo-open-research-platform` — Build and configure ECHO-style research platforms for running reproducible user studies co
+- `echoes-loop-diagnosing-risks` — Diagnose and mitigate feedback-loop risks (bias amplification, hallucination propagation, 
+- `edge-iot` — Edge computing, IoT protocols, and embedded systems integration
+- `effgen-enabling-small-language` — Deploy and optimize small language models (SLMs) as autonomous agents using the effGen fra
+- `efficient-table-retrieval-understanding` — |
+- `egss-entropy-guided-stepwise-scaling` — >
+- `electron-development` — Master Electron desktop app development with secure IPC, contextIsolation, preload scripts
+- `elevenlabs-agents` — >
+- `eliciting-least-to-most-reasoning-phishing` — Detect phishing URLs using Least-to-Most iterative decomposition with answer sensitivity s
+- `elon-musk` — Agente que simula Elon Musk com profundidade psicologica e comunicacional de alta fidelida
+- `email-sequence` — When the user wants to create or optimize an email sequence, drip campaign, automated emai
+- `email-systems` — Email has the highest ROI of any marketing channel. $36 for every $1 spent. Yet most start
+- `embedded-systems` — Use when developing firmware for microcontrollers, implementing RTOS applications, or opti
+- `emergency-card` — 生成紧急情况下快速访问的医疗信息摘要卡片。当用户需要旅行、就诊准备、紧急情况或询问"紧急信息"、"医疗卡片"、"急救信息"时使用此技能。提取关键信息（过敏、用药、急症、植入物），支
+- `empirical-mcts-continuous-agent-evolution` — Applies Empirical-MCTS dual-loop reasoning: structured tree search with persistent memory 
+- `energy-procurement` — Codified expertise for electricity and gas procurement, tariff optimisation, demand charge
+- `enhance-prompt` — Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, a
+- `enhancing-mathematical-problem-solving` — |
+- `entry-point-analyzer` — Analyzes smart contract codebases to identify state-changing entry points for security aud
+- `entworld-holistic-environment-benchmark` — Build verifiable enterprise GUI agent benchmarks using schema-grounded task generation and
+- `environment-setup-guide` — Guide developers through setting up development environments with proper tools, dependenci
+- `error-detective` — Search logs and codebases for error patterns, stack traces, and anomalies. Correlates erro
+- `error-diagnostics-error-analysis` — You are an expert error analysis specialist with deep expertise in debugging distributed s
+- `error-diagnostics-error-trace` — You are an error tracking and observability expert specializing in implementing comprehens
+- `error-diagnostics-smart-debug` — Use when working with error diagnostics smart debug
+- `error-handling-patterns` — Master error handling patterns across languages including exceptions, Result types, error 
+- `error-taxonomy-guided-prompt-optimization` — |
+- `es-memeval-benchmarking-conversational-agents` — Build and evaluate long-term memory systems for conversational agents using the ES-MemEval
+- `ethical-hacking-methodology` — This skill should be used when the user asks to \"learn ethical hacking\", \"understand pe
+- `evaluating-achieving-controllable-code` — Instruction-guided code completion that follows user constraints on algorithm choice, data
+- `evaluating-retrievalaugmented-generation-variants` — |
+- `evaluating-they-not-know` — Build statistically efficient LLM evaluation pipelines that combine direct accuracy with p
+- `evaluation` — Build evaluation frameworks for agent systems
+- `evaluation-entity-matching-recommender` — Build and evaluate cross-dataset entity matching pipelines for recommender systems. Implem
+- `evaluation-oncotimia-system-supporting` — Build RAG pipelines that transform unstructured clinical or domain-specific documents into
+- `event-sourcing-architect` — Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters event stor
+- `event-store-design` — Design and implement event stores for event-sourced systems. Use when building event sourc
+- `event-vstream-event-driven-real-time-understanding` — Build event-driven video stream processing pipelines that detect meaningful state transiti
+- `eventcast-hybrid-demand-forecasting` — Build hybrid demand forecasting systems that fuse LLM-extracted event knowledge with time-
+- `evermembench-benchmarking-long-term-interactive`
+- `evocodebench-human-performance-benchmark-self-evol`
+- `evolution` — |
+- `evolving-tool-user-creator` — Transform Claude from a static tool user into a dynamic tool creator using the UCT (User-t
+- `exa-search` — Semantic search, similar content discovery, and structured research using Exa API
+- `executing-plans` — Use when you have a written implementation plan to execute in a separate session with revi
+- `explain-like-socrates` — >
+- `exploring-reasoning-reward-agents` — |
+- `fademem-biologically-inspired-forgetting-agent` — >
+- `failure-aware-enhancements-code-generation` — >
+- `fal-audio` — Text-to-speech and speech-to-text using fal.ai audio models
+- `fal-generate` — Generate images and videos using fal.ai AI models
+- `fal-image-edit` — AI-powered image editing with style transfer and object removal
+- `fal-platform` — Platform APIs for model management, pricing, and usage tracking
+- `fal-upscale` — Upscale and enhance image and video resolution using AI
+- `fal-workflow` — Generate workflow JSON files for chaining AI models
+- `farm-field-aware-resolution-intelligent` — Build intelligent trigger-action automation systems using FARM's two-stage architecture: c
+- `favicon` — Generate favicons from a source image
+- `favicon-gen` — >
+- `fda-food-safety-auditor` — Expert AI auditor for FDA Food Safety (FSMA), HACCP, and PCQI compliance. Reviews food fac
+- `featurebench-benchmarking-agentic-coding` — Extract feature-level coding tasks from repositories using test-driven dependency graph tr
+- `feiskyer` — Cloud-native and Kubernetes patterns by feiskyer.
+- `ffuf-claude-skill` — Web fuzzing with ffuf
+- `ffuf-web-fuzzing` — Expert guidance for ffuf web fuzzing during penetration testing, including authenticated f
+- `file-organizer` — Intelligently organizes files and folders by understanding context, finding duplicates, an
+- `file-path-traversal` — This skill should be used when the user asks to \"test for directory traversal\", \"exploi
+- `file-uploads` — Expert at handling file uploads and cloud storage. Covers S3, Cloudflare R2, presigned URL
+- `filesystem-context` — Use for file-based context management, dynamic context discovery, and reducing context win
+- `finance` — Production-ready financial analyst skill with ratio analysis, DCF valuation, budget varian
+- `find-bugs` — Find bugs, security vulnerabilities, and code quality issues in local branch changes. Use 
+- `finishing-a-development-branch` — Use when implementation is complete, all tests pass, and you need to decide how to integra
+- `firebase` — Firebase gives you a complete backend in minutes - auth, database, storage, functions, hos
+- `firebase-apk-scanner` — Scans Android APKs for Firebase security misconfigurations including open databases, stora
+- `firecrawl-scraper` — Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API
+- `firmware-analyst` — Expert firmware analyst specializing in embedded systems, IoT security, and hardware rever
+- `fix-review` — Verify fix commits address audit findings without new bugs
+- `fixing-metadata` — >
+- `fixing-motion-performance` — Audit and fix animation performance issues including layout thrashing, compositor properti
+- `flyaoc-evaluating-agentic-ontology`
+- `fmbench-adaptive-output-formatting` — |
+- `fp-async` — Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, wit
+- `fp-check` — Systematically verifies suspected security bugs to eliminate false positives. Produces TRU
+- `fp-data-transforms` — Everyday data transformations using functional patterns - arrays, objects, grouping, aggre
+- `fp-either-ref` — Quick reference for Either type. Use when user needs error handling, validation, or operat
+- `fp-errors` — Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner
+- `fp-pipe-ref` — Quick reference for pipe and flow. Use when user needs to chain functions, compose operati
+- `fp-taskeither-ref` — Quick reference for TaskEither. Use when user needs async error handling, API calls, or Pr
+- `fp-ts-errors` — Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable Ty
+- `fp-types-ref` — Quick reference for fp-ts types. Use when user asks which type to use, needs Option/Either
+- `fraudshield-knowledge-graph-empowered` — Detect and defend against fraudulent content in LLM inputs using knowledge-graph-augmented
+- `freshdesk-automation` — Automate Freshdesk helpdesk operations including tickets, contacts, companies, notes, and 
+- `freshservice-automation` — Automate Freshservice ITSM tasks via Rube MCP (Composio): create/update tickets, bulk oper
+- `from-assistant-double-agent` — Security audit and hardening for personalized LLM-based agents against prompt injection, t
+- `from-assumptions-actions-turning`
+- `from-code-centric-concept-centric-teaching` — Generate LLM-assisted coding labs that teach concepts through 'Vibe Coding' — producing wo
+- `from-detection-prevention-explaining` — Proactively identify security-critical code regions and generate prevention-oriented expla
+- `from-features-actions-explainability` — Diagnose and explain failures in agentic AI systems using trace-based rubric evaluation, b
+- `from-gameplay-traces-game` — Reverse-engineer game mechanics from gameplay traces using a two-stage causal induction pi
+- `from-helpfulness-toxic-proactivity` — Diagnose and mitigate Toxic Proactivity in LLM agent systems -- the failure mode where age
+- `from-passive-metric-active` — Build systems that use LLM uncertainty as an active control signal -- routing computation,
+- `from-sparse-decisions-dense`
+- `full-stack-orchestration-full-stack-feature` — Use when working with full stack orchestration full stack feature
+- `fullstack-agent-enhancing-agentic-fullstack` — Build production-grade full-stack web applications using a three-agent pipeline (Planning,
+- `fullstack-guardian`
+- `funny-or-persuasive-but` — Fine-grained multi-concept text control that avoids the compositionality trap where LLMs d
+- `funprm-function-as-step-process-reward` — Generate high-quality code by decomposing solutions into modular functions (Chain-of-Funct
+- `fuzzing-dictionary` — >
+- `fuzzing-obstacles` — >
+- `game-developer` — Use when building game systems, implementing Unity/Unreal Engine features, or optimizing g
+- `game-development` — Game development orchestrator. Routes to platform-specific skills based on project needs.
+- `gamedevbench-evaluating-agentic-capabilities` — Agentic game development with visual feedback loops for Godot Engine projects. Applies the
+- `gamms-graph-based-adversarial` — >
+- `gdcnet-generative-discrepancy-comparison` — |
+- `gemini-api-dev` — Use this skill when building applications with Gemini models, Gemini API, working with mul
+- `gemini-api-integration` — Use when integrating Google Gemini API into projects. Covers model selection, multimodal i
+- `gender-race-bias-consumer` — Audit LLM-generated product recommendations for gender and race bias using marked words an
+- `generating-data-driven-reasoning-rubrics` — Build granular error taxonomies from incorrect reasoning traces, then use those rubrics to
+- `generative-ontology-structured-knowledge` — >
+- `geoffrey-hinton` — Agente que simula Geoffrey Hinton — Godfather of Deep Learning, Prêmio Turing 2018, criado
+- `gflowpo-generative-flow-network` — Optimize LLM prompts using GFlowPO's iterative generate-evaluate-refine loop with diversit
+- `gh-review-requests` — Fetch unread GitHub notifications for open PRs where review is requested from a specified 
+- `gisa-benchmark-general-information-seeking` — >
+- `git-advanced-workflows` — Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and r
+- `git-cleanup` — Safely analyzes and cleans up local git branches and worktrees by categorizing them as mer
+- `git-hooks-automation` — Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Auto
+- `git-pr-workflows-git-workflow` — Orchestrate a comprehensive git workflow from code review through PR creation, leveraging 
+- `git-pr-workflows-onboard` — You are an **expert onboarding specialist and knowledge transfer architect** with deep exp
+- `git-pr-workflows-pr-enhance` — You are a PR optimization expert specializing in creating high-quality pull requests that 
+- `git-pushing` — Stage, commit, and push git changes with conventional commit messages. Use when user wants
+- `git-workflow` — Guided git workflows: prepare PRs, clean up branches, resolve merge conflicts, handle mono
+- `git-workflows` — Git version control, branching strategies, and collaboration patterns
+- `github-automation` — Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via 
+- `github-issue-creator` — Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored 
+- `github-release` — Prepare and publish GitHub releases. Sanitizes code for public release (secrets scan, pers
+- `github-workflow-automation` — Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD int
+- `gitlab-automation` — Automate GitLab project management, issues, merge requests, pipelines, branches, and user 
+- `gmail-automation` — |
+- `go` — Go programming patterns and idioms
+- `go-concurrency-patterns` — Master Go concurrency with goroutines, channels, sync primitives, and context. Use when bu
+- `go-rod-master` — Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools P
+- `godot-gdscript-patterns` — Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimizati
+- `google-apps-script` — Build Google Apps Script automation for Sheets and Workspace apps. Produces scripts with c
+- `google-chat-messages` — Send Google Chat messages via webhook — text, rich cards (cardsV2), threaded replies. Incl
+- `google-docs-automation` — |
+- `google-drive-automation` — |
+- `google-sheets-automation` — |
+- `google-slides-automation` — |
+- `googlesheets-automation` — Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via R
+- `graph-anchored-knowledge-indexing-retrieval-augmen` — Build iterative RAG pipelines that construct evolving knowledge graphs to anchor retrieval
+- `graph-based-agent-memory-taxonomy` — Design and implement graph-based memory systems for LLM agents following the extraction-st
+- `graphagents-knowledge-graph-guided-agentic` — Build multi-agent pipelines that use knowledge graphs to guide LLM reasoning across domain
+- `grounding-generative-planners-verifiable` — >
+- `guidelines-advisor` — Smart contract development advisor based on Trail of Bits' best practices. Analyzes codeba
+- `gutenocr-grounded-vision-language-front-end` — Build grounded OCR pipelines using GutenOCR's prompt-based interface for reading, detectio
+- `haif-human-ai-integration-framework` — Apply the HAIF protocol to organize hybrid human-AI team workflows with tiered autonomy, d
+- `harness-writing` — >
+- `harnessing-precision-querying-retrieval-augmented` — LLM-driven precision querying of structured tabular data via Python/Pandas code generation
+- `haskell-pro` — Expert Haskell engineer specializing in advanced type systems, pure
+- `helpdesk-automation` — Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned re
+- `hierarchical-agent-memory` — Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level c
+- `hig-components-content` — Apple Human Interface Guidelines for content display components.
+- `hig-components-controls` — Apple HIG guidance for selection and input controls including pickers, toggles, sliders, s
+- `hig-components-dialogs` — Apple HIG guidance for presentation components including alerts, action sheets, popovers, 
+- `hig-components-layout` — Apple Human Interface Guidelines for layout and navigation components.
+- `hig-components-menus` — Apple HIG guidance for menu and button components including menus, context menus, dock men
+- `hig-components-search` — Apple HIG guidance for navigation-related components including search fields, page control
+- `hig-components-status` — Apple HIG guidance for status and progress UI components including progress indicators, st
+- `hig-components-system` — Apple HIG guidance for system experience components: widgets, live activities, notificatio
+- `hig-inputs` — Apple HIG guidance for input methods and interaction patterns: gestures, Apple Pencil, key
+- `hig-patterns` — Apple Human Interface Guidelines interaction and UX patterns.
+- `hig-platforms` — Apple Human Interface Guidelines for platform-specific design.
+- `hig-project-context` — Create or update a shared Apple design context document that other HIG skills use to tailo
+- `hig-technologies` — Apple HIG guidance for Apple technology integrations: Siri, Apple Pay, HealthKit, HomeKit,
+- `history-guided-iterative-visual-reasoning` — |
+- `hono-api-scaffolder` — Scaffold Hono API routes for Cloudflare Workers. Produces route files, middleware, typed b
+- `hook-development` — This skill should be used when the user asks to "create a hook", "add a PreToolUse/PostToo
+- `hosted-agents` — Build background agents in sandboxed environments. Use for hosted coding agents, sandboxed
+- `hosted-agents-v2-py` — Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use 
+- `how-few-shot-demonstrations-affect` — Design prompt-based LLM safety defenses using optimal few-shot strategies. Applies the fin
+- `how-information-access-affect` — |
+- `how-much-reasoning-retrieval-augmented` — Build contamination-aware hybrid RAG evaluation pipelines that couple knowledge graphs wit
+- `how-well-open-sourced` — |
+- `hr-pro` — Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, perfor
+- `hubspot-automation` — Automate HubSpot CRM operations (contacts, companies, deals, tickets, properties) via Rube
+- `hubspot-integration` — Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, a
+- `human-aligned-enhancement-programming-answers` — >
+- `humans-welcome-observe-first-look` — Analyze AI agent social network activity using topic taxonomy classification and multi-lev
+- `hybrid-search-implementation` — Combine vector and keyword search for improved retrieval. Use when implementing RAG system
+- `i18n-localization` — Internationalization and localization patterns. Detecting hardcoded strings, managing tran
+- `ic-eo-interpretable-code-based-assistant` — Build conversational Earth Observation agents that turn natural-language queries into exec
+- `icl-evader-zero-query-black-box-evasion` — Harden ICL classification prompts against zero-query black-box evasion attacks. Audit in-c
+- `icon-intent-context-coupling-multi-turn`
+- `icon-set-generator` — >
+- `iconsax-library` — Extensive icon library and AI-driven icon generation skill for premium UI/UX design.
+- `ide-bench-evaluating-as-ide` — Apply IDE-Bench's structured agent workflow for tackling real-world software engineering t
+- `identifying-adversary-tactics-techniques`
+- `identifying-concurrency-bug-reports` — Classify bug reports as concurrency-related using a four-level linguistic pattern taxonomy
+- `iesr-mcts-based-modular-reasoning` — Convert natural language questions into SQL queries using MCTS-based modular reasoning ins
+- `ilya-sutskever` — Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da 
+- `image-processing` — Process images for web development — resize, crop, trim whitespace, convert formats (PNG/W
+- `image-studio` — Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fo
+- `imagen` — AI image generation skill powered by Google Gemini, enabling seamless visual content creat
+- `infa-guard-mitigating-malicious-propagation` — >
+- `infinite-gratitude` — Multi-agent research skill for parallel research execution (10 agents, battle-tested with 
+- `inngest` — Inngest expert for serverless-first background jobs, event-driven workflows, and durable e
+- `insecure-defaults` — Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) th
+- `instagram` — Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, 
+- `instagram-automation` — Automate Instagram tasks via Rube MCP (Composio): create posts, carousels, manage media, g
+- `interaction-design` — Design and implement microinteractions, motion design, transitions, and user feedback patt
+- `intercom-automation` — Automate Intercom tasks via Rube MCP (Composio): conversations, contacts, companies, segme
+- `internal-comms-anthropic` — A set of resources to help me write all kinds of internal communications, using the format
+- `internal-comms-community` — A set of resources to help me write all kinds of internal communications, using the format
+- `internationalization` — 國際化與本地化開發：i18n/l10n 架構設計、翻譯管理、多語言應用最佳實踐
+- `internet-agentic-ai-incentive-compatible` — >
+- `interpreting-agentic-systems-beyond` — Audit and instrument agentic AI systems for system-level interpretability and accountabili
+- `interpreting-controlling-behavior-constitutions` — Learn and apply natural-language constitutions that map prompt edits to predictable model 
+- `interpreting-culture-index` — Interprets Culture Index (CI) surveys, behavioral profiles, and personality assessment dat
+- `interview-coach` — Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcr
+- `inventory-demand-planning` — Codified expertise for demand forecasting, safety stock optimisation, replenishment planni
+- `isd-agent-bench-comprehensive-benchmark-evaluating` — Build and evaluate LLM-based Instructional Design agents using the ADDIE framework, Contex
+- `issueguard-real-time-secret-leak` — Scan text for leaked secrets using a two-stage pipeline: regex candidate extraction follow
+- `issues` — Interact with GitHub issues - create, list, and view issues.
+- `istio-traffic-management` — Configure Istio traffic management including routing, load balancing, circuit breakers, an
+- `iterate-pr` — Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feed
+- `jaf-judge-agent-forest` — |
+- `jailbreaks-vision-multimodal-reasoning` — >
+- `jeff-code-reviewer`
+- `jeff-legacy-modernizer` — Designs incremental migration strategies, identifies service boundaries, produces dependen
+- `jeff-sql-pro` — Optimizes SQL queries, designs database schemas, and troubleshoots performance issues. Use
+- `jira-automation` — Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, 
+- `julia-pro` — Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and 
+- `junta-leiloeiros` — Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil.
+- `just-ask-curious-code` — >
+- `kaizen` — Guide for continuous improvement, error proofing, and standardization. Use this skill when
+- `kg-craft-knowledge-graph-based-contrastive` — >
+- `klaviyo-automation` — Automate Klaviyo tasks via Rube MCP (Composio): manage email/SMS campaigns, inspect campai
+- `knowledge-restoration-driven-prompt-optimization` — |
+- `koral-knowledge-graph-guided` — Build Knowledge Graph-guided LLM reasoning pipelines for operational telemetry analysis. C
+- `kpi-dashboard-design` — Design effective KPI dashboards with metrics selection, visualization best practices, and 
+- `krone-hierarchical-modular-log` — Detect anomalies in application logs using KRONE's hierarchical decomposition: parse flat 
+- `langfuse` — Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt ma
+- `langgraph` — Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI
+- `large-geolocation-extraction-humanitarian`
+- `large-model-powered-evolutionary-code` — Iteratively optimize code performance using LLM-driven evolutionary search on a phylogenet
+- `large-reasoning-failures`
+- `large-scale-multidimensional-knowledge-profiling` — Build multidimensional profiling pipelines for large scientific paper corpora. Combines BE
+- `last30days` — Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write co
+- `latent-chain-of-thought-as-planning` — Decouple reasoning from verbalization using PLaT-inspired latent planning. Maintains a bro
+- `latex-document` — >
+- `legacy-modernizer` — Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernizatio
+- `leiloeiro-avaliacao` — Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14
+- `leiloeiro-edital` — Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausul
+- `leiloeiro-ia` — Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial 
+- `leiloeiro-juridico` — Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829
+- `leiloeiro-mercado` — Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de
+- `leiloeiro-risco` — Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/oper
+- `lemon-agent-technical-report` — Orchestrate multi-agent workflows using the Lemon Agent orchestrator-worker pattern with h
+- `less-noise-more-voice` — Identify and remove interference tokens from prompts to improve LLM reasoning accuracy. Ba
+- `let-fate-decide` — Draws 4 Tarot cards using os.urandom() to inject entropy into planning when prompts are va
+- `levnikolaevich` — Development patterns and utilities by levnikolaevich.
+- `lex` — Centralized 'Truth Engine' for cross-jurisdictional legal context (US, EU, CA) and contrac
+- `lhaw-controllable-underspecification-long-horizon` — Detect and handle ambiguity in long-horizon agent tasks using the LHAW framework. Systemat
+- `libafl` — >
+- `libfuzzer` — >
+- `libreoffice` — LibreOffice document automation and macro patterns.
+- `linear-automation` — Automate Linear tasks via Rube MCP (Composio): issues, projects, cycles, teams, labels. Al
+- `linear-claude-skill` — Manage Linear issues, projects, and teams
+- `linglanmidian-systematic-evaluation-tcm` — Build rigorous, multi-task evaluation benchmarks for domain-specific LLMs using the LingLa
+- `linguistagent-a-reflective-multimodel` — >
+- `linkedin-automation` — Automate LinkedIn tasks via Rube MCP (Composio): create posts, manage profile, company inf
+- `linkedin-cli` — Use when automating LinkedIn via CLI: fetch profiles, search people/companies, send messag
+- `linkerd-patterns` — Implement Linkerd service mesh patterns for lightweight, security-focused service mesh dep
+- `lint-and-validate` — Automatic quality control, linting, and static analysis procedures. Use after every code m
+- `linux-shell-scripting` — This skill should be used when the user asks to \"create bash scripts\", \"automate Linux 
+- `linux-troubleshooting` — Linux system troubleshooting workflow for diagnosing and resolving system issues, performa
+- `live-evo-online-evolution-agentic` — Implement online self-evolving memory for LLM agents using dual-bank architecture (Experie
+- `livemedbench-contamination-free-medical-benchmark` — Build contamination-free LLM evaluation pipelines with multi-agent data curation and autom
+- `livibench-omnimodal-benchmark-interactive`
+- `loca-bench-benchmarking-agents-under` — Apply context management strategies from LOCA-bench to prevent context rot in long-running
+- `locomo-plus-beyond-factual-cognitive-memory` — Build and evaluate cognitive memory systems for LLM dialogue agents that retain implicit u
+- `logicscore-fine-grained-logic-evaluation` — Evaluate the logical integrity of LLM-generated multi-hop answers using Horn Rule backward
+- `logistics-exception-management` — Codified expertise for handling freight exceptions, shipment delays, damages, losses, and 
+- `loki-mode` — Multi-agent autonomous startup system for Claude Code. Triggers on \"Loki Mode\". Orchestr
+- `longcat-flash-thinking-2601-technical-report` — Build robust multi-tool agentic pipelines with noise-aware execution, parallel reasoning, 
+- `lps-bench-benchmarking-safety-awareness` — >
+- `m365-agents-dotnet` — Microsoft 365 Agents SDK for .NET. Build multichannel agents for Teams/M365/Copilot Studio
+- `m365-agents-py` — Microsoft 365 Agents SDK for Python. Build multichannel agents for Teams/M365/Copilot Stud
+- `m365-agents-ts` — Microsoft 365 Agents SDK for TypeScript/Node.js.
+- `made-benchmark-environments-closed-loop` — Build closed-loop discovery benchmarks where an agent iteratively proposes, evaluates, and
+- `magic-animator` — AI-powered animation tool for creating motion in logos, UI, icons, and social media assets
+- `mailchimp-automation` — Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, 
+- `make-automation` — Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and 
+- `malicious-agent-skills-wild` — >
+- `malicious-repurposing-open-science` — |
+- `manifest` — Install and configure the Manifest observability plugin for your agents. Use when setting 
+- `markovscale-optimal-sequential-scaling` — Implement MarkovScale's principled sequential scaling for LLM inference pipelines. Models 
+- `mas-prove-understanding-process-verification` — Design and implement process verification for multi-agent LLM systems. Add intermediate-st
+- `mata-multiagent-framework-for` — Multi-agent table question answering using MATA's three-path reasoning strategy (Chain-of-
+- `matematico-tao` — Matemático ultra-avançado inspirado em Terence Tao. Análise rigorosa de código e arquitetu
+- `mathliblemma-folklore-lemma-generation` — Multi-agent system for discovering and formalizing missing 'folklore' lemmas in Lean 4 / M
+- `matplotlib` — Low-level plotting library for full customization. Use when you need fine-grained control 
+- `mcp-atlas-large-scale-benchmark-tool-use` — Design and evaluate multi-server MCP tool-use benchmarks using claims-based scoring rubric
+- `mcp-builder` — >
+- `mcp-builder-ms` — Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to i
+- `mcp-developer` — Use when building, debugging, or extending MCP servers or clients that connect AI systems 
+- `mcp-integration` — This skill should be used when the user asks to "add MCP server", "integrate MCP", "config
+- `mdl-unified-multi-distribution-learner`
+- `medbeads-agent-native-immutable-data` — Build immutable, agent-native medical data pipelines using Merkle DAG structures (MedBeads
+- `medspeak-knowledge-graph-aided-asr` — Build knowledge-graph-aided ASR error correction pipelines for medical speech, using phone
+- `medverse-reliable-medical-reasoning` — Decompose complex medical reasoning into DAG-structured parallel execution paths using Pet
+- `memcast-memory-driven-time-series` — Build memory-augmented time series forecasting systems using hierarchical experience stora
+- `memory-safety-patterns` — Implement memory-safe programming with RAII, ownership, smart pointers, and resource manag
+- `memory-systems` — Design short-term, long-term, and graph-based memory architectures
+- `mempot-defending-against-memory` — >
+- `mermaid-expert` — Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax
+- `mermaid-memory-enhanced-retrieval-reasoning` — Memory-enhanced multi-agent retrieval and reasoning for veracity assessment and fact-check
+- `metagen-self-evolving-roles-topologies` — |
+- `metasploit-framework` — This skill should be used when the user asks to \"use Metasploit for penetration testing\"
+- `mhdash-online-platform-benchmarking` — Build risk-aware evaluation pipelines for mental health AI assistants using the MHDash fra
+- `minecraft-bukkit-pro` — Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.
+- `miro-automation` — Automate Miro tasks via Rube MCP (Composio): boards, items, sticky notes, frames, sharing,
+- `mitigating-conversational-inertia-multi-turn` — Detect and break conversational inertia in multi-turn agent interactions — where an LLM re
+- `mixpanel-automation` — Automate Mixpanel tasks via Rube MCP (Composio): events, segmentation, funnels, cohorts, u
+- `mmr-bench-comprehensive-benchmark-multimodal` — Build cost-aware multimodal LLM routing systems that select the best model per query based
+- `moco-one-stop-shop-collaboration` — Design and implement multi-LM collaboration pipelines using the MoCo framework's 26 method
+- `modality-gap-driven-subspace-alignment` — Align multimodal embeddings (vision-language) by correcting the modality gap using the ReA
+- `molykit` — |
+- `monetization` — Estrategia e implementacao de monetizacao para produtos digitais - Stripe, subscriptions, 
+- `monitoring-expert` — Configures monitoring systems, implements structured logging pipelines, creates Prometheus
+- `monorepo-architect` — Expert in monorepo architecture, build systems, and dependency management at scale. Master
+- `monorepo-management` — Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, sca
+- `monte-carlo-tree-search` — >
+- `moodle-external-api-development` — Create custom external web service APIs for Moodle LMS. Use when implementing web services
+- `more-code-less-reuse` — Analyze AI-generated code for redundancy and missed reuse opportunities using semantic clo
+- `more-than-quick-glance` — Implement LASER-KV-style KV-cache compression for LLM inference pipelines using block-wise
+- `mpib-benchmark-medical-prompt` — Evaluate and defend clinical LLM systems against prompt injection attacks using the MPIB b
+- `mtls-configuration` — Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when impl
+- `multi-advisor` — Conselho de especialistas — consulta multiplos agentes do ecossistema em paralelo para ana
+- `multi-field-tool-retrieval` — Implement multi-field tool retrieval systems that decompose tool documentation into struct
+- `multi-platform-apps-multi-platform` — Build and deploy the same feature consistently across web, mobile, and desktop platforms u
+- `multi-reviewer-patterns` — Coordinate parallel code reviews across multiple quality dimensions with finding deduplica
+- `n8n-mcp-tools-expert` — Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, valida
+- `n8n-validation-expert` — Interpret validation errors and guide fixing them. Use when encountering validation errors
+- `n8n-workflow-patterns` — Proven workflow architectural patterns from real n8n workflows. Use when building new work
+- `nanobanana-ppt-skills` — AI-powered PPT generation with document analysis and styled images
+- `native-data-fetching` — Use when implementing or debugging ANY network request, API call, or data fetching. Covers
+- `nerdzao-elite` — Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with plann
+- `nerdzao-elite-gemini-high` — Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Wo
+- `network-101` — This skill should be used when the user asks to \"set up a web server\", \"configure HTTP 
+- `networkx` — Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs
+- `noisy-but-valid-robust` — >
+- `nosql-expert` — Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental m
+- `notebooklm` — Use this skill to query your Google NotebookLM notebooks directly from Claude Code for sou
+- `notion-automation` — Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users. 
+- `now-you-hear-me` — Audit and defend large audio-language models (LALMs) against narrative-style audio jailbre
+- `nutrition-analyzer` — 分析营养数据、识别营养模式、评估营养状况，并提供个性化营养建议。支持与运动、睡眠、慢性病数据的关联分析。
+- `nx-workspace-patterns` — Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project
+- `observability-monitoring-monitor-setup` — You are a monitoring and observability expert specializing in implementing comprehensive m
+- `observability-monitoring-slo-implement` — You are an SLO (Service Level Objective) expert specializing in implementing reliability s
+- `obsidian-clipper-template-creator` — Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a n
+- `odoo-accounting-setup` — Expert guide for configuring Odoo Accounting: chart of accounts, journals, fiscal position
+- `odoo-hr-payroll-setup` — Expert guide for Odoo HR and Payroll: salary structures, payslip rules, leave policies, em
+- `odoo-inventory-optimizer` — Expert guide for Odoo Inventory: stock valuation (FIFO/AVCO), reordering rules, putaway st
+- `odoo-manufacturing-advisor` — Expert guide for Odoo Manufacturing: Bills of Materials (BoM), Work Centers, routings, MRP
+- `odoo-module-developer` — Expert guide for creating custom Odoo modules. Covers __manifest__.py, model inheritance, 
+- `odoo-orm-expert` — Master Odoo ORM patterns: search, browse, create, write, domain filters, computed fields, 
+- `odoo-performance-tuner` — Expert guide for diagnosing and fixing Odoo performance issues: slow queries, worker confi
+- `odoo-project-timesheet` — Expert guide for Odoo Project and Timesheets: task stages, billable time tracking, timeshe
+- `odoo-purchase-workflow` — Expert guide for Odoo Purchase: RFQ → PO → Receipt → Vendor Bill workflow, purchase agreem
+- `odoo-qweb-templates` — Expert in Odoo QWeb templating for PDF reports, email templates, and website pages. Covers
+- `odoo-rpc-api` — Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, r
+- `odoo-upgrade-advisor` — Step-by-step Odoo version upgrade advisor: pre-upgrade checklist, community vs enterprise 
+- `odoo-woocommerce-bridge` — Sync Odoo with WooCommerce: products, inventory, orders, and customers via WooCommerce RES
+- `odysseyarena-benchmarking-long-horizon-active` — Design and run inductive agent benchmarks where LLMs must discover hidden rules through lo
+- `omni-rrm-advancing-omni-reward` — Build rubric-grounded reward models and preference evaluation pipelines for multimodal AI 
+- `omnicode-benchmark-evaluating-software` — Evaluate and improve code across four software engineering dimensions: bug fixing, test ge
+- `on-call-handoff-patterns` — Master on-call shift handoffs with context transfer, escalation procedures, and documentat
+- `on-impact-agentsmd-files` — Generate and optimize AGENTS.md / CLAUDE.md repository instruction files to reduce AI codi
+- `on-impact-code-comments` — |
+- `on-use-generate-dataset` — Generate diverse, validated datasets of neural network implementations using LLM-driven co
+- `on-use-support-conduction` — LLM-assisted systematic literature review and mapping study pipeline. Automates screening,
+- `one-drive-automation` — Automate OneDrive file management, search, uploads, downloads, sharing, permissions, and f
+- `ontology-to-tools-compilation-executable-semantic` — Compile domain ontologies (OWL/RDFS/JSON-LD schemas) into executable tool interfaces with 
+- `open-tutorai-open-source-platform` — Build personalized AI tutoring systems with structured onboarding, four-layer prompt archi
+- `openapi-spec-generation` — Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and valida
+- `optimal-turkish-subword-strategies`
+- `orchestration` — A lightweight pattern for coordinating personas, skills, and task agents on complex work.
+- `orthogonal-hierarchical-decomposition-structure-aw` — Decompose complex tables with multi-level headers, merged cells, and irregular layouts int
+- `os-scripting` — Operating system and shell scripting troubleshooting workflow for Linux, macOS, and Window
+- `oss-hunter` — Automatically hunt for high-impact OSS contribution opportunities in trending repositories
+- `ossfuzz` — >
+- `outlook-automation` — Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attac
+- `pabu-progress-aware-belief-update` — Apply Progress-Aware Belief Update (PABU) to build efficient LLM agents that track task pr
+- `pagerduty-automation` — Automate PagerDuty tasks via Rube MCP (Composio): manage incidents, services, schedules, e
+- `paid-ads` — When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Ins
+- `pakistan-payments-stack` — Design and implement production-grade Pakistani payment integrations (JazzCash, Easypaisa,
+- `paperbanana-automating-academic-illustration` — Generate publication-ready academic illustrations using a multi-agent pipeline inspired by
+- `parse-open-domain-reasoning-question` — Build and evaluate reasoning-focused QA systems for low-resource languages using the PARSE
+- `patch-to-poc-systematic-study-agentic` — >
+- `pathwise-planning-world-automated` — Multi-agent heuristic design framework that uses an entailment graph, policy/world-model/c
+- `payment-integration` — Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, w
+- `paypal-integration` — Integrate PayPal payment processing with support for express checkout, subscriptions, and 
+- `pcbschemagen-constraint-guided-schematic-design` — Generate PCB schematics from natural language using constraint-guided LLM code generation 
+- `pdf` — Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, 
+- `pdf-official` — Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, 
+- `pearl-plan-exploration-adaptive` — Apply PEARL's two-phase tool orchestration: offline tool exploration to learn valid usage 
+- `pearl-prototype-enhanced-alignment-label-efficient` — |
+- `perfguard-performance-aware-agent-visual` — >
+- `performance-optimization` — Profiling, optimization techniques, and performance best practices
+- `performance-optimizer` — Identifies and fixes performance bottlenecks in code, databases, and APIs. Measures before
+- `performance-profiling` — Performance profiling principles. Measurement, analysis, and optimization techniques.
+- `persona-jailbreaking` — Audit and defend LLM-powered applications against persona manipulation attacks using the P
+- `pipecat-friday-agent` — Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipec
+- `pipedrive-automation` — Automate Pipedrive CRM operations including deals, contacts, organizations, activities, no
+- `plan-writing` — Structured task planning with clear breakdowns, dependencies, and verification criteria. U
+- `planner-auditor-twin-agentic-discharge` — Implement a Planner-Auditor twin architecture that decouples LLM generation from determini
+- `planning-with-files` — Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findin
+- `plotly` — Interactive visualization library. Use when you need hover info, zoom, pan, or web-embedda
+- `podcast-generation` — Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini 
+- `polarmem-training-free-polarized-latent` — Build polarized memory systems for multimodal agents that encode both positive and negativ
+- `polars` — Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow
+- `posix-shell-pro` — Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Spec
+- `posthog-automation` — Automate PostHog tasks via Rube MCP (Composio): events, feature flags, projects, user prof
+- `postmark-automation` — Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, man
+- `postmortem-writing` — Write effective blameless postmortems with root cause analysis, timelines, and action item
+- `powershell-windows` — PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling.
+- `pptx` — Presentation creation, editing, and analysis. When Claude needs to work with presentations
+- `pptx-official` — Presentation creation, editing, and analysis. When Claude needs to work with presentations
+- `pr-writer` — ALWAYS use this skill when creating or updating pull requests — never create or edit a PR 
+- `precise-reducing-bias-evaluations` — Implement the PRECISE framework to debias LLM-as-judge evaluations of search, ranking, and
+- `precision-practice-knowledge-guided` — >
+- `predicting-intermittent-job-failure` — Classify and diagnose intermittent CI/CD job failures from execution logs using the FlaXif
+- `predictive-coding-information-bottleneck` — >
+- `prisma-expert` — Prisma ORM expert for schema design, migrations, query optimization, relations modeling, a
+- `professional-proofreader` — >
+- `profinfer-ebpf-based-fine-grained-inference` — Profile and diagnose LLM inference engines (llama.cpp and similar GGML-based runtimes) usi
+- `progressive-estimation` — Estimate AI-assisted and hybrid human+agent development work with research-backed PERT sta
+- `project-development` — This skill should be used when the user asks to "start an LLM project", "design batch pipe
+- `project-management` — 6 production-ready project management skills for Atlassian users: senior PM with portfolio
+- `projection-patterns` — Build read models and projections from event streams. Use when implementing CQRS read side
+- `prompt-caching` — Caching strategies for LLM prompts including Anthropic prompt caching, response caching, a
+- `prompt-driven-development-claude` — |
+- `prompt-library` — Curated collection of high-quality prompts for various use cases. Includes role-based prom
+- `proopf-benchmarking-improving-professional-grade` — Translate natural-language power system operational requirements into executable Optimal P
+- `proxywar-dynamic-assessment-of` — Build competitive game-arena evaluation frameworks for LLM-generated code using ProxyWar's
+- `pruning-minimal-reasoning-graphs` — >
+- `puda-private-user-dataset`
+- `pull-requests-as-training` — Apply the Clean-PR agentless repo-level code editing protocol: decompose issues into file 
+- `pydantic-models-py` — Create Pydantic models following the multi-model pattern with Base, Create, Update, Respon
+- `pypict-skill` — Pairwise test generation
+- `qiskit` — IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qis
+- `qrs-rule-synthesizing-neuro-symbolic-triad` — Autonomous vulnerability discovery using the QRS (Query, Review, Sanitize) neuro-symbolic 
+- `quality-nonconformance` — Codified expertise for quality control, non-conformance investigation, root cause analysis
+- `quasar-universal-autonomous-system` — Build autonomous multi-scale scientific simulation pipelines using the QUASAR architecture
+- `query-efficient-agentic-graph-extraction` — >
+- `ra-qm-team` — 12 production-ready regulatory affairs and quality management skills for HealthTech/MedTec
+- `ral-bench-benchmarking-application-level-functiona` — Generate and evaluate complete multi-file application repositories with both functional co
+- `readme` — When the user wants to create or update a README.md file for a project. Also use when the 
+- `realhd-high-quality-dataset-robust` — Detect AI-generated images using NLM noise entropy analysis and build robust forensic dete
+- `realistic-synthetic-household-data` — Generate realistic synthetic household datasets with bidirectional persona-environment cou
+- `realsec-bench-benchmark-evaluating-secure` — >
+- `realtime-systems` — WebSocket, real-time communication, and event-driven architectures
+- `reasoning-augmented-representations-multimodal-ret` — Decouple reasoning from embedding compression in multimodal retrieval pipelines by enrichi
+- `reasoning-while-asking-transforming` — |
+- `receiving-code-review` — Use when receiving code review feedback, before implementing suggestions, especially if fe
+- `red-team-tactics` — Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, repor
+- `red-team-tools` — This skill should be used when the user asks to \"follow red team methodology\", \"perform
+- `reddit-automation` — Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage com
+- `reducing-costs-proof-synthesis` — Generate formally verified Rust code with Verus specifications and proofs using the VeruSy
+- `reference-builder` — Creates exhaustive technical references and API documentation. Generates comprehensive par
+- `referral-program` — When the user wants to create, optimize, or analyze a referral program, affiliate program,
+- `reflect-transparent-principle-guided-reasoning` — >
+- `regular-variational-latent-reasoning` — Compress verbose chain-of-thought reasoning into compact latent state representations guid
+- `rehabilitation-analyzer` — 分析康复训练数据、识别康复模式、评估康复进展，并提供个性化康复建议
+- `remotion` — Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, z
+- `remotion-best-practices` — Best practices for Remotion - Video creation in React
+- `render-automation` — Automate Render tasks via Rube MCP (Composio): services, deployments, projects. Always sea
+- `reprompt-prompt-generation-intelligent` — Generate optimized system and user prompts for coding agents using requirements engineerin
+- `requesting-code-review` — Use when completing tasks, implementing major features, or before merging to verify work m
+- `responsive-design` — Implement modern responsive layouts using container queries, fluid typography, CSS Grid, a
+- `responsiveness-check` — Test website responsiveness across viewport widths using browser automation. Resizes a sin
+- `rethinker-scientific-reasoning-rethinking` — Solve hard scientific and technical reasoning problems using the ReThinker Solver-Critic-S
+- `rethinking-scientific-modeling-physically` — Generate physics-consistent, simulation-executable structural engineering code using const
+- `returns-reverse-logistics` — Codified expertise for returns authorisation, receipt and inspection, disposition decision
+- `revisiting-role-natural-code` — Comment-augmented code translation (COMMENTRA) that uses targeted natural language comment
+- `risk-manager` — Monitor portfolio risk, R-multiples, and position limits. Creates hedging strategies, calc
+- `risk-metrics-calculation` — Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analys
+- `robius-app-architecture` — |
+- `robius-event-action` — |
+- `robius-matrix-integration` — |
+- `robius-state-management` — |
+- `robius-widget-patterns` — |
+- `roma-recursive-open-meta-agent` — Decompose long-horizon, multi-step tasks using ROMA's recursive meta-agent pattern: Atomiz
+- `rubberduckbench-benchmark-ai-coding` — Evaluate and improve AI coding assistant responses using RubberDuckBench's rubric-based me
+- `ruleflow-generating-reusable-program` — Optimize Pandas code by discovering per-program improvements, generalizing them into reusa
+- `ruzzy` — >
+- `rvb-automating-ai-system` — Harden code and AI guardrails through iterative Red Team vs Blue Team adversarial games. U
+- `s3-cot-self-sampled-succinct-reasoning` — Apply dual-cognitive reasoning (System 1 fast / System 2 slow) to compress verbose chain-o
+- `safepred-predictive-guardrail-computer-using` — Implement predictive safety guardrails for computer-using agents and automated pipelines u
+- `saga-orchestration` — Implement saga patterns for distributed transactions and cross-aggregate workflows. Use wh
+- `sam-altman` — Agente que simula Sam Altman — CEO da OpenAI, ex-presidente da Y Combinator, arquiteto da 
+- `sarif-parsing` — >-
+- `sast-configuration` — Configure Static Application Security Testing (SAST) tools for automated vulnerability det
+- `scanning-tools` — This skill should be used when the user asks to \"perform vulnerability scanning\", \"scan
+- `scanpy` — Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality 
+- `schema-markup` — Design, validate, and optimize schema.org structured data for eligibility, correctness, an
+- `scidatacopilot-agentic-data-preparation` — Build agentic pipelines that ingest heterogeneous raw scientific data, parse research inte
+- `scientific` — Scientific computing patterns including NumPy, SciPy, and data analysis.
+- `scientific-writing` — Core skill for the deep research and writing tool. Write scientific manuscripts in full pa
+- `scratcheval-multimodal-evaluation-framework` — Evaluate, debug, and repair block-based Scratch programs using a three-layer executable pr
+- `screenshots` — Generate marketing screenshots of your app using Playwright. Use when the user wants to cr
+- `sdr-cir-semantic-debias-retrieval` — Build training-free composed image retrieval systems that combine a reference image with m
+- `seaborn` — Statistical visualization with pandas integration. Use for quick exploration of distributi
+- `search-specialist` — Expert web researcher using advanced search techniques and
+- `seatbelt-sandboxer` — Generates minimal macOS Seatbelt sandbox configurations. Use when sandboxing, isolating, o
+- `seccodeprm-process-reward-code` — Step-level security scoring for code generation and vulnerability detection using process 
+- `second-opinion` — Runs external LLM code reviews (OpenAI Codex or Google Gemini CLI) on uncommitted changes,
+- `secrets-management` — Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, 
+- `secure-code-generation-via` — |
+- `secure-code-guardian`
+- `secure-workflow-guide` — Guides through Trail of Bits' 5-step secure development workflow. Runs Slither scans, chec
+- `seek-and-analyze-video` — Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent 
+- `segment-automation` — Automate Segment tasks via Rube MCP (Composio): track events, identify users, manage group
+- `segment-cdp` — Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tra
+- `semanticalli-caching-reasoning-not` — Implement pipeline-aware intermediate representation (IR) caching for agentic systems. Ins
+- `sendgrid-automation` — Automate SendGrid email operations including sending emails, managing contacts/lists, send
+- `senior-architect` — Comprehensive software architecture skill for designing scalable, maintainable systems usi
+- `senior-fullstack` — Comprehensive fullstack development skill for building complete web applications with Reac
+- `sentry-automation` — Automate Sentry tasks via Rube MCP (Composio): manage issues/events, configure alerts, tra
+- `sere-similarity-based-expert-re-routing` — Deploy SERE (Similarity-based Expert Re-routing) to accelerate MoE model batch decoding in
+- `server-management` — Server management principles and decision-making. Process management, monitoring strategy,
+- `service-mesh-expert` — Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking 
+- `service-mesh-observability` — Implement comprehensive observability for service meshes including distributed tracing, me
+- `seta-statistical-fault-attribution`
+- `shadcn` — Manages shadcn/ui components and projects, providing context, documentation, and usage pat
+- `shadcn-ui` — Install and configure shadcn/ui components for React projects. Guides component selection,
+- `shader-programming-glsl` — Expert guide for writing efficient GLSL shaders (Vertex/Fragment) for web and game engines
+- `shardmemo-masked-moe-routing` — Implement ShardMemo-style tiered, sharded memory with masked Mixture-of-Experts routing fo
+- `sharp-edges` — sharp-edges
+- `shell-bash` — Shell scripting and Bash programming patterns
+- `shellcheck-configuration` — Master ShellCheck static analysis configuration and usage for shell script quality. Use wh
+- `shodan-reconnaissance` — This skill should be used when the user asks to \"search for exposed devices on the intern
+- `sifting-noise-comparative-study` — Filter false positives from static analysis security tools (SAST) using LLM-agent-driven t
+- `similarity-search-patterns` — Implement efficient similarity search with vector databases. Use when building semantic se
+- `skill-check` — Validate Claude Code skills against the agentskills specification. Catches structural, sem
+- `skill-creator` — This skill should be used when the user asks to create a new skill, build a skill, make a 
+- `skill-creator-ms` — Guide for creating effective skills for AI coding agents working with Azure SDKs and Micro
+- `skill-developer` — Create and manage Claude Code skills following Anthropic best practices. Use when creating
+- `skill-development` — This skill should be used when the user wants to "create a skill", "add a skill to plugin"
+- `skill-improver` — Iteratively reviews and fixes Claude Code skill quality issues until they meet standards. 
+- `skill-installer` — Instala, valida, registra e verifica novas skills no ecossistema. 10 checks de seguranca, 
+- `skill-router` — Use when the user is unsure which skill to use or where to start. Interviews the user with
+- `skill-scanner` — Scan agent skills for security issues. Use when asked to "scan a skill",
+- `skill-seekers` — -Automatically convert documentation websites, GitHub repositories, and PDFs into Claude A
+- `skill-sentinel` — Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gap
+- `skill-writer` — Create and improve agent skills following the Agent Skills specification. Use when asked t
+- `skillrl-evolving-agents-recursive` — Build self-improving agent systems that distill raw execution traces into a hierarchical s
+- `slack-automation` — Automate Slack messaging, channel management, search, reactions, and threads via Rube MCP 
+- `slack-bot-builder` — Build Slack apps using the Bolt framework across Python, JavaScript, and Java. Covers Bloc
+- `slack-gif-creator` — Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constrain
+- `sleep-analyzer` — 分析睡眠数据、识别睡眠模式、评估睡眠质量，并提供个性化睡眠改善建议。支持与其他健康数据的关联分析。
+- `slo-implementation` — Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) w
+- `small-beautiful-practical-log` — Build efficient log parsing systems that extract structured templates from raw log message
+- `smartoracle-agentic-approach` — Agentic differential oracle for triaging cross-implementation discrepancies. Decomposes bu
+- `social-catalysts-not-moral` — >
+- `social-content` — When the user wants help creating, scheduling, or optimizing social media content for Link
+- `social-orchestrator` — Orquestrador unificado de canais sociais — coordena Instagram, Telegram e WhatsApp em um u
+- `socialveil-probing-social-intelligence` — Stress-test LLM agents' social intelligence by injecting realistic communication barriers 
+- `software-architecture` — Guide for quality focused software architecture. This skill should be used when users want
+- `sparc-separating-perception-reasoning` — |
+- `sparseeval-evaluation-sparse-optimization` — Efficiently evaluate LLMs on benchmarks by selecting a small subset of anchor items via sp
+- `spec-miner`
+- `speckit-updater` — SpecKit Safe Update
+- `speed` — Launch RSVP speed reader for text
+- `spell-synthesis-programmatic-edits` — Automate library migrations by synthesizing reusable code transformation scripts. Uses LLM
+- `spider-sense-intrinsic-risk-sensing` — Implement event-driven, hierarchical security screening for LLM agent systems using Intrin
+- `spline-3d-integration` — Use when adding interactive 3D scenes from Spline.design to web projects, including React 
+- `sql` — SQL patterns for database querying and design
+- `sql-optimization-patterns` — Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically i
+- `sql-pro` — Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query 
+- `square-automation` — Automate Square tasks via Rube MCP (Composio): payments, orders, invoices, locations. Alwa
+- `sred-project-organizer` — Take a list of projects and their related documentation, and organize them into the SRED f
+- `sred-work-summary` — Go back through the previous year of work and create a Notion doc that groups relevant lin
+- `st-raptor-agentic-system-semi-structured` — Agentic system for answering questions about semi-structured tables using tree-based struc
+- `stability-ai` — Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainti
+- `stalled-biased-confused-uncovering-reasoning` — Systematic root cause analysis for cloud/distributed system failures using a 16-category r
+- `state-transition-framework-reasoning` — |
+- `stateless-yet-not-forgetful` — Detect, audit, and defend against implicit memory channels in LLM-powered systems where mo
+- `statsmodels` — Statistical models library for Python. Use when you need specific model classes (OLS, GLM,
+- `status-hierarchies` — Detect and mitigate status hierarchy bias in multi-agent LLM systems. Applies expectation 
+- `steereval-framework-evaluating-steerability`
+- `stepshield-not-whether-intervene` — Implement temporal safety monitoring for AI agent trajectories using StepShield's cascaded
+- `steve-jobs` — Agente que simula Steve Jobs — cofundador da Apple, CEO da Pixar, fundador da NeXT, o maio
+- `stitch-loop` — Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing
+- `stride-analysis-patterns` — Apply STRIDE methodology to systematically identify threats. Use when analyzing system sec
+- `stripe-automation` — Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices
+- `stripe-integration` — Implement Stripe payment processing for robust, PCI-compliant payment flows including chec
+- `strong-reasoning-isnt-enough` — Build interactive diagnostic agents that systematically elicit evidence before concluding,
+- `supabase-automation` — Automate Supabase database queries, table management, project administration, storage, edg
+- `supchain-bench-benchmarking-real-world-supply` — Build reliable long-horizon supply chain agents using the SupChain-ReAct pattern: multi-pa
+- `super-executing-plans` — Use when you have a written implementation plan to execute in a separate session with revi
+- `super-finishing-a-development-branch` — Use when implementation is complete, all tests pass, and you need to decide how to integra
+- `super-receiving-code-review` — Use when receiving code review feedback, before implementing suggestions, especially if fe
+- `super-requesting-code-review` — Use when completing tasks, implementing major features, or before merging to verify work m
+- `supply-chain-risk-auditor` — Identifies dependencies at heightened risk of exploitation or takeover. Use when assessing
+- `svrepair-structured-visual-reasoning` — Fix bugs using structured visual reasoning -- converts screenshots, control-flow graphs, a
+- `sw-architecture-patterns` — Software architecture patterns and best practices
+- `sw-documentation` — Technical writing, API docs, and documentation best practices
+- `sw-game-development` — Game development patterns, architectures, and best practices
+- `sw-project-management` — Agile methodologies, issue tracking, and team collaboration tools
+- `swe-agi-benchmarking-specification-driven-software` — Build production-scale software systems from formal specifications, RFCs, and standards do
+- `swe-context-bench-benchmark` — Reuse prior coding experience across related repository tasks. Accumulate, summarize, retr
+- `swe-manager-selecting-synthesizing-golden` — >
+- `swe-master-unleashing-potential-software` — >
+- `swe-pruner-self-adaptive-context-pruning` — |
+- `sycoeval-em-sycophancy-evaluation-simulated` — Build multi-agent adversarial simulations to evaluate LLM sycophancy and policy compliance
+- `sympy` — Use this skill when working with symbolic mathematics in Python. This skill should be used
+- `synthesizing-file-level-data-unit` — Generate high-quality unit tests with self-debugging repair loops and chain-of-thought rea
+- `system-design` — Scalability, availability, and distributed systems design
+- `system-name-address-parsing` — Parse unstructured person names and addresses into a structured 17-field schema using prom
+- `table-as-search-formulate-long-horizon-agentic`
+- `taming-scylla-understanding-multi-headed` — >
+- `tanstack-query-expert` — Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetchi
+- `tanstack-start` — Build a full-stack TanStack Start app on Cloudflare Workers from scratch — SSR, file-based
+- `tauri-tauri-app-resources` — Assists with managing Tauri application resources including app icons setup and generation
+- `tauri-tauri-architecture` — Teaches Claude about Tauri's core architecture, including the Rust backend, webview integr
+- `tauri-tauri-binary-size` — Guides users through Tauri binary size optimization techniques to produce small, efficient
+- `tauri-tauri-capabilities` — Guides users through configuring Tauri capabilities for security and access control, cover
+- `tauri-tauri-code-signing` — Guides the user through Tauri application code signing and notarization for Android, iOS, 
+- `tauri-tauri-configuration` — Guides developers through Tauri v2 configuration including tauri.conf.json structure, Carg
+- `tauri-tauri-crabnebula` — Guides the user through distributing Tauri applications via CrabNebula Cloud, including pi
+- `tauri-tauri-csp` — Guides users through configuring Content Security Policy (CSP) in Tauri v2 applications to
+- `tauri-tauri-http-headers` — Guides developers through configuring HTTP headers security in Tauri v2 applications, cove
+- `tauri-tauri-ipc` — Teaches the assistant about Tauri IPC (Inter-Process Communication) patterns including bro
+- `tauri-tauri-macos-distribution` — Guides users through distributing Tauri applications on macOS, including creating DMG inst
+- `tauri-tauri-permissions` — Guides the user through configuring Tauri permissions, including the security permission s
+- `tauri-tauri-process-model` — Explains the Tauri process model architecture including the Core process, WebView process,
+- `tauri-tauri-project-setup` — Helps users create and initialize new Tauri v2 projects for building cross-platform deskto
+- `tauri-tauri-runtime-authority` — Explains how the Tauri runtime authority enforces security policies during application exe
+- `tauri-tauri-scope` — Guides users through configuring Tauri command scopes for security, including filesystem r
+- `tauri-tauri-sidecar` — Teaches the assistant how to embed and execute external binaries (sidecars) in Tauri appli
+- `tauri-tauri-splashscreen` — Guides the user through adding a Tauri splashscreen, splash screen, loading screen, or sta
+- `tauri-tauri-system-tray` — Guides the user through implementing Tauri system tray functionality, including tray icon 
+- `tauri-tauri-updating-dependencies` — Assists users with updating Tauri dependencies including the Tauri CLI, Rust crates, JavaS
+- `tauri-tauri-window-customization` — Guides users through Tauri window customization including custom titlebar implementation, 
+- `tauri-tauri-windows-distribution` — Guides users through distributing Tauri applications on Windows, including creating MSI an
+- `tavily-web` — Web search, content extraction, crawling, and research capabilities using Tavily API
+- `tcm-constitution-analyzer` — 分析中医体质数据、识别体质类型、评估体质特征,并提供个性化养生建议。支持与营养、运动、睡眠等健康数据的关联分析。
+- `teaching-evaluating-reason-about` — Apply knowledge-augmented reasoning distillation for polymer design tasks. Builds structur
+- `team-collaboration-issue` — You are a GitHub issue resolution expert specializing in systematic bug investigation, fea
+- `team-collaboration-standup-notes` — You are an expert team communication specialist focused on async-first standup practices, 
+- `team-communication-protocols` — Structured messaging protocols for agent team communication including message type selecti
+- `team-composition-analysis` — This skill should be used when the user asks to "plan team structure", "determine hiring n
+- `team-composition-patterns` — Design optimal agent team compositions with sizing heuristics, preset configurations, and 
+- `team-update` — Post project updates to team chat, gather feedback, triage responses, and plan next steps.
+- `telegram` — Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline
+- `telegram-automation` — Automate Telegram tasks via Rube MCP (Composio): send messages, manage chats, share photos
+- `telegram-bot-builder` — Expert in building Telegram bots that solve real problems - from simple automation to comp
+- `telegram-mini-app` — Expert in building Telegram Mini Apps (TWA) - web apps that run inside Telegram with nativ
+- `text-summarization-global-structure` — Summarize long documents while preserving global semantic structure and logical coherence 
+- `textual-equilibrium-propagation-deep` — >
+- `the-clef-2026-finmmeval-lab` — Build multilingual, multimodal financial AI evaluation pipelines using the FinMMEval frame
+- `the-fool` — Use when challenging ideas, plans, decisions, or proposals using structured critical reaso
+- `the-landscape-prompt-injection` — Harden LLM agent systems against prompt injection using layered text/model/execution defen
+- `the-necessity-unified-framework` — Design and implement standardized, reproducible evaluation harnesses for LLM-based agents.
+- `the-shadow-self-intrinsic` — Detect and mitigate intrinsic value misalignment in LLM agent systems using the IMPRESS sc
+- `think-augmented-function-calling-improving` — |
+- `thinking-makes-agents-introverted` — >
+- `thinktank-me-multi-expert-framework-middle` — Build multi-expert forecasting systems where specialized LLM agents collaborate through ro
+- `threejs-animation` — Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixi
+- `threejs-geometry` — Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing.
+- `threejs-interaction` — Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when
+- `threejs-lighting` — Three.js lighting - light types, shadows, environment lighting. Use when adding lights, co
+- `threejs-loaders` — Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 
+- `threejs-materials` — Three.js materials - PBR, basic, phong, shader materials, material properties. Use when st
+- `threejs-postprocessing` — Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding vis
+- `threejs-shaders` — Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custo
+- `threejs-skills` — Create 3D scenes, interactive experiences, and visual effects using Three.js. Use when use
+- `threejs-textures` — Three.js textures - texture types, UV mapping, environment maps, texture settings. Use whe
+- `tiktok-automation` — Automate TikTok tasks via Rube MCP (Composio): upload/publish videos, post photos, manage 
+- `timely-machine-awareness-time` — Apply time-budget-aware reasoning to agentic tasks with tool calls. Dynamically adjust str
+- `timemachine-bench-benchmark-evaluating-capabilitie` — Systematic dependency migration for Python projects. Diagnose and fix test failures caused
+- `tob-agentic-actions-auditor`
+- `tob-ask-questions-if-underspecified` — Clarify requirements before implementing. Use when serious doubts arise.
+- `tob-audit-context-building` — Enables ultra-granular, line-by-line code analysis to build deep architectural context bef
+- `tob-claude-in-chrome-troubleshooting` — Diagnose and fix Claude in Chrome MCP extension connectivity issues. Use when mcp__claude-
+- `tob-constant-time-analysis` — Detects timing side-channel vulnerabilities in cryptographic code. Use when implementing o
+- `tob-debug-buttercup` — >
+- `tob-devcontainer-setup` — Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), a
+- `tob-differential-review` — >
+- `tob-dwarf-expert` — Provides expertise for analyzing DWARF debug files and understanding the DWARF debug forma
+- `tob-sharp-edges` — Identifies error-prone APIs, dangerous configurations, and footgun designs that enable sec
+- `tob-skill-improver` — Iteratively reviews and fixes Claude Code skill quality issues until they meet standards. 
+- `tob-supply-chain-risk-auditor` — Identifies dependencies at heightened risk of exploitation or takeover. Use when assessing
+- `tob-variant-analysis` — Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use w
+- `tob-zeroize-audit` — Detects missing zeroization of sensitive data in source code and identifies zeroization re
+- `todoist-automation` — Automate Todoist task management, projects, sections, filtering, and bulk operations via R
+- `token-integration-analyzer` — Token integration and implementation analyzer based on Trail of Bits' token integration ch
+- `tool-design` — Build tools that agents can use effectively, including architectural reduction patterns
+- `toolweaver-weaving-collaborative-semantics` — Design scalable tool retrieval systems using hierarchical code tokenization that captures 
+- `toward-culturally-aligned-ontology-guided` — Ontology-guided multi-agent reasoning for culturally aligned LLM outputs. Use when buildin
+- `toward-universal-transferable-jailbreak` — >
+- `towards-ai-evaluation-domain-specific` — Build and evaluate domain-specific RAG systems with iterative user-feedback refinement, so
+- `towards-automated-kernel-generation` — Automate GPU kernel generation and optimization using LLM-driven agentic workflows with pr
+- `towards-autonomous-mathematics-research` — Iterative generate-verify-revise agent for mathematical research problems. Implements the 
+- `towards-declarative-agentic-layer` — Build grounded, declarative agentic architectures using the DALIA pattern: capability desc
+- `towards-green-ai-decoding` — Optimize LLM-generated code for energy efficiency by detecting and suppressing babbling be
+- `towards-science-collective-ai` — >
+- `tracemem-weaving-narrative-memory` — Build structured narrative memory systems from conversational traces using TraceMem's thre
+- `track-management` — Use this skill when creating, managing, or working with Conductor tracks - the logical wor
+- `trapped-past-disentangling-fluid` — Diagnose whether an LLM is memorizing or reasoning by constructing distributional proximit
+- `treetensor-boost-ai-system` — >
+- `trello-automation` — Automate Trello boards, cards, and workflows via Rube MCP (Composio). Create cards, manage
+- `tricky2-benchmark-evaluating-human-error` — Taxonomy-guided analysis of mixed human+LLM bugs in code. Classifies bug origins, localize
+- `trigger-dev` — Trigger.dev expert for background jobs, AI workflows, and reliable async execution with ex
+- `triplay-rl-tri-role-self-play-reinforcement` — Apply the TriPlay-RL tri-role adversarial self-play framework to systematically red-team, 
+- `ts-debate-multimodal-collaborative-debate` — Zero-shot time series reasoning via modality-specialized multi-agent debate. Assigns dedic
+- `turborepo-caching` — Configure Turborepo for efficient monorepo builds with local and remote caching. Use when 
+- `tutorial-reasoning-ir-ir`
+- `twilio-communications` — Build communication features with Twilio: SMS messaging, voice calls, WhatsApp Business AP
+- `twitter-automation` — Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, 
+- `uncertainty-and-fairness-awareness` — Audit LLM-based recommendation systems for predictive uncertainty and demographic fairness
+- `uncle-bob-craft` — Use when performing code review, writing or refactoring code, or discussing architecture; 
+- `understanding-dominant-themes-reviewing` — >
+- `unicog-uncovering-cognitive-abilities`
+- `unicomp-unified-evaluation-compression` — Guide Claude through evaluating and recommending LLM compression strategies (pruning, quan
+- `unikie-bench-benchmarking-multimodal-key` — Extract structured key information from document images using schema-guided prompting for 
+- `unit-based-agent-semi-cascaded-full-duplex` — Build full-duplex voice dialogue systems using unit-based agent decomposition and semi-cas
+- `unity-developer` — Build Unity games with optimized C# scripts, efficient rendering, and proper asset managem
+- `unity-ecs-patterns` — Master Unity ECS (Entity Component System) with DOTS, Jobs, and Burst for high-performance
+- `unsplash-integration` — Integration skill for searching and fetching high-quality, free-to-use professional photog
+- `unveiling-cognitive-compass-theory-of-mind-guided`
+- `upstash-qstash` — Upstash QStash expert for serverless message queues, scheduled jobs, and reliable HTTP-bas
+- `usage-effects-requirements-ai-coding` — Optimize AI coding assistant interactions using empirical enterprise findings on usage pat
+- `use-graph-it-needs` — Implement adaptive RAG pipelines that route queries to dense retrieval, graph-based retrie
+- `using-neon` — Guides and best practices for working with Neon Serverless Postgres. Covers getting starte
+- `uv-package-manager` — Master the uv package manager for fast Python dependency management, virtual environments,
+- `ux-audit` — Dogfood web apps — browse as a real user, notice friction, document findings. Adopts a use
+- `ux-principles` — User experience design principles for developers
+- `variability-aware-detection-repair-compilation-err`
+- `variant-analysis` — Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use w
+- `varlock` — Secure environment variable management with Varlock. Use when handling secrets, API keys, 
+- `varlock-claude-skill` — Secure environment variable management ensuring secrets are never exposed in Claude sessio
+- `vectra-metric-dataset-visual` — Assess visual quality of translated product images using Vectra's 14-dimension scoring fra
+- `vercel-ai-sdk-expert` — Expert in the Vercel AI SDK. Covers Core API (generateText, streamText), UI hooks (useChat
+- `vercel-automation` — Automate Vercel tasks via Rube MCP (Composio): manage deployments, domains, DNS, env vars,
+- `verge-formal-refinement-guidance` — Iterative verification-guided reasoning that decomposes answers into atomic claims, classi
+- `vexor` — Vector-powered CLI for semantic file search with a Claude/Codex skill
+- `vexor-cli` — Semantic file discovery via `vexor`. Use whenever locating where something is implemented/
+- `vibe-code-auditor` — Audit rapidly generated or AI-produced code for structural flaws, fragility, and productio
+- `videodb` — Video and audio perception, indexing, and editing. Ingest files/URLs/live streams, build v
+- `videodb-skills` — Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoD
+- `vihermes-graph-grounded-multihop-question`
+- `villain-at-averimatec-verifying` — Build multi-agent fact-checking pipelines that verify image-text claims through modality-s
+- `vision-deepresearch-incentivizing-deepresearch-cap` — Multi-turn, multi-entity, multi-scale visual and textual deep research agent for answering
+- `visiontrim-unified-vision-token` — Implement VisionTrim's training-free visual token compression for multimodal LLMs. Combine
+- `vistira-closing-image-text-modality` — Solve math problems from images by decomposing them into interleaved natural-language rati
+- `visual-cognitive-demands-model-powered`
+- `vizcom` — AI-powered product design tool for transforming sketches into full-fidelity 3D renders.
+- `vln-pilot-vision-language-as-autonomous` — Build VLLM-driven autonomous navigation agents that interpret natural language instruction
+- `voice-agents` — Voice agents represent the frontier of AI interaction - humans speaking naturally with AI 
+- `voice-ai-development` — Expert in building voice AI applications - from real-time voice agents to voice-enabled ap
+- `vtc-r1-vision-text-compression-long-context` — Implement VTC-R1 vision-text compression for efficient long-context reasoning. Renders int
+- `warren-buffett` — Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire
+- `washin-admin-elderly-friendly-ux` — |
+- `washin-agent-autonomy-safety-framework` — |
+- `washin-agentic-coding-complete` — |
+- `washin-ai-chatbot-persona-design` — |
+- `washin-ai-concierge-intent-router-pattern` — |
+- `washin-ai-prompt-mastery` — |
+- `washin-ai-quota-monitoring-tools` — |
+- `washin-ai-to-ai-communication-protocol` — |
+- `washin-animal-visual-fingerprint-system` — |
+- `washin-anthropic-vision-url-pitfalls` — |
+- `washin-api-402-multilingual-deposit-persuasion` — |
+- `washin-api-platform-three-layer-architecture` — |
+- `washin-api-proxy-quota-hardstop-pattern` — |
+- `washin-api-tool-use-upgrade-pattern` — |
+- `washin-async-job-duplicate-insert` — |
+- `washin-audit-inflation-bias-prevention` — |
+- `washin-auto-tidy` — |
+- `washin-batch-processing-output-architecture` — |
+- `washin-brute-force-parallel-request-self-lock` — |
+- `washin-bun-async-race-condition-pattern` — |
+- `washin-chatbot-promise-execution-gap` — |
+- `washin-claude-code-dual-install-update-fix` — |
+- `washin-code-assistant-advanced-workflow` — |
+- `washin-code-verification-loop` — |
+- `washin-env-var-shadow-db-key-trap` — |
+- `washin-eye-comfort-mode-implementation` — |
+- `washin-game-economy-dynamic-parameterization` — |
+- `washin-gemini-api-guide` — |
+- `washin-hono-global-middleware-ordering` — |
+- `washin-hono-subrouter-auth-isolation` — |
+- `washin-hono-subrouter-route-conflict` — |
+- `washin-infinite-gratitude` — |
+- `washin-japan-concert-ticket-proxy-industry` — |
+- `washin-l4-overnight-training-diagnostics` — |
+- `washin-last30days` — Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write co
+- `washin-ledger-dual-purpose-side-effect-trap` — |
+- `washin-mcp-http-adapter-pattern` — |
+- `washin-mcp-remote-auth-platform-differences` — |
+- `washin-multi-ai-cli-orchestration` — |
+- `washin-multi-provider-fallback-gateway` — |
+- `washin-multi-terminal-parallel-development` — |
+- `washin-nebula-ai-integration-guide` — |
+- `washin-parallel-quality-audit-workflow` — |
+- `washin-pet-ai-comprehensive` — |
+- `washin-pet-veterinary-ai-market` — |
+- `washin-platform-favorable-rounding` — |
+- `washin-pre-deduct-phantom-refund-prevention` — |
+- `washin-project-index` — |
+- `washin-remotion` — |
+- `washin-service-channel-replication-pattern` — |
+- `washin-skill-library-lifecycle-management` — |
+- `washin-supply-side-honeymoon-incentive` — |
+- `washin-techdebt` — |
+- `washin-template-literal-inline-js-escaping` — |
+- `washin-token-economics-audit-methodology` — |
+- `washin-try-catch-const-block-scope-trap` — |
+- `washin-youtube-search-language-localization` — |
+- `wdscaling-parallel-tool-calling-deep` — Scale deep research tasks by issuing parallel tool calls (width) alongside sequential reas
+- `web-artifacts-builder` — Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using mode
+- `web-component-design` — Master React, Vue, and Svelte component patterns including CSS-in-JS, composition strategi
+- `web-design-guidelines` — Review UI code for Web Interface Guidelines compliance. Use when asked to \\\"review my UI
+- `web-performance-optimization` — Optimize website and web application performance including loading speed, Core Web Vitals,
+- `web-scraper` — Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabel
+- `webflow-automation` — Automate Webflow CMS collections, site publishing, page management, asset uploads, and eco
+- `weightloss-analyzer` — 分析减肥数据、计算代谢率、追踪能量缺口、管理减肥阶段
+- `wellally-tech` — Integrate digital health data sources (Apple Health, Fitbit, Oura Ring) and connect to Wel
+- `whatsapp-automation` — Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates,
+- `when-agents-fail-act` — >
+- `when-agents-fail-comprehensive` — Diagnose and fix bugs in LLM agent systems using a research-backed taxonomy of 11 bug type
+- `when-agents-misremember-collectively` — Detect, measure, and defend against collective false-memory propagation (the Mandela Effec
+- `when-better-prompts-hurt` — Evaluation-driven prompt iteration using the Define-Test-Diagnose-Fix loop and Minimum Via
+- `when-get-significantly-worse` — Statistically detect LLM degradation after optimization using McNemar's paired test. Use w
+- `when-meets-fuzzy-topsis-personnel` — Rank and select candidates using LLM-scored profiles combined with Fuzzy TOPSIS multi-crit
+- `when-should-search-more` — >
+- `where-ai-coding-agents` — Pre-flight checker that prevents AI coding agent PRs from failing, based on empirical anal
+- `whispers-wealth-red-teaming-googles` — Red-team LLM-based agentic payment systems against prompt injection attacks targeting tran
+- `who-gets-which-message` — Audit demographic bias in LLM-generated targeted text. Detects age- and gender-based stere
+- `why-deep-research-agent` — >
+- `why-reasoning-fails-plan` — Apply FLARE (Future-aware Lookahead with Reward Estimation) to long-horizon coding tasks. 
+- `wideseek-r1-exploring-width-scaling` — Decompose broad information-seeking tasks into parallel subtasks using a lead-agent-subage
+- `wiki-architect` — Analyzes code repositories and generates hierarchical documentation structures with onboar
+- `wiki-changelog` — Analyzes git commit history and generates structured changelogs categorized by change type
+- `wiki-onboarding` — Generates two complementary onboarding guides \u2014 a Principal-Level architectural deep-
+- `wiki-page-writer` — Generates rich technical documentation pages with dark-mode Mermaid diagrams, source code 
+- `wiki-qa` — Answers questions about a code repository using source file analysis. Use when the user as
+- `wiki-researcher` — Conducts multi-turn iterative deep research on specific topics within a codebase with zero
+- `will-it-survive-deciphering` — Analyze the survival and maintenance fate of AI-generated code in repositories using survi
+- `wireshark-analysis` — This skill should be used when the user asks to \"analyze network traffic with Wireshark\"
+- `wordpress` — Complete WordPress development workflow covering theme development, plugin creation, WooCo
+- `wordpress-content` — >
+- `wordpress-elementor` — >
+- `wordpress-pro` — Develops custom WordPress themes and plugins, creates and registers Gutenberg blocks and b
+- `wordpress-setup` — >
+- `wordpress-theme-development` — WordPress theme development workflow covering theme architecture, template hierarchy, cust
+- `wordpress-woocommerce-development` — WooCommerce store development workflow covering store setup, payment integration, shipping
+- `workflow-automation` — Workflow automation is the infrastructure that makes AI agents reliable. Without durable e
+- `workflow-orchestration-patterns` — Design durable workflows with Temporal for distributed systems. Covers workflow vs activit
+- `workflow-patterns` — Use this skill when implementing tasks according to Conductor's TDD workflow, handling pha
+- `wrike-automation` — Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage pr
+- `wycheproof` — >
+- `x-twitter-scraper` — X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engageme
+- `xai-clip-roi-guided-perturbation-framework` — Build ROI-guided perturbation pipelines for explainable medical image segmentation using C
+- `xlist-hate-checklist-based-framework-interpretable` — Decompose hate speech detection into a checklist of ten concept-level binary questions ans
+- `xlsx` — Comprehensive spreadsheet creation, editing, and analysis with support for formulas, forma
+- `xlsx-official` — Comprehensive spreadsheet creation, editing, and analysis with support for formulas, forma
+- `yann-lecun` — Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scient
+- `yann-lecun-debate` — Sub-skill de debates e posições de Yann LeCun. Cobre críticas técnicas detalhadas aos LLMs
+- `yann-lecun-filosofia` — Sub-skill filosófica e pedagógica de Yann LeCun. Cobre filosofia do open source (LLaMA, so
+- `yann-lecun-tecnico` — Sub-skill técnica de Yann LeCun. Cobre CNNs, LeNet, backpropagation, JEPA (I-JEPA, V-JEPA,
+- `yara-rule-authoring` — >
+- `yes-md` — 6-layer AI governance: safety gates, evidence-based debugging, anti-slack detection, and m
+- `yoloe-26-integrating-yolo26-yoloe` — |
+- `youtube-automation` — Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search co
+- `youtube-summarizer` — Extract transcripts from YouTube videos and generate comprehensive, detailed summaries usi
+- `yunque-deepresearch-technical-report`
+- `zapier-make-patterns` — No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) l
+- `zendesk-automation` — Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies. Al
+- `zeroize-audit` — Detects missing zeroization of sensitive data in source code and identifies zeroization re
+- `zod-validation-expert` — Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinem
+- `zoom-automation` — Automate Zoom meeting creation, management, recordings, webinars, and participant tracking
+- `zustand-store-ts` — Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/
+
+### 📣 Marketing & Growth (353)
+
+- `ag-microservices-patterns` — Design microservices architectures with service boundaries, event-driven communication, an
+- `ai-marketing-claude--ai-discoverability-audit` — Audit how a brand appears in AI-powered search (ChatGPT, Perplexity, Claude, Gemini). Use 
+- `ai-marketing-claude--ai-discoverability-audit-v2` — > "Find out if AI can find you — and fix it before your competitors do."
+- `ai-marketing-claude--ai-employee-onboarding-wizard` — Stand up a production-ready AI employee operating system in one guided session. Outputs 7 
+- `ai-marketing-claude--brand-positioning-audit` — Diagnose brand positioning with a 6-dimension scorecard, identify the root failure, and re
+- `ai-marketing-claude--case-study-builder` — Turn client wins into formatted case studies for proposals, social proof, and sales conver
+- `ai-marketing-claude--chief-of-staff-v2` — A proactive AI chief of staff that runs your operational life — triaging chaos into action
+- `ai-marketing-claude--cold-outreach-sequence` — Build personalized cold outreach sequences for LinkedIn and email. Use when someone needs 
+- `ai-marketing-claude--competitor-intel-brief` — Run a structured competitive teardown in 20 minutes. Covers positioning, ICP, offer analys
+- `ai-marketing-claude--content-idea-generator` — Generate content ideas rooted in positioning. Use when someone needs "content ideas," "wha
+- `ai-marketing-claude--daily-briefing-builder` — Generate a clean morning brief in Claude Code — pulls today's priorities, unposted content
+- `ai-marketing-claude--de-ai-ify` — Remove AI-generated jargon and restore human voice to text. Built from analyzing 1,000+ AI
+- `ai-marketing-claude--go-mode` — Autonomous goal execution — give a goal, get a plan, confirm, execute, report. You steer, 
+- `ai-marketing-claude--homepage-audit` — Full conversion audit for any homepage or landing page. Use when someone asks to "review m
+- `ai-marketing-claude--last30days` — Research any topic across Reddit, X, and web from the last 30 days. Get current trends, re
+- `ai-marketing-claude--linkedin-authority-builder` — Build a LinkedIn content system for thought leadership. Use when someone needs to establis
+- `ai-marketing-claude--linkedin-profile-optimizer` — Audit and rewrite your LinkedIn profile to attract the right people. Scores each section, 
+- `ai-marketing-claude--marketing-principles` — Apply timeless marketing and business principles to any problem. Use when someone needs st
+- `ai-marketing-claude--meeting-prep` — Generate a pre-meeting prep brief in Claude Code. Researches participants, pulls vault con
+- `ai-marketing-claude--morning-brief-system` — Generate a daily founder briefing that turns scattered context into clear execution priori
+- `ai-marketing-claude--multi-agent-team-blueprint-v2` — A complete 10-agent team architecture with roles, model routing, cron templates, meeting s
+- `ai-marketing-claude--newsletter-creation-curation` — Industry-adaptive B2B newsletter creation with stage, role, and geography-aware workflows
+- `ai-marketing-claude--plan-my-day` — Generate an energy-optimized, time-blocked daily plan based on circadian rhythm research a
+- `ai-marketing-claude--positioning-basics` — Help founders and marketers nail their positioning. Use when someone mentions "positioning
+- `ai-marketing-claude--reddit-insights` — |
+- `ai-marketing-claude--social-card-gen` — Generate platform-specific social post variants (Twitter/X, LinkedIn, Reddit) from one sou
+- `ai-marketing-claude--tweet-draft-reviewer` — Review tweet drafts in Claude Code against 8 voice rules. Scores 1-10, breaks down every r
+- `ai-marketing-claude--vault-cleanup-auditor` — Audit your Obsidian vault in Claude Code — finds stale drafts, empty folders, duplicate fi
+- `ai-marketing-claude--youtube-summarizer` — Automatically fetch YouTube video transcripts, generate structured summaries, and send ful
+- `ai-marketing-claude-market` — You are a comprehensive AI marketing analysis and content generation system for Claude Cod
+- `amem4rec-leveraging-cross-user-similarity` — Build agentic recommendation systems that learn collaborative filtering signals through cr
+- `antigravity-awesome--apify-brand-reputation-monitoring` — Track reviews, ratings, sentiment, and brand mentions across Google Maps, Booking.com, Tri
+- `antigravity-awesome--apify-content-analytics` — Track engagement metrics, measure campaign ROI, and analyze content performance across Ins
+- `antigravity-awesome--apify-lead-generation` — Generates B2B/B2C leads by scraping Google Maps, websites, Instagram, TikTok, Facebook, Li
+- `antigravity-awesome--azure-appconfiguration-java` — Azure App Configuration SDK for Java. Centralized application configuration management wit
+- `antigravity-awesome--azure-appconfiguration-py` — Azure App Configuration SDK for Python. Use for centralized configuration management, feat
+- `antigravity-awesome--azure-appconfiguration-ts` — Build applications using Azure App Configuration SDK for JavaScript (@azure/app-configurat
+- `antigravity-awesome--azure-microsoft-playwright-testing-ts` — Run Playwright tests at scale using Azure Playwright Workspaces (formerly Microsoft Playwr
+- `antigravity-awesome--brand-guidelines` — Write copy following Sentry brand guidelines. Use when writing UI text, error messages, em
+- `antigravity-awesome--brand-guidelines-anthropic` — Applies Anthropic's official brand colors and typography to any sort of artifact that may 
+- `antigravity-awesome--brand-guidelines-community` — Applies Anthropic's official brand colors and typography to any sort of artifact that may 
+- `antigravity-awesome--content-creator` — Create SEO-optimized marketing content with consistent brand voice. Includes brand voice a
+- `antigravity-awesome--content-marketer` — Elite content marketing strategist specializing in AI-powered content creation, omnichanne
+- `antigravity-awesome--copywriting` — Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces b
+- `antigravity-awesome--form-cro` — Optimize any form that is NOT signup or account registration — including lead capture, con
+- `antigravity-awesome--growth-engine` — Motor de crescimento para produtos digitais -- growth hacking, SEO, ASO, viral loops, emai
+- `antigravity-awesome--k6-load-testing` — Comprehensive k6 load testing skill for API, browser, and scalability testing. Write reali
+- `antigravity-awesome--latex-paper-conversion` — This skill should be used when the user asks to convert an academic paper in LaTeX from on
+- `antigravity-awesome--local-legal-seo-audit` — Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professio
+- `antigravity-awesome--makepad-animation` — |
+- `antigravity-awesome--makepad-basics` — |
+- `antigravity-awesome--makepad-deployment` — |
+- `antigravity-awesome--makepad-dsl` — |
+- `antigravity-awesome--makepad-event-action` — |
+- `antigravity-awesome--makepad-font` — |
+- `antigravity-awesome--makepad-layout` — |
+- `antigravity-awesome--makepad-platform` — |
+- `antigravity-awesome--makepad-reference` — |
+- `antigravity-awesome--makepad-shaders` — |
+- `antigravity-awesome--makepad-skills` — Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and trou
+- `antigravity-awesome--makepad-splash` — |
+- `antigravity-awesome--makepad-widgets` — |
+- `antigravity-awesome--marketing-ideas` — Provide proven marketing strategies and growth ideas for SaaS and software products, prior
+- `antigravity-awesome--marketing-psychology` — Apply behavioral science and mental models to marketing decisions, prioritized using a psy
+- `antigravity-awesome--microservices-patterns` — Design microservices architectures with service boundaries, event-driven communication, an
+- `antigravity-awesome--microsoft-azure-webjobs-extensions-auth` — Microsoft Entra Authentication Events SDK for .NET. Azure Functions triggers for custom au
+- `antigravity-awesome--microsoft-teams-automation` — Automate Microsoft Teams tasks via Rube MCP (Composio): send messages, manage channels, cr
+- `antigravity-awesome--onboarding-cro` — When the user wants to optimize post-signup onboarding, user activation, first-run experie
+- `antigravity-awesome--page-cro` — Analyze and optimize individual pages for conversion performance.
+- `antigravity-awesome--paywall-upgrade-cro` — When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals,
+- `antigravity-awesome--popup-cro` — Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversio
+- `antigravity-awesome--programmatic-seo` — Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale usi
+- `antigravity-awesome--scroll-experience` — Expert in building immersive scroll-driven experiences - parallax storytelling, scroll ani
+- `antigravity-awesome--seo-audit` — Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic pe
+- `antigravity-awesome--seo-authority-builder` — Analyzes content for E-E-A-T signals and suggests improvements to
+- `antigravity-awesome--seo-content-auditor` — Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores con
+- `antigravity-awesome--seo-content-planner` — Creates comprehensive content outlines and topic clusters for SEO.
+- `antigravity-awesome--seo-content-refresher` — Identifies outdated elements in provided content and suggests updates to maintain freshnes
+- `antigravity-awesome--seo-content-writer` — Writes SEO-optimized content based on provided keywords and topic briefs. Creates engaging
+- `antigravity-awesome--seo-forensic-incident-response` — Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO 
+- `antigravity-awesome--seo-fundamentals` — Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content 
+- `antigravity-awesome--seo-keyword-strategist` — Analyzes keyword usage in provided content, calculates density, suggests semantic variatio
+- `antigravity-awesome--seo-meta-optimizer` — Creates optimized meta titles, descriptions, and URL suggestions based on character limits
+- `antigravity-awesome--seo-snippet-hunter` — Formats content to be eligible for featured snippets and SERP features. Creates snippet-op
+- `antigravity-awesome--seo-structure-architect` — Analyzes and optimizes content structure including header hierarchy, suggests schema marku
+- `antigravity-awesome--signup-flow-cro` — When the user wants to optimize signup, registration, account creation, or trial activatio
+- `antigravity-awesome--viral-generator-builder` — Expert in building shareable generator tools that go viral - name generators, quiz makers,
+- `apify-brand-reputation-monitoring` — Track reviews, ratings, sentiment, and brand mentions across Google Maps, Booking.com, Tri
+- `apify-content-analytics` — Track engagement metrics, measure campaign ROI, and analyze content performance across Ins
+- `apify-lead-generation` — Generates B2B/B2C leads by scraping Google Maps, websites, Instagram, TikTok, Facebook, Li
+- `awesome-claude-code--microservices-design` — Microservices design patterns including service mesh, event-driven architecture, saga patt
+- `azure-appconfiguration-java` — Azure App Configuration SDK for Java. Centralized application configuration management wit
+- `azure-appconfiguration-py` — Azure App Configuration SDK for Python. Use for centralized configuration management, feat
+- `azure-appconfiguration-ts` — Build applications using Azure App Configuration SDK for JavaScript (@azure/app-configurat
+- `azure-microsoft-playwright-testing-ts` — Run Playwright tests at scale using Azure Playwright Workspaces (formerly Microsoft Playwr
+- `beyond-translation-cross-cultural-meme` — Cross-cultural meme transcreation using a three-stage hybrid pipeline (cultural analysis, 
+- `brand-guidelines` — Write copy following Sentry brand guidelines. Use when writing UI text, error messages, em
+- `brand-guidelines-anthropic` — Applies Anthropic's official brand colors and typography to any sort of artifact that may 
+- `brand-guidelines-community` — Applies Anthropic's official brand colors and typography to any sort of artifact that may 
+- `c-cron` — Manage cron jobs and macOS launchctl services — schedule recurring tasks, start/stop servi
+- `content-creator` — Create SEO-optimized marketing content with consistent brand voice. Includes brand voice a
+- `content-marketer` — Elite content marketing strategist specializing in AI-powered content creation, omnichanne
+- `content-platforms` — CMS, blogging platforms, and content management patterns
+- `copywriting` — Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces b
+- `cross-lingual-stability-judges-under` — Detect and fix cross-lingual evaluation instabilities in LLM-as-a-judge pipelines. Use whe
+- `datacross-unified-benchmark-agent` — Cross-modal data analysis agent that unifies structured sources (SQL, CSV, JSON) with unst
+- `deepread-document-structure-aware-reasoning` — |
+- `explicit-multi-head-attention-inter-head` — |
+- `form-cro` — Optimize any form that is NOT signup or account registration — including lead capture, con
+- `growth-engine` — Motor de crescimento para produtos digitais -- growth hacking, SEO, ASO, viral loops, emai
+- `hunt-instead-wait-evaluating` — >
+- `hyperoffload-graph-driven-hierarchical-memory` — Design and implement compiler-driven hierarchical memory offloading for LLM inference and 
+- `local-legal-seo-audit` — Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professio
+- `makepad-animation` — |
+- `makepad-basics` — |
+- `makepad-deployment` — |
+- `makepad-dsl` — |
+- `makepad-event-action` — |
+- `makepad-font` — |
+- `makepad-layout` — |
+- `makepad-platform` — |
+- `makepad-reference` — |
+- `makepad-shaders` — |
+- `makepad-skills` — Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and trou
+- `makepad-splash` — |
+- `makepad-widgets` — |
+- `marketing-ideas` — Provide proven marketing strategies and growth ideas for SaaS and software products, prior
+- `marketing-psychology` — Apply behavioral science and mental models to marketing decisions, prioritized using a psy
+- `marketing-skill` — 42-skill marketing division for AI coding agents. 7 specialist pods covering content, SEO,
+- `marketing-skills-404` — When the user wants to create, optimize, or audit 404 error pages. Also use when the user 
+- `marketing-skills-about` — When the user wants to create, optimize, or audit About page content. Also use when the us
+- `marketing-skills-affiliate-marketing` — When the user wants to plan, implement, or optimize affiliate marketing strategy. Also use
+- `marketing-skills-affiliate-program` — When the user wants to create, optimize, or audit affiliate program page content. Also use
+- `marketing-skills-ai-traffic` — When the user wants to track AI search traffic in GA4 or GSC. Also use when the user menti
+- `marketing-skills-alternatives` — When the user wants to create, optimize, or audit alternatives or comparison content (page
+- `marketing-skills-api` — When the user wants to create, optimize, or audit the API introduction/overview page. Also
+- `marketing-skills-app-ads` — When the user wants to run app install ads, user acquisition (UA), or promote mobile apps.
+- `marketing-skills-article` — When the user wants to write, generate, or create article content—blog post body, long-for
+- `marketing-skills-backlink-analysis` — When the user wants to analyze backlinks, audit link profile, or identify link issues. Als
+- `marketing-skills-blog` — When the user wants to create, optimize, or audit blog page structure and content. Also us
+- `marketing-skills-brand-monitoring` — When the user wants to monitor brand mentions, detect trademark infringement, or set up br
+- `marketing-skills-brand-protection` — When the user faces brand impersonation, fake websites, phishing sites, or trademark infri
+- `marketing-skills-brand-visual` — When the user wants to define, audit, or apply visual identity (typography, colors, spacin
+- `marketing-skills-branding` — When the user wants to define, audit, or apply brand strategy—purpose, values, positioning
+- `marketing-skills-breadcrumb` — When the user wants to add, optimize, or audit breadcrumb navigation. Also use when the us
+- `marketing-skills-canonical` — When the user wants to configure canonical URLs, fix duplicate content, or consolidate URL
+- `marketing-skills-card` — When the user wants to design, optimize, or audit card layouts for content display. Also u
+- `marketing-skills-careers` — When the user wants to create, optimize, or audit a careers or jobs page. Also use when th
+- `marketing-skills-carousel` — When the user wants to design, optimize, or audit carousel/slider layouts for content disp
+- `marketing-skills-category-pages` — When the user wants to create, optimize, or audit e-commerce category pages or listing pag
+- `marketing-skills-changelog` — When the user wants to create, optimize, or structure a changelog or release notes page. A
+- `marketing-skills-cold-start` — When the user wants to plan cold start, get first users, or launch a new product with zero
+- `marketing-skills-community-forum` — When the user wants to promote via forums, communities, or invite users to join a communit
+- `marketing-skills-competitor-research` — When the user wants to analyze competitors for SEO, content, backlinks, or positioning. Al
+- `marketing-skills-contact` — When the user wants to create, optimize, or audit contact page and forms. Also use when th
+- `marketing-skills-content-marketing` — When the user wants to plan content marketing across channels, define content types and fo
+- `marketing-skills-content-optimization` — When the user wants to optimize content for SEO—word count, H2 keywords, keyword density, 
+- `marketing-skills-contest` — When the user wants to create, optimize, or audit a giveaway, contest, or promotional camp
+- `marketing-skills-conversion` — When the user wants to improve conversion rates, run A/B tests, optimize funnels, or reduc
+- `marketing-skills-cookie-policy` — When the user wants to create or optimize a cookie policy page. Also use when the user men
+- `marketing-skills-copywriting` — When the user wants to write or optimize marketing copy—headlines, CTAs, ad copy, landing 
+- `marketing-skills-core-web-vitals` — When the user wants to optimize Core Web Vitals, fix LCP, INP, or CLS issues. Also use whe
+- `marketing-skills-crawlability` — When the user wants to improve crawlability, fix orphan pages, or optimize site structure 
+- `marketing-skills-creator-program` — When the user wants to plan, implement, or optimize creator program strategy. Also use whe
+- `marketing-skills-cta` — When the user wants to design, optimize, or audit call-to-action (CTA) buttons. Also use w
+- `marketing-skills-ctv-ads` — When the user wants to run CTV, OTT, or streaming TV ads. Also use when the user mentions 
+- `marketing-skills-customer-stories` — When the user wants to create, optimize, or audit customer stories or case study pages. Al
+- `marketing-skills-description` — When the user wants to optimize the meta description or meta tag description. Also use whe
+- `marketing-skills-disclosure` — When the user wants to create, optimize, or audit an affiliate, sponsor, or paid partnersh
+- `marketing-skills-discount-marketing` — When the user wants to plan, implement, or optimize discount and promotional pricing strat
+- `marketing-skills-display-ads` — When the user wants to run display, banner, or ad network campaigns. Also use when the use
+- `marketing-skills-distribution-channels` — When the user wants to plan product distribution via marketplaces, app stores, or third-pa
+- `marketing-skills-docs` — When the user wants to create, optimize, or structure a documentation site. Also use when 
+- `marketing-skills-domain-architecture` — When the user wants to decide domain structure for multiple products or brands—subfolder v
+- `marketing-skills-domain-selection` — When the user wants to choose an SEO-friendly domain for a new site—brand vs keyword domai
+- `marketing-skills-download` — When the user wants to create, optimize, or audit a download page for desktop or mobile ap
+- `marketing-skills-education-program` — When the user wants to plan, implement, or optimize student and education discount program
+- `marketing-skills-eeat-signals` — When the user wants to improve E-E-A-T, add trust signals, or optimize for expertise and a
+- `marketing-skills-email-marketing` — When the user wants to plan email marketing, EDM, newsletter strategy, or email deliverabi
+- `marketing-skills-employee-generated-content` — When the user wants to plan, implement, or optimize employee-generated content (EGC) or em
+- `marketing-skills-entity-seo` — When the user wants to optimize for entity recognition, Knowledge Graph, or entity-based S
+- `marketing-skills-faq` — When the user wants to create, optimize, or audit FAQ page content. Also use when the user
+- `marketing-skills-favicon` — When the user wants to implement, optimize, or audit favicon and app icons. Also use when 
+- `marketing-skills-featured-snippet` — When the user wants to optimize for Featured Snippets, Position Zero, or snippet extractio
+- `marketing-skills-features` — When the user wants to create, optimize, or audit features page content. Also use when the
+- `marketing-skills-feedback` — When the user wants to create, optimize, or audit a feedback or roadmap page. Also use whe
+- `marketing-skills-footer` — When the user wants to design, optimize, or audit website footers. Also use when the user 
+- `marketing-skills-geo` — When the user wants to optimize for AI search visibility (ChatGPT, Claude, Perplexity). Al
+- `marketing-skills-github` — When the user wants to use GitHub for SEO, parasite SEO, GEO, open source marketing, or cr
+- `marketing-skills-glossary` — When the user wants to create, optimize, or audit glossary page content and structure. Als
+- `marketing-skills-google-ads` — When the user wants to set up, optimize, or manage Google Ads campaigns. Also use when the
+- `marketing-skills-google-search-console` — When the user wants to analyze Google Search Console data, use GSC API, or interpret searc
+- `marketing-skills-grid` — When the user wants to design, optimize, or audit grid layouts for content display. Also u
+- `marketing-skills-grokipedia` — When the user wants to add recommendations, links, or content to Grokipedia. Also use when
+- `marketing-skills-growth-funnel` — When the user wants to plan growth using the AARRR framework, diagnose growth bottlenecks,
+- `marketing-skills-heading` — When the user wants to optimize heading structure (H1-H6), fix heading hierarchy, or impro
+- `marketing-skills-hero` — When the user wants to design, optimize, or audit hero sections (above-the-fold main visua
+- `marketing-skills-home` — When the user wants to create, optimize, or audit homepage content and structure. Also use
+- `marketing-skills-image-optimization` — When the user wants to optimize images for search engines and performance. Also use when t
+- `marketing-skills-indexing` — When the user wants to fix indexing issues from Search Console, use noindex, or implement 
+- `marketing-skills-indexnow` — When the user wants to implement IndexNow, notify search engines of new/updated URLs, or s
+- `marketing-skills-indie-hacker` — When the user wants indie hacker or bootstrapping founder strategy—growth, channels, Build
+- `marketing-skills-influencer-marketing` — When the user wants to plan, implement, or optimize influencer marketing strategy. Also us
+- `marketing-skills-integrated-marketing` — When the user wants to plan integrated marketing, coordinate channels, or clarify program 
+- `marketing-skills-integrations` — When the user wants to create, optimize, or audit integrations, plugins, or extensions pag
+- `marketing-skills-internal-links` — When the user wants to optimize internal linking, fix orphan pages, or improve link struct
+- `marketing-skills-keyword-research` — When the user wants to research keywords, find target keywords, or analyze search intent. 
+- `marketing-skills-landing-page` — When the user wants to create, optimize, or audit campaign landing pages for paid ads or o
+- `marketing-skills-legal` — When the user wants to create, optimize, or structure legal pages (Privacy, Terms, etc.). 
+- `marketing-skills-link-building` — When the user wants to build backlinks, acquire links, or improve off-page SEO. Also use w
+- `marketing-skills-linkedin` — When the user wants to create LinkedIn post copy or optimize for LinkedIn. Also use when t
+- `marketing-skills-linkedin-ads` — When the user wants to set up, optimize, or manage LinkedIn Ads. Also use when the user me
+- `marketing-skills-list` — When the user wants to design, optimize, or audit list layouts for content display. Also u
+- `marketing-skills-local` — When the user wants to optimize for local search, set up Google Business Profile, or build
+- `marketing-skills-localization` — When the user wants to plan or implement localization strategy for multilingual and global
+- `marketing-skills-logo` — When the user wants to optimize logo placement, linking, or branding on a website. Also us
+- `marketing-skills-masonry` — When the user wants to design, optimize, or audit masonry (Pinterest-style) layouts for co
+- `marketing-skills-media-kit` — When the user wants to create, optimize, or audit media kit or press page. Also use when t
+- `marketing-skills-medium` — When the user wants to publish on Medium for parasite SEO, GEO, or content distribution. A
+- `marketing-skills-meta-ads` — When the user wants to set up, optimize, or manage Meta (Facebook/Instagram) Ads. Also use
+- `marketing-skills-metadata` — When the user wants to optimize meta tags other than title, description, Open Graph, or Tw
+- `marketing-skills-migration` — When the user wants to create, optimize, or audit migration guides for users switching fro
+- `marketing-skills-mobile-friendly` — When the user wants to optimize for mobile-first indexing or fix mobile usability. Also us
+- `marketing-skills-multi-domain-brand-seo` — When the user wants to optimize brand search for a company with multiple domains (e.g. par
+- `marketing-skills-native-ads` — When the user wants to run native ads on Taboola, Outbrain, or similar platforms. Also use
+- `marketing-skills-navigation-menu` — When the user wants to design, optimize, or audit site navigation menus. Also use when the
+- `marketing-skills-newsletter-signup` — When the user wants to design, optimize, or audit newsletter signup forms. Also use when t
+- `marketing-skills-open-graph` — When the user wants to add or optimize Open Graph metadata for social sharing. Also use wh
+- `marketing-skills-open-source` — When the user wants open source strategy, OSS commercialization, or open source growth. Al
+- `marketing-skills-paid-ads` — When the user wants to plan paid ads strategy, allocate ad budget, or choose paid channels
+- `marketing-skills-parasite-seo` — When the user wants to leverage high-authority platforms for rankings or backlinks. Also u
+- `marketing-skills-pinterest` — When the user wants to create Pinterest Pins, optimize Pin descriptions, or grow Pinterest
+- `marketing-skills-pmf` — When the user wants to validate product-market fit, measure PMF, or plan before scaling. A
+- `marketing-skills-podcast` — When the user wants to plan, create, or market a podcast. Also use when the user mentions 
+- `marketing-skills-popup` — When the user wants to add, optimize, or audit popups or modals for lead capture or offers
+- `marketing-skills-press-coverage` — When the user wants to create a press coverage page, "As Seen In" section, or media mentio
+- `marketing-skills-privacy` — When the user wants to create, optimize, or structure Privacy Policy page. Also use when t
+- `marketing-skills-product-hunt-launch` — When the user wants to launch on Product Hunt, prepare a Product Hunt submission, or plan 
+- `marketing-skills-product-launch` — When the user wants to plan a product launch, execute launch channels, or create a launch 
+- `marketing-skills-products` — When the user wants to create, optimize, or audit a product listing or category page. Also
+- `marketing-skills-programmatic-seo` — When the user wants to create SEO pages at scale using templates and data. Also use when t
+- `marketing-skills-public-relations` — When the user wants to plan PR, write a press release, or manage media relations. Also use
+- `marketing-skills-rebranding` — When the user wants to plan or execute a rebrand—domain change, 301 redirects, migration, 
+- `marketing-skills-reddit` — When the user wants to create Reddit post copy, comments, or optimize for Reddit. Also use
+- `marketing-skills-reddit-ads` — When the user wants to set up, optimize, or manage Reddit Ads. Also use when the user ment
+- `marketing-skills-referral-program` — When the user wants to plan, implement, or optimize referral program strategy. Also use wh
+- `marketing-skills-refund` — When the user wants to create or optimize a refund or return policy page. Also use when th
+- `marketing-skills-rendering-strategies` — When the user wants to choose or optimize rendering strategy for SEO. Also use when the us
+- `marketing-skills-research-sources` — When the user wants to find information sources for content ideation, competitor monitorin
+- `marketing-skills-resources` — When the user wants to create, optimize, or audit resources page or content hub. Also use 
+- `marketing-skills-retention` — When the user wants to reduce churn, improve customer retention, or plan lifecycle marketi
+- `marketing-skills-robots` — When the user wants to configure, audit, or optimize robots.txt. Also use when the user me
+- `marketing-skills-schema` — When the user wants to add or optimize structured data (Schema.org, JSON-LD). Also use whe
+- `marketing-skills-seo` — When the user wants to plan SEO strategy, prioritize SEO work, or understand the SEO workf
+- `marketing-skills-seo-audit` — When the user wants to run an SEO audit, technical SEO audit, or site health check. Also u
+- `marketing-skills-seo-monitoring` — When the user wants to build an SEO data analysis system, monitor indexing/traffic/keyword
+- `marketing-skills-serp-features` — When the user wants to understand or optimize for SERP features. Also use when the user me
+- `marketing-skills-services` — When the user wants to create, optimize, or audit a services page. Also use when the user 
+- `marketing-skills-shipping` — When the user wants to create or optimize a shipping or delivery information page. Also us
+- `marketing-skills-showcase` — When the user wants to create, optimize, or audit a showcase or gallery page for user-gene
+- `marketing-skills-sidebar` — When the user wants to design, optimize, or audit a sidebar for blogs, docs, or content pa
+- `marketing-skills-signup-login` — When the user wants to create, optimize, or audit signup and login pages. Also use when th
+- `marketing-skills-sitemap` — When the user wants to create, audit, or optimize sitemap.xml. Also use when the user ment
+- `marketing-skills-social-share` — When the user wants to add, optimize, or audit social share buttons (share article to X, L
+- `marketing-skills-solutions` — When the user wants to create, optimize, or audit solutions pages. Also use when the user 
+- `marketing-skills-status` — When the user wants to create, optimize, or structure a status page. Also use when the use
+- `marketing-skills-tab-accordion` — When the user wants to add or optimize tab or accordion components for content organizatio
+- `marketing-skills-template-page` — When the user wants to design template pages—aggregation (gallery/hub) or detail (individu
+- `marketing-skills-terms` — When the user wants to create, optimize, or structure Terms of Service page. Also use when
+- `marketing-skills-testimonials` — When the user wants to add, optimize, or design customer testimonials, reviews, or case st
+- `marketing-skills-tiktok` — When the user wants to create TikTok video captions, scripts, or optimize for TikTok. Also
+- `marketing-skills-tiktok-ads` — When the user wants to set up, optimize, or manage TikTok Ads. Also use when the user ment
+- `marketing-skills-title` — When the user wants to optimize the title tag, page title, or SERP title. Also use when th
+- `marketing-skills-toc` — When the user wants to add, optimize, or audit table of contents (TOC) for long-form conte
+- `marketing-skills-tools` — When the user wants to create, optimize, or audit free tools pages. Also use when the user
+- `marketing-skills-top-banner` — When the user wants to add, optimize, or audit a top announcement bar or sticky banner. Al
+- `marketing-skills-tracking` — When the user wants to set up, audit, or optimize analytics tracking (GA4, events, convers
+- `marketing-skills-traffic` — When the user wants to analyze website traffic sources, attribution, or dark traffic. Also
+- `marketing-skills-translation` — When the user wants to translate content, create translation workflows, manage terminology
+- `marketing-skills-trust-badges` — When the user wants to add or optimize trust badges, "Trusted by" logos, security seals, o
+- `marketing-skills-twitter-cards` — When the user wants to add or optimize Twitter Card metadata for X (Twitter) link previews
+- `marketing-skills-url-slug` — When the user wants to create, optimize, or validate URL slugs for content pages. Also use
+- `marketing-skills-url-structure` — When the user wants to optimize URL structure, fix URL issues, or plan URL hierarchy. Also
+- `marketing-skills-use-cases` — When the user wants to create, optimize, or audit use case pages. Also use when the user m
+- `marketing-skills-video` — When the user wants to plan video marketing, create video scripts, or optimize for short-f
+- `marketing-skills-video-optimization` — When the user wants to optimize videos for Google Search, video sitemap, VideoObject schem
+- `marketing-skills-visual-content` — When the user wants to plan, create, or repurpose visual content (images, infographics, so
+- `marketing-skills-website-structure` — When the user wants to plan website structure, decide which pages to build, or prioritize 
+- `marketing-skills-x` — When the user wants to create X (Twitter) post copy, threads, or optimize for X platform. 
+- `marketing-skills-youtube` — When the user wants to optimize YouTube videos for search, create video descriptions, or i
+- `marketing-skills-youtube-ads` — When the user wants to run YouTube ads, set up TrueView or Bumper campaigns, or optimize v
+- `marketingskills-ab-test-setup` — When the user wants to plan, design, or implement an A/B test or experiment. Also use when
+- `marketingskills-ad-creative`
+- `marketingskills-ai-seo`
+- `marketingskills-analytics-tracking`
+- `marketingskills-churn-prevention`
+- `marketingskills-cold-email`
+- `marketingskills-competitor-alternatives`
+- `marketingskills-copy-editing` — When the user wants to edit, review, or improve existing marketing copy. Also use when the
+- `marketingskills-copywriting`
+- `marketingskills-email-sequence`
+- `marketingskills-form-cro`
+- `marketingskills-lead-magnets`
+- `marketingskills-marketing-ideas`
+- `marketingskills-marketing-psychology` — When the user wants to apply psychological principles, mental models, or behavioral scienc
+- `marketingskills-onboarding-cro`
+- `marketingskills-page-cro`
+- `marketingskills-paid-ads` — When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Ins
+- `marketingskills-paywall-upgrade-cro`
+- `marketingskills-popup-cro` — When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners 
+- `marketingskills-product-marketing-context`
+- `marketingskills-programmatic-seo`
+- `marketingskills-referral-program` — When the user wants to create, optimize, or analyze a referral program, affiliate program,
+- `marketingskills-revops`
+- `marketingskills-sales-enablement`
+- `marketingskills-schema-markup` — When the user wants to add, fix, or optimize schema markup and structured data on their si
+- `marketingskills-seo-audit`
+- `marketingskills-signup-flow-cro`
+- `marketingskills-site-architecture`
+- `marketingskills-social-content`
+- `masalbench-benchmark-contextual-cross-cultural` — Build cross-cultural figurative language benchmarks and evaluation pipelines for LLMs. App
+- `microservices-architect` — Designs distributed system architectures, decomposes monoliths into bounded-context servic
+- `microservices-patterns` — Design microservices architectures with service boundaries, event-driven communication, an
+- `microsoft-azure-webjobs-extensions-authentication-events-dotnet` — Microsoft Entra Authentication Events SDK for .NET. Azure Functions triggers for custom au
+- `microsoft-teams-automation` — Automate Microsoft Teams tasks via Rube MCP (Composio): send messages, manage channels, cr
+- `onboarding-cro` — When the user wants to optimize post-signup onboarding, user activation, first-run experie
+- `page-cro` — Analyze and optimize individual pages for conversion performance.
+- `paywall-upgrade-cro` — When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals,
+- `pm-skills-beachhead-segment` — Identify the first beachhead market segment for a product launch. Evaluates segments again
+- `pm-skills-growth-loops` — Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral,
+- `pm-skills-marketing-ideas` — Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engageme
+- `popup-cro` — Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversio
+- `proact-agentic-lookahead-interactive` — >
+- `programmatic-seo` — Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale usi
+- `read-as-human-compressing` — Compress long contexts using the RAM (Read As Human) strategy: partition text into segment
+- `reasoning-beyond-literal-cross-style` — Detect and interpret figurative language (sarcasm, humor, offense, metaphor) in multimodal
+- `scroll-experience` — Expert in building immersive scroll-driven experiences - parallax storytelling, scroll ani
+- `seo-audit` — Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic pe
+- `seo-authority-builder` — Analyzes content for E-E-A-T signals and suggests improvements to
+- `seo-content-auditor` — Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores con
+- `seo-content-planner` — Creates comprehensive content outlines and topic clusters for SEO.
+- `seo-content-refresher` — Identifies outdated elements in provided content and suggests updates to maintain freshnes
+- `seo-content-writer` — Writes SEO-optimized content based on provided keywords and topic briefs. Creates engaging
+- `seo-forensic-incident-response` — Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO 
+- `seo-fundamentals` — Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content 
+- `seo-keyword-strategist` — Analyzes keyword usage in provided content, calculates density, suggests semantic variatio
+- `seo-meta-optimizer` — Creates optimized meta titles, descriptions, and URL suggestions based on character limits
+- `seo-snippet-hunter` — Formats content to be eligible for featured snippets and SERP features. Creates snippet-op
+- `seo-structure-architect` — Analyzes and optimizes content structure including header hierarchy, suggests schema marku
+- `signup-flow-cro` — When the user wants to optimize signup, registration, account creation, or trial activatio
+- `viral-generator-builder` — Expert in building shareable generator tools that go viral - name generators, quiz makers,
+- `vulread-knowledge-graph-guided-software-vulnerabil` — CWE-guided vulnerability reasoning and detection using knowledge-graph-structured analysis
+- `washin-cron-generated-script-desync` — |
+
+### 🚀 DevOps & Cloud (318)
+
+- `agent-framework-azure-ai-py` — Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framew
+- `antigravity-awesome--agent-framework-azure-ai-py` — Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framew
+- `antigravity-awesome--aws-cost-cleanup` — Automated cleanup of unused AWS resources to reduce costs
+- `antigravity-awesome--aws-cost-optimizer` — Comprehensive AWS cost analysis and optimization recommendations using AWS CLI and Cost Ex
+- `antigravity-awesome--aws-iam-best-practices` — IAM policy review, hardening, and least privilege implementation
+- `antigravity-awesome--aws-penetration-testing` — This skill should be used when the user asks to \"pentest AWS\", \"test AWS security\", \"
+- `antigravity-awesome--aws-secrets-rotation` — Automate AWS secrets rotation for RDS, API keys, and credentials
+- `antigravity-awesome--aws-serverless` — Specialized skill for building production-ready serverless applications on AWS. Covers Lam
+- `antigravity-awesome--aws-skills` — AWS development with infrastructure automation and cloud architecture patterns
+- `antigravity-awesome--azd-deployment` — Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd).
+- `antigravity-awesome--azure-ai-agents-persistent-dotnet` — Azure AI Agents Persistent SDK for .NET. Low-level SDK for creating and managing AI agents
+- `antigravity-awesome--azure-ai-agents-persistent-java` — Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents
+- `antigravity-awesome--azure-ai-contentsafety-java` — Build content moderation applications with Azure AI Content Safety SDK for Java. Use when 
+- `antigravity-awesome--azure-ai-contentsafety-py` — Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and imag
+- `antigravity-awesome--azure-ai-contentsafety-ts` — Analyze text and images for harmful content using Azure AI Content Safety (@azure-rest/ai-
+- `antigravity-awesome--azure-ai-contentunderstanding-py` — Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from 
+- `antigravity-awesome--azure-ai-document-intelligence-dotnet` — Azure AI Document Intelligence SDK for .NET. Extract text, tables, and structured data fro
+- `antigravity-awesome--azure-ai-document-intelligence-ts` — Extract text, tables, and structured data from documents using Azure Document Intelligence
+- `antigravity-awesome--azure-ai-formrecognizer-java` — Build document analysis applications with Azure Document Intelligence (Form Recognizer) SD
+- `antigravity-awesome--azure-ai-ml-py` — Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, c
+- `antigravity-awesome--azure-ai-openai-dotnet` — Azure OpenAI SDK for .NET. Client library for Azure OpenAI and OpenAI services. Use for ch
+- `antigravity-awesome--azure-ai-projects-dotnet` — Azure AI Projects SDK for .NET. High-level client for Azure AI Foundry projects including 
+- `antigravity-awesome--azure-ai-projects-java` — Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management inc
+- `antigravity-awesome--azure-ai-projects-py` — Build AI applications using the Azure AI Projects Python SDK (azure-ai-projects). Use when
+- `antigravity-awesome--azure-ai-projects-ts` — Build AI applications using Azure AI Projects SDK for JavaScript (@azure/ai-projects). Use
+- `antigravity-awesome--azure-ai-textanalytics-py` — Azure AI Text Analytics SDK for sentiment analysis, entity recognition, key phrases, langu
+- `antigravity-awesome--azure-ai-transcription-py` — Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcri
+- `antigravity-awesome--azure-ai-translation-document-py` — Azure AI Document Translation SDK for batch translation of documents with format preservat
+- `antigravity-awesome--azure-ai-translation-text-py` — Azure AI Text Translation SDK for real-time text translation, transliteration, language de
+- `antigravity-awesome--azure-ai-translation-ts` — Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai
+- `antigravity-awesome--azure-ai-vision-imageanalysis-java` — Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing
+- `antigravity-awesome--azure-ai-vision-imageanalysis-py` — Azure AI Vision Image Analysis SDK for captions, tags, objects, OCR, people detection, and
+- `antigravity-awesome--azure-ai-voicelive-dotnet` — Azure AI Voice Live SDK for .NET. Build real-time voice AI applications with bidirectional
+- `antigravity-awesome--azure-ai-voicelive-java` — Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assis
+- `antigravity-awesome--azure-ai-voicelive-py` — Build real-time voice AI applications using Azure AI Voice Live SDK (azure-ai-voicelive). 
+- `antigravity-awesome--azure-ai-voicelive-ts` — Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications w
+- `antigravity-awesome--azure-communication-callautomation-java` — Build call automation workflows with Azure Communication Services Call Automation Java SDK
+- `antigravity-awesome--azure-communication-callingserver-java` — Azure Communication Services CallingServer (legacy) Java SDK. Note - This SDK is deprecate
+- `antigravity-awesome--azure-communication-chat-java` — Build real-time chat applications with Azure Communication Services Chat Java SDK. Use whe
+- `antigravity-awesome--azure-communication-common-java` — Azure Communication Services common utilities for Java. Use when working with Communicatio
+- `antigravity-awesome--azure-communication-sms-java` — Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SM
+- `antigravity-awesome--azure-compute-batch-java` — Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, ta
+- `antigravity-awesome--azure-containerregistry-py` — Azure Container Registry SDK for Python. Use for managing container images, artifacts, and
+- `antigravity-awesome--azure-cosmos-db-py` — Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patter
+- `antigravity-awesome--azure-cosmos-java` — Azure Cosmos DB SDK for Java. NoSQL database operations with global distribution, multi-mo
+- `antigravity-awesome--azure-cosmos-py` — Azure Cosmos DB SDK for Python (NoSQL API). Use for document CRUD, queries, containers, an
+- `antigravity-awesome--azure-cosmos-rust` — Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and 
+- `antigravity-awesome--azure-cosmos-ts` — Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use f
+- `antigravity-awesome--azure-data-tables-java` — Build table storage applications with Azure Tables SDK for Java. Use when working with Azu
+- `antigravity-awesome--azure-data-tables-py` — Azure Tables SDK for Python (Storage and Cosmos DB). Use for NoSQL key-value storage, enti
+- `antigravity-awesome--azure-eventgrid-dotnet` — Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azu
+- `antigravity-awesome--azure-eventgrid-java` — Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing ev
+- `antigravity-awesome--azure-eventgrid-py` — Azure Event Grid SDK for Python. Use for publishing events, handling CloudEvents, and even
+- `antigravity-awesome--azure-eventhub-dotnet` — Azure Event Hubs SDK for .NET.
+- `antigravity-awesome--azure-eventhub-java` — Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implem
+- `antigravity-awesome--azure-eventhub-py` — Azure Event Hubs SDK for Python streaming. Use for high-throughput event ingestion, produc
+- `antigravity-awesome--azure-eventhub-rust` — Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingest
+- `antigravity-awesome--azure-eventhub-ts` — Build event streaming applications using Azure Event Hubs SDK for JavaScript (@azure/event
+- `antigravity-awesome--azure-functions` — Expert patterns for Azure Functions development including isolated worker model, Durable F
+- `antigravity-awesome--azure-identity-dotnet` — Azure Identity SDK for .NET. Authentication library for Azure SDK clients using Microsoft 
+- `antigravity-awesome--azure-identity-java` — Azure Identity Java SDK for authentication with Azure services. Use when implementing Defa
+- `antigravity-awesome--azure-identity-py` — Azure Identity SDK for Python authentication. Use for DefaultAzureCredential, managed iden
+- `antigravity-awesome--azure-identity-rust` — Azure Identity SDK for Rust authentication. Use for DeveloperToolsCredential, ManagedIdent
+- `antigravity-awesome--azure-identity-ts` — Authenticate to Azure services using Azure Identity SDK for JavaScript (@azure/identity). 
+- `antigravity-awesome--azure-keyvault-certificates-rust` — Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certi
+- `antigravity-awesome--azure-keyvault-keys-rust` — Azure Key Vault Keys SDK for Rust. Use for creating, managing, and using cryptographic key
+- `antigravity-awesome--azure-keyvault-keys-ts` — Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-k
+- `antigravity-awesome--azure-keyvault-py` — Azure Key Vault SDK for Python. Use for secrets, keys, and certificates management with se
+- `antigravity-awesome--azure-keyvault-secrets-rust` — Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, a
+- `antigravity-awesome--azure-keyvault-secrets-ts` — Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets).
+- `antigravity-awesome--azure-maps-search-dotnet` — Azure Maps SDK for .NET. Location-based services including geocoding, routing, rendering, 
+- `antigravity-awesome--azure-messaging-webpubsub-java` — Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing
+- `antigravity-awesome--azure-messaging-webpubsubservice-py` — Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connection
+- `antigravity-awesome--azure-mgmt-apicenter-dotnet` — Azure API Center SDK for .NET. Centralized API inventory management with governance, versi
+- `antigravity-awesome--azure-mgmt-apicenter-py` — Azure API Center Management SDK for Python. Use for managing API inventory, metadata, and 
+- `antigravity-awesome--azure-mgmt-apimanagement-dotnet` — Azure Resource Manager SDK for API Management in .NET.
+- `antigravity-awesome--azure-mgmt-apimanagement-py` — Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subsc
+- `antigravity-awesome--azure-mgmt-applicationinsights-dotnet` — Azure Application Insights SDK for .NET. Application performance monitoring and observabil
+- `antigravity-awesome--azure-mgmt-arizeaiobservabilityeval-dot` — Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET).
+- `antigravity-awesome--azure-mgmt-botservice-dotnet` — Azure Resource Manager SDK for Bot Service in .NET. Management plane operations for creati
+- `antigravity-awesome--azure-mgmt-botservice-py` — Azure Bot Service Management SDK for Python. Use for creating, managing, and configuring A
+- `antigravity-awesome--azure-mgmt-fabric-dotnet` — Azure Resource Manager SDK for Fabric in .NET.
+- `antigravity-awesome--azure-mgmt-fabric-py` — Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and r
+- `antigravity-awesome--azure-mgmt-mongodbatlas-dotnet` — Manage MongoDB Atlas Organizations as Azure ARM resources using Azure.ResourceManager.Mong
+- `antigravity-awesome--azure-mgmt-weightsandbiases-dotnet` — Azure Weights & Biases SDK for .NET. ML experiment tracking and model management via Azure
+- `antigravity-awesome--azure-monitor-ingestion-java` — Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collectio
+- `antigravity-awesome--azure-monitor-ingestion-py` — Azure Monitor Ingestion SDK for Python. Use for sending custom logs to Log Analytics works
+- `antigravity-awesome--azure-monitor-opentelemetry-exporter-ja` — Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and l
+- `antigravity-awesome--azure-monitor-opentelemetry-exporter-py` — Azure Monitor OpenTelemetry Exporter for Python. Use for low-level OpenTelemetry export to
+- `antigravity-awesome--azure-monitor-opentelemetry-py` — Azure Monitor OpenTelemetry Distro for Python. Use for one-line Application Insights setup
+- `antigravity-awesome--azure-monitor-opentelemetry-ts` — Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monito
+- `antigravity-awesome--azure-monitor-query-java` — Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces a
+- `antigravity-awesome--azure-monitor-query-py` — Azure Monitor Query SDK for Python. Use for querying Log Analytics workspaces and Azure Mo
+- `antigravity-awesome--azure-postgres-ts` — Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the
+- `antigravity-awesome--azure-resource-manager-cosmosdb-dotnet` — Azure Resource Manager SDK for Cosmos DB in .NET.
+- `antigravity-awesome--azure-resource-manager-mysql-dotnet` — Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server de
+- `antigravity-awesome--azure-resource-manager-playwright-dotne` — Azure Resource Manager SDK for Microsoft Playwright Testing in .NET.
+- `antigravity-awesome--azure-resource-manager-postgresql-dotne` — Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible
+- `antigravity-awesome--azure-resource-manager-redis-dotnet` — Azure Resource Manager SDK for Redis in .NET.
+- `antigravity-awesome--azure-resource-manager-sql-dotnet` — Azure Resource Manager SDK for Azure SQL in .NET.
+- `antigravity-awesome--azure-search-documents-dotnet` — Azure AI Search SDK for .NET (Azure.Search.Documents). Use for building search application
+- `antigravity-awesome--azure-search-documents-py` — Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, in
+- `antigravity-awesome--azure-search-documents-ts` — Build search applications using Azure AI Search SDK for JavaScript (@azure/search-document
+- `antigravity-awesome--azure-servicebus-dotnet` — Azure Service Bus SDK for .NET. Enterprise messaging with queues, topics, subscriptions, a
+- `antigravity-awesome--azure-servicebus-py` — Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and ent
+- `antigravity-awesome--azure-servicebus-ts` — Build messaging applications using Azure Service Bus SDK for JavaScript (@azure/service-bu
+- `antigravity-awesome--azure-speech-to-text-rest-py` — Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition 
+- `antigravity-awesome--azure-storage-blob-java` — Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, 
+- `antigravity-awesome--azure-storage-blob-py` — Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing
+- `antigravity-awesome--azure-storage-blob-rust` — Azure Blob Storage SDK for Rust. Use for uploading, downloading, and managing blobs and co
+- `antigravity-awesome--azure-storage-blob-ts` — Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Us
+- `antigravity-awesome--azure-storage-file-datalake-py` — Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data a
+- `antigravity-awesome--azure-storage-file-share-py` — Azure Storage File Share SDK for Python. Use for SMB file shares, directories, and file op
+- `antigravity-awesome--azure-storage-file-share-ts` — Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share 
+- `antigravity-awesome--azure-storage-queue-py` — Azure Queue Storage SDK for Python. Use for reliable message queuing, task distribution, a
+- `antigravity-awesome--azure-storage-queue-ts` — Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue ope
+- `antigravity-awesome--azure-web-pubsub-ts` — Build real-time messaging applications using Azure Web PubSub SDKs for JavaScript (@azure/
+- `antigravity-awesome--cloud-architect` — Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, ad
+- `antigravity-awesome--cloud-devops` — Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, 
+- `antigravity-awesome--cloud-penetration-testing` — This skill should be used when the user asks to \"perform cloud penetration testing\", \"a
+- `antigravity-awesome--database-cloud-optimization-cost-optimi` — You are a cloud cost optimization expert specializing in reducing infrastructure expenses 
+- `antigravity-awesome--deployment-engineer` — Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and a
+- `antigravity-awesome--deployment-procedures` — Production deployment principles and decision-making. Safe deployment workflows, rollback 
+- `antigravity-awesome--deployment-validation-config-validate` — You are a configuration management expert specializing in validating, testing, and ensurin
+- `antigravity-awesome--devops-deploy` — DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terrafo
+- `antigravity-awesome--devops-troubleshooter` — Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, 
+- `antigravity-awesome--docker-expert` — Docker containerization expert with deep knowledge of multi-stage builds, image optimizati
+- `antigravity-awesome--expo-deployment` — Deploy Expo apps to production
+- `antigravity-awesome--gcp-cloud-run` — Specialized skill for building production-ready serverless applications on GCP. Covers Clo
+- `antigravity-awesome--github-actions-templates` — Create production-ready GitHub Actions workflows for automated testing, building, and depl
+- `antigravity-awesome--gitlab-ci-patterns` — Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distributed runners 
+- `antigravity-awesome--gitops-workflow` — Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes depl
+- `antigravity-awesome--grafana-dashboards` — Create and manage production Grafana dashboards for real-time visualization of system and 
+- `antigravity-awesome--helm-chart-scaffolding` — Design, organize, and manage Helm charts for templating and packaging Kubernetes applicati
+- `antigravity-awesome--hybrid-cloud-architect` — Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azu
+- `antigravity-awesome--hybrid-cloud-networking` — Configure secure, high-performance connectivity between on-premises infrastructure and clo
+- `antigravity-awesome--k8s-manifest-generator` — Create production-ready Kubernetes manifests for Deployments, Services, ConfigMaps, and Se
+- `antigravity-awesome--kubernetes-architect` — Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps w
+- `antigravity-awesome--kubernetes-deployment` — Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and
+- `antigravity-awesome--multi-cloud-architecture` — Design multi-cloud architectures using a decision framework to select and integrate servic
+- `antigravity-awesome--odoo-docker-deployment` — Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volu
+- `antigravity-awesome--prometheus-configuration` — Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastr
+- `antigravity-awesome--terraform-aws-modules` — Terraform module creation for AWS — reusable modules, state management, and HCL best pract
+- `antigravity-awesome--terraform-infrastructure` — Terraform infrastructure as code workflow for provisioning cloud resources, creating reusa
+- `antigravity-awesome--terraform-module-library` — Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastr
+- `antigravity-awesome--terraform-skill` — Terraform infrastructure as code best practices
+- `antigravity-awesome--terraform-specialist` — Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, 
+- `antigravity-awesome--vercel-deployment` — Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment
+- `antigravity-awesome--whatsapp-cloud-api` — Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA
+- `awesome-claude-code--aws-cloud-patterns` — AWS cloud patterns for Lambda, ECS, S3, DynamoDB, and Infrastructure as Code with CDK/Terr
+- `awesome-claude-code--devops-automation` — CI/CD pipeline design with GitHub Actions, Docker, Kubernetes, Helm, and GitOps patterns
+- `awesome-claude-code--docker-best-practices` — Docker best practices including multi-stage builds, compose patterns, image optimization, 
+- `awesome-claude-code--kubernetes-operations` — Kubernetes operations including manifests, Helm charts, operators, troubleshooting, and re
+- `aws-cost-cleanup` — Automated cleanup of unused AWS resources to reduce costs
+- `aws-cost-optimizer` — Comprehensive AWS cost analysis and optimization recommendations using AWS CLI and Cost Ex
+- `aws-penetration-testing` — This skill should be used when the user asks to \"pentest AWS\", \"test AWS security\", \"
+- `aws-serverless` — Specialized skill for building production-ready serverless applications on AWS. Covers Lam
+- `aws-skills` — AWS development with infrastructure automation and cloud architecture patterns
+- `azd-deployment` — Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd).
+- `azure-ai-agents-persistent-dotnet` — Azure AI Agents Persistent SDK for .NET. Low-level SDK for creating and managing AI agents
+- `azure-ai-agents-persistent-java` — Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents
+- `azure-ai-contentsafety-java` — Build content moderation applications with Azure AI Content Safety SDK for Java. Use when 
+- `azure-ai-contentsafety-py` — Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and imag
+- `azure-ai-contentsafety-ts` — Analyze text and images for harmful content using Azure AI Content Safety (@azure-rest/ai-
+- `azure-ai-contentunderstanding-py` — Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from 
+- `azure-ai-document-intelligence-dotnet` — Azure AI Document Intelligence SDK for .NET. Extract text, tables, and structured data fro
+- `azure-ai-document-intelligence-ts` — Extract text, tables, and structured data from documents using Azure Document Intelligence
+- `azure-ai-formrecognizer-java` — Build document analysis applications with Azure Document Intelligence (Form Recognizer) SD
+- `azure-ai-ml-py` — Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, c
+- `azure-ai-openai-dotnet` — Azure OpenAI SDK for .NET. Client library for Azure OpenAI and OpenAI services. Use for ch
+- `azure-ai-projects-dotnet` — Azure AI Projects SDK for .NET. High-level client for Azure AI Foundry projects including 
+- `azure-ai-projects-java` — Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management inc
+- `azure-ai-projects-py` — Build AI applications using the Azure AI Projects Python SDK (azure-ai-projects). Use when
+- `azure-ai-projects-ts` — Build AI applications using Azure AI Projects SDK for JavaScript (@azure/ai-projects). Use
+- `azure-ai-textanalytics-py` — Azure AI Text Analytics SDK for sentiment analysis, entity recognition, key phrases, langu
+- `azure-ai-transcription-py` — Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcri
+- `azure-ai-translation-document-py` — Azure AI Document Translation SDK for batch translation of documents with format preservat
+- `azure-ai-translation-text-py` — Azure AI Text Translation SDK for real-time text translation, transliteration, language de
+- `azure-ai-translation-ts` — Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai
+- `azure-ai-vision-imageanalysis-java` — Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing
+- `azure-ai-vision-imageanalysis-py` — Azure AI Vision Image Analysis SDK for captions, tags, objects, OCR, people detection, and
+- `azure-ai-voicelive-dotnet` — Azure AI Voice Live SDK for .NET. Build real-time voice AI applications with bidirectional
+- `azure-ai-voicelive-java` — Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assis
+- `azure-ai-voicelive-py` — Build real-time voice AI applications using Azure AI Voice Live SDK (azure-ai-voicelive). 
+- `azure-ai-voicelive-ts` — Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications w
+- `azure-communication-callautomation-java` — Build call automation workflows with Azure Communication Services Call Automation Java SDK
+- `azure-communication-callingserver-java` — Azure Communication Services CallingServer (legacy) Java SDK. Note - This SDK is deprecate
+- `azure-communication-chat-java` — Build real-time chat applications with Azure Communication Services Chat Java SDK. Use whe
+- `azure-communication-common-java` — Azure Communication Services common utilities for Java. Use when working with Communicatio
+- `azure-communication-sms-java` — Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SM
+- `azure-compute-batch-java` — Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, ta
+- `azure-containerregistry-py` — Azure Container Registry SDK for Python. Use for managing container images, artifacts, and
+- `azure-cosmos-db-py` — Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patter
+- `azure-cosmos-java` — Azure Cosmos DB SDK for Java. NoSQL database operations with global distribution, multi-mo
+- `azure-cosmos-py` — Azure Cosmos DB SDK for Python (NoSQL API). Use for document CRUD, queries, containers, an
+- `azure-cosmos-rust` — Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and 
+- `azure-cosmos-ts` — Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use f
+- `azure-data-tables-java` — Build table storage applications with Azure Tables SDK for Java. Use when working with Azu
+- `azure-data-tables-py` — Azure Tables SDK for Python (Storage and Cosmos DB). Use for NoSQL key-value storage, enti
+- `azure-eventgrid-dotnet` — Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azu
+- `azure-eventgrid-java` — Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing ev
+- `azure-eventgrid-py` — Azure Event Grid SDK for Python. Use for publishing events, handling CloudEvents, and even
+- `azure-eventhub-dotnet` — Azure Event Hubs SDK for .NET.
+- `azure-eventhub-java` — Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implem
+- `azure-eventhub-py` — Azure Event Hubs SDK for Python streaming. Use for high-throughput event ingestion, produc
+- `azure-eventhub-rust` — Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingest
+- `azure-eventhub-ts` — Build event streaming applications using Azure Event Hubs SDK for JavaScript (@azure/event
+- `azure-functions` — Expert patterns for Azure Functions development including isolated worker model, Durable F
+- `azure-identity-dotnet` — Azure Identity SDK for .NET. Authentication library for Azure SDK clients using Microsoft 
+- `azure-identity-java` — Azure Identity Java SDK for authentication with Azure services. Use when implementing Defa
+- `azure-identity-py` — Azure Identity SDK for Python authentication. Use for DefaultAzureCredential, managed iden
+- `azure-identity-rust` — Azure Identity SDK for Rust authentication. Use for DeveloperToolsCredential, ManagedIdent
+- `azure-identity-ts` — Authenticate to Azure services using Azure Identity SDK for JavaScript (@azure/identity). 
+- `azure-keyvault-certificates-rust` — Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certi
+- `azure-keyvault-keys-rust` — Azure Key Vault Keys SDK for Rust. Use for creating, managing, and using cryptographic key
+- `azure-keyvault-keys-ts` — Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-k
+- `azure-keyvault-py` — Azure Key Vault SDK for Python. Use for secrets, keys, and certificates management with se
+- `azure-keyvault-secrets-rust` — Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, a
+- `azure-keyvault-secrets-ts` — Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets).
+- `azure-maps-search-dotnet` — Azure Maps SDK for .NET. Location-based services including geocoding, routing, rendering, 
+- `azure-messaging-webpubsub-java` — Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing
+- `azure-messaging-webpubsubservice-py` — Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connection
+- `azure-mgmt-apicenter-dotnet` — Azure API Center SDK for .NET. Centralized API inventory management with governance, versi
+- `azure-mgmt-apicenter-py` — Azure API Center Management SDK for Python. Use for managing API inventory, metadata, and 
+- `azure-mgmt-apimanagement-dotnet` — Azure Resource Manager SDK for API Management in .NET.
+- `azure-mgmt-apimanagement-py` — Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subsc
+- `azure-mgmt-applicationinsights-dotnet` — Azure Application Insights SDK for .NET. Application performance monitoring and observabil
+- `azure-mgmt-arizeaiobservabilityeval-dotnet` — Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET).
+- `azure-mgmt-botservice-dotnet` — Azure Resource Manager SDK for Bot Service in .NET. Management plane operations for creati
+- `azure-mgmt-botservice-py` — Azure Bot Service Management SDK for Python. Use for creating, managing, and configuring A
+- `azure-mgmt-fabric-dotnet` — Azure Resource Manager SDK for Fabric in .NET.
+- `azure-mgmt-fabric-py` — Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and r
+- `azure-mgmt-mongodbatlas-dotnet` — Manage MongoDB Atlas Organizations as Azure ARM resources using Azure.ResourceManager.Mong
+- `azure-mgmt-weightsandbiases-dotnet` — Azure Weights & Biases SDK for .NET. ML experiment tracking and model management via Azure
+- `azure-monitor-ingestion-java` — Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collectio
+- `azure-monitor-ingestion-py` — Azure Monitor Ingestion SDK for Python. Use for sending custom logs to Log Analytics works
+- `azure-monitor-opentelemetry-exporter-java` — Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and l
+- `azure-monitor-opentelemetry-exporter-py` — Azure Monitor OpenTelemetry Exporter for Python. Use for low-level OpenTelemetry export to
+- `azure-monitor-opentelemetry-py` — Azure Monitor OpenTelemetry Distro for Python. Use for one-line Application Insights setup
+- `azure-monitor-opentelemetry-ts` — Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monito
+- `azure-monitor-query-java` — Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces a
+- `azure-monitor-query-py` — Azure Monitor Query SDK for Python. Use for querying Log Analytics workspaces and Azure Mo
+- `azure-postgres-ts` — Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the
+- `azure-resource-manager-cosmosdb-dotnet` — Azure Resource Manager SDK for Cosmos DB in .NET.
+- `azure-resource-manager-mysql-dotnet` — Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server de
+- `azure-resource-manager-playwright-dotnet` — Azure Resource Manager SDK for Microsoft Playwright Testing in .NET.
+- `azure-resource-manager-postgresql-dotnet` — Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible
+- `azure-resource-manager-redis-dotnet` — Azure Resource Manager SDK for Redis in .NET.
+- `azure-resource-manager-sql-dotnet` — Azure Resource Manager SDK for Azure SQL in .NET.
+- `azure-search-documents-dotnet` — Azure AI Search SDK for .NET (Azure.Search.Documents). Use for building search application
+- `azure-search-documents-py` — Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, in
+- `azure-search-documents-ts` — Build search applications using Azure AI Search SDK for JavaScript (@azure/search-document
+- `azure-servicebus-dotnet` — Azure Service Bus SDK for .NET. Enterprise messaging with queues, topics, subscriptions, a
+- `azure-servicebus-py` — Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and ent
+- `azure-servicebus-ts` — Build messaging applications using Azure Service Bus SDK for JavaScript (@azure/service-bu
+- `azure-speech-to-text-rest-py` — Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition 
+- `azure-storage-blob-java` — Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, 
+- `azure-storage-blob-py` — Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing
+- `azure-storage-blob-rust` — Azure Blob Storage SDK for Rust. Use for uploading, downloading, and managing blobs and co
+- `azure-storage-blob-ts` — Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Us
+- `azure-storage-file-datalake-py` — Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data a
+- `azure-storage-file-share-py` — Azure Storage File Share SDK for Python. Use for SMB file shares, directories, and file op
+- `azure-storage-file-share-ts` — Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share 
+- `azure-storage-queue-py` — Azure Queue Storage SDK for Python. Use for reliable message queuing, task distribution, a
+- `azure-storage-queue-ts` — Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue ope
+- `azure-web-pubsub-ts` — Build real-time messaging applications using Azure Web PubSub SDKs for JavaScript (@azure/
+- `cloud-architect` — Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, ad
+- `cloud-devops` — Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, 
+- `cloud-penetration-testing` — This skill should be used when the user asks to \"perform cloud penetration testing\", \"a
+- `cloud-platforms` — AWS, GCP, Azure services and cloud-native development
+- `database-cloud-optimization-cost-optimize` — You are a cloud cost optimization expert specializing in reducing infrastructure expenses 
+- `deployment-engineer` — Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and a
+- `deployment-procedures` — Production deployment principles and decision-making. Safe deployment workflows, rollback 
+- `deployment-validation-config-validate` — You are a configuration management expert specializing in validating, testing, and ensurin
+- `devops-aws-cost-optimization` — AWS cost optimization and FinOps workflows. Use for finding unused resources, analyzing Re
+- `devops-ci-cd` — CI/CD pipeline design, optimization, DevSecOps security scanning, and troubleshooting. Use
+- `devops-cicd` — CI/CD pipelines, infrastructure as code, and deployment strategies
+- `devops-deploy` — DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terrafo
+- `devops-engineer`
+- `devops-gitops-workflows` — GitOps deployment workflows with ArgoCD and Flux. Use for setting up GitOps (ArgoCD 3.x, F
+- `devops-gym-benchmarking-ai-agents` — Apply the DevOps-Gym methodology to systematically tackle full-cycle DevOps tasks: build/c
+- `devops-monitoring-observability` — Monitoring and observability strategy, implementation, and troubleshooting. Use for design
+- `devops-troubleshooter` — Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, 
+- `docker-expert` — Docker containerization expert with deep knowledge of multi-stage builds, image optimizati
+- `evaluating-kubernetes-performance-genai` — Design and optimize Kubernetes-native GenAI inference platforms using Kueue job queuing, D
+- `expo-deployment` — Deploy Expo apps to production
+- `expo-expo-deployment` — Deploying Expo apps to iOS App Store, Android Play Store, web hosting, and API routes
+- `gcp-cloud-run` — Specialized skill for building production-ready serverless applications on GCP. Covers Clo
+- `github-actions-templates` — Create production-ready GitHub Actions workflows for automated testing, building, and depl
+- `gitlab-ci-patterns` — Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distributed runners 
+- `gitops-workflow` — Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes depl
+- `grafana-dashboards` — Create and manage production Grafana dashboards for real-time visualization of system and 
+- `helm-chart-scaffolding` — Design, organize, and manage Helm charts for templating and packaging Kubernetes applicati
+- `helm-human-centered-evaluation-framework` — Evaluate LLM-powered recommender systems across five human-centered dimensions: Intent Ali
+- `hybrid-cloud-architect` — Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azu
+- `hybrid-cloud-networking` — Configure secure, high-performance connectivity between on-premises infrastructure and clo
+- `jeff-cloud-architect` — Designs cloud architectures, creates migration plans, generates cost optimization recommen
+- `k8s-manifest-generator` — Create production-ready Kubernetes manifests for Deployments, Services, ConfigMaps, and Se
+- `kubernetes-architect` — Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps w
+- `kubernetes-deployment` — Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and
+- `kubernetes-specialist` — Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests
+- `multi-cloud-architecture` — Design multi-cloud architectures using a decision framework to select and integrate servic
+- `odoo-docker-deployment` — Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volu
+- `prometheus-configuration` — Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastr
+- `terraform-aws-modules` — Terraform module creation for AWS — reusable modules, state management, and HCL best pract
+- `terraform-engineer` — Use when implementing infrastructure as code with Terraform across AWS, Azure, or GCP. Inv
+- `terraform-infrastructure` — Terraform infrastructure as code workflow for provisioning cloud resources, creating reusa
+- `terraform-module-library` — Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastr
+- `terraform-skill` — Terraform infrastructure as code best practices
+- `terraform-specialist` — Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, 
+- `vercel-deployment` — Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment
+- `washin-docker-compose-force-recreate-caddy-loop` — |
+- `washin-docker-ghost-container-recovery` — |
+- `washin-docker-small-vps-deploy-optimization` — |
+- `washin-docker-static-asset-copy-gotcha` — |
+- `washin-railway-fastapi-deployment` — |
+- `washin-serverless-api-timeout-pattern` — |
+- `whatsapp-cloud-api` — Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA
+
+### 🤖 AI & Machine Learning (167)
+
+- `adaptive-confidence-gating-multi-agent` — Multi-agent code generation using structured debate with adaptive confidence gating. Three
+- `agent-orchestration-multi-agent-optimize` — Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-a
+- `agenticsimlaw-juvenile-courtroom-multi-agent` — Structured multi-agent courtroom debate for explainable high-stakes tabular decisions. Use
+- `agyn-multi-agent-system-team-based` — Orchestrate multi-agent teams for autonomous software engineering using the Agyn methodolo
+- `ai-agent-development` — AI agent development workflow for building autonomous agents, multi-agent systems, and age
+- `ai-agent-for-reverseengineering` — >
+- `ai-agent-systems-supply` — >
+- `ai-agents-architect` — Expert in designing and building autonomous AI agents. Masters tool use, memory systems, p
+- `ai-ml-integration` — AI/ML APIs, LLM integration, and intelligent application patterns
+- `ama-adaptive-memory-multi-agent` — Build adaptive memory systems using coordinated multi-agent collaboration with hierarchica
+- `analyticsgpt-workflow-scientometric-question` — Build sequential LLM pipelines for scientometric question answering over academic database
+- `antigravity-awesome--agent-orchestration-multi-agent-optimiz` — Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-a
+- `antigravity-awesome--ai-agent-development` — AI agent development workflow for building autonomous agents, multi-agent systems, and age
+- `antigravity-awesome--ai-agents-architect` — Expert in designing and building autonomous AI agents. Masters tool use, memory systems, p
+- `antigravity-awesome--bullmq-specialist` — BullMQ expert for Redis-backed job queues, background processing, and reliable async execu
+- `antigravity-awesome--earllm-build` — Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that con
+- `antigravity-awesome--embedding-strategies` — Select and optimize embedding models for semantic search and RAG applications. Use when ch
+- `antigravity-awesome--error-debugging-multi-agent-review` — Use when working with error debugging multi agent review
+- `antigravity-awesome--fp-pragmatic` — A practical, jargon-free guide to functional programming - the 80/20 approach that gets re
+- `antigravity-awesome--fp-ts-pragmatic` — A practical, jargon-free guide to fp-ts functional programming - the 80/20 approach that g
+- `antigravity-awesome--html-injection-testing` — This skill should be used when the user asks to \"test for HTML injection\", \"inject HTML
+- `antigravity-awesome--hugging-face-cli` — Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to downloa
+- `antigravity-awesome--hugging-face-dataset-viewer` — Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metad
+- `antigravity-awesome--hugging-face-datasets` — Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining conf
+- `antigravity-awesome--hugging-face-evaluation` — Add and manage evaluation results in Hugging Face model cards. Supports extracting eval ta
+- `antigravity-awesome--hugging-face-jobs` — This skill should be used when users want to run any workload on Hugging Face Jobs infrast
+- `antigravity-awesome--hugging-face-model-trainer` — This skill should be used when users want to train or fine-tune language models using TRL 
+- `antigravity-awesome--hugging-face-paper-publisher` — Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, lin
+- `antigravity-awesome--hugging-face-tool-builder` — Use this skill when the user wants to build tool/scripts or achieve a task where using dat
+- `antigravity-awesome--langchain-architecture` — Design LLM applications using the LangChain framework with agents, memory, and tool integr
+- `antigravity-awesome--llm-app-patterns` — Production-ready patterns for building LLM applications. Covers RAG pipelines, agent archi
+- `antigravity-awesome--llm-application-dev-ai-assistant` — You are an AI assistant development expert specializing in creating intelligent conversati
+- `antigravity-awesome--llm-application-dev-langchain-agent` — You are an expert LangChain agent developer specializing in production-grade AI systems us
+- `antigravity-awesome--llm-application-dev-prompt-optimize` — You are an expert prompt engineer specializing in crafting effective prompts for LLMs thro
+- `antigravity-awesome--llm-evaluation` — Implement comprehensive evaluation strategies for LLM applications using automated metrics
+- `antigravity-awesome--llm-ops` — LLM Operations -- RAG, embeddings, vector databases, fine-tuning, prompt engineering avanc
+- `antigravity-awesome--llm-prompt-optimizer` — Use when improving prompts for any LLM. Applies proven prompt engineering techniques to bo
+- `antigravity-awesome--llm-structured-output` — >
+- `antigravity-awesome--local-llm-expert` — Master local LLM inference, model selection, VRAM optimization, and local deployment using
+- `antigravity-awesome--ml-engineer` — Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implem
+- `antigravity-awesome--multi-agent-patterns` — This skill should be used when the user asks to "design multi-agent system", "implement su
+- `antigravity-awesome--odoo-xml-views-builder` — Expert at building Odoo XML views: Form, List, Kanban, Search, Calendar, and Graph. Genera
+- `antigravity-awesome--performance-testing-review-multi-agent-` — Use when working with performance testing review multi agent review
+- `antigravity-awesome--prompt-engineer` — Transforms user prompts into optimized prompts using frameworks (RTF, RISEN, Chain of Thou
+- `antigravity-awesome--prompt-engineering` — Expert guide on prompt engineering patterns, best practices, and optimization techniques. 
+- `antigravity-awesome--prompt-engineering-patterns` — Master advanced prompt engineering techniques to maximize LLM performance, reliability, an
+- `antigravity-awesome--recallmax` — FREE — God-tier long-context memory for AI agents. Injects 500K-1M clean tokens, auto-summ
+- `antigravity-awesome--sankhya-dashboard-html-jsp-custom-best-` — This skill should be used when the user asks for patterns, best practices, creation, or fi
+- `antigravity-awesome--scikit-learn` — Machine learning in Python with scikit-learn. Use for classification, regression, clusteri
+- `automated-structural-testing-llm-based` — Write structural tests for LLM-based agents using trace-based assertions, mocked LLM respo
+- `autonomous-multi-agent-ai-high-throughput` — |
+- `awesome-claude-code--llm-integration` — LLM integration patterns including API usage, streaming, function calling, RAG pipelines, 
+- `awesome-claude-code--prompt-engineering` — Prompt engineering patterns including structured prompts, chain-of-thought, few-shot learn
+- `bullmq-specialist` — BullMQ expert for Redis-backed job queues, background processing, and reliable async execu
+- `canonical-intermediate-representation-llm-based` — >
+- `codecircuit-inferring-llm-generated-code` — Assess LLM-generated code correctness using attribution graph analysis inspired by mechani
+- `commcp-multi-agent-coordination-llm-based`
+- `compact-hypercube-embeddings-fast` — Build fast similarity-search systems using compact binary hypercube embeddings derived fro
+- `completing-missing-annotation-multi-agent` — Multi-agent debate framework for relevance assessment and annotation completion. Uses oppo
+- `constrained-process-maps-multi-agent`
+- `contextevolve-multi-agent-context-compression` — Multi-agent iterative code optimization using context compression. Decomposes optimization
+- `coverage-analysis` — >
+- `darl-encouraging-diverse-answers` — Generate diverse, high-quality answer variants for open-ended tasks using DARL's bounded-d
+- `dart-diffusion-inspired-speculative-decoding` — Set up and use DART (Diffusion-Inspired Speculative Decoding) for fast LLM inference. DART
+- `detecting-correcting-hallucinations-llm-generated` — >
+- `diffusion-pretrained-dense-contextual-embeddings` — Build production retrieval systems using pplx-embed, diffusion-pretrained dense and contex
+- `discoverllm-executing-intents-discovering` — Help users discover and form their intents through adaptive diverge-converge interaction, 
+- `dllm-agent-see-farther`
+- `dynamic-role-assignment-multi-agent` — Dynamically assign specialized roles to multiple AI agents via a meta-debate protocol (pro
+- `earllm-build` — Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that con
+- `eft-cot-multi-agent-chain-of-thought-framework` — Build multi-agent emotion-focused therapy (EFT) reasoning pipelines for empathetic mental 
+- `embedding-strategies` — Select and optimize embedding models for semantic search and RAG applications. Use when ch
+- `error-debugging-multi-agent-review` — Use when working with error debugging multi agent review
+- `evaluating-social-bias-rag` — Evaluate and mitigate social bias in RAG pipelines. Use when: 'audit my RAG system for bia
+- `evoconfig-self-evolving-multi-agent-systems` — Autonomous environment configuration using multi-agent diagnosis and self-evolving error r
+- `evolve-evolutionary-search-llm-based` — Evolutionary search framework for LLM-driven Verilog/RTL generation and PPA optimization. 
+- `experience-driven-multi-agent-systems-training-fre`
+- `fat-cat-document-driven-metacognitive-multi-agent` — >
+- `fine-tuning-expert` — Use when fine-tuning LLMs, training custom models, or adapting foundation models for speci
+- `fine-tuning-gpt-5-gpu-kernel` — Generate optimized GPU kernels in Triton from PyTorch reference code using the Makora RL-b
+- `following-dragons-code-review-guided` — Extract security-relevant signals from code review comments and translate them into fuzzer
+- `fp-pragmatic` — A practical, jargon-free guide to functional programming - the 80/20 approach that gets re
+- `fp-ts-pragmatic` — A practical, jargon-free guide to fp-ts functional programming - the 80/20 approach that g
+- `from-pragmas-partners-symbiotic` — Agentic High-Level Synthesis (HLS) optimization: autonomously analyze, insert, and tune C/
+- `hidden-licensing-risks-llmware` — Detect license incompatibilities across LLM supply chains (OSS repos, models, datasets) us
+- `html-injection-testing` — This skill should be used when the user asks to \"test for HTML injection\", \"inject HTML
+- `hugging-face-cli` — Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to downloa
+- `hugging-face-dataset-viewer` — Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metad
+- `hugging-face-datasets` — Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining conf
+- `hugging-face-evaluation` — Add and manage evaluation results in Hugging Face model cards. Supports extracting eval ta
+- `hugging-face-jobs` — This skill should be used when users want to run any workload on Hugging Face Jobs infrast
+- `hugging-face-model-trainer` — This skill should be used when users want to train or fine-tune language models using TRL 
+- `hugging-face-paper-publisher` — Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, lin
+- `hugging-face-tool-builder` — Use this skill when the user wants to build tool/scripts or achieve a task where using dat
+- `jeff-prompt-engineer` — Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates,
+- `langchain-architecture` — Design LLM applications using LangChain 1.x and LangGraph for agents, memory, and tool int
+- `lata-tool-llm-assisted-translation` — >
+- `layer-wise-lora-fine-tuning-similarity` — Selectively apply LoRA adapters to only the most important transformer layers using CKA si
+- `leveraging-data-say-no` — Implement memory-augmented selective prediction for vision-language models using retrieval
+- `leveraging-turkish-skill-extraction` — Extract and normalize skills from job postings using a two-stage LLM pipeline: dynamic few
+- `lingxidiagbench-multi-agent-framework-benchmarking` — Build multi-agent benchmarking systems with role-separated agents (simulator, interviewer,
+- `llm-app-patterns` — Production-ready patterns for building LLM applications. Covers RAG pipelines, agent archi
+- `llm-application-dev-ai-assistant` — You are an AI assistant development expert specializing in creating intelligent conversati
+- `llm-application-dev-langchain-agent` — You are an expert LangChain agent developer specializing in production-grade AI systems us
+- `llm-application-dev-prompt-optimize` — You are an expert prompt engineer specializing in crafting effective prompts for LLMs thro
+- `llm-based-sql-generation-prompting` — Generate accurate SQL from natural language using the SSEV pipeline: schema-linked prompti
+- `llm-evaluation` — Implement comprehensive evaluation strategies for LLM applications using automated metrics
+- `llm-fsm-scaling-finite-state-reasoning` — Generate correct RTL (Verilog/SystemVerilog) implementations of finite-state machines from
+- `llm-in-sandbox-elicits-general-agentic` — Solve non-code tasks (math, science, long-context, formatting) by treating the terminal as
+- `llm-not-all-you` — Systematic model selection advisor for classification tasks — chooses between classical ML
+- `llm-ops` — LLM Operations -- RAG, embeddings, vector databases, fine-tuning, prompt engineering avanc
+- `llm-prompt-evaluation-educational` — Systematically design, evaluate, and rank LLM prompts for educational applications using t
+- `llm-prompt-optimizer` — Use when improving prompts for any LLM. Applies proven prompt engineering techniques to bo
+- `llm-structured-output` — >
+- `llms-as-orchestrators-constraint-compliant` — |
+- `local-llm-expert` — Master local LLM inference, model selection, VRAM optimization, and local deployment using
+- `marti-mars2-scaling-multi-agent-self-search-reinfo`
+- `mascot-multi-agent-socio-collaborative-companion`
+- `mirror-multi-agent-framework-iterative` — Translate natural language optimization problems into mathematical models and solver code 
+- `ml-engineer` — Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implem
+- `multi-agent-causal-reasoning-system` — Build multi-agent systems that discover causal rules from event sequences using specialize
+- `multi-agent-patterns` — This skill should be used when the user asks to "design multi-agent system", "implement su
+- `multi-agent-teams-hold-experts` — Prevent expertise dilution in multi-agent LLM workflows by applying findings from 'Multi-A
+- `multivis-agent-multi-agent-framework-logic` — Build reliable multi-agent data visualization pipelines with logic rule constraints. Use w
+- `mulvul-retrieval-augmented-multi-agent-code` — Multi-agent vulnerability detection using coarse-to-fine routing, contrastive retrieval, a
+- `neural-theorem-proving-verification` — Generate formal proofs for program verification conditions (VCs) in Isabelle, Lean 4, and 
+- `next-gen-captchas-leveraging-cognitive`
+- `odoo-xml-views-builder` — Expert at building Odoo XML views: Form, List, Kanban, Search, Calendar, and Graph. Genera
+- `omnireview-large-scale-benchmark-llm-enhanced` — Build reviewer/expert recommendation systems using LLM-generated semantic profiles and Mul
+- `on-uncertainty-model-based-multi-agent` — Apply entropy-based uncertainty analysis to multi-agent LLM systems. Diagnose when multi-a
+- `opinf-llm-parametric-pde-solving` — >
+- `opportunities-aiml-rubin-lsst` — Build trustworthy ML pipelines for large-scale scientific data analysis with calibrated un
+- `pamas-self-adaptive-multi-agent-system` — Build hierarchical multi-agent systems that detect misinformation, anomalies, and deceptiv
+- `performance-testing-review-multi-agent-review` — Use when working with performance testing review multi agent review
+- `prism-principled-framework-multi-agent` — >
+- `prompt-engineer` — Transforms user prompts into optimized prompts using frameworks (RTF, RISEN, Chain of Thou
+- `prompt-engineering` — Expert guide on prompt engineering patterns, best practices, and optimization techniques. 
+- `prompt-engineering-patterns` — Master advanced prompt engineering techniques to maximize LLM performance, reliability, an
+- `ragturk-best-practices-retrieval` — Design and optimize RAG pipelines for Turkish and other morphologically rich languages (Tu
+- `refer-agent-collaborative-multi-agent-system`
+- `robustexplain-evaluating-robustness-llm-based` — Evaluate robustness of LLM-generated recommendation explanations under realistic user beha
+- `rulesmith-multi-agent-automated-game` — Automated game balancing using multi-agent LLM self-play coupled with Bayesian optimizatio
+- `sankhya-dashboard-html-jsp-custom-best-pratices` — This skill should be used when the user asks for patterns, best practices, creation, or fi
+- `scikit-learn` — Machine learning in Python with scikit-learn. Use for classification, regression, clusteri
+- `sec-LLM_Testing` — Comprehensive testing prompts and wordlists for evaluating Large Language Model (LLM) secu
+- `sf-ai-agentforce` — >
+- `sf-ai-agentforce-observability` — >
+- `sf-ai-agentforce-persona` — >
+- `sf-ai-agentforce-testing` — >
+- `sf-ai-agentscript` — >
+- `sogptspotter-detecting-chatgpt-generated-answers` — Detect AI-generated answers in Q&A content using Siamese embedding comparison with referen
+- `solagent-specialized-multi-agent-framework` — Generate secure, functionally correct Solidity smart contracts using a dual-loop refinemen
+- `state-art-llm-enabled-interaction` — Build LLM-powered natural language interfaces for data visualization — NL2VIS pipelines, c
+- `symphony-synergistic-multi-agent-planning` — >
+- `synthagent-multi-agent-framework-realistic` — Build multi-agent pipelines that generate realistic synthetic patient profiles by integrat
+- `tam-eval-evaluating-llms-for` — |
+- `the-semantic-trap-fine-tuned` — >
+- `tracecoder-trace-driven-multi-agent-framework` — Trace-driven debugging framework for LLM-generated code. Uses diagnostic probe instrumenta
+- `tracellm-leveraging-prompt-engineering` — Establish and verify traceability links between software artifacts (requirements, design d
+- `understanding-agent-scaling-llm-based` — Design diversity-aware multi-agent systems that maximize performance with fewer agents. Us
+- `washin-llm-api-cost-optimization` — |
+- `washin-llm-model-version-migration-2026` — |
+- `washin-multi-agent-tdz-trap` — |
+- `washin-multi-agent-workflow-design` — |
+- `washin-unified-ai-agent-architecture` — |
+- `what-should-cite-rag` — Build multi-level RAG pipelines for academic citation prediction and literature discovery.
+- `why-ai-agents-systematically` — >
+
+### ⚡ Backend & APIs (147)
+
+- `agentstepper-interactive-debugging-software` — Interactive debugging of LLM-powered software development agents using structured trajecto
+- `agenttrace-structured-logging-framework` — Implement structured, multi-surface observability logging for LLM agent systems using the 
+- `ai-engineer` — Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Imp
+- `antigravity-awesome--ai-engineer` — Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Imp
+- `antigravity-awesome--ai-engineering-toolkit` — 6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), cont
+- `antigravity-awesome--api-design-principles` — Master REST and GraphQL API design principles to build intuitive, scalable, and maintainab
+- `antigravity-awesome--backend-architect` — Expert backend architect specializing in scalable API design, microservices architecture, 
+- `antigravity-awesome--backend-dev-guidelines` — Opinionated backend development standards for Node.js + Express + TypeScript microservices
+- `antigravity-awesome--cc-skill-backend-patterns` — Backend architecture patterns, API design, database optimization, and server-side best pra
+- `antigravity-awesome--data-engineer` — Build scalable data pipelines, modern data warehouses, and real-time streaming architectur
+- `antigravity-awesome--data-engineering-data-driven-feature` — Build features guided by data insights, A/B testing, and continuous measurement using spec
+- `antigravity-awesome--debugging-strategies` — Master systematic debugging techniques, profiling tools, and root cause analysis to effici
+- `antigravity-awesome--debugging-toolkit-smart-debug` — Use when working with debugging toolkit smart debug
+- `antigravity-awesome--distributed-debugging-debug-trace` — You are a debugging expert specializing in setting up comprehensive debugging environments
+- `antigravity-awesome--django-access-review` — django-access-review
+- `antigravity-awesome--django-perf-review` — Django performance code review. Use when asked to "review Django performance", "find N+1 q
+- `antigravity-awesome--django-pro` — Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web a
+- `antigravity-awesome--dotnet-backend` — Build ASP.NET Core 8+ backend services with EF Core, auth, background jobs, and production
+- `antigravity-awesome--dotnet-backend-patterns` — Master C#/.NET backend development patterns for building robust APIs, MCP servers, and ent
+- `antigravity-awesome--error-debugging-error-analysis` — You are an expert error analysis specialist with deep expertise in debugging distributed s
+- `antigravity-awesome--error-debugging-error-trace` — You are an error tracking and observability expert specializing in implementing comprehens
+- `antigravity-awesome--fastapi-pro` — Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master mi
+- `antigravity-awesome--fastapi-router-py` — Create FastAPI routers with CRUD operations, authentication dependencies, and proper respo
+- `antigravity-awesome--fastapi-templates` — Create production-ready FastAPI projects with async patterns, dependency injection, and co
+- `antigravity-awesome--fp-backend` — Functional programming patterns for Node.js/Deno backend development using fp-ts, ReaderTa
+- `antigravity-awesome--graphql` — GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed s
+- `antigravity-awesome--graphql-architect` — Master modern GraphQL with federation, performance optimization, and enterprise security. 
+- `antigravity-awesome--grpc-golang` — Build production-ready gRPC services in Go with mTLS, streaming, and observability. Use wh
+- `antigravity-awesome--laravel-expert` — Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel sol
+- `antigravity-awesome--mlops-engineer` — Build comprehensive ML pipelines, experiment tracking, and model registries with MLflow, K
+- `antigravity-awesome--n8n-expression-syntax` — Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, us
+- `antigravity-awesome--n8n-node-configuration` — Operation-aware node configuration guidance. Use when configuring nodes, understanding pro
+- `antigravity-awesome--nestjs-expert` — Nest.js framework expert specializing in module architecture, dependency injection, middle
+- `antigravity-awesome--network-engineer` — Expert network engineer specializing in modern cloud networking, security architectures, a
+- `antigravity-awesome--new-rails-project` — Create a new Rails project
+- `antigravity-awesome--nodejs-backend-patterns` — Build production-ready Node.js backend services with Express/Fastify, implementing middlew
+- `antigravity-awesome--nodejs-best-practices` — Node.js development principles and decision-making. Framework selection, async patterns, s
+- `antigravity-awesome--observability-engineer` — Build production-ready monitoring, logging, and tracing systems. Implements comprehensive 
+- `antigravity-awesome--performance-engineer` — Expert performance engineer specializing in modern observability,
+- `antigravity-awesome--protocol-reverse-engineering` — Master network protocol reverse engineering including packet analysis, protocol dissection
+- `antigravity-awesome--python-fastapi-development` — Python FastAPI backend development with async patterns, SQLAlchemy, Pydantic, authenticati
+- `antigravity-awesome--python-packaging` — Create distributable Python packages with proper project structure, setup.py/pyproject.tom
+- `antigravity-awesome--reverse-engineer` — Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and s
+- `antigravity-awesome--skill-rails-upgrade` — Analyze Rails apps and provide upgrade assessments
+- `antigravity-awesome--tutorial-engineer` — Creates step-by-step tutorials and educational content from code. Transforms complex conce
+- `antigravity-awesome--unreal-engine-cpp-pro` — Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance 
+- `antigravity-awesome--voice-ai-engine-development` — Build real-time conversational AI voice engines using async worker pipelines, streaming tr
+- `antigravity-awesome--wordpress-plugin-development` — WordPress plugin development workflow covering plugin architecture, hooks, admin interface
+- `api-design` — RESTful, GraphQL, gRPC, and API best practices
+- `api-design-principles` — Master REST and GraphQL API design principles to build intuitive, scalable, and maintainab
+- `api-designer` — Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API 
+- `awesome-claude-code--api-design-patterns` — REST API design with resource naming, pagination, versioning, and OpenAPI spec generation
+- `awesome-claude-code--data-engineering` — Data engineering patterns for ETL pipelines, data warehousing, Apache Spark, and data qual
+- `awesome-claude-code--django-patterns` — Django architecture patterns including DRF, ORM optimization, signals, middleware, and pro
+- `awesome-claude-code--graphql-design` — GraphQL schema design, resolver patterns, subscriptions, DataLoader for N+1 prevention, an
+- `awesome-claude-code--springboot-patterns` — Spring Boot patterns including JPA repositories, REST controllers, layered services, and c
+- `awesome-claude-code--websocket-realtime` — Real-time communication patterns with WebSocket, Socket.io, Server-Sent Events, and scalin
+- `backend` — Backend development with Node.js, Express, NestJS, and server patterns
+- `backend-architect` — Expert backend architect specializing in scalable API design, microservices architecture, 
+- `backend-dev-guidelines` — Opinionated backend development standards for Node.js + Express + TypeScript microservices
+- `bridging-arithmetic-gap-cognitive` — Iterative Dual-Phase Financial-PoT: decouple semantic reasoning from arithmetic computatio
+- `bridging-modality-gap-roadside`
+- `bridging-online-offline-rl` — Apply Cobalt-style contextual bandit learning to multi-turn code generation tasks. Decompo
+- `c-messaging` — Send and read messages via imsg (iMessage) and wacli (WhatsApp). Supports sending to indiv
+- `cc-skill-backend-patterns` — Backend architecture patterns, API design, database optimization, and server-side best pra
+- `chaos-engineer` — Designs chaos experiments, creates failure injection frameworks, and facilitates game day 
+- `claude-code-plugin` — Claude Code Plugin 開發、發布、安裝、更新與 Marketplace 管理完整指南
+- `claude-code-plugin-m-curate-delta` — Synthesize Reflector insights into structured delta proposals for playbook updates, follow
+- `claude-code-plugin-m-generate-appworld-code` — Generate Python code to solve AppWorld agent tasks using playbook bullet guidance. Use whe
+- `claude-code-plugin-m-reflect-appworld-failure` — Analyze AppWorld task failures to extract specific API patterns and generate actionable pl
+- `cognitive-platform-engineering-autonomous` — Build autonomous cloud operations using a four-plane cognitive architecture (Sensing, Reas
+- `comprehensive-evaluation-software-engineering` — >
+- `data-engineer` — Build scalable data pipelines, modern data warehouses, and real-time streaming architectur
+- `data-engineering-data-driven-feature` — Build features guided by data insights, A/B testing, and continuous measurement using spec
+- `debugging-code-world` — Debug code by mentally simulating execution as a Code World Model — predicting runtime sta
+- `debugging-strategies` — Master systematic debugging techniques, profiling tools, and root cause analysis to effici
+- `debugging-toolkit-smart-debug` — Use when working with debugging toolkit smart debug
+- `debugging-wizard` — Parses error messages, traces execution flow through stack traces, correlates log entries 
+- `distributed-debugging-debug-trace` — You are a debugging expert specializing in setting up comprehensive debugging environments
+- `django-access-review` — django-access-review
+- `django-expert` — Use when building Django web applications or REST APIs with Django REST Framework. Invoke 
+- `django-perf-review` — Django performance code review. Use when asked to "review Django performance", "find N+1 q
+- `django-pro` — Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web a
+- `dotnet-backend` — Build ASP.NET Core 8+ backend services with EF Core, auth, background jobs, and production
+- `dotnet-backend-patterns` — Master C#/.NET backend development patterns for building robust APIs, MCP servers, and ent
+- `engineering` — 25 advanced POWERFUL-tier engineering skills covering agent design, RAG architecture, MCP 
+- `engineering-team` — 23 production-ready engineering skills covering architecture, frontend, backend, fullstack
+- `error-debugging-error-analysis` — You are an expert error analysis specialist with deep expertise in debugging distributed s
+- `error-debugging-error-trace` — You are an error tracking and observability expert specializing in implementing comprehens
+- `fastapi-expert` — Use when building high-performance async Python APIs with FastAPI and Pydantic V2. Invoke 
+- `fastapi-pro` — Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master mi
+- `fastapi-router-py` — Create FastAPI routers with CRUD operations, authentication dependencies, and proper respo
+- `fastapi-templates` — Create production-ready FastAPI projects with async patterns, dependency injection, and co
+- `fp-backend` — Functional programming patterns for Node.js/Deno backend development using fp-ts, ReaderTa
+- `graphql` — GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed s
+- `graphql-architect` — Master modern GraphQL with federation, performance optimization, and enterprise security. 
+- `grpc-golang` — Build production-ready gRPC services in Go with mTLS, streaming, and observability. Use wh
+- `jeff-graphql-architect` — Use when designing GraphQL schemas, implementing Apollo Federation, or building real-time 
+- `jeff-nestjs-expert` — Creates and configures NestJS modules, controllers, services, DTOs, guards, and intercepto
+- `laravel-expert` — Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel sol
+- `laravel-specialist` — Build and configure Laravel 10+ applications, including creating Eloquent models and relat
+- `mlops-engineer` — Build comprehensive ML pipelines, experiment tracking, and model registries with MLflow, K
+- `monitoring-logging` — Application monitoring, logging systems, and alerting
+- `n8n-expression-syntax` — Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, us
+- `n8n-node-configuration` — Operation-aware node configuration guidance. Use when configuring nodes, understanding pro
+- `nestjs-expert` — Nest.js framework expert specializing in module architecture, dependency injection, middle
+- `network-engineer` — Expert network engineer specializing in modern cloud networking, security architectures, a
+- `new-rails-project` — Create a new Rails project
+- `nodejs-backend-patterns` — Build production-ready Node.js backend services with Express/Fastify, implementing middlew
+- `nodejs-best-practices` — Node.js development principles and decision-making. Framework selection, async patterns, s
+- `observability-engineer` — Build production-ready monitoring, logging, and tracing systems. Implements comprehensive 
+- `parallel-debugging` — Debug complex issues using competing hypotheses with parallel investigation, evidence coll
+- `performance-engineer` — Expert performance engineer specializing in modern observability,
+- `plugin-settings` — This skill should be used when the user asks about "plugin settings", "store plugin config
+- `plugin-structure` — This skill should be used when the user asks to "create a plugin", "scaffold a plugin", "u
+- `protocol-reverse-engineering` — Master network protocol reverse engineering including packet analysis, protocol dissection
+- `python-fastapi-development` — Python FastAPI backend development with async patterns, SQLAlchemy, Pydantic, authenticati
+- `python-packaging` — Create distributable Python packages with proper project structure, setup.py/pyproject.tom
+- `rails-expert` — Rails 7+ specialist that optimizes Active Record queries with includes/eager_load, impleme
+- `reverse-engineer` — Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and s
+- `rust-engineer`
+- `skill-rails-upgrade` — Analyze Rails apps and provide upgrade assessments
+- `spark-engineer` — Use when writing Spark jobs, debugging performance issues, or configuring cluster settings
+- `spring-boot-engineer` — Generates Spring Boot 3.x configurations, creates REST controllers, implements Spring Secu
+- `sre-engineer` — Defines service level objectives, creates error budget policies, designs incident response
+- `structured-context-engineering-file-native` — |
+- `supporting-software-engineering-tasks` — Generate test scenarios from requirements and retrieve/analyze software engineering docume
+- `tauri-tauri-debugging` — Helps users debug Tauri v2 applications across VS Code, RustRover, IntelliJ, and Neovim. C
+- `tauri-tauri-linux-packaging` — Guides users through packaging Tauri v2 applications for Linux distributions including App
+- `tauri-tauri-nodejs-sidecar` — Guides users through running Node.js as a sidecar process in Tauri applications, enabling 
+- `tauri-tauri-plugin-permissions` — Guides users through configuring Tauri plugin permissions, capabilities, and security. Cov
+- `tauri-tauri-plugins` — Guides the user through Tauri plugin development, including creating plugin extensions, co
+- `tutorial-engineer` — Creates step-by-step tutorials and educational content from code. Transforms complex conce
+- `unreal-engine-cpp-pro` — Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance 
+- `voice-ai-engine-development` — Build real-time conversational AI voice engines using async worker pipelines, streaming tr
+- `washin-cloudflare-worker-performance-debugging` — |
+- `washin-multi-layer-proxy-timeout-chain-debugging` — |
+- `washin-supabase-rls-empty-data-debugging` — |
+- `washin-telegram-bot-conversation-history-debugging` — |
+- `washin-vision-api-fastapi-integration` — |
+- `washin-vps-migration-dns-ghost-debugging` — |
+- `washin-websocket-relay-stability-pattern` — |
+- `websocket-engineer` — Use when building real-time communication systems with WebSockets or Socket.IO. Invoke for
+- `when-much-imagine-adaptive`
+- `wiki-live-challenge-challenging`
+- `wordpress-plugin-development` — WordPress plugin development workflow covering plugin architecture, hooks, admin interface
+- `world-workflows-benchmark-bringing`
+
+### ⚙️ ag- Curated Patterns (134)
+
+- `a-rag-scaling-agentic-retrieval-augmented` — >
+- `a2rag-adaptive-agentic-graph` — Build adaptive, cost-aware Graph-RAG pipelines that route queries through escalating retri
+- `ag-airflow-dag-patterns` — Build production Apache Airflow DAGs with best practices for operators, sensors, testing, 
+- `ag-angular-migration` — Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and 
+- `ag-anti-reversing-techniques` — Understand anti-reversing, obfuscation, and protection techniques encountered during softw
+- `ag-api-design-principles` — Master REST and GraphQL API design principles to build intuitive, scalable, and maintainab
+- `ag-architecture-decision-records` — Write and maintain Architecture Decision Records (ADRs) following best practices for techn
+- `ag-architecture-patterns` — Implement proven backend architecture patterns including Clean Architecture, Hexagonal Arc
+- `ag-async-python-patterns` — Master Python asyncio, concurrent programming, and async/await patterns for high-performan
+- `ag-attack-tree-construction` — Build comprehensive attack trees to visualize threat paths. Use when mapping attack scenar
+- `ag-auth-implementation-patterns` — Master authentication and authorization patterns including JWT, OAuth2, session management
+- `ag-avoid-ai-writing` — Audit and rewrite content to remove 21 categories of AI writing patterns with a 43-entry r
+- `ag-backtesting-frameworks` — Build robust backtesting systems for trading strategies with proper handling of look-ahead
+- `ag-bash-defensive-patterns` — Master defensive Bash programming techniques for production-grade scripts. Use when writin
+- `ag-bats-testing-patterns` — Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use wh
+- `ag-bazel-build-optimization` — Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing 
+- `ag-billing-automation` — Build automated billing systems for recurring payments, invoicing, subscription lifecycle,
+- `ag-binary-analysis-patterns` — Master binary analysis patterns including disassembly, decompilation, control flow analysi
+- `ag-changelog-automation` — Automate changelog generation from commits, PRs, and releases following Keep a Changelog f
+- `ag-code-review-excellence` — Master effective code review practices to provide constructive feedback, catch bugs early,
+- `ag-competitive-landscape` — This skill should be used when the user asks to \\\"analyze competitors", "assess competit
+- `ag-context-driven-development` — Use this skill when working with Conductor's context-driven development methodology, manag
+- `ag-cost-optimization` — Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances,
+- `ag-cqrs-implementation` — Implement Command Query Responsibility Segregation for scalable architectures. Use when se
+- `ag-data-quality-frameworks` — Implement data quality validation with Great Expectations, dbt tests, and data contracts. 
+- `ag-data-storytelling` — Transform data into compelling narratives using visualization, context, and persuasive str
+- `ag-database-migration` — Execute database migrations across ORMs and platforms with zero-downtime strategies, data 
+- `ag-dbt-transformation-patterns` — Master dbt (data build tool) for analytics engineering with model organization, testing, d
+- `ag-debugging-strategies` — Master systematic debugging techniques, profiling tools, and root cause analysis to effici
+- `ag-dependency-upgrade` — Manage major dependency version upgrades with compatibility analysis, staged rollout, and 
+- `ag-distributed-tracing` — Implement distributed tracing with Jaeger and Tempo to track requests across microservices
+- `ag-documentation` — Documentation generation workflow covering API docs, architecture docs, README files, code
+- `ag-dotnet-backend-patterns` — Master C#/.NET backend development patterns for building robust APIs, MCP servers, and ent
+- `ag-e2e-testing-patterns` — Master end-to-end testing with Playwright and Cypress to build reliable test suites that c
+- `ag-embedding-strategies` — Select and optimize embedding models for semantic search and RAG applications. Use when ch
+- `ag-error-handling-patterns` — Master error handling patterns across languages including exceptions, Result types, error 
+- `ag-event-store-design` — Design and implement event stores for event-sourced systems. Use when building event sourc
+- `ag-fastapi-templates` — Create production-ready FastAPI projects with async patterns, dependency injection, and co
+- `ag-git-advanced-workflows` — Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and r
+- `ag-github-actions-templates` — Create production-ready GitHub Actions workflows for automated testing, building, and depl
+- `ag-gitlab-ci-patterns` — Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distributed runners 
+- `ag-gitops-workflow` — Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes depl
+- `ag-go-concurrency-patterns` — Master Go concurrency with goroutines, channels, sync primitives, and context. Use when bu
+- `ag-godot-gdscript-patterns` — Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimizati
+- `ag-grafana-dashboards` — Create and manage production Grafana dashboards for real-time visualization of system and 
+- `ag-helm-chart-scaffolding` — Design, organize, and manage Helm charts for templating and packaging Kubernetes applicati
+- `ag-hybrid-cloud-networking` — Configure secure, high-performance connectivity between on-premises infrastructure and clo
+- `ag-hybrid-search-implementation` — Combine vector and keyword search for improved retrieval. Use when implementing RAG system
+- `ag-incident-runbook-templates` — Create structured incident response runbooks with step-by-step procedures, escalation path
+- `ag-istio-traffic-management` — Configure Istio traffic management including routing, load balancing, circuit breakers, an
+- `ag-javascript-testing-patterns` — Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for uni
+- `ag-k8s-manifest-generator` — Create production-ready Kubernetes manifests for Deployments, Services, ConfigMaps, and Se
+- `ag-k8s-security-policies` — Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBA
+- `ag-kpi-dashboard-design` — Design effective KPI dashboards with metrics selection, visualization best practices, and 
+- `ag-langchain-architecture` — Design LLM applications using the LangChain framework with agents, memory, and tool integr
+- `ag-linkerd-patterns` — Implement Linkerd service mesh patterns for lightweight, security-focused service mesh dep
+- `ag-llm-evaluation` — Implement comprehensive evaluation strategies for LLM applications using automated metrics
+- `ag-mcp-builder` — Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to i
+- `ag-memory-forensics` — Master memory forensics techniques including memory acquisition, process analysis, and art
+- `ag-memory-safety-patterns` — Implement memory-safe programming with RAII, ownership, smart pointers, and resource manag
+- `ag-modern-javascript-patterns` — Master ES6+ features including async/await, destructuring, spread operators, arrow functio
+- `ag-monorepo-management` — Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, sca
+- `ag-mtls-configuration` — Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when impl
+- `ag-multi-cloud-architecture` — Design multi-cloud architectures using a decision framework to select and integrate servic
+- `ag-nextjs-app-router-patterns` — Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and adva
+- `ag-nodejs-backend-patterns` — Build production-ready Node.js backend services with Express/Fastify, implementing middlew
+- `ag-nx-workspace-patterns` — Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project
+- `ag-on-call-handoff-patterns` — Master on-call shift handoffs with context transfer, escalation procedures, and documentat
+- `ag-openapi-spec-generation` — Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and valida
+- `ag-paypal-integration` — Integrate PayPal payment processing with support for express checkout, subscriptions, and 
+- `ag-postgresql` — Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constrai
+- `ag-postmortem-writing` — Write effective blameless postmortems with root cause analysis, timelines, and action item
+- `ag-projection-patterns` — Build read models and projections from event streams. Use when implementing CQRS read side
+- `ag-prometheus-configuration` — Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastr
+- `ag-prompt-engineering-patterns` — Master advanced prompt engineering techniques to maximize LLM performance, reliability, an
+- `ag-protocol-reverse-engineering` — Master network protocol reverse engineering including packet analysis, protocol dissection
+- `ag-python-packaging` — Create distributable Python packages with proper project structure, setup.py/pyproject.tom
+- `ag-python-performance-optimization` — Profile and optimize Python code using cProfile, memory profilers, and performance best pr
+- `ag-python-testing-patterns` — Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven
+- `ag-rag-implementation` — RAG (Retrieval-Augmented Generation) implementation workflow covering embedding selection,
+- `ag-react-modernization` — Upgrade React applications to latest versions, migrate from class components to hooks, and
+- `ag-react-native-architecture` — Build production React Native apps with Expo, navigation, native modules, offline sync, an
+- `ag-react-state-management` — Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. 
+- `ag-risk-metrics-calculation` — Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analys
+- `ag-rust-async-patterns` — Master Rust async programming with Tokio, async traits, error handling, and concurrent pat
+- `ag-saga-orchestration` — Implement saga patterns for distributed transactions and cross-aggregate workflows. Use wh
+- `ag-sast-configuration` — Configure Static Application Security Testing (SAST) tools for automated vulnerability det
+- `ag-screen-reader-testing` — Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when va
+- `ag-secrets-management` — Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, 
+- `ag-security-requirement-extraction` — Derive security requirements from threat models and business context. Use when translating
+- `ag-service-mesh-observability` — Implement comprehensive observability for service meshes including distributed tracing, me
+- `ag-shellcheck-configuration` — Master ShellCheck static analysis configuration and usage for shell script quality. Use wh
+- `ag-similarity-search-patterns` — Implement efficient similarity search with vector databases. Use when building semantic se
+- `ag-slo-implementation` — Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) w
+- `ag-solidity-security` — Master smart contract security best practices to prevent common vulnerabilities and implem
+- `ag-spark-optimization` — Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tu
+- `ag-sql-optimization-patterns` — Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically i
+- `ag-stride-analysis-patterns` — Apply STRIDE methodology to systematically identify threats. Use when analyzing system sec
+- `ag-stripe-integration` — Implement Stripe payment processing for robust, PCI-compliant payment flows including chec
+- `ag-tailwind-design-system` — Build scalable design systems with Tailwind CSS, design tokens, component libraries, and r
+- `ag-team-composition-analysis` — This skill should be used when the user asks to \\\"plan team structure", "determine hirin
+- `ag-temporal-python-testing` — Test Temporal workflows with pytest, time-skipping, and mocking strategies. Covers unit te
+- `ag-terraform-module-library` — Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastr
+- `ag-threat-mitigation-mapping` — Map identified threats to appropriate security controls and mitigations. Use when prioriti
+- `ag-track-management` — Use this skill when creating, managing, or working with Conductor tracks - the logical wor
+- `ag-turborepo-caching` — Configure Turborepo for efficient monorepo builds with local and remote caching. Use when 
+- `ag-typescript-advanced-types` — Master TypeScript's advanced type system including generics, conditional types, mapped typ
+- `ag-unity-ecs-patterns` — Master Unity ECS (Entity Component System) with DOTS, Jobs, and Burst for high-performance
+- `ag-uv-package-manager` — Master the uv package manager for fast Python dependency management, virtual environments,
+- `ag-wcag-audit-patterns` — Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and rem
+- `ag-workflow-orchestration-patterns` — Design durable workflows with Temporal for distributed systems. Covers workflow vs activit
+- `ag-workflow-patterns` — Use this skill when implementing tasks according to Conductor's TDD workflow, handling pha
+- `airflow-dag-patterns` — Build production Apache Airflow DAGs with best practices for operators, sensors, testing, 
+- `antigravity-awesome--airflow-dag-patterns` — Build production Apache Airflow DAGs with best practices for operators, sensors, testing, 
+- `antigravity-awesome--rag-engineer` — Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vecto
+- `antigravity-awesome--rag-implementation` — RAG (Retrieval-Augmented Generation) implementation workflow covering embedding selection,
+- `antigravity-awesome--wcag-audit-patterns` — Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and rem
+- `compactrag-reducing-calls-token` — |
+- `comprehensive-comparison-rag-methods` — Select and configure the right RAG strategy for conversational QA systems based on dataset
+- `contextual-drag-errors-context` — >
+- `cost-efficient-rag-entity-matching` — Build cost-efficient RAG pipelines for entity matching and deduplication using blocking-ba
+- `diverge-diversity-enhanced-rag-open-ended` — Diversity-enhanced RAG for open-ended queries with multiple valid answers. Uses reflection
+- `domain-specific-knowledge-graphs-rag-enhanced` — >
+- `dziribot-rag-intelligent-conversational` — Build dialect-aware RAG conversational agents that handle non-standard orthography, code-s
+- `greprag-empirical-study-optimization` — Lightweight, index-free repository-level code retrieval using ripgrep for context-aware co
+- `hugrag-hierarchical-causal-knowledge` — Build hierarchical causal knowledge graphs for RAG pipelines that suppress spurious correl
+- `mrag-benchmarking-retrieval-augmented-generation` — Build and evaluate biomedical RAG pipelines using the MRAG benchmark methodology. Configur
+- `rag-architect` — Designs and implements production-grade RAG systems by chunking documents, generating embe
+- `rag-engineer` — Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vecto
+- `rag-implementation` — Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databa
+- `sar-rag-atr-visual-question` — |
+- `sparc-rag-adaptive-sequential-parallel-scaling` — Implement multi-agent RAG systems with coordinated sequential-parallel scaling and shared 
+- `wcag-audit-patterns` — Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and rem
+- `when-iterative-rag-beats` — Build iterative retrieval-reasoning RAG pipelines that outperform single-shot retrieval, u
+
+### 🏢 Business & Startups (129)
+
+- `active-directory-attacks` — This skill should be used when the user asks to \"attack Active Directory\", \"exploit AD\
+- `ag-startup-financial-modeling` — This skill should be used when the user asks to \\\"create financial projections", "build 
+- `ag-startup-metrics-framework` — This skill should be used when the user asks about \\\"key startup metrics", "SaaS metrics
+- `ag-vector-index-tuning` — Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW pa
+- `ai-marketing-claude--brand-voice-extractor` — Extract or build a distinct brand voice profile that AI agents can use to produce on-brand
+- `ai-marketing-claude--founder-intelligence` — Detect from context or ask: *"Quick lens, full analysis, or full analysis with roadmap?"*
+- `ai-marketing-claude--testimonial-collector` — Systematically gather, score, and format client testimonials. Use when someone needs socia
+- `ai-marketing-claude--voice-extractor` — Extract and document someone's authentic writing voice from samples. Use when someone need
+- `antigravity-awesome--active-directory-attacks` — This skill should be used when the user asks to \"attack Active Directory\", \"exploit AD\
+- `antigravity-awesome--apify-actor-development` — Develop, debug, and deploy Apify Actors - serverless cloud programs for web scraping, auto
+- `antigravity-awesome--apify-actorization` — Convert existing projects into Apify Actors - serverless cloud programs. Actorize JavaScri
+- `antigravity-awesome--apify-ecommerce` — Scrape e-commerce data for pricing intelligence, customer reviews, and seller discovery ac
+- `antigravity-awesome--azure-ai-anomalydetector-java` — Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when
+- `antigravity-awesome--business-analyst` — Master modern business analysis with AI-powered analytics, real-time dashboards, and data-
+- `antigravity-awesome--code-refactoring-context-restore` — Use when working with code refactoring context restore
+- `antigravity-awesome--code-refactoring-refactor-clean` — You are a code refactoring expert specializing in clean code principles, SOLID design patt
+- `antigravity-awesome--code-refactoring-tech-debt` — You are a technical debt expert specializing in identifying, quantifying, and prioritizing
+- `antigravity-awesome--codebase-cleanup-refactor-clean` — You are a code refactoring expert specializing in clean code principles, SOLID design patt
+- `antigravity-awesome--conductor-implement` — Execute tasks from a track's implementation plan following TDD workflow
+- `antigravity-awesome--conductor-manage` — Manage track lifecycle: archive, restore, delete, rename, and cleanup
+- `antigravity-awesome--conductor-new-track` — Create a new track with specification and phased implementation plan
+- `antigravity-awesome--conductor-revert` — Git-aware undo by logical work unit (track, phase, or task)
+- `antigravity-awesome--conductor-setup` — Configure a Rails project to work with Conductor (parallel coding agents)
+- `antigravity-awesome--conductor-status` — Display project status, active tracks, and next actions
+- `antigravity-awesome--conductor-validator` — Validates Conductor project artifacts for completeness,
+- `antigravity-awesome--fp-refactor` — Comprehensive guide for refactoring imperative TypeScript code to fp-ts functional pattern
+- `antigravity-awesome--free-tool-strategy` — When the user wants to plan, evaluate, or build a free tool for marketing purposes \u2014 
+- `antigravity-awesome--keyword-extractor` — >
+- `antigravity-awesome--launch-strategy` — When the user wants to plan a product launch, feature announcement, or release strategy. A
+- `antigravity-awesome--lightning-channel-factories` — Technical reference on Lightning Network channel factories, multi-party channels, LSP arch
+- `antigravity-awesome--lightning-factory-explainer` — Explain Bitcoin Lightning channel factories and the SuperScalar protocol — scalable Lightn
+- `antigravity-awesome--micro-saas-launcher` — Expert in launching small, focused SaaS products fast - the indie hacker approach to build
+- `antigravity-awesome--notion-template-business` — Expert in building and selling Notion templates as a business - not just making templates,
+- `antigravity-awesome--odoo-backup-strategy` — Complete Odoo backup and restore strategy: database dumps, filestore backup, automated sch
+- `antigravity-awesome--odoo-ecommerce-configurator` — Expert guide for Odoo eCommerce and Website: product catalog, payment providers, shipping 
+- `antigravity-awesome--odoo-edi-connector` — Guide for implementing EDI (Electronic Data Interchange) with Odoo: X12, EDIFACT document 
+- `antigravity-awesome--odoo-shopify-integration` — Connect Odoo with Shopify: sync products, inventory, orders, and customers using the Shopi
+- `antigravity-awesome--pricing-strategy` — Design pricing, packaging, and monetization strategies based on value, customer willingnes
+- `antigravity-awesome--saas-mvp-launcher` — Use when planning or building a SaaS MVP from scratch. Provides a structured roadmap cover
+- `antigravity-awesome--seo-cannibalization-detector` — Analyzes multiple provided pages to identify keyword overlap and potential cannibalization
+- `antigravity-awesome--shopify-apps` — Expert patterns for Shopify app development including Remix/React Router apps, embedded ap
+- `antigravity-awesome--shopify-automation` — Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, co
+- `antigravity-awesome--shopify-development` — Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, a
+- `antigravity-awesome--startup-analyst` — Expert startup business analyst specializing in market sizing, financial modeling, competi
+- `antigravity-awesome--startup-business-analyst-business-case` — Generate comprehensive investor-ready business case document with
+- `antigravity-awesome--startup-business-analyst-financial-proj` — Create detailed 3-5 year financial model with revenue, costs, cash
+- `antigravity-awesome--startup-financial-modeling` — This skill should be used when the user asks to \\\"create financial projections", "build 
+- `antigravity-awesome--startup-metrics-framework` — This skill should be used when the user asks about \\\"key startup metrics", "SaaS metrics
+- `antigravity-awesome--tdd-workflows-tdd-refactor` — Use when working with tdd workflows tdd refactor
+- `antigravity-awesome--theme-factory` — Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reporting
+- `antigravity-awesome--vector-database-engineer` — Expert in vector databases, embedding strategies, and semantic search implementation. Mast
+- `antigravity-awesome--vector-index-tuning` — Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW pa
+- `apify-actor-development` — Develop, debug, and deploy Apify Actors - serverless cloud programs for web scraping, auto
+- `apify-actorization` — Convert existing projects into Apify Actors - serverless cloud programs. Actorize JavaScri
+- `apify-ecommerce` — Scrape e-commerce data for pricing intelligence, customer reviews, and seller discovery ac
+- `assessing-business-process-modeling` — Evaluate and generate BPMN process models from natural language using the BEF4LLM framewor
+- `aussie-business-english` — >
+- `autonomous-business-system-neuro-symbolic` — |
+- `azure-ai-anomalydetector-java` — Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when
+- `business-analyst` — Master modern business analysis with AI-powered analytics, real-time dashboards, and data-
+- `business-growth` — 4 production-ready business and growth skills: customer success manager with health scorin
+- `code-refactoring-context-restore` — Use when working with code refactoring context restore
+- `code-refactoring-refactor-clean` — You are a code refactoring expert specializing in clean code principles, SOLID design patt
+- `code-refactoring-tech-debt` — You are a technical debt expert specializing in identifying, quantifying, and prioritizing
+- `codebase-cleanup-refactor-clean` — You are a code refactoring expert specializing in clean code principles, SOLID design patt
+- `conductor-implement` — Execute tasks from a track's implementation plan following TDD workflow
+- `conductor-manage` — Manage track lifecycle: archive, restore, delete, rename, and cleanup
+- `conductor-new-track` — Create a new track with specification and phased implementation plan
+- `conductor-revert` — Git-aware undo by logical work unit (track, phase, or task)
+- `conductor-setup` — Configure a Rails project to work with Conductor (parallel coding agents)
+- `conductor-status` — Display project status, active tracks, and next actions
+- `conductor-validator` — Validates Conductor project artifacts for completeness,
+- `cve-factory-scaling-expert-level-agentic` — >
+- `fp-refactor` — Comprehensive guide for refactoring imperative TypeScript code to fp-ts functional pattern
+- `free-tool-strategy` — When the user wants to plan, evaluate, or build a free tool for marketing purposes \u2014 
+- `keyword-extractor` — >
+- `launch-strategy` — When the user wants to plan a product launch, feature announcement, or release strategy. A
+- `lightning-channel-factories` — Technical reference on Lightning Network channel factories, multi-party channels, LSP arch
+- `lightning-factory-explainer` — Explain Bitcoin Lightning channel factories and the SuperScalar protocol — scalable Lightn
+- `marketing-skills-content-strategy` — When the user wants to plan content for SEO, create content calendar, or build topic clust
+- `marketing-skills-directory-listing-ads` — When the user wants to run paid ads within directories or marketplaces. Also use when the 
+- `marketing-skills-directory-submission`
+- `marketing-skills-gtm` — When the user wants to plan go-to-market strategy, GTM framework, or market entry. Also us
+- `marketing-skills-pricing` — When the user wants to create, optimize, or audit pricing page content and structure. Also
+- `marketing-skills-pricing-strategy` — When the user wants to plan, design, or optimize pricing strategy and structure. Also use 
+- `marketing-skills-startups` — When the user wants to create, optimize, or audit a startups, education, or special progra
+- `marketingskills-content-strategy`
+- `marketingskills-free-tool-strategy`
+- `marketingskills-launch-strategy` — When the user wants to plan a product launch, feature announcement, or release strategy. A
+- `marketingskills-pricing-strategy`
+- `micro-saas-launcher` — Expert in launching small, focused SaaS products fast - the indie hacker approach to build
+- `multi-agent-constraint-factorization-reveals` — Orchestrate multi-agent LLM pipelines using constraint factorization -- decomposing comple
+- `notion-template-business` — Expert in building and selling Notion templates as a business - not just making templates,
+- `odoo-backup-strategy` — Complete Odoo backup and restore strategy: database dumps, filestore backup, automated sch
+- `odoo-ecommerce-configurator` — Expert guide for Odoo eCommerce and Website: product catalog, payment providers, shipping 
+- `odoo-edi-connector` — Guide for implementing EDI (Electronic Data Interchange) with Odoo: X12, EDIFACT document 
+- `odoo-shopify-integration` — Connect Odoo with Shopify: sync products, inventory, orders, and customers using the Shopi
+- `pm-skills-business-model` — Generate a Business Model Canvas with all 9 building blocks. Use when creating a business 
+- `pm-skills-gtm-motions` — Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Dig
+- `pm-skills-gtm-strategy` — Create a go-to-market strategy covering marketing channels, messaging, success metrics, an
+- `pm-skills-monetization-strategy` — Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiment
+- `pm-skills-pricing-strategy` — Analyze and design pricing strategies including pricing models, competitive pricing analys
+- `pm-skills-product-strategy` — Create a comprehensive product strategy using the 9-section Product Strategy Canvas — visi
+- `pm-skills-startup-canvas` — Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (cost
+- `pricing-strategy` — Design pricing, packaging, and monetization strategies based on value, customer willingnes
+- `saas-mvp-launcher` — Use when planning or building a SaaS MVP from scratch. Provides a structured roadmap cover
+- `saas-platforms` — SaaS architecture, multi-tenancy, and subscription management
+- `seo-cannibalization-detector` — Analyzes multiple provided pages to identify keyword overlap and potential cannibalization
+- `seo-local-business` — Generate complete SEO setup for local business websites — HTML head tags, JSON-LD LocalBus
+- `shopify-apps` — Expert patterns for Shopify app development including Remix/React Router apps, embedded ap
+- `shopify-automation` — Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, co
+- `shopify-content` — >
+- `shopify-development` — Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, a
+- `shopify-expert`
+- `shopify-products` — >
+- `shopify-setup` — >
+- `startup-analyst` — Expert startup business analyst specializing in market sizing, financial modeling, competi
+- `startup-business-analyst-business-case` — Generate comprehensive investor-ready business case document with
+- `startup-business-analyst-financial-projections` — Create detailed 3-5 year financial model with revenue, costs, cash
+- `startup-financial-modeling` — This skill should be used when the user asks to "create financial projections", "build a f
+- `startup-metrics-framework` — This skill should be used when the user asks about "key startup metrics", "SaaS metrics", 
+- `swe-refactor-repository-level-benchmark-real-world` — >
+- `tdd-workflows-tdd-refactor` — Use when working with tdd workflows tdd refactor
+- `theme-factory` — Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reporting
+- `vector-database-engineer` — Expert in vector databases, embedding strategies, and semantic search implementation. Mast
+- `vector-index-tuning` — Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW pa
+- `washin-api-pool-token-pricing-methodology` — |
+- `washin-api-pricing-single-source-of-truth` — |
+- `washin-apify-actor-intelligence` — |
+
+### 💹 Trading, Finance & Investing (129)
+
+- `adoption-use-at-academic` — >
+- `ag-defi-protocol-templates` — Implement DeFi protocols with production-ready templates for staking, AMMs, governance, an
+- `ag-market-sizing-analysis` — This skill should be used when the user asks to \\\"calculate TAM\\\", "determine SAM", "e
+- `ag-nft-standards` — Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strateg
+- `ag-web3-testing` — Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integratio
+- `ai-marketing-claude-market-ads` — You are the advertising engine for `/market ads <url>`. You generate complete ad campaigns
+- `ai-marketing-claude-market-audit` — You are the full marketing audit engine for `/market audit <url>`. You launch 5 parallel s
+- `ai-marketing-claude-market-brand` — Analyze a brand's voice, tone, and messaging across all available channels and generate a 
+- `ai-marketing-claude-market-competitors` — You are the competitive intelligence engine for `/market competitors <url>`. You identify 
+- `ai-marketing-claude-market-copy` — You are the copywriting engine for `/market copy <url>`. You analyze existing website copy
+- `ai-marketing-claude-market-emails` — You are the email marketing engine for `/market emails <topic/url>`. You generate complete
+- `ai-marketing-claude-market-funnel` — You are the funnel analysis engine for `/market funnel <url>`. You map the complete conver
+- `ai-marketing-claude-market-landing` — Perform a comprehensive Conversion Rate Optimization (CRO) analysis on any landing page. T
+- `ai-marketing-claude-market-launch` — Generate a complete, week-by-week launch playbook for any product, service, or feature lau
+- `ai-marketing-claude-market-proposal` — Generate a professional, client-ready marketing services proposal. This skill produces a c
+- `ai-marketing-claude-market-report` — Generate a comprehensive, professionally formatted marketing report in Markdown. This skil
+- `ai-marketing-claude-market-report-pdf` — Generate a professional, visually polished PDF marketing report using the Python script `s
+- `ai-marketing-claude-market-seo` — Perform a comprehensive SEO audit of a webpage or website, covering on-page SEO, content q
+- `ai-marketing-claude-market-social` — You are the social media engine for `/market social <topic/url>`. You generate a complete 
+- `alpha-vantage` — Access real-time and historical stock market data, forex rates, cryptocurrency prices, com
+- `antigravity-awesome--alpha-vantage` — Access real-time and historical stock market data, forex rates, cryptocurrency prices, com
+- `antigravity-awesome--apify-market-research` — Analyze market conditions, geographic opportunities, pricing, consumer behavior, and produ
+- `antigravity-awesome--blockchain-developer` — Build production-ready Web3 applications, smart contracts, and decentralized systems. Impl
+- `antigravity-awesome--cc-skill-continuous-learning` — Development skill from everything-claude-code
+- `antigravity-awesome--crypto-bd-agent` — Autonomous crypto business development patterns — multi-chain token discovery, 100-point s
+- `antigravity-awesome--defi-protocol-templates` — Implement DeFi protocols with production-ready templates for staking, AMMs, governance, an
+- `antigravity-awesome--emblemai-crypto-wallet` — Crypto wallet management across 7 blockchains via EmblemAI Agent Hustle API. Balance check
+- `antigravity-awesome--fp-option-ref` — Quick reference for Option type. Use when user needs to handle nullable values, optional d
+- `antigravity-awesome--interactive-portfolio` — Expert in building portfolios that actually land jobs and clients - not just showing work,
+- `antigravity-awesome--machine-learning-ops-ml-pipeline` — Design and implement a complete ML pipeline for: $ARGUMENTS
+- `antigravity-awesome--market-sizing-analysis` — This skill should be used when the user asks to \\\"calculate TAM\\\", "determine SAM", "e
+- `antigravity-awesome--nft-standards` — Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strateg
+- `antigravity-awesome--plaid-fintech` — Expert patterns for Plaid API integration including Link token flows, transactions sync, i
+- `antigravity-awesome--quant-analyst` — Build financial models, backtest trading strategies, and analyze market data. Implements r
+- `antigravity-awesome--startup-business-analyst-market-opportu` — Generate comprehensive market opportunity analysis with TAM/SAM/SOM
+- `antigravity-awesome--web3-testing` — Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integratio
+- `apify-market-research` — Analyze market conditions, geographic opportunities, pricing, consumer behavior, and produ
+- `awesome-claude-code--continuous-learning` — Auto-extract patterns from coding sessions, track corrections, and build reusable knowledg
+- `blockchain-developer` — Build production-ready Web3 applications, smart contracts, and decentralized systems. Impl
+- `cc-skill-continuous-learning` — Development skill from everything-claude-code
+- `claude-trading-skill-backtest-expert` — Expert guidance for systematic backtesting of trading strategies. Use when developing, tes
+- `claude-trading-skill-breadth-chart-analyst`
+- `claude-trading-skill-canslim-screener` — Screen US stocks using William O'Neil's CANSLIM growth stock methodology. Use when user re
+- `claude-trading-skill-data-quality-checker` — Validate data quality in market analysis documents and blog articles before publication. U
+- `claude-trading-skill-dividend-growth-pullback-screener` — Use this skill to find high-quality dividend growth stocks (12%+ annual dividend growth, 1
+- `claude-trading-skill-dual-axis-skill-reviewer` — Review skills in any project using a dual-axis method: (1) deterministic code-based checks
+- `claude-trading-skill-earnings-calendar` — This skill retrieves upcoming earnings announcements for US stocks using the Financial Mod
+- `claude-trading-skill-earnings-trade-analyzer` — Analyze recent post-earnings stocks using a 5-factor scoring system (Gap Size, Pre-Earning
+- `claude-trading-skill-economic-calendar-fetcher` — Fetch upcoming economic events and data releases using FMP API. Retrieve scheduled central
+- `claude-trading-skill-edge-candidate-agent` — Generate and prioritize US equity long-side edge research tickets from EOD observations, t
+- `claude-trading-skill-edge-concept-synthesizer` — Abstract detector tickets and hints into reusable edge concepts with thesis, invalidation 
+- `claude-trading-skill-edge-hint-extractor` — Extract edge hints from daily market observations and news reactions, with optional LLM id
+- `claude-trading-skill-edge-pipeline-orchestrator` — Orchestrate the full edge research pipeline from candidate detection through strategy desi
+- `claude-trading-skill-edge-signal-aggregator` — Aggregate and rank signals from multiple edge-finding skills (edge-candidate-agent, theme-
+- `claude-trading-skill-edge-strategy-designer` — Convert abstract edge concepts into strategy draft variants and optional exportable ticket
+- `claude-trading-skill-edge-strategy-reviewer` — >
+- `claude-trading-skill-finviz-screener` — Build and open FinViz screener URLs from natural language requests. Use when user wants to
+- `claude-trading-skill-ftd-detector` — Detects Follow-Through Day (FTD) signals for market bottom confirmation using William O'Ne
+- `claude-trading-skill-institutional-flow-tracker` — Use this skill to track institutional investor ownership changes and portfolio flows using
+- `claude-trading-skill-kanchi-dividend-review-monitor` — Monitor dividend portfolios with Kanchi-style forced-review triggers (T1-T5) and convert a
+- `claude-trading-skill-kanchi-dividend-sop` — Convert Kanchi-style dividend investing into a repeatable US-stock operating procedure. Us
+- `claude-trading-skill-kanchi-dividend-us-tax-accounting` — Provide US dividend tax and account-location workflow for Kanchi-style income portfolios. 
+- `claude-trading-skill-macro-regime-detector` — Detect structural macro regime transitions (1-2 year horizon) using cross-asset ratio anal
+- `claude-trading-skill-market-breadth-analyzer` — Quantifies market breadth health using TraderMonty's public CSV data. Generates a 0-100 co
+- `claude-trading-skill-market-environment-analysis` — Comprehensive market environment analysis and reporting tool. Analyzes global markets incl
+- `claude-trading-skill-market-news-analyst`
+- `claude-trading-skill-market-top-detector` — Detects market top probability using O'Neil Distribution Days, Minervini Leading Stock Det
+- `claude-trading-skill-options-strategy-advisor` — Options trading strategy analysis and simulation tool. Provides theoretical pricing using 
+- `claude-trading-skill-pair-trade-screener` — Statistical arbitrage tool for identifying and analyzing pair trading opportunities. Detec
+- `claude-trading-skill-pead-screener` — Screen post-earnings gap-up stocks for PEAD (Post-Earnings Announcement Drift) patterns. A
+- `claude-trading-skill-portfolio-manager` — Comprehensive portfolio analysis using Alpaca MCP Server integration to fetch holdings and
+- `claude-trading-skill-position-sizer` — Calculate risk-based position sizes for long stock trades. Use when user asks about positi
+- `claude-trading-skill-scenario-analyzer` — |
+- `claude-trading-skill-sector-analyst` — This skill should be used when analyzing sector rotation patterns and market cycle positio
+- `claude-trading-skill-skill-designer` — Design new Claude skills from structured idea specifications. Use when the skill auto-gene
+- `claude-trading-skill-skill-idea-miner` — Mine Claude Code session logs for skill idea candidates. Use when running the weekly skill
+- `claude-trading-skill-skill-integration-tester` — Validate multi-skill workflows defined in CLAUDE.md by checking skill existence, inter-ski
+- `claude-trading-skill-stanley-druckenmiller-investment`
+- `claude-trading-skill-strategy-pivot-designer` — Detect backtest iteration stagnation and generate structurally different strategy pivot pr
+- `claude-trading-skill-technical-analyst` — This skill should be used when analyzing weekly price charts for stocks, stock indices, cr
+- `claude-trading-skill-theme-detector` — Detect and analyze trending market themes across sectors. Use when user asks about current
+- `claude-trading-skill-trade-hypothesis-ideator` — >
+- `claude-trading-skill-trader-memory-core` — Track investment theses across their lifecycle — from screening idea to closed position wi
+- `claude-trading-skill-uptrend-analyzer` — Analyzes market breadth using Monty's Uptrend Ratio Dashboard data to diagnose the current
+- `claude-trading-skill-us-market-bubble-detector` — Evaluates market bubble risk through quantitative data-driven analysis using the revised M
+- `claude-trading-skill-us-stock-analysis` — Comprehensive US stock analysis including fundamental analysis (financial metrics, busines
+- `claude-trading-skill-value-dividend-screener` — Screen US stocks for high-quality dividend opportunities combining value characteristics (
+- `claude-trading-skill-vcp-screener` — Screen S&P 500 stocks for Mark Minervini's Volatility Contraction Pattern (VCP). Identifie
+- `compass-contrastive-learning-automated` — Assess patch correctness using contrastive learning on code representations. Applies seman
+- `conversation-non-verifiable-learning-self-evolving` — |
+- `crypto-bd-agent` — Autonomous crypto business development patterns — multi-chain token discovery, 100-point s
+- `defi-protocol-templates` — Implement DeFi protocols with production-ready templates for staking, AMMs, governance, an
+- `dep-search-learning-dependency-aware-reasoning` — Dependency-aware multi-step reasoning with persistent memory for complex questions requiri
+- `dr-kernel-reinforcement-learning-done` — Write high-performance Triton GPU kernels using Dr. Kernel's multi-turn refinement strateg
+- `dynamic-framework-collaborative-learning` — Build AI-moderated collaborative learning platforms with LLM-driven discussion facilitatio
+- `emblemai-crypto-wallet` — Crypto wallet management across 7 blockchains via EmblemAI Agent Hustle API. Balance check
+- `epistemic-context-learning-building` — Build trust-aware multi-agent systems using Epistemic Context Learning (ECL). Constructs p
+- `fp-option-ref` — Quick reference for Option type. Use when user needs to handle nullable values, optional d
+- `guideai-real-time-personalized-learning`
+- `hqp-sensitivity-aware-hybrid-quantization` — Apply the HQP framework to compress and accelerate PyTorch models for edge deployment usin
+- `interactive-portfolio` — Expert in building portfolios that actually land jobs and clients - not just showing work,
+- `just-in-time-reinforcement-learning-continual` — Implement JitRL-style continual learning for LLM agents: training-free policy optimization
+- `learning-compose-cross-domain-agentic` — Generate cross-domain agentic workflows using decompose-recompose-decide composition over 
+- `learning-irrecoverable-error-localized-policy` — Debug multi-step tool-using agent pipelines by localizing the first irrecoverable error vi
+- `learning-rate-matters-vanilla` — Configure optimal learning rates for LoRA fine-tuning of LLMs. Generates hyperparameter se
+- `learning-reason-faithfully-step-level` — Apply FaithRL's step-level faithfulness verification to multi-step reasoning tasks. Decomp
+- `llm-assisted-logic-rule-learning` — Build deterministic, interpretable anomaly detection rule sets for time series data using 
+- `local-life-manager-learning-system` — Structured learning and spaced repetition system. Use when user wants to learn a topic, st
+- `machine-learning-ops-ml-pipeline` — Design and implement a complete ML pipeline for: $ARGUMENTS
+- `market-sizing-analysis` — This skill should be used when the user asks to "calculate TAM", "determine SAM", "estimat
+- `nft-standards` — Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strateg
+- `optimizing-small-sample-experience-learning-llm-ba` — Implement the ExperienceWeaver hierarchical experience-learning framework to improve text 
+- `papersearchqa-learning-search-reason` — Build iterative search-and-reason agents for scientific literature QA. Uses the PaperSearc
+- `plaid-fintech` — Expert patterns for Plaid API integration including Link token flows, transactions sync, i
+- `pm-skills-market-segments` — Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis
+- `pm-skills-market-sizing` — Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use w
+- `pope-learning-reason-hard` — Apply the POPE (Privileged On-Policy Exploration) technique to solve hard reasoning proble
+- `quant-analyst` — Build financial models, backtest trading strategies, and analyze market data. Implements r
+- `raicl-retrieval-augmented-in-context-learning` — Build retrieval-augmented in-context learning (RAICL) pipelines that convert time-series o
+- `research-multi-stage-machine-learning` — Build multi-stage search pipelines that separate recall from precision for discovering dat
+- `self-hinting-enhance-reinforcement-learning` — Apply the SAGE self-hinting technique to improve LLM problem-solving by generating graduat
+- `sql-trail-multi-turn-reinforcement-learning` — Iterative multi-turn Text-to-SQL generation using reason-execute-observe loops with execut
+- `sqlagent-learning-explore-before` — Explore unfamiliar databases before writing SQL by building a local knowledge base of sche
+- `startup-business-analyst-market-opportunity` — Generate comprehensive market opportunity analysis with TAM/SAM/SOM
+- `tokenomics-quantifying-where-tokens` — Analyze and optimize token consumption in LLM-based multi-agent software engineering workf
+- `viola-video-in-context-learning`
+- `washin-ai-agent-crypto-animal-welfare` — |
+- `washin-erc8004-blockchain-identity` — |
+- `web3-testing` — Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integratio
+
+### 🔐 Security (128)
+
+- `3-secbench-large-scale-evaluation-suite-security`
+- `aegis-governance-integrity-security` — Red-team and harden AI voice agents and LLM-powered service systems against adversarial mi
+- `agent-fence-mapping-security-vulnerabilities` — >
+- `agent2agent-threats-safety-critical-assistants` — Threat model multi-agent LLM systems using the AgentHeLLM framework -- formally separating
+- `algorand-vulnerability-scanner` — Scans Algorand smart contracts for 11 common vulnerabilities including rekeying attacks, u
+- `antigravity-awesome--api-security-best-practices` — Implement secure API design patterns including authentication, authorization, input valida
+- `antigravity-awesome--api-security-testing` — API security testing workflow for REST and GraphQL APIs covering authentication, authoriza
+- `antigravity-awesome--attack-tree-construction` — Build comprehensive attack trees to visualize threat paths. Use when mapping attack scenar
+- `antigravity-awesome--aws-security-audit` — Comprehensive AWS security posture assessment using AWS CLI and security best practices
+- `antigravity-awesome--azure-security-keyvault-keys-dotnet` — Azure Key Vault Keys SDK for .NET. Client library for managing cryptographic keys in Azure
+- `antigravity-awesome--azure-security-keyvault-keys-java` — Azure Key Vault Keys Java SDK for cryptographic key management. Use when creating, managin
+- `antigravity-awesome--azure-security-keyvault-secrets-java` — Azure Key Vault Secrets Java SDK for secret management. Use when storing, retrieving, or m
+- `antigravity-awesome--backend-security-coder` — Expert in secure backend coding practices specializing in input validation, authentication
+- `antigravity-awesome--burp-suite-testing` — This skill should be used when the user asks to \"intercept HTTP traffic\", \"modify web r
+- `antigravity-awesome--burpsuite-project-parser` — Searches and explores Burp Suite project files (.burp) from the command line. Use when sea
+- `antigravity-awesome--cc-skill-security-review` — Use this skill when adding authentication, handling user input, working with secrets, crea
+- `antigravity-awesome--frontend-mobile-security-xss-scan` — You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerabilit
+- `antigravity-awesome--frontend-security-coder` — Expert in secure frontend coding practices specializing in XSS prevention, output sanitiza
+- `antigravity-awesome--gha-security-review` — GitHub Actions security review for workflow exploitation vulnerabilities. Use when asked t
+- `antigravity-awesome--incident-responder` — Expert SRE incident responder specializing in rapid problem resolution, modern observabili
+- `antigravity-awesome--incident-response-incident-response` — Use when working with incident response incident response
+- `antigravity-awesome--incident-response-smart-fix` — [Extended thinking: This workflow implements a sophisticated debugging and resolution pipe
+- `antigravity-awesome--incident-runbook-templates` — Create structured incident response runbooks with step-by-step procedures, escalation path
+- `antigravity-awesome--k8s-security-policies` — Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBA
+- `antigravity-awesome--laravel-security-audit` — Security auditor for Laravel applications. Analyzes code for vulnerabilities, misconfigura
+- `antigravity-awesome--malware-analyst` — Expert malware analyst specializing in defensive malware research, threat intelligence, an
+- `antigravity-awesome--memory-forensics` — Master memory forensics techniques including memory acquisition, process analysis, and art
+- `antigravity-awesome--mobile-security-coder` — Expert in secure mobile coding practices specializing in input validation, WebView securit
+- `antigravity-awesome--odoo-security-rules` — Expert in Odoo access control: ir.model.access.csv, record rules (ir.rule), groups, and mu
+- `antigravity-awesome--pentest-checklist` — This skill should be used when the user asks to \"plan a penetration test\", \"create a se
+- `antigravity-awesome--pentest-commands` — This skill should be used when the user asks to \"run pentest commands\", \"scan with nmap
+- `antigravity-awesome--security-audit` — Comprehensive security auditing workflow covering web application testing, API security, p
+- `antigravity-awesome--security-auditor` — Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compli
+- `antigravity-awesome--security-bluebook-builder` — Create or refine a concise, normative security policy ("Blue Book") for sensitive applicat
+- `antigravity-awesome--security-requirement-extraction` — Derive security requirements from threat models and business context. Use when translating
+- `antigravity-awesome--security-scanning-security-dependencies` — You are a security expert specializing in dependency vulnerability analysis, SBOM generati
+- `antigravity-awesome--security-scanning-security-hardening` — Coordinate multi-layer security scanning and hardening across application, infrastructure,
+- `antigravity-awesome--security-scanning-security-sast` — Static Application Security Testing (SAST) for code vulnerability
+- `antigravity-awesome--semgrep-rule-creator` — Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and cod
+- `antigravity-awesome--semgrep-rule-variant-creator` — Creates language variants of existing Semgrep rules. Use when porting a Semgrep rule to sp
+- `antigravity-awesome--solidity-security` — Master smart contract security best practices to prevent common vulnerabilities and implem
+- `antigravity-awesome--sqlmap-database-pentesting` — This skill should be used when the user asks to \"automate SQL injection testing,\" \"enum
+- `antigravity-awesome--threat-mitigation-mapping` — Map identified threats to appropriate security controls and mitigations. Use when prioriti
+- `antigravity-awesome--threat-modeling-expert` — Expert in threat modeling methodologies, security architecture review, and risk assessment
+- `antigravity-awesome--top-web-vulnerabilities` — This skill should be used when the user asks to \"identify web application vulnerabilities
+- `antigravity-awesome--vulnerability-scanner` — Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surf
+- `antigravity-awesome--web-security-testing` — Web application security testing workflow for OWASP Top 10 vulnerabilities including injec
+- `antigravity-awesome--xss-html-injection` — This skill should be used when the user asks to \"test for XSS vulnerabilities\", \"perfor
+- `api-security-best-practices` — Implement secure API design patterns including authentication, authorization, input valida
+- `api-security-testing` — API security testing workflow for REST and GraphQL APIs covering authentication, authoriza
+- `attack-tree-construction` — Build comprehensive attack trees to visualize threat paths. Use when mapping attack scenar
+- `awesome-claude-code--security-hardening` — Application security covering input validation, auth, headers, secrets management, and dep
+- `azure-security-keyvault-keys-dotnet` — Azure Key Vault Keys SDK for .NET. Client library for managing cryptographic keys in Azure
+- `azure-security-keyvault-keys-java` — Azure Key Vault Keys Java SDK for cryptographic key management. Use when creating, managin
+- `azure-security-keyvault-secrets-java` — Azure Key Vault Secrets Java SDK for secret management. Use when storing, retrieving, or m
+- `backend-security-coder` — Expert in secure backend coding practices specializing in input validation, authentication
+- `breaking-protocol-security-analysis` — Audit and harden Model Context Protocol (MCP) server deployments against protocol-level vu
+- `burp-suite-testing` — This skill should be used when the user asks to \"intercept HTTP traffic\", \"modify web r
+- `burpsuite-project-parser` — Searches and explores Burp Suite project files (.burp) from the command line. Use when sea
+- `cairo-vulnerability-scanner` — Scans Cairo/StarkNet smart contracts for 6 critical vulnerabilities including felt252 arit
+- `cc-skill-security-review` — Use this skill when adding authentication, handling user input, working with secrets, crea
+- `cosmos-vulnerability-scanner` — Scans Cosmos SDK blockchains for 9 consensus-critical vulnerabilities including non-determ
+- `evaluating-enhancing-vulnerability-reasoning` — Perform DAG-structured vulnerability reasoning on code, modeling causal dependencies betwe
+- `extracting-recurring-vulnerabilities-black-box` — >
+- `frontend-mobile-security-xss-scan` — You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerabilit
+- `frontend-security-coder` — Expert in secure frontend coding practices specializing in XSS prevention, output sanitiza
+- `gha-security-review` — GitHub Actions security review for workflow exploitation vulnerabilities. Use when asked t
+- `gradingattack-attacking-short-answer` — Audit LLM-based automatic short answer grading (ASAG) systems for adversarial vulnerabilit
+- `hallucination-resistant-security-planning` — >
+- `incident-responder` — Expert SRE incident responder specializing in rapid problem resolution, modern observabili
+- `incident-response-incident-response` — Use when working with incident response incident response
+- `incident-response-smart-fix` — [Extended thinking: This workflow implements a sophisticated debugging and resolution pipe
+- `incident-runbook-templates` — Create structured incident response runbooks with step-by-step procedures, escalation path
+- `k8s-security-policies` — Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBA
+- `laravel-security-audit` — Security auditor for Laravel applications. Analyzes code for vulnerabilities, misconfigura
+- `localv-exploiting-information-locality` — Multi-agent framework for generating large-scale Verilog/RTL code from long hardware speci
+- `malware-analyst` — Expert malware analyst specializing in defensive malware research, threat intelligence, an
+- `memory-forensics` — Master memory forensics techniques including memory acquisition, process analysis, and art
+- `mobile-security-coder` — Expert in secure mobile coding practices specializing in input validation, WebView securit
+- `multi-agent-end-to-end-vulnerability-management` — Detect, confirm, repair, and validate recurring software vulnerabilities using a multi-age
+- `naamse-framework-evolutionary-security` — Implement evolutionary security evaluation for AI agents using the NAAMSE framework — gene
+- `odoo-security-rules` — Expert in Odoo access control: ir.model.access.csv, record rules (ir.rule), groups, and mu
+- `pentest-checklist` — This skill should be used when the user asks to \"plan a penetration test\", \"create a se
+- `pentest-commands` — This skill should be used when the user asks to \"run pentest commands\", \"scan with nmap
+- `physical-prompt-injection-attacks` — >
+- `prompt-injection-attacks-agentic` — >
+- `redsage-cybersecurity-generalist` — |
+- `security` — Comprehensive security patterns, vulnerability detection, and secure coding practices.
+- `security-audit` — Comprehensive security auditing workflow covering web application testing, API security, p
+- `security-auditor` — Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compli
+- `security-bluebook-builder` — Create or refine a concise, normative security policy ("Blue Book") for sensitive applicat
+- `security-practices` — OWASP Top 10, authentication, and secure coding practices
+- `security-requirement-extraction` — Derive security requirements from threat models and business context. Use when translating
+- `security-reviewer` — Identifies security vulnerabilities, generates structured audit reports with severity rati
+- `security-scanning-security-dependencies` — You are a security expert specializing in dependency vulnerability analysis, SBOM generati
+- `security-scanning-security-hardening` — Coordinate multi-layer security scanning and hardening across application, infrastructure,
+- `security-scanning-security-sast` — Static Application Security Testing (SAST) for code vulnerability
+- `semantic-aware-advanced-persistent-threat` — >
+- `semgrep` — >-
+- `semgrep-rule-creator` — Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and cod
+- `semgrep-rule-variant-creator` — Creates language variants of existing Semgrep rules. Use when porting a Semgrep rule to sp
+- `solana-vulnerability-scanner` — Scans Solana programs for 6 critical vulnerabilities including arbitrary CPI, improper PDA
+- `solidity-security` — Master smart contract security best practices to prevent common vulnerabilities and implem
+- `sqlmap-database-pentesting` — This skill should be used when the user asks to \"automate SQL injection testing,\" \"enum
+- `stop-testing-attacks-start` — >
+- `substrate-vulnerability-scanner` — Scans Substrate/Polkadot pallets for 7 critical vulnerabilities including arithmetic overf
+- `tauri-tauri-ecosystem-security` — Guides developers through Tauri ecosystem security practices including security auditing, 
+- `tauri-tauri-lifecycle-security` — Assists developers with understanding Tauri application lifecycle security threats spannin
+- `threat-mitigation-mapping` — Map identified threats to appropriate security controls and mitigations. Use when prioriti
+- `threat-modeling-expert` — Expert in threat modeling methodologies, security architecture review, and risk assessment
+- `tob-burpsuite-project-parser` — Searches and explores Burp Suite project files (.burp) from the command line. Use when sea
+- `tob-semgrep-rule-creator` — Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and cod
+- `tob-semgrep-rule-variant-creator` — Creates language variants of existing Semgrep rules. Use when porting a Semgrep rule to sp
+- `ton-vulnerability-scanner` — Scans TON (The Open Network) smart contracts for 3 critical vulnerabilities including inte
+- `top-web-vulnerabilities` — This skill should be used when the user asks to \"identify web application vulnerabilities
+- `vulnerability-scanner` — Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surf
+- `washin-api-security-audit-methodology` — |
+- `washin-bun-sqlite-like-parameter-binding` — |
+- `washin-bun-sqlite-test-infrastructure` — |
+- `washin-bun-sqlite-transaction-await-crash` — |
+- `washin-docker-sqlite-wal-copy-trap` — |
+- `washin-github-action-security-hardening` — |
+- `washin-hono-503-sqlite-fk-constraint` — |
+- `washin-json-to-sqlite-hybrid-migration` — |
+- `washin-security-for-non-engineers` — |
+- `washin-sqlite-check-constraint-migration` — |
+- `web-security-testing` — Web application security testing workflow for OWASP Top 10 vulnerabilities including injec
+- `xss-html-injection` — This skill should be used when the user asks to \"test for XSS vulnerabilities\", \"perfor
+
+### 🎨 Frontend & UI (116)
+
+- `angular` — Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zonele
+- `angular-architect` — Generates Angular 17+ standalone components, configures advanced routing with lazy loading
+- `angular-best-practices` — Angular performance optimization and best practices guide. Use when writing, reviewing, or
+- `angular-migration` — Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and 
+- `angular-state-management` — Master modern Angular state management with Signals, NgRx, and RxJS. Use when setting up g
+- `angular-ui-patterns` — Modern Angular UI patterns for loading states, error handling, and data display. Use when 
+- `antigravity-awesome--android-ui-verification` — Automated end-to-end UI testing and verification on an Android Emulator using ADB.
+- `antigravity-awesome--angular` — Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zonele
+- `antigravity-awesome--angular-best-practices` — Angular performance optimization and best practices guide. Use when writing, reviewing, or
+- `antigravity-awesome--angular-migration` — Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and 
+- `antigravity-awesome--angular-state-management` — Master modern Angular state management with Signals, NgRx, and RxJS. Use when setting up g
+- `antigravity-awesome--angular-ui-patterns` — Modern Angular UI patterns for loading states, error handling, and data display. Use when 
+- `antigravity-awesome--astropy` — Comprehensive Python library for astronomy and astrophysics. This skill should be used whe
+- `antigravity-awesome--cc-skill-frontend-patterns` — Frontend development patterns for React, Next.js, state management, performance optimizati
+- `antigravity-awesome--comfyui-gateway` — REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching,
+- `antigravity-awesome--expo-tailwind-setup` — Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styli
+- `antigravity-awesome--expo-ui-jetpack-compose` — expo-ui-jetpack-compose
+- `antigravity-awesome--expo-ui-swift-ui` — expo-ui-swift-ui
+- `antigravity-awesome--figma-automation` — Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, 
+- `antigravity-awesome--fixing-accessibility` — Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus 
+- `antigravity-awesome--fp-react` — Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works 
+- `antigravity-awesome--fp-ts-react` — Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use wh
+- `antigravity-awesome--frontend-design` — Create distinctive, production-grade frontend interfaces with intentional aesthetics, high
+- `antigravity-awesome--frontend-dev-guidelines` — Opinionated frontend development standards for modern React + TypeScript applications. Cov
+- `antigravity-awesome--frontend-developer` — Build React components, implement responsive layouts, and handle client-side state managem
+- `antigravity-awesome--frontend-mobile-development-component-s` — You are a React component architecture expert specializing in scaffolding production-ready
+- `antigravity-awesome--frontend-slides` — Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoin
+- `antigravity-awesome--frontend-ui-dark-ts` — Build dark-themed React applications using Tailwind CSS with custom theming, glassmorphism
+- `antigravity-awesome--magic-ui-generator` — Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready U
+- `antigravity-awesome--nextjs-app-router-patterns` — Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and adva
+- `antigravity-awesome--nextjs-best-practices` — Next.js App Router principles. Server Components, data fetching, routing patterns.
+- `antigravity-awesome--nextjs-supabase-auth` — Expert integration of Supabase Auth with Next.js App Router Use when: supabase auth next, 
+- `antigravity-awesome--radix-ui-design-system` — Build accessible design systems with Radix UI primitives. Headless component customization
+- `antigravity-awesome--react-best-practices` — React and Next.js performance optimization guidelines from Vercel Engineering. This skill 
+- `antigravity-awesome--react-flow-architect` — Expert ReactFlow architect for building interactive graph applications with hierarchical n
+- `antigravity-awesome--react-flow-node-ts` — Create React Flow node components with TypeScript types, handles, and Zustand integration.
+- `antigravity-awesome--react-modernization` — Upgrade React applications to latest versions, migrate from class components to hooks, and
+- `antigravity-awesome--react-native-architecture` — Build production React Native apps with Expo, navigation, native modules, offline sync, an
+- `antigravity-awesome--react-nextjs-development` — React and Next.js 14+ application development with App Router, Server Components, TypeScri
+- `antigravity-awesome--react-patterns` — Modern React patterns and principles. Hooks, composition, performance, TypeScript best pra
+- `antigravity-awesome--react-state-management` — Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. 
+- `antigravity-awesome--react-ui-patterns` — Modern React UI patterns for loading states, error handling, and data fetching. Use when b
+- `antigravity-awesome--senior-frontend` — Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. 
+- `antigravity-awesome--stitch-ui-design` — Expert guide for creating effective prompts for Google Stitch AI UI design tool. Use when 
+- `antigravity-awesome--swiftui-expert-skill` — Write, review, or improve SwiftUI code following best practices for state management, view
+- `antigravity-awesome--tailwind-design-system` — Build scalable design systems with Tailwind CSS, design tokens, component libraries, and r
+- `antigravity-awesome--tailwind-patterns` — Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, d
+- `antigravity-awesome--ui-skills` — Opinionated, evolving constraints to guide agents when building interfaces
+- `antigravity-awesome--ui-ux-designer` — Create interface designs, wireframes, and design systems. Masters user research, accessibi
+- `antigravity-awesome--ui-ux-pro-max` — UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (
+- `antigravity-awesome--ui-visual-validator` — Rigorous visual validation expert specializing in UI testing, design system compliance, an
+- `antigravity-awesome--wiki-vitepress` — Packages generated wiki Markdown into a VitePress static site with dark theme, dark-mode M
+- `astropy` — Comprehensive Python library for astronomy and astrophysics. This skill should be used whe
+- `awesome-claude-code--accessibility-wcag` — Web accessibility patterns for WCAG 2.2 compliance including ARIA, keyboard navigation, sc
+- `awesome-claude-code--frontend-excellence` — Modern frontend patterns for React Server Components, performance optimization, and Core W
+- `awesome-claude-code--nextjs-mastery` — Next.js 14+ App Router patterns including RSC, ISR, middleware, parallel routes, and data 
+- `awesome-claude-code--react-patterns` — React 19 patterns including Server Components, Actions, Suspense, hooks, and component com
+- `cc-skill-frontend-patterns` — Frontend development patterns for React, Next.js, state management, performance optimizati
+- `code2world-gui-world-renderable` — Predict and simulate GUI state transitions by generating renderable HTML/CSS/SVG code from
+- `comfyui-gateway` — REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching,
+- `expo-expo-tailwind-setup` — Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styli
+- `expo-expo-ui-jetpack-compose` — `@expo/ui/jetpack-compose` package lets you use Jetpack Compose Views and modifiers in you
+- `expo-expo-ui-swift-ui` — `@expo/ui/swift-ui` package lets you use SwiftUI Views and modifiers in your app.
+- `expo-tailwind-setup` — Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styli
+- `expo-ui-jetpack-compose` — expo-ui-jetpack-compose
+- `expo-ui-swift-ui` — expo-ui-swift-ui
+- `figma-automation` — Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, 
+- `fixing-accessibility` — Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus 
+- `fp-react` — Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works 
+- `fp-ts-react` — Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use wh
+- `frontend` — Modern frontend development with React, Vue, and web technologies
+- `frontend-design` — Create distinctive, production-grade frontend interfaces with intentional aesthetics, high
+- `frontend-dev-guidelines` — Opinionated frontend development standards for modern React + TypeScript applications. Cov
+- `frontend-developer` — Build React components, implement responsive layouts, and handle client-side state managem
+- `frontend-mobile-development-component-scaffold` — You are a React component architecture expert specializing in scaffolding production-ready
+- `frontend-slides` — Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoin
+- `frontend-ui-dark-ts` — Build dark-themed React applications using Tailwind CSS with custom theming, glassmorphism
+- `magic-ui-generator` — Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready U
+- `nextjs-app-router-patterns` — Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and adva
+- `nextjs-best-practices` — Next.js App Router principles. Server Components, data fetching, routing patterns.
+- `nextjs-developer` — Use when building Next.js 14+ applications with App Router, server components, or server a
+- `nextjs-supabase-auth` — Expert integration of Supabase Auth with Next.js App Router Use when: supabase auth next, 
+- `radix-ui-design-system` — Build accessible design systems with Radix UI primitives. Headless component customization
+- `react-best-practices` — React and Next.js performance optimization guidelines from Vercel Engineering. This skill 
+- `react-expert` — Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router project
+- `react-flow-architect` — Expert ReactFlow architect for building interactive graph applications with hierarchical n
+- `react-flow-node-ts` — Create React Flow node components with TypeScript types, handles, and Zustand integration.
+- `react-modernization` — Upgrade React applications to latest versions, migrate from class components to hooks, and
+- `react-native-architecture` — Build production React Native apps with Expo, navigation, native modules, offline sync, an
+- `react-native-design` — Master React Native styling, navigation, and Reanimated animations for cross-platform mobi
+- `react-native-expert` — Builds, optimizes, and debugs cross-platform mobile applications with React Native and Exp
+- `react-nextjs-development` — React and Next.js 14+ application development with App Router, Server Components, TypeScri
+- `react-patterns` — Modern React patterns and principles. Hooks, composition, performance, TypeScript best pra
+- `react-state-management` — Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. 
+- `react-ui-patterns` — Modern React UI patterns for loading states, error handling, and data fetching. Use when b
+- `senior-frontend` — Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. 
+- `stitch-ui-design` — Expert guide for creating effective prompts for Google Stitch AI UI design tool. Use when 
+- `swiftui-expert-skill` — Write, review, or improve SwiftUI code following best practices for state management, view
+- `tailwind-design-system` — Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, an
+- `tailwind-patterns` — Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, d
+- `tailwind-theme-builder` — >
+- `tauri-tauri-calling-frontend` — Guides developers through Tauri v2 event system for calling frontend from Rust, covering e
+- `tauri-tauri-frontend-events` — Teaches how to subscribe to and listen for Tauri events in the frontend using the events A
+- `tauri-tauri-frontend-js` — Guides Claude through configuring JavaScript frontend frameworks for Tauri v2 desktop appl
+- `tauri-tauri-frontend-rust` — Guides the user through integrating Rust-based WASM frontend frameworks with Tauri v2, cov
+- `ui-skills` — Opinionated, evolving constraints to guide agents when building interfaces
+- `ui-ux-designer` — Create interface designs, wireframes, and design systems. Masters user research, accessibi
+- `ui-ux-pro-max` — UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (
+- `ui-visual-validator` — Rigorous visual validation expert specializing in UI testing, design system compliance, an
+- `vite-flare-starter` — Scaffold a full-stack Cloudflare app from vite-flare-starter — React 19, Hono, D1+Drizzle,
+- `vue-expert` — Builds Vue 3 components with Composition API patterns, configures Nuxt 3 SSR/SSG projects,
+- `vue-expert-js`
+- `washin-elderly-friendly-ssr-ui-optimization` — |
+- `washin-nextjs-common-patterns` — |
+- `washin-ui-feedback-communication-protocol` — |
+- `wiki-vitepress` — Packages generated wiki Markdown into a VitePress static site with dark theme, dark-mode M
+
+### 💻 Languages (110)
+
+- `antigravity-awesome--async-python-patterns` — Master Python asyncio, concurrent programming, and async/await patterns for high-performan
+- `antigravity-awesome--biopython` — Comprehensive molecular biology toolkit. Use for sequence manipulation, file parsing (FAST
+- `antigravity-awesome--cpp-pro` — Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms. H
+- `antigravity-awesome--csharp-pro` — Write modern C# code with advanced features like records, pattern matching, and async/awai
+- `antigravity-awesome--dbos-golang` — DBOS Go SDK for building reliable, fault-tolerant applications with durable workflows. Use
+- `antigravity-awesome--dbos-python` — DBOS Python SDK for building reliable, fault-tolerant applications with durable workflows.
+- `antigravity-awesome--dbos-typescript` — DBOS TypeScript SDK for building reliable, fault-tolerant applications with durable workfl
+- `antigravity-awesome--elixir-pro` — Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Ma
+- `antigravity-awesome--golang-pro` — Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and 
+- `antigravity-awesome--java-pro` — Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Bo
+- `antigravity-awesome--javascript-mastery` — Comprehensive JavaScript reference covering 33+ essential concepts every developer should 
+- `antigravity-awesome--javascript-pro` — Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, ev
+- `antigravity-awesome--javascript-typescript-typescript-scaffo` — You are a TypeScript project architecture expert specializing in scaffolding production-re
+- `antigravity-awesome--linux-privilege-escalation` — This skill should be used when the user asks to \"escalate privileges on Linux\", \"find p
+- `antigravity-awesome--modern-javascript-patterns` — Master ES6+ features including async/await, destructuring, spread operators, arrow functio
+- `antigravity-awesome--n8n-code-javascript` — Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/
+- `antigravity-awesome--n8n-code-python` — Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_n
+- `antigravity-awesome--php-pro` — Write idiomatic PHP code with generators, iterators, SPL data
+- `antigravity-awesome--privilege-escalation-methods` — This skill should be used when the user asks to \"escalate privileges\", \"get root access
+- `antigravity-awesome--python-development-python-scaffold` — You are a Python project architecture expert specializing in scaffolding production-ready 
+- `antigravity-awesome--python-patterns` — Python development principles and decision-making. Framework selection, async patterns, ty
+- `antigravity-awesome--python-performance-optimization` — Profile and optimize Python code using cProfile, memory profilers, and performance best pr
+- `antigravity-awesome--python-pro` — Master Python 3.12+ with modern features, async programming, performance optimization, and
+- `antigravity-awesome--ruby-pro` — Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimizati
+- `antigravity-awesome--rust-async-patterns` — Master Rust async programming with Tokio, async traits, error handling, and concurrent pat
+- `antigravity-awesome--rust-pro` — Master Rust 1.75+ with modern async patterns, advanced type system features, and productio
+- `antigravity-awesome--scala-pro` — Master enterprise-grade Scala development with functional programming, distributed systems
+- `antigravity-awesome--systems-programming-rust-project` — You are a Rust project architecture expert specializing in scaffolding production-ready Ru
+- `antigravity-awesome--temporal-golang-pro` — Use when building durable distributed systems with Temporal Go SDK. Covers deterministic w
+- `antigravity-awesome--temporal-python-pro` — Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga
+- `antigravity-awesome--typescript-advanced-types` — Master TypeScript's advanced type system including generics, conditional types, mapped typ
+- `antigravity-awesome--typescript-expert` — TypeScript and JavaScript expert with deep knowledge of type-level programming, performanc
+- `antigravity-awesome--typescript-pro` — Master TypeScript with advanced types, generics, and strict type safety. Handles complex t
+- `antigravity-awesome--windows-privilege-escalation` — This skill should be used when the user asks to \"escalate privileges on Windows,\" \"find
+- `async-python-patterns` — Master Python asyncio, concurrent programming, and async/await patterns for high-performan
+- `awesome-claude-code--golang-idioms` — Idiomatic Go patterns for error handling, interfaces, concurrency, testing, and module man
+- `awesome-claude-code--python-best-practices` — Pythonic code with modern type hints, dataclasses, async patterns, packaging, and testing
+- `awesome-claude-code--rust-systems` — Rust systems programming patterns including ownership, traits, async runtime, error handli
+- `awesome-claude-code--typescript-advanced` — Advanced TypeScript patterns including generics, conditional types, mapped types, template
+- `benchmarking-text-to-python-against-text-to-sql` — Generate correct Python/Pandas code from natural language questions over tabular data, app
+- `biopython` — Comprehensive molecular biology toolkit. Use for sequence manipulation, file parsing (FAST
+- `brains-trust` — >
+- `can-reasoning-be-trusted` — Validate and score LLM-generated statistical reasoning using a three-axis rubric (Correctn
+- `cpp` — Modern C++ programming patterns and idioms
+- `cpp-pro` — Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms. H
+- `csharp-developer` — Use when building C# applications with .NET 8+, ASP.NET Core APIs, or Blazor web apps. Bui
+- `csharp-dotnet` — C# and .NET development patterns
+- `csharp-pro` — Write modern C# code with advanced features like records, pattern matching, and async/awai
+- `dbos-golang` — DBOS Go SDK for building reliable, fault-tolerant applications with durable workflows. Use
+- `dbos-python` — DBOS Python SDK for building reliable, fault-tolerant applications with durable workflows.
+- `dbos-typescript` — DBOS TypeScript SDK for building reliable, fault-tolerant applications with durable workfl
+- `elixir-pro` — Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Ma
+- `golang-pro` — Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and 
+- `java-architect` — Use when building, configuring, or debugging enterprise Java applications with Spring Boot
+- `java-kotlin` — Java and Kotlin programming patterns
+- `java-pro` — Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Bo
+- `javascript-mastery` — Comprehensive JavaScript reference covering 33+ essential concepts every developer should 
+- `javascript-pro` — Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, ev
+- `javascript-typescript` — Modern JavaScript and TypeScript development patterns
+- `javascript-typescript-typescript-scaffold` — You are a TypeScript project architecture expert specializing in scaffolding production-re
+- `jeff-cpp-pro` — Writes, optimizes, and debugs C++ applications using modern C++20/23 features, template me
+- `jeff-golang-pro` — Implements concurrent Go patterns using goroutines and channels, designs and builds micros
+- `jeff-javascript-pro` — Writes, debugs, and refactors JavaScript code using modern ES2023+ features, async/await p
+- `jeff-php-pro` — Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony fram
+- `jeff-python-pro` — Use when building Python 3.11+ applications requiring type safety, async programming, or r
+- `jeff-typescript-pro` — Implements advanced TypeScript type systems, creates custom type guards, utility types, an
+- `kotlin-specialist` — Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow st
+- `linux-privilege-escalation` — This skill should be used when the user asks to \"escalate privileges on Linux\", \"find p
+- `menvagent-scalable-polyglot-environment` — Automated Docker environment construction for polyglot repositories using a Planning-Execu
+- `modern-javascript-patterns` — Master ES6+ features including async/await, destructuring, spread operators, arrow functio
+- `modern-python` — Configures Python projects with modern tooling (uv, ruff, ty). Use when creating projects,
+- `n8n-code-javascript` — Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/
+- `n8n-code-python` — Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_n
+- `php` — Modern PHP programming patterns
+- `php-pro` — Write idiomatic PHP code with generators, iterators, SPL data
+- `privilege-escalation-methods` — This skill should be used when the user asks to \"escalate privileges\", \"get root access
+- `python` — Python programming patterns and best practices
+- `python-anti-patterns` — Common Python anti-patterns to avoid. Use as a checklist when reviewing code, before final
+- `python-background-jobs` — Python background job patterns including task queues, workers, and event-driven architectu
+- `python-code-style` — Python code style, linting, formatting, naming conventions, and documentation standards. U
+- `python-configuration` — Python configuration management via environment variables and typed settings. Use when ext
+- `python-design-patterns` — Python design patterns including KISS, Separation of Concerns, Single Responsibility, and 
+- `python-development-python-scaffold` — You are a Python project architecture expert specializing in scaffolding production-ready 
+- `python-error-handling` — Python error handling patterns including input validation, exception hierarchies, and part
+- `python-observability` — Python observability patterns including structured logging, metrics, and distributed traci
+- `python-patterns` — Python development principles and decision-making. Framework selection, async patterns, ty
+- `python-performance-optimization` — Profile and optimize Python code using cProfile, memory profilers, and performance best pr
+- `python-pro` — Master Python 3.12+ with modern features, async programming, performance optimization, and
+- `python-project-structure` — Python project organization, module architecture, and public API design. Use when setting 
+- `python-resilience` — Python resilience patterns including automatic retries, exponential backoff, timeouts, and
+- `python-resource-management` — Python resource management with context managers, cleanup patterns, and streaming. Use whe
+- `python-type-safety` — Python type safety with type hints, generics, protocols, and strict type checking. Use whe
+- `ruby` — Ruby programming patterns and idioms
+- `ruby-pro` — Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimizati
+- `rust` — Rust programming patterns and ownership concepts
+- `rust-async-patterns` — Master Rust async programming with Tokio, async traits, error handling, and concurrent pat
+- `rust-pro` — Master Rust 1.75+ with modern async patterns, advanced type system features, and productio
+- `scala-pro` — Master enterprise-grade Scala development with functional programming, distributed systems
+- `systems-programming-rust-project` — You are a Rust project architecture expert specializing in scaffolding production-ready Ru
+- `tauri-tauri-calling-rust` — Guides the user through calling Rust backend functions from the Tauri frontend using the i
+- `temporal-golang-pro` — Use when building durable distributed systems with Temporal Go SDK. Covers deterministic w
+- `temporal-python-pro` — Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga
+- `towards-adaptive-scalable-robust` — Implement RAPS (Reputation-Aware Publish-Subscribe) multi-agent coordination using intent-
+- `trust-design-skill-profiles` — >
+- `typescript-advanced-types` — Master TypeScript's advanced type system including generics, conditional types, mapped typ
+- `typescript-expert` — TypeScript and JavaScript expert with deep knowledge of type-level programming, performanc
+- `typescript-pro` — Master TypeScript with advanced types, generics, and strict type safety. Handles complex t
+- `washin-python-lazy-init-proxy-pattern` — |
+- `windows-privilege-escalation` — This skill should be used when the user asks to \"escalate privileges on Windows,\" \"find
+- `yasa-scalable-multi-language-taint` — Perform unified multi-language taint analysis across Java, JavaScript, Python, and Go code
+
+### 🌟 Life & Productivity (94)
+
+- `agentic-ai-healthcare-medicine` — Design, evaluate, and improve LLM-based agentic systems for healthcare using a seven-dimen
+- `alertguardian-intelligent-alert-life-cycle` — |
+- `antigravity-awesome--azure-resource-manager-durabletask-dotn` — Azure Resource Manager SDK for Durable Task Scheduler in .NET.
+- `antigravity-awesome--claude-ally-health` — A health assistant skill for medical information analysis, symptom tracking, and wellness 
+- `antigravity-awesome--family-health-analyzer` — 分析家族病史、评估遗传风险、识别家庭健康模式、提供个性化预防建议
+- `antigravity-awesome--fitness-analyzer` — 分析运动数据、识别运动模式、评估健身进展，并提供个性化训练建议。支持与慢性病数据的关联分析。
+- `antigravity-awesome--goal-analyzer` — 分析健康目标数据、识别目标模式、评估目标进度,并提供个性化目标管理建议。支持与营养、运动、睡眠等健康数据的关联分析。
+- `antigravity-awesome--health-trend-analyzer` — 分析一段时间内健康数据的趋势和模式。关联药物、症状、生命体征、化验结果和其他健康指标的变化。识别令人担忧的趋势、改善情况，并提供数据驱动的洞察。当用户询问健康趋势、模式、随时间的变
+- `antigravity-awesome--kotlin-coroutines-expert` — Expert patterns for Kotlin Coroutines and Flow, covering structured concurrency, error han
+- `antigravity-awesome--mental-health-analyzer` — 分析心理健康数据、识别心理模式、评估心理健康状况、提供个性化心理健康建议。支持与睡眠、运动、营养等其他健康数据的关联分析。
+- `antigravity-awesome--occupational-health-analyzer` — 分析职业健康数据、识别工作相关健康风险、评估职业健康状况、提供个性化职业健康建议。支持与睡眠、运动、心理健康等其他健康数据的关联分析。
+- `antigravity-awesome--oral-health-analyzer` — 分析口腔健康数据、识别口腔问题模式、评估口腔健康状况、提供个性化口腔健康建议。支持与营养、慢性病、用药等其他健康数据的关联分析。
+- `antigravity-awesome--personal-tool-builder` — Expert in building custom tools that solve your own problems first. The best products ofte
+- `antigravity-awesome--sexual-health-analyzer` — Sexual Health Analyzer
+- `antigravity-awesome--skin-health-analyzer` — Analyze skin health data, identify skin problem patterns, assess skin health status. Suppo
+- `antigravity-awesome--task-intelligence` — Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema AN
+- `antigravity-awesome--travel-health-analyzer` — 分析旅行健康数据、评估目的地健康风险、提供疫苗接种建议、生成多语言紧急医疗信息卡片。支持WHO/CDC数据集成的专业级旅行健康风险评估。
+- `assessing-quality-mental-health` — >
+- `azure-resource-manager-durabletask-dotnet` — Azure Resource Manager SDK for Durable Task Scheduler in .NET.
+- `c-schedule` — Smart scheduling — automate recurring Claude tasks with cost control. Deliver results to T
+- `claude-ally-health` — A health assistant skill for medical information analysis, symptom tracking, and wellness 
+- `embodied-task-planning-graph-informed` — Structure long-horizon task planning using graph-based memory and bounded lookahead. Use w
+- `family-health-analyzer` — 分析家族病史、评估遗传风险、识别家庭健康模式、提供个性化预防建议
+- `fitness-analyzer` — 分析运动数据、识别运动模式、评估健身进展，并提供个性化训练建议。支持与慢性病数据的关联分析。
+- `from-prompt-response-goal-directed-systems` — Design production-grade agentic AI architectures with separated cognition/execution layers
+- `from-task-solving-robust` — Build LLM agent workflows that stay robust under partial observability, noisy signals, shi
+- `goal-analyzer` — 分析健康目标数据、识别目标模式、评估目标进度,并提供个性化目标管理建议。支持与营养、运动、睡眠等健康数据的关联分析。
+- `halluverse-m3-multitask-multilingual-benchmark-hal` — Detect and classify hallucinations in LLM outputs across languages using the HalluVerse-M3
+- `harmoni-multimodal-personalization-multi-user` — Build multi-user personalization pipelines with per-user profile tracking, multimodal perc
+- `health-trend-analyzer` — 分析一段时间内健康数据的趋势和模式。关联药物、症状、生命体征、化验结果和其他健康指标的变化。识别令人担忧的趋势、改善情况，并提供数据驱动的洞察。当用户询问健康趋势、模式、随时间的变
+- `how-personalized-memory-shape` — Rational preference utilization for personalized LLM assistants. Implements RP-Reasoner's 
+- `kotlin-coroutines-expert` — Expert patterns for Kotlin Coroutines and Flow, covering structured concurrency, error han
+- `local-life-manager-adr` — Create Architecture Decision Records through interactive conversation. Use when making tec
+- `local-life-manager-advise` — Interactive conversational guidance - user implements with step-by-step advice. Use when y
+- `local-life-manager-brief` — Create or update project brief through interactive discovery. Use when starting any new id
+- `local-life-manager-commit` — Create git commits in spaces/[project]/ with conventional message format. Use for saving p
+- `local-life-manager-complete` — Complete task: validate, document, review, commit, and merge to develop. Use when all impl
+- `local-life-manager-critique` — Challenge idea assumptions with skeptical VC-style evaluation. Use when user requests crit
+- `local-life-manager-daily-journal` — Daily journal management for the my-vault Obsidian vault. Use for morning routines, daily 
+- `local-life-manager-daily-review` — Complete daily journal review. Use at end of day or next morning to fill in journal sectio
+- `local-life-manager-debrief` — End-of-session reflection. Extracts memories, suggests updates to about-taylor.md and CLAU
+- `local-life-manager-docs` — Documentation health check and maintenance across all ideas. Use for periodic maintenance,
+- `local-life-manager-end-session` — End the current learning session. Use when done studying to generate summary, update learn
+- `local-life-manager-flashcards` — Generate spaced repetition flashcards from notes or topics. Use when user wants to create 
+- `local-life-manager-git-sync` — Sync all git repos - my-life top repo and spaces/ projects
+- `local-life-manager-good-morning` — Morning routine check-in. Use at start of day to review yesterday, set up today's journal,
+- `local-life-manager-implement` — Execute plan phases, writing code in spaces/ while tracking in ideas/. Use after creating 
+- `local-life-manager-improve-processes` — Reflect on current session and suggest improvements to agents, commands, templates, workfl
+- `local-life-manager-issue` — Create standalone work items (TASK, BUG, or SPIKE) with AI-assisted type detection. Use wh
+- `local-life-manager-life-planning` — Cross-repo life and project planning. Use when user wants to plan their week, prioritize p
+- `local-life-manager-log-session` — Log entries to the current learning session. Use mid-session to save progress, capture con
+- `local-life-manager-plan` — Create PLAN.md file with phase-based breakdown for issues. Use after creating an issue wit
+- `local-life-manager-process-inbox` — Process notes in inbox folder. Use when user wants to organize inbox, triage notes, or cle
+- `local-life-manager-project-status` — Enhanced project status dashboard with intelligent context analysis. Use for session start
+- `local-life-manager-projects-quick` — Quick overview of all projects (lightweight, Haiku-powered). Use to check project statuses
+- `local-life-manager-quality` — Comprehensive code quality assessment in spaces/[project]/. Use before commits, merges, or
+- `local-life-manager-quick-journal` — Quick update to today's journal without full review. Use when user wants to quickly log so
+- `local-life-manager-readmes` — Check all READMEs for accuracy and consistency across the meta-repo
+- `local-life-manager-refresh` — Silently refresh AI context by reading project configuration and guidelines. Use when star
+- `local-life-manager-research` — Deep research on a topic, creating persistent documentation for future reference. Use for 
+- `local-life-manager-review-session` — Retrieval practice session to test retention on a topic. Use when user wants to test their
+- `local-life-manager-rss-catchup` — Fetch and summarize latest articles from RSS feeds. Creates notes with article summaries a
+- `local-life-manager-sanity-check` — Step back, reflect on current work, validate direction and alignment. Use when complexity 
+- `local-life-manager-security-audit` — Comprehensive security audit of codebase using multiple security-auditor agents. Use befor
+- `local-life-manager-spec` — Manage protocol/standard specifications that define what a system must do. Use to create, 
+- `local-life-manager-start-session` — Start a new learning session on a topic. Use when user wants to learn something new, begin
+- `local-life-manager-study-notes` — Create comprehensive study notes on a topic. Use when user wants detailed notes, a study g
+- `local-life-manager-synthesize` — Synthesize information across multiple sources into a structured document. Processes sourc
+- `local-life-manager-teach` — Deep pedagogical guidance - learn technology by doing with Socratic teaching. Use when lea
+- `local-life-manager-troubleshoot` — Systematic debugging with 5-step loop for issues in spaces/[project]/. Use when encounteri
+- `local-life-manager-ui-design` — Create HTML UI mockups stored in ideas/[project]/docs/ui-designs/
+- `local-life-manager-validate-idea` — Validate idea/project structure, documentation completeness, and readiness for next phase
+- `local-life-manager-validate-space` — Validate project space structure, boilerplate docs, and consistency with ideas/
+- `local-life-manager-validate-spec` — Validate spec completeness and implementation compliance. Use before approval (--pre) or b
+- `local-life-manager-video-summarize` — Summarize a single YouTube video and create a note. Use when user shares a video URL or as
+- `local-life-manager-weekly-review` — Weekly review and planning session. Use at end of week or weekend to review progress, plan
+- `local-life-manager-whats-next` — Quick prioritization of what to work on. Use when unsure what to do next, need help decidi
+- `local-life-manager-worklog` — Add timestamped work log entries to track progress and decisions. Use for documenting work
+- `local-life-manager-youtube-catchup` — Fetch and summarize latest videos from priority YouTube channels. Creates notes with trans
+- `logsieve-task-aware-ci-log` — Reduce verbose CI/CD build logs before LLM analysis using RCA-aware semantic filtering. Re
+- `mental-health-analyzer` — 分析心理健康数据、识别心理模式、评估心理健康状况、提供个性化心理健康建议。支持与睡眠、运动、营养等其他健康数据的关联分析。
+- `occupational-health-analyzer` — 分析职业健康数据、识别工作相关健康风险、评估职业健康状况、提供个性化职业健康建议。支持与睡眠、运动、心理健康等其他健康数据的关联分析。
+- `oral-health-analyzer` — 分析口腔健康数据、识别口腔问题模式、评估口腔健康状况、提供个性化口腔健康建议。支持与营养、慢性病、用药等其他健康数据的关联分析。
+- `personal-tool-builder` — Expert in building custom tools that solve your own problems first. The best products ofte
+- `personality-as-relational-infrastructure` — Design LLM messaging systems that infuse Big Five personality traits for sustained user en
+- `project-health`
+- `sexual-health-analyzer` — Sexual Health Analyzer
+- `skin-health-analyzer` — Analyze skin health data, identify skin problem patterns, assess skin health status. Suppo
+- `task-coordination-strategies` — Decompose complex tasks, design dependency graphs, and coordinate multi-agent work with pr
+- `task-intelligence` — Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema AN
+- `toolself-unifying-task-execution` — Implement self-reconfiguring agent workflows where configuration (sub-goals, strategy, too
+- `travel-health-analyzer` — 分析旅行健康数据、评估目的地健康风险、提供疫苗接种建议、生成多语言紧急医疗信息卡片。支持WHO/CDC数据集成的专业级旅行健康风险评估。
+- `tsrbench-comprehensive-multi-task-multi-modal` — Evaluate and build multi-modal time series reasoning pipelines using the TSRBench framewor
+- `washin-l4-task-engine-iterative-tuning` — |
+
+### 📋 Product Management (88)
+
+- `agentcpm-report-interleaving-drafting-deepening` — >
+- `ai-product` — Every product will be AI-powered. The question is whether you'll build it right or ship a 
+- `ai-wrapper-product` — Expert in building products that wrap AI APIs (OpenAI, Anthropic, etc.) into focused tools
+- `analytics-product` — Analytics de produto — PostHog, Mixpanel, eventos, funnels, cohorts, retencao, north star 
+- `antigravity-awesome--ai-product` — Every product will be AI-powered. The question is whether you'll build it right or ship a 
+- `antigravity-awesome--ai-wrapper-product` — Expert in building products that wrap AI APIs (OpenAI, Anthropic, etc.) into focused tools
+- `antigravity-awesome--analytics-product` — Analytics de produto — PostHog, Mixpanel, eventos, funnels, cohorts, retencao, north star 
+- `antigravity-awesome--apify-influencer-discovery` — Find and evaluate influencers for brand partnerships, verify authenticity, and track colla
+- `antigravity-awesome--backend-development-feature-development` — Orchestrate end-to-end backend feature development from requirements to deployment. Use wh
+- `antigravity-awesome--office-productivity` — Office productivity workflow covering document creation, spreadsheet automation, presentat
+- `antigravity-awesome--product-design` — Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visu
+- `antigravity-awesome--product-inventor` — Product Inventor e Design Alchemist de nivel maximo — combina Product Thinking, Design Sys
+- `antigravity-awesome--product-manager` — Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metric
+- `antigravity-awesome--product-manager-toolkit` — Comprehensive toolkit for product managers including RICE prioritization, customer intervi
+- `antigravity-awesome--production-code-audit` — Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns,
+- `antigravity-awesome--production-scheduling` — Codified expertise for production scheduling, job sequencing, line balancing, changeover o
+- `apify-influencer-discovery` — Find and evaluate influencers for brand partnerships, verify authenticity, and track colla
+- `backend-development-feature-development` — Orchestrate end-to-end backend feature development from requirements to deployment. Use wh
+- `benchmarking-pairwise-causal-discovery` — >
+- `co-redteam-orchestrated-security-discovery` — Multi-agent security vulnerability discovery and exploitation using Co-RedTeam's orchestra
+- `deltaevolve-accelerating-scientific-discovery` — Iteratively evolve code solutions using momentum-driven semantic deltas instead of full-co
+- `feature-forge` — Conducts structured requirements workshops to produce feature specifications, user stories
+- `magellan-autonomous-discovery-compiler` — Evolve compiler optimization heuristics by coupling LLM code generation with evolutionary 
+- `office-productivity` — Office productivity workflow covering document creation, spreadsheet automation, presentat
+- `parallel-feature-development` — Coordinate parallel feature development with file ownership strategies, conflict avoidance
+- `pm-skills-ab-test-analysis` — Analyze A/B test results with statistical significance, sample size validation, confidence
+- `pm-skills-analyze-feature-requests` — Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, e
+- `pm-skills-ansoff-matrix` — Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, ma
+- `pm-skills-brainstorm-experiments-existing` — Design experiments to test assumptions for an existing product — prototypes, A/B tests, sp
+- `pm-skills-brainstorm-experiments-new` — Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and
+- `pm-skills-brainstorm-ideas-existing` — Brainstorm product ideas for an existing product using multi-perspective ideation from PM,
+- `pm-skills-brainstorm-ideas-new` — Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Eng
+- `pm-skills-brainstorm-okrs` — Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with m
+- `pm-skills-cohort-analysis` — Perform cohort analysis on user engagement data — retention curves, feature adoption trend
+- `pm-skills-competitive-battlecard` — Create sales-ready competitive battlecards comparing your product against a specific compe
+- `pm-skills-competitor-analysis` — Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identif
+- `pm-skills-create-prd` — Create a Product Requirements Document using a comprehensive 8-section template covering p
+- `pm-skills-customer-journey-map` — Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points,
+- `pm-skills-dummy-dataset` — Generate realistic dummy datasets for testing with customizable columns, constraints, and 
+- `pm-skills-grammar-check` — Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewr
+- `pm-skills-identify-assumptions-existing` — Identify risky assumptions for a feature idea in an existing product across Value, Usabili
+- `pm-skills-identify-assumptions-new` — Identify risky assumptions for a new product idea across 8 risk categories including Go-to
+- `pm-skills-interview-script` — Create a structured customer interview script with JTBD probing questions, warm-up, core e
+- `pm-skills-job-stories` — Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]
+- `pm-skills-lean-canvas` — Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advant
+- `pm-skills-metrics-dashboard` — Define and design a product metrics dashboard with key metrics, data sources, visualizatio
+- `pm-skills-north-star-metric` — Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellat
+- `pm-skills-opportunity-solution-tree` — Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired ou
+- `pm-skills-outcome-roadmap` — Transform an output-focused roadmap into an outcome-focused one that communicates strategi
+- `pm-skills-pestle-analysis` — Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and 
+- `pm-skills-porters-five-forces` — Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, 
+- `pm-skills-positioning-ideas` — Brainstorm product positioning ideas differentiated from competitors. Identifies top compe
+- `pm-skills-pre-mortem` — Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real 
+- `pm-skills-prioritization-frameworks` — Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and te
+- `pm-skills-prioritize-assumptions` — Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use
+- `pm-skills-prioritize-features` — Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignme
+- `pm-skills-product-name` — Brainstorm 5 unique, memorable product names with rationale aligned to brand values and ta
+- `pm-skills-product-vision` — Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and
+- `pm-skills-release-notes` — Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engag
+- `pm-skills-retro` — Facilitate a structured sprint retrospective — what went well, what didn't, and prioritize
+- `pm-skills-review-resume` — Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S for
+- `pm-skills-sentiment-analysis` — Analyze user feedback data to identify segments with sentiment scores, JTBD, and product s
+- `pm-skills-sprint-plan` — Plan a sprint with capacity estimation, story selection, dependency mapping, and risk iden
+- `pm-skills-sql-queries` — Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, My
+- `pm-skills-stakeholder-map` — Build a stakeholder map using a power/interest grid, identify communication strategies per
+- `pm-skills-summarize-interview` — Summarize a customer interview transcript into a structured template with JTBD, satisfacti
+- `pm-skills-summarize-meeting` — Summarize a meeting transcript into structured notes with date, participants, topic, key d
+- `pm-skills-swot-analysis` — Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with 
+- `pm-skills-test-scenarios` — Create comprehensive test scenarios from user stories with test objectives, starting condi
+- `pm-skills-user-personas` — Create refined user personas from research data — 3 personas with JTBD, pains, gains, and 
+- `pm-skills-user-segmentation` — Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3
+- `pm-skills-user-stories` — Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST crit
+- `pm-skills-value-prop-statements` — Generate value proposition statements for marketing, sales, and onboarding from existing v
+- `pm-skills-value-proposition` — Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, 
+- `pm-skills-wwas` — Create product backlog items in Why-What-Acceptance format — independent, valuable, testab
+- `product-design` — Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visu
+- `product-inventor` — Product Inventor e Design Alchemist de nivel maximo — combina Product Thinking, Design Sys
+- `product-manager` — Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metric
+- `product-manager-toolkit` — Comprehensive toolkit for product managers including RICE prioritization, customer intervi
+- `product-team` — 8 production-ready product skills: product manager toolkit with RICE prioritization, agile
+- `production-code-audit` — Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns,
+- `production-scheduling` — Codified expertise for production scheduling, job sequencing, line balancing, changeover o
+- `protean-compiler-agile-framework` — Guide fine-grained LLVM compiler phase ordering using the Protean framework's agile optimi
+- `refuge-feature-generation-prediction` — Automated feature engineering for prediction tasks on relational databases using a multi-a
+- `washin-community-product-ghost-town-fix` — |
+- `washin-fastapi-development-production-dual-mode` — |
+- `whitespaces-dont-lie-feature-driven` — Detect whether source code was written by a human or generated by an AI (ChatGPT, Copilot,
+- `zero-shot-product-attribute-labeling`
+
+### 🧪 Testing & QA (87)
+
+- `ab-test-setup` — Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, an
+- `antigravity-awesome--ab-test-setup` — Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, an
+- `antigravity-awesome--api-testing-observability-api-mock` — You are an API mocking expert specializing in realistic mock services for development, tes
+- `antigravity-awesome--awt-e2e-testing` — AI-powered E2E web testing — eyes and hands for AI coding tools. Declarative YAML scenario
+- `antigravity-awesome--backtesting-frameworks` — Build robust backtesting systems for trading strategies with proper handling of look-ahead
+- `antigravity-awesome--bats-testing-patterns` — Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use wh
+- `antigravity-awesome--e2e-testing` — End-to-end testing workflow with Playwright for browser automation, visual regression, cro
+- `antigravity-awesome--e2e-testing-patterns` — Master end-to-end testing with Playwright and Cypress to build reliable test suites that c
+- `antigravity-awesome--go-playwright` — Expert capability for robust, stealthy, and efficient browser automation using Playwright 
+- `antigravity-awesome--idor-testing` — This skill should be used when the user asks to \"test for insecure direct object referenc
+- `antigravity-awesome--javascript-testing-patterns` — Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for uni
+- `antigravity-awesome--odoo-automated-tests` — Write and run Odoo automated tests using TransactionCase, HttpCase, and browser tour tests
+- `antigravity-awesome--performance-testing-review-ai-review` — You are an expert AI-powered code review specialist combining automated static analysis, i
+- `antigravity-awesome--playwright-java` — Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Pa
+- `antigravity-awesome--playwright-skill` — Complete browser automation with Playwright. Auto-detects dev servers, writes clean test s
+- `antigravity-awesome--python-testing-patterns` — Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven
+- `antigravity-awesome--screen-reader-testing` — Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when va
+- `antigravity-awesome--smtp-penetration-testing` — This skill should be used when the user asks to \"perform SMTP penetration testing\", \"en
+- `antigravity-awesome--sql-injection-testing` — This skill should be used when the user asks to \"test for SQL injection vulnerabilities\"
+- `antigravity-awesome--ssh-penetration-testing` — This skill should be used when the user asks to \"pentest SSH services\", \"enumerate SSH 
+- `antigravity-awesome--tdd-orchestrator` — Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflo
+- `antigravity-awesome--tdd-workflow` — Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle.
+- `antigravity-awesome--tdd-workflows-tdd-cycle` — Use when working with tdd workflows tdd cycle
+- `antigravity-awesome--tdd-workflows-tdd-green` — Implement the minimal code needed to make failing tests pass in the TDD green phase.
+- `antigravity-awesome--tdd-workflows-tdd-red` — Generate failing tests for the TDD red phase to define expected behavior and edge cases.
+- `antigravity-awesome--temporal-python-testing` — Test Temporal workflows with pytest, time-skipping, and mocking strategies. Covers unit te
+- `antigravity-awesome--test-automator` — Master AI-powered test automation with modern frameworks, self-healing tests, and comprehe
+- `antigravity-awesome--test-driven-development` — Use when implementing any feature or bugfix, before writing implementation code
+- `antigravity-awesome--test-fixing` — Run tests and systematically fix all failing tests using smart error grouping. Use when us
+- `antigravity-awesome--testing-patterns` — Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when w
+- `antigravity-awesome--testing-qa` — Comprehensive testing and QA workflow covering unit testing, integration testing, E2E test
+- `antigravity-awesome--unit-testing-test-generate` — Generate comprehensive, maintainable unit tests across languages with strong coverage and 
+- `antigravity-awesome--webapp-testing` — Toolkit for interacting with and testing local web applications using Playwright. Supports
+- `antigravity-awesome--wordpress-penetration-testing` — This skill should be used when the user asks to \"pentest WordPress sites\", \"scan WordPr
+- `api-testing-observability-api-mock` — You are an API mocking expert specializing in realistic mock services for development, tes
+- `awesome-claude-code--tdd-mastery` — Test-driven development workflow with Red-Green-Refactor cycle across languages
+- `awesome-claude-code--testing-strategies` — Testing strategies including contract testing, snapshot testing, mutation testing, propert
+- `backtesting-frameworks` — Build robust backtesting systems for trading strategies with proper handling of look-ahead
+- `bats-testing-patterns` — Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use wh
+- `constant-time-testing` — >
+- `corpusqa-10-million-token` — Corpus-level QA over massive document collections using memory-augmented agentic processin
+- `e2e-testing` — End-to-end testing workflow with Playwright for browser automation, visual regression, cro
+- `e2e-testing-patterns` — Master end-to-end testing with Playwright and Cypress to build reliable test suites that c
+- `fs-researcher-test-time-scaling-long-horizon` — >
+- `go-playwright` — Expert capability for robust, stealthy, and efficient browser automation using Playwright 
+- `idor-testing` — This skill should be used when the user asks to \"test for insecure direct object referenc
+- `javascript-testing-patterns` — Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for uni
+- `jobresqa-benchmark-machine-reading` — Build and evaluate multilingual machine reading comprehension systems for HR documents (re
+- `odoo-automated-tests` — Write and run Odoo automated tests using TransactionCase, HttpCase, and browser tour tests
+- `performance-testing-review-ai-review` — You are an expert AI-powered code review specialist combining automated static analysis, i
+- `playwright-expert` — Use when writing E2E tests with Playwright, setting up test infrastructure, or debugging f
+- `playwright-java` — Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Pa
+- `playwright-skill` — Complete browser automation with Playwright. Auto-detects dev servers, writes clean test s
+- `predicting-improving-test-time-scaling` — Implement Scaling-Law Guided (SLG) Search for test-time compute optimization. Uses reward 
+- `property-based-testing` — Provides guidance for property-based testing across multiple languages and smart contracts
+- `python-testing-patterns` — Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven
+- `rethinking-value-agent-generated-tests` — Optimize agent test-writing strategy for issue resolution by reallocating interaction budg
+- `screen-reader-testing` — Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when va
+- `sf-testing` — >
+- `smtp-penetration-testing` — This skill should be used when the user asks to \"perform SMTP penetration testing\", \"en
+- `sql-injection-testing` — This skill should be used when the user asks to \"test for SQL injection vulnerabilities\"
+- `ssh-penetration-testing` — This skill should be used when the user asks to \"pentest SSH services\", \"enumerate SSH 
+- `super-test-driven-development` — Use when implementing any feature or bugfix, before writing implementation code
+- `swe-replay-test-time-scaling-software` — Efficient test-time scaling for software engineering agents using trajectory recycling and
+- `tauri-tauri-testing` — Guides developers through testing Tauri applications including unit testing with mock runt
+- `tdd-orchestrator` — Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflo
+- `tdd-workflow` — Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle.
+- `tdd-workflows-tdd-cycle` — Use when working with tdd workflows tdd cycle
+- `tdd-workflows-tdd-green` — Implement the minimal code needed to make failing tests pass in the TDD green phase.
+- `tdd-workflows-tdd-red` — Generate failing tests for the TDD red phase to define expected behavior and edge cases.
+- `temporal-python-testing` — Test Temporal workflows with pytest, time-skipping, and mocking strategies. Covers unit te
+- `test-automator` — Master AI-powered test automation with modern frameworks, self-healing tests, and comprehe
+- `test-driven-development` — Use when implementing any feature or bugfix, before writing implementation code
+- `test-fixing` — Run tests and systematically fix all failing tests using smart error grouping. Use when us
+- `test-master` — Generates test files, creates mocking strategies, analyzes code coverage, designs test arc
+- `test-vs-mutant-adversarial` — >
+- `testexplora-benchmarking-proactive-bug` — >
+- `testing-handbook-generator` — >
+- `testing-patterns` — Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when w
+- `testing-qa` — Comprehensive testing and QA workflow covering unit testing, integration testing, E2E test
+- `testing-strategies` — Unit, integration, E2E testing and TDD practices
+- `tsaqa-time-series-analysis` — Structured time series question answering using the TSAQA six-task framework: anomaly dete
+- `unit-testing-test-generate` — Generate comprehensive, maintainable unit tests across languages with strong coverage and 
+- `washin-ai-chatbot-automated-testing` — |
+- `washin-playwright-anti-ai-detection-bypass` — |
+- `webapp-testing` — Toolkit for interacting with and testing local web applications using Playwright. Supports
+- `wordpress-penetration-testing` — This skill should be used when the user asks to \"pentest WordPress sites\", \"scan WordPr
+
+### ⚖️ Legal & Compliance (72)
+
+- `accessibility-compliance` — Implement WCAG 2.2 compliant interfaces with mobile accessibility, inclusive design patter
+- `accessibility-compliance-accessibility-audit` — You are an accessibility expert specializing in WCAG compliance, inclusive design, and ass
+- `ag-employment-contract-templates` — Create employment contracts, offer letters, and HR policy documents following legal best p
+- `ag-gdpr-data-handling` — Implement GDPR-compliant data handling with consent management, data subject rights, and p
+- `ag-pci-compliance` — Implement PCI DSS compliance requirements for secure handling of payment card data and pay
+- `alienlm-alienization-api-boundary-privacy` — Implement AlienLM-style API-boundary privacy layers that protect sensitive text sent to bl
+- `anonymization-enhanced-privacy-protection-mobile-g` — Implement available-but-invisible privacy protection for mobile GUI agents using PII-aware
+- `antigravity-awesome--accessibility-compliance-accessibility-` — You are an accessibility expert specializing in WCAG compliance, inclusive design, and ass
+- `antigravity-awesome--aws-compliance-checker` — Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks
+- `antigravity-awesome--cc-skill-coding-standards` — Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React
+- `antigravity-awesome--context-fundamentals` — This skill should be used when the user asks to "understand context", "explain context win
+- `antigravity-awesome--customs-trade-compliance` — Codified expertise for customs documentation, tariff classification, duty optimisation, re
+- `antigravity-awesome--employment-contract-templates` — Create employment contracts, offer letters, and HR policy documents following legal best p
+- `antigravity-awesome--fda-medtech-compliance-auditor` — Expert AI auditor for Medical Device (SaMD) compliance, IEC 62304, and 21 CFR Part 820. Re
+- `antigravity-awesome--gdpr-data-handling` — Implement GDPR-compliant data handling with consent management, data subject rights, and p
+- `antigravity-awesome--geo-fundamentals` — Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity).
+- `antigravity-awesome--google-calendar-automation` — |
+- `antigravity-awesome--hig-foundations` — Apple Human Interface Guidelines design foundations.
+- `antigravity-awesome--legal-advisor` — Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-com
+- `antigravity-awesome--monday-automation` — Automate Monday.com work management including boards, items, columns, groups, subitems, an
+- `antigravity-awesome--odoo-l10n-compliance` — Country-specific Odoo localization: tax configuration, e-invoicing (CFDI, FatturaPA, SAF-T
+- `antigravity-awesome--outlook-calendar-automation` — Automate Outlook Calendar tasks via Rube MCP (Composio): create events, manage attendees, 
+- `antigravity-awesome--pci-compliance` — Implement PCI DSS compliance requirements for secure handling of payment card data and pay
+- `antigravity-awesome--privacy-by-design` — Use when building apps that collect user data. Ensures privacy protections are built in fr
+- `antigravity-awesome--security-compliance-compliance-check` — You are a compliance expert specializing in regulatory requirements for software systems i
+- `antigravity-awesome--spec-to-code-compliance` — Verifies code implements exactly what documentation specifies for blockchain audits. Use w
+- `antigravity-awesome--threejs-fundamentals` — Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when 
+- `c-calendar` — View and create calendar events via gog (Google Calendar) or icalBuddy (Apple Calendar). C
+- `c-mop-integrating-momentum-boundary-aware` — Optimize LLM system prompts iteratively using boundary-aware contrastive sampling and mome
+- `cc-skill-coding-standards` — Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React
+- `claude-legal-canned-responses` — Generate templated responses for common legal inquiries and identify when situations requi
+- `claude-legal-compliance` — Navigate privacy regulations (GDPR, CCPA), review DPAs, and handle data subject requests. 
+- `claude-legal-contract-review` — Review contracts against your organization's negotiation playbook, flagging deviations and
+- `claude-legal-legal-risk-assessment` — Assess and classify legal risks using a severity-by-likelihood framework with escalation c
+- `claude-legal-meeting-briefing` — Prepare structured briefings for meetings with legal relevance and track resulting action 
+- `claude-legal-nda-triage` — Screen incoming NDAs and classify them as GREEN (standard), YELLOW (needs review), or RED 
+- `context-fundamentals` — This skill should be used when the user asks to "understand context", "explain context win
+- `customs-trade-compliance` — Codified expertise for customs documentation, tariff classification, duty optimisation, re
+- `employment-contract-templates` — Create employment contracts, offer letters, and HR policy documents following legal best p
+- `evaluation-legal-applications-challenges` — Build evaluation pipelines for LLMs in legal tasks using a three-dimensional framework: ou
+- `fda-medtech-compliance-auditor` — Expert AI auditor for Medical Device (SaMD) compliance, IEC 62304, and 21 CFR Part 820. Re
+- `gdpr-data-handling` — Implement GDPR-compliant data handling with consent management, data subject rights, and p
+- `geo-fundamentals` — Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity).
+- `google-calendar-automation` — |
+- `hig-foundations` — Apple Human Interface Guidelines design foundations.
+- `legal-advisor` — Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-com
+- `legalmalr-multi-agent-query-understanding` — Multi-agent query reformulation and LLM reranking for retrieval over legal, regulatory, or
+- `llama-31-foundationai-securityllm-reasoning-8b-tec` — >
+- `monday-automation` — Automate Monday.com work management including boards, items, columns, groups, subitems, an
+- `odoo-l10n-compliance` — Country-specific Odoo localization: tax configuration, e-invoicing (CFDI, FatturaPA, SAF-T
+- `openguandan-large-scale-imperfect-information` — Build AI agents for the OpenGuanDan imperfect-information card game benchmark. Covers WebS
+- `outlook-calendar-automation` — Automate Outlook Calendar tasks via Rube MCP (Composio): create events, manage attendees, 
+- `pandas-pro` — Performs pandas DataFrame operations for data analysis, manipulation, and transformation. 
+- `pci-compliance` — Implement PCI DSS compliance requirements for secure handling of payment card data and pay
+- `pm-skills-draft-nda` — Draft a detailed Non-Disclosure Agreement between two parties covering information types, 
+- `pm-skills-privacy-policy` — Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance con
+- `prism-xr-empowering-privacy-aware-xr` — Build privacy-aware pipelines that filter sensitive content from visual frames before send
+- `privacy-by-design` — Use when building apps that collect user data. Ensures privacy protections are built in fr
+- `privacy-collapse-benign-fine-tuning` — Audit fine-tuning datasets and pipelines for privacy collapse — the silent failure where b
+- `probing-knowledge-boundary-interactive` — >
+- `reliability-engineering` — SRE principles, observability, and incident management
+- `reliable-responsible-foundation-comprehensive` — |
+- `rethinking-reranker-boundary-aware-evidence` — >
+- `security-compliance-compliance-check` — You are a compliance expert specializing in regulatory requirements for software systems i
+- `spec-to-code-compliance` — Verifies code implements exactly what documentation specifies for blockchain audits. Use w
+- `standardizing-longitudinal-radiology-report` — Build LLM-based pipelines that automatically detect and classify longitudinal (temporal) c
+- `the-compliance-paradox-semantic-instruction`
+- `threejs-fundamentals` — Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when 
+- `tob-spec-to-code-compliance` — Verifies code implements exactly what documentation specifies for blockchain audits. Use w
+- `veri-sure-contract-aware-multi-agent-framework` — Generate functionally correct RTL/Verilog code using a contract-aware multi-agent workflow
+- `visual-design-foundations` — Apply typography, color theory, spacing systems, and iconography principles to create cohe
+- `washin-skill-format-standard` — |
+
+### 🗄️ Databases & Data (57)
+
+- `antigravity-awesome--cc-skill-clickhouse-io` — ClickHouse database patterns, query optimization, analytics, and data engineering best pra
+- `antigravity-awesome--claimable-postgres` — Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new). No
+- `antigravity-awesome--database` — Database development and operations workflow covering SQL, NoSQL, database design, migrati
+- `antigravity-awesome--database-admin` — Expert database administrator specializing in modern cloud databases, automation, and reli
+- `antigravity-awesome--database-architect` — Expert database architect specializing in data layer design from scratch, technology selec
+- `antigravity-awesome--database-design` — Database design principles and decision-making. Schema design, indexing strategy, ORM sele
+- `antigravity-awesome--database-migration` — Execute database migrations across ORMs and platforms with zero-downtime strategies, data 
+- `antigravity-awesome--database-migrations-migration-observabi` — Migration monitoring, CDC, and observability infrastructure
+- `antigravity-awesome--database-migrations-sql-migrations` — SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Serve
+- `antigravity-awesome--database-optimizer` — Expert database optimizer specializing in modern performance tuning, query optimization, a
+- `antigravity-awesome--dbt-transformation-patterns` — Master dbt (data build tool) for analytics engineering with model organization, testing, d
+- `antigravity-awesome--food-database-query` — Food Database Query
+- `antigravity-awesome--framework-migration-code-migrate` — You are a code migration expert specializing in transitioning codebases between frameworks
+- `antigravity-awesome--framework-migration-deps-upgrade` — You are a dependency management expert specializing in safe, incremental upgrades of proje
+- `antigravity-awesome--framework-migration-legacy-modernize` — Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, e
+- `antigravity-awesome--godot-4-migration` — Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syn
+- `antigravity-awesome--neon-postgres` — Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Dr
+- `antigravity-awesome--odoo-migration-helper` — Step-by-step guide for migrating Odoo custom modules between versions (v14→v15→v16→v17). C
+- `antigravity-awesome--postgres-best-practices` — Postgres performance optimization and best practices from Supabase. Use this skill when wr
+- `antigravity-awesome--postgresql` — Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constrai
+- `antigravity-awesome--postgresql-optimization` — PostgreSQL database optimization workflow for query tuning, indexing strategies, performan
+- `antigravity-awesome--pubmed-database` — Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch pr
+- `antigravity-awesome--uniprot-database` — Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Pr
+- `awesome-claude-code--database-optimization` — Query optimization, indexing strategies, and database performance tuning for PostgreSQL an
+- `awesome-claude-code--postgres-optimization` — PostgreSQL optimization including indexes, query plans, partitioning, JSONB operations, an
+- `awesome-claude-code--redis-patterns` — Redis patterns including caching strategies, pub/sub, streams for event processing, Lua sc
+- `cc-skill-clickhouse-io` — ClickHouse database patterns, query optimization, analytics, and data engineering best pra
+- `claimable-postgres` — Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new). No
+- `d1-migration` — Cloudflare D1 migration workflow: generate with Drizzle, inspect SQL for gotchas, apply to
+- `database` — Database development and operations workflow covering SQL, NoSQL, database design, migrati
+- `database-admin` — Expert database administrator specializing in modern cloud databases, automation, and reli
+- `database-architect` — Expert database architect specializing in data layer design from scratch, technology selec
+- `database-design` — Database design principles and decision-making. Schema design, indexing strategy, ORM sele
+- `database-migration` — Execute database migrations across ORMs and platforms with zero-downtime strategies, data 
+- `database-migrations-migration-observability` — Migration monitoring, CDC, and observability infrastructure
+- `database-migrations-sql-migrations` — SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Serve
+- `database-optimizer` — Expert database optimizer specializing in modern performance tuning, query optimization, a
+- `dbt-transformation-patterns` — Master dbt (data build tool) for analytics engineering with model organization, testing, d
+- `environment-in-the-loop-rethinking-code-migration`
+- `food-database-query` — Food Database Query
+- `framework-migration-code-migrate` — You are a code migration expert specializing in transitioning codebases between frameworks
+- `framework-migration-deps-upgrade` — You are a dependency management expert specializing in safe, incremental upgrades of proje
+- `framework-migration-legacy-modernize` — Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, e
+- `godot-4-migration` — Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syn
+- `jeff-database-optimizer` — Optimizes database queries and improves performance across PostgreSQL and MySQL systems. U
+- `neon-postgres` — Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Dr
+- `odoo-migration-helper` — Step-by-step guide for migrating Odoo custom modules between versions (v14→v15→v16→v17). C
+- `postgres-best-practices` — Postgres performance optimization and best practices from Supabase. Use this skill when wr
+- `postgres-pro` — Use when optimizing PostgreSQL queries, configuring replication, or implementing advanced 
+- `postgresql` — Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constrai
+- `postgresql-optimization` — PostgreSQL database optimization workflow for query tuning, indexing strategies, performan
+- `pubmed-database` — Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch pr
+- `supabase-supabase-postgres-best-practices` — Postgres performance optimization and best practices from Supabase. Use this skill when wr
+- `sw-database` — Database design, SQL, NoSQL, and data management patterns
+- `tauri-tauri-migration` — Assists users with migrating Tauri applications from v1 to v2 stable, and from v2 beta to 
+- `uniprot-database` — Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Pr
+- `washin-elizaos-pglite-migration-timing-fix` — |
+
+### ⚡ Superpowers Workflow (45)
+
+- `antigravity-awesome--brainstorming` — Use before creative or constructive work (features, architecture, behavior). Transforms va
+- `antigravity-awesome--dispatching-parallel-agents` — Use when facing 2+ independent tasks that can be worked on without shared state or sequent
+- `antigravity-awesome--multi-agent-brainstorming` — Simulate a structured peer-review process using multiple specialized agents to validate de
+- `antigravity-awesome--parallel-agents` — Multi-agent orchestration patterns. Use when multiple independent tasks can run with diffe
+- `antigravity-awesome--subagent-driven-development` — Use when executing implementation plans with independent tasks in the current session
+- `antigravity-awesome--superpowers-lab` — Lab environment for Claude superpowers
+- `antigravity-awesome--systematic-debugging` — Use when encountering any bug, test failure, or unexpected behavior, before proposing fixe
+- `antigravity-awesome--using-git-worktrees` — Use when starting feature work that needs isolation from current workspace or before execu
+- `antigravity-awesome--using-superpowers` — Use when starting any conversation - establishes how to find and use skills, requiring Ski
+- `antigravity-awesome--verification-before-completion` — Use when about to claim work is complete, fixed, or passing, before committing or creating
+- `antigravity-awesome--writing-plans` — Use when you have a spec or requirements for a multi-step task, before touching code
+- `brainstorming` — Use before creative or constructive work (features, architecture, behavior). Transforms va
+- `dispatching-parallel-agents` — Use when facing 2+ independent tasks that can be worked on without shared state or sequent
+- `multi-agent-brainstorming` — Simulate a structured peer-review process using multiple specialized agents to validate de
+- `parallel-agents` — Multi-agent orchestration patterns. Use when multiple independent tasks can run with diffe
+- `subagent-driven-development` — Use when executing implementation plans with independent tasks in the current session
+- `super-brainstorming` — You MUST use this before any creative work - creating features, building components, addin
+- `super-dispatching-parallel-agents` — Use when facing 2+ independent tasks that can be worked on without shared state or sequent
+- `super-subagent-driven-development` — Use when executing implementation plans with independent tasks in the current session
+- `super-systematic-debugging` — Use when encountering any bug, test failure, or unexpected behavior, before proposing fixe
+- `super-using-git-worktrees` — Use when starting feature work that needs isolation from current workspace or before execu
+- `super-using-superpowers` — Use when starting any conversation - establishes how to find and use skills, requiring Ski
+- `super-verification-before-completion` — Use when about to claim work is complete, fixed, or passing, before committing or creating
+- `super-writing-plans` — Use when you have a spec or requirements for a multi-step task, before touching code
+- `superpowers-brainstorming` — You MUST use this before any creative work - creating features, building components, addin
+- `superpowers-dispatching-parallel-agents` — Use when facing 2+ independent tasks that can be worked on without shared state or sequent
+- `superpowers-executing-plans` — Use when you have a written implementation plan to execute in a separate session with revi
+- `superpowers-finishing-a-development-branch` — Use when implementation is complete, all tests pass, and you need to decide how to integra
+- `superpowers-lab` — Lab environment for Claude superpowers
+- `superpowers-receiving-code-review` — Use when receiving code review feedback, before implementing suggestions, especially if fe
+- `superpowers-requesting-code-review` — Use when completing tasks, implementing major features, or before merging to verify work m
+- `superpowers-subagent-driven-development` — Use when executing implementation plans with independent tasks in the current session
+- `superpowers-systematic-debugging` — Use when encountering any bug, test failure, or unexpected behavior, before proposing fixe
+- `superpowers-test-driven-development` — Use when implementing any feature or bugfix, before writing implementation code
+- `superpowers-using-git-worktrees` — Use when starting feature work that needs isolation from current workspace or before execu
+- `superpowers-using-superpowers` — Use when starting any conversation - establishes how to find and use skills, requiring Ski
+- `superpowers-verification-before-completion` — Use when about to claim work is complete, fixed, or passing, before committing or creating
+- `superpowers-writing-plans` — Use when you have a spec or requirements for a multi-step task, before touching code
+- `superpowers-writing-skills` — Use when creating new skills, editing existing skills, or verifying skills work before dep
+- `systematic-debugging` — Use when encountering any bug, test failure, or unexpected behavior, before proposing fixe
+- `using-git-worktrees` — Use when starting feature work that needs isolation from current workspace or before execu
+- `using-superpowers` — Use when starting any conversation - establishes how to find and use skills, requiring Ski
+- `verification-before-completion` — Use when about to claim work is complete, fixed, or passing, before committing or creating
+- `washin-systematic-debug` — |
+- `writing-plans` — Use when you have a spec or requirements for a multi-step task, before touching code
+
+### 📱 Mobile (40)
+
+- `android-jetpack-compose-expert` — Expert guidance for building modern Android UIs with Jetpack Compose, covering state manag
+- `android_ui_verification` — Automated end-to-end UI testing and verification on an Android Emulator using ADB.
+- `antigravity-awesome--android-jetpack-compose-expert` — Expert guidance for building modern Android UIs with Jetpack Compose, covering state manag
+- `antigravity-awesome--expo-api-routes` — Guidelines for creating API routes in Expo Router with EAS Hosting
+- `antigravity-awesome--expo-cicd-workflows` — Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when 
+- `antigravity-awesome--expo-dev-client` — Build and distribute Expo development clients locally or via TestFlight
+- `antigravity-awesome--flutter-expert` — Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.
+- `antigravity-awesome--ios-developer` — Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integra
+- `antigravity-awesome--mobile-design` — Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch intera
+- `antigravity-awesome--mobile-developer` — Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Ma
+- `antigravity-awesome--mobile-games` — Mobile game development principles. Touch input, battery, performance, app stores.
+- `antigravity-awesome--upgrading-expo` — Upgrade Expo SDK versions
+- `awesome-claude-code--mobile-development` — Mobile development patterns for React Native and Flutter including navigation, state manag
+- `curiosity-driven-knowledge-retrieval` — |
+- `expo-api-routes` — Guidelines for creating API routes in Expo Router with EAS Hosting
+- `expo-building-native-ui` — Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling,
+- `expo-cicd-workflows` — Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when 
+- `expo-dev-client` — Build and distribute Expo development clients locally or via TestFlight
+- `expo-expo-api-routes` — Guidelines for creating API routes in Expo Router with EAS Hosting
+- `expo-expo-cicd-workflows` — Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when 
+- `expo-expo-dev-client` — Build and distribute Expo development clients locally or via TestFlight
+- `expo-native-data-fetching` — Use when implementing or debugging ANY network request, API call, or data fetching. Covers
+- `expo-upgrading-expo` — Guidelines for upgrading Expo SDK versions and fixing dependency issues
+- `expo-use-dom` — Use Expo DOM components to run web code in a webview on native and as-is on web. Migrate w
+- `flutter-expert` — Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.
+- `helios-hierarchical-graph-abstraction`
+- `ios-developer` — Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integra
+- `jeff-flutter-expert` — Use when building cross-platform applications with Flutter 3+ and Dart. Invoke for widget 
+- `mobile` — Mobile development with React Native, Flutter, and native patterns
+- `mobile-android-design` — Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Us
+- `mobile-design` — Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch intera
+- `mobile-developer` — Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Ma
+- `mobile-ios-design` — Master iOS Human Interface Guidelines and SwiftUI patterns for building native iOS apps. U
+- `swe-bench-mobile-agents-develop` — >
+- `swift` — Swift programming patterns for iOS and macOS
+- `swift-expert` — Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management,
+- `tauri-tauri-android-distribution` — Guides the user through distributing Tauri applications for Android, including Google Play
+- `tauri-tauri-ios-distribution` — Guides users through distributing Tauri applications to the iOS App Store, including Apple
+- `upgrading-expo` — Upgrade Expo SDK versions
+- `washin-cloudflare-tunnel-mobile-preview` — |
+
+### 💼 Sales & CRM (26)
+
+- `ag-deployment-pipeline-design` — Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment or
+- `ag-ml-pipeline-workflow` — Build end-to-end MLOps pipelines from data preparation through model training, validation,
+- `agenticpay-multi-agent-negotiation-system` — Build multi-agent LLM negotiation systems where buyer and seller agents reach deals throug
+- `antigravity-awesome--data-engineering-data-pipeline` — You are a data pipeline architecture expert specializing in scalable, reliable, and cost-e
+- `antigravity-awesome--deployment-pipeline-design` — Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment or
+- `antigravity-awesome--ml-pipeline-workflow` — Build end-to-end MLOps pipelines from data preparation through model training, validation,
+- `antigravity-awesome--odoo-sales-crm-expert` — Expert guide for Odoo Sales and CRM: pipeline stages, quotation templates, pricelists, sal
+- `antigravity-awesome--sales-automator` — Draft cold emails, follow-ups, and proposal templates. Creates
+- `antigravity-awesome--salesforce-automation` — Automate Salesforce tasks via Rube MCP (Composio): leads, contacts, accounts, opportunitie
+- `antigravity-awesome--salesforce-development` — Expert patterns for Salesforce platform development including Lightning Web Components (LW
+- `antigravity-awesome--zoho-crm-automation` — Automate Zoho CRM tasks via Rube MCP (Composio): create/update records, search contacts, m
+- `awesome-claude-code--ci-cd-pipelines` — CI/CD pipeline patterns for GitHub Actions, GitLab CI, testing strategies, and deployment 
+- `data-engineering-data-pipeline` — You are a data pipeline architecture expert specializing in scalable, reliable, and cost-e
+- `deployment-pipeline-design` — Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment or
+- `hybrid-supervised-llm-pipeline-actionable-suggesti` — Build hybrid classifier-then-LLM pipelines to extract actionable suggestions from unstruct
+- `ml-pipeline`
+- `ml-pipeline-workflow` — Build end-to-end MLOps pipelines from data preparation through model training, validation,
+- `odoo-sales-crm-expert` — Expert guide for Odoo Sales and CRM: pipeline stages, quotation templates, pricelists, sal
+- `pm-skills-ideal-customer-profile` — Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors,
+- `sales-automator` — Draft cold emails, follow-ups, and proposal templates. Creates
+- `salesforce-automation` — Automate Salesforce tasks via Rube MCP (Composio): leads, contacts, accounts, opportunitie
+- `salesforce-developer` — Writes and debugs Apex code, builds Lightning Web Components, optimizes SOQL queries, impl
+- `salesforce-development` — Expert patterns for Salesforce platform development including Lightning Web Components (LW
+- `tauri-tauri-pipeline-github` — Guides users through setting up Tauri GitHub Actions CI/CD pipelines and workflows for aut
+- `washin-deterministic-preprocessing-pipeline` — |
+- `zoho-crm-automation` — Automate Zoho CRM tasks via Rube MCP (Composio): create/update records, search contacts, m
+
+### ☁️ Salesforce (18)
+
+- `antigravity-awesome--lightning-architecture-review` — Review Bitcoin Lightning Network protocol designs, compare channel factory approaches, and
+- `apex-agents` — |
+- `lightning-architecture-review` — Review Bitcoin Lightning Network protocol designs, compare channel factory approaches, and
+- `report-nsf-workshop-ai` — Apply AI techniques from the NSF AI-for-EDA workshop to hardware design tasks: RTL code ge
+- `sf-apex` — >
+- `sf-connected-apps` — >
+- `sf-data` — >
+- `sf-debug` — >
+- `sf-deploy` — >
+- `sf-diagram-mermaid` — >
+- `sf-diagram-nanobananapro` — >
+- `sf-flow` — >
+- `sf-integration` — >
+- `sf-lwc` — >
+- `sf-metadata` — >
+- `sf-permissions` — >
+- `sf-shared` — Shared utilities for Salesforce development including:
+- `sf-soql` — >
+
+### ✍️ Writing & Humanization (13)
+
+- `antigravity-awesome--avoid-ai-writing` — Audit and rewrite content to remove 21 categories of AI writing patterns with a 43-entry r
+- `antigravity-awesome--blog-writing-guide` — Write, review, and improve blog posts for the Sentry engineering blog following Sentry's s
+- `antigravity-awesome--writing-skills` — Use when creating, updating, or improving agent skills.
+- `antigravity-awesome--x-article-publisher-skill` — Publish articles to X/Twitter
+- `avoid-ai-writing` — Audit and rewrite content to remove AI writing patterns ("AI-isms"). Use this skill when a
+- `blog-writing-guide` — Write, review, and improve blog posts for the Sentry engineering blog following Sentry's s
+- `humanize-writing` — |
+- `humanizer-academic` — |
+- `humanizer-blader` — |
+- `softaworks-humanizer` — |
+- `super-writing-skills` — Use when creating new skills, editing existing skills, or verifying skills work before dep
+- `writing-skills` — Use when creating, updating, or improving agent skills.
+- `x-article-publisher-skill` — Publish articles to X/Twitter
+
+### 📊 Data Engineering (10)
+
+- `analytics-tracking` — Design, audit, and improve analytics tracking systems that produce reliable, decision-read
+- `antigravity-awesome--analytics-tracking` — Design, audit, and improve analytics tracking systems that produce reliable, decision-read
+- `antigravity-awesome--google-analytics-automation` — Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/proper
+- `antigravity-awesome--spark-optimization` — Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tu
+- `fin-rate-real-world-financial-analytics`
+- `google-analytics-automation` — Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/proper
+- `graphseek-next-generation-graph-analytics` — Build LLM-powered graph analytics systems using the GraphSeek two-plane architecture: a Se
+- `spark-optimization` — Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tu
+- `t2vtree-user-centered-visual-analytics` — >
+- `vista-scene-aware-optimization-streaming` — |
+
+---
+
+## AGENTS (533)
+
+- `@0-preflight` — Performs preflight validation, config merging, TU enumeration, and work director
+- `@1-mcp-resolver` — Resolves symbol definitions, types, and cross-file references using Serena MCP f
+- `@2-source-analyzer` — Identifies sensitive objects, detects wipe calls, validates correctness, and per
+- `@2b-rust-source-analyzer` — Performs source-level zeroization analysis for Rust crates in zeroize-audit. Gen
+- `@3-tu-compiler-analyzer` — Performs per-TU compiler-level analysis (IR diff, assembly, semantic IR, CFG) fo
+- `@3b-rust-compiler-analyzer` — Performs crate-level MIR and LLVM IR analysis for Rust in zeroize-audit. A singl
+- `@4-report-assembler` — Collects all findings from source and compiler analysis, applies supersessions a
+- `@5-poc-generator` — Crafts bespoke proof-of-concept programs demonstrating that zeroize-audit findin
+- `@5b-poc-validator` — Compiles and runs all PoCs for zeroize-audit findings. Produces poc_validation_r
+- `@5c-poc-verifier` — Verifies that each zeroize-audit PoC actually proves the vulnerability it claims
+- `@6-test-generator` — Generates runtime validation test harnesses (C tests, MSAN, Valgrind targets) fo
+- `@actix-expert` — Expert in Actix for building high-performance web applications with Rust
+- `@agent-creator` — |
+- `@ai-marketing-cl-SKILL-OC` — 10-agent team with roles, routing, cron templates, starter kits, and phased depl
+- `@ai-marketing-cl-market-competitive` — You are a competitive analysis specialist. You research and analyze the competit
+- `@ai-marketing-cl-market-content` — You are a content and messaging analysis specialist. You analyze website content
+- `@ai-marketing-cl-market-conversion` — You are a conversion rate optimization (CRO) specialist. You analyze websites fo
+- `@ai-marketing-cl-market-strategy` — You are a marketing strategy specialist. You evaluate the overall marketing stra
+- `@ai-marketing-cl-market-technical` — You are a technical marketing analysis specialist. You evaluate the technical fo
+- `@android-expert` — Expert in Android development, specializing in modern Android practices, optimiz
+- `@angular-expert` — Write idiomatic Angular code with best practices, performance optimizations, and
+- `@angularjs-expert` — Expert in AngularJS development, focusing on optimizing code structure, improvin
+- `@ansible-expert` — Master Ansible automation for configuration management, application deployment, 
+- `@antigravity-awe-capability-taxonomy` — Categorias padrao para classificar skills no ecossistema.
+- `@antigravity-awe-code-quality-reviewer-prompt` — [task summary]
+- `@antigravity-awe-compression-rules` — Uma sessão é candidata a arquivamento quando:
+- `@antigravity-awe-context-format` — Cada arquivo de sessão segue este formato:
+- `@antigravity-awe-implementer-prompt` — Implement Task N: [task name]
+- `@antigravity-awe-orchestration-patterns` — Guia detalhado para coordenar multiplos skills em workflows complexos.
+- `@antigravity-awe-spec-reviewer-prompt` — Review spec compliance for Task N
+- `@architect` — Software architecture specialist for system design, scalability, and technical d
+- `@aspnet-core-expert` — Expert in ASP.NET Core web application development, optimization, and best pract
+- `@astro-expert` — Expert in Astro with deep understanding of component architecture, content colle
+- `@auth0-expert` — Expert in Auth0 implementation, configuration, and best practices
+- `@ava-expert` — Expert in Ava for running tests and managing test suites efficiently.
+- `@awesome-agent-s-CONTRIBUTING` — A curated list of Agent Skills for AI coding assistants. We organize links to sk
+- `@awesome-agent-s-README` — <img width="1500" height="801" alt="claude-skills" src="https://github.com/user-
+- `@awesome-claude--academic-researcher` — Conducts literature reviews, citation analysis, methodology evaluation, and rese
+- `@awesome-claude--accessibility-specialist` — WCAG 2.2 compliance, screen reader testing, keyboard navigation, and ARIA patter
+- `@awesome-claude--agent-installer` — Install and configure agent collections, resolve dependencies, and validate envi
+- `@awesome-claude--ai-engineer` — AI application development with model API integration, RAG pipelines, agent fram
+- `@awesome-claude--angular-architect` — Angular 17+ development with signals, standalone components, RxJS patterns, and 
+- `@awesome-claude--api-designer` — REST and GraphQL API design with OpenAPI specs, versioning, and pagination patte
+- `@awesome-claude--api-documentation` — Creates comprehensive API documentation using OpenAPI/Swagger, Redoc, and intera
+- `@awesome-claude--api-expert` — Senior API architect specializing in RESTful design, GraphQL schemas, and API-fi
+- `@awesome-claude--api-gateway-engineer` — API gateway patterns, rate limiting, authentication proxies, and request routing
+- `@awesome-claude--backend-developer` — Node.js backend development with Express, Fastify, middleware patterns, and API 
+- `@awesome-claude--benchmarking-specialist` — Designs performance benchmarks, load tests, comparative evaluations, and reprodu
+- `@awesome-claude--blockchain-developer` — Develops smart contracts and Web3 applications with Solidity, Hardhat, and block
+- `@awesome-claude--build-engineer` — Designs and optimizes build systems, bundlers, and compilation pipelines for fas
+- `@awesome-claude--business-analyst` — Performs requirements analysis, process mapping, gap analysis, and stakeholder a
+- `@awesome-claude--chaos-engineer` — Chaos testing, fault injection, resilience validation, and failure mode analysis
+- `@awesome-claude--cli-developer` — Builds robust CLI tools using Commander.js, yargs, clap, and other frameworks wi
+- `@awesome-claude--clojure-developer` — REPL-driven development, persistent data structures, Ring/Compojure, and Clojure
+- `@awesome-claude--cloud-architect` — AWS/GCP/Azure multi-cloud patterns, IaC, cost optimization, and well-architected
+- `@awesome-claude--code-reviewer` — Comprehensive code review covering patterns, anti-patterns, security, performanc
+- `@awesome-claude--competitive-analyst` — Performs competitive analysis including feature comparison, market positioning, 
+- `@awesome-claude--compliance-auditor` — SOC 2, GDPR, HIPAA compliance checking, audit evidence collection, and policy en
+- `@awesome-claude--computer-vision-engineer` — Builds image classification, object detection, and segmentation pipelines using 
+- `@awesome-claude--content-strategist` — Plans content strategy with SEO-driven writing, editorial calendars, topic clust
+- `@awesome-claude--context-manager` — Context window optimization, progressive loading, and strategic compaction
+- `@awesome-claude--csharp-developer` — C# and .NET 8+ development with ASP.NET Core, Entity Framework Core, minimal API
+- `@awesome-claude--customer-success` — Builds customer support infrastructure with ticket triage, knowledge base system
+- `@awesome-claude--data-engineer` — Data pipeline engineering with ETL/ELT workflows, Spark, data warehousing, and p
+- `@awesome-claude--data-researcher` — Performs data analysis, pattern recognition, statistical interpretation, and evi
+- `@awesome-claude--data-scientist` — Statistical analysis, data visualization, hypothesis testing, and exploratory da
+- `@awesome-claude--data-visualization` — Creates interactive dashboards and data visualizations using D3.js, Chart.js, Ma
+- `@awesome-claude--database-admin` — PostgreSQL, MySQL, MongoDB optimization, migrations, replication, and backup str
+- `@awesome-claude--database-optimizer` — Database performance optimization with query tuning, indexing strategies, partit
+- `@awesome-claude--dependency-manager` — Audits, updates, and manages project dependencies with attention to security, co
+- `@awesome-claude--deployment-engineer` — Blue-green deployments, canary releases, rolling updates, and feature flag manag
+- `@awesome-claude--developer-portal` — Builds internal developer portals using Backstage, service catalogs, and self-se
+- `@awesome-claude--devops-engineer` — CI/CD pipelines, Docker, Kubernetes, monitoring, and GitOps workflows
+- `@awesome-claude--django-developer` — Django 5+ development with Django REST Framework, ORM optimization, migrations, 
+- `@awesome-claude--documentation-engineer` — Creates technical documentation including API references, guides, tutorials, and
+- `@awesome-claude--dx-optimizer` — Improves developer experience through tooling ergonomics, workflow friction redu
+- `@awesome-claude--e-commerce-engineer` — Builds e-commerce systems including product catalogs, shopping carts, inventory 
+- `@awesome-claude--education-tech` — Builds learning management systems with SCORM/xAPI compliance, adaptive learning
+- `@awesome-claude--electron-developer` — Electron desktop applications, IPC communication, native OS integration, and aut
+- `@awesome-claude--elixir-expert` — Elixir development with Phoenix, OTP supervision trees, LiveView, and distribute
+- `@awesome-claude--embedded-systems` — Develops firmware and embedded software in C and Rust with RTOS integration and 
+- `@awesome-claude--error-coordinator` — Handle errors across multi-agent workflows, implement recovery strategies, and p
+- `@awesome-claude--error-detective` — Error tracking, stack trace analysis, reproduction step generation, and root cau
+- `@awesome-claude--etl-specialist` — Builds robust data pipelines with schema evolution, data quality checks, increme
+- `@awesome-claude--event-driven-architect` — Event sourcing, CQRS, message queues, and distributed event-driven system design
+- `@awesome-claude--feature-engineer` — Designs feature stores, feature pipelines, and encoding strategies that ensure c
+- `@awesome-claude--fintech-engineer` — Builds financial systems with precise arithmetic, regulatory compliance, audit t
+- `@awesome-claude--flutter-expert` — Flutter 3+ cross-platform development with Dart, state management, navigation, a
+- `@awesome-claude--frontend-architect` — React/Next.js specialist with performance optimization, SSR/SSG, and accessibili
+- `@awesome-claude--fullstack-engineer` — End-to-end feature development across frontend, backend, and database layers
+- `@awesome-claude--game-developer` — Designs game systems, logic, and architecture patterns for Unity, Godot, and cus
+- `@awesome-claude--geospatial-engineer` — Builds GIS applications with PostGIS, spatial queries, mapping APIs, tile server
+- `@awesome-claude--git-workflow-manager` — Designs Git branching strategies, CI integration patterns, and repository workfl
+- `@awesome-claude--golang-developer` — Go concurrency patterns, interfaces, error handling, testing, and module managem
+- `@awesome-claude--graphql-architect` — GraphQL schema design, resolver implementation, federation, and performance opti
+- `@awesome-claude--growth-engineer` — Implements A/B testing frameworks, analytics instrumentation, funnel optimizatio
+- `@awesome-claude--haskell-developer` — Pure functional programming, monads, type classes, GHC extensions, and Haskell e
+- `@awesome-claude--healthcare-engineer` — Builds HIPAA-compliant healthcare systems with HL7 FHIR interoperability, medica
+- `@awesome-claude--incident-responder` — Incident triage, runbook execution, communication protocols, and recovery proced
+- `@awesome-claude--iot-engineer` — Designs IoT systems with MQTT messaging, edge computing, device management, and 
+- `@awesome-claude--java-architect` — Spring Boot 3+ application architecture with JPA, security, microservices, and r
+- `@awesome-claude--knowledge-synthesizer` — Compress and synthesize information across sources, build knowledge graphs, and 
+- `@awesome-claude--kotlin-specialist` — Kotlin development with coroutines, Ktor, Kotlin Multiplatform, and idiomatic pa
+- `@awesome-claude--kubernetes-specialist` — Kubernetes operators, CRDs, service mesh with Istio, and advanced cluster manage
+- `@awesome-claude--legacy-modernizer` — Plans and executes legacy codebase migrations with incremental strategies and ri
+- `@awesome-claude--legal-advisor` — Drafts terms of service, privacy policies, software licenses, and compliance doc
+- `@awesome-claude--llm-architect` — LLM system design with fine-tuning, model selection, inference optimization, and
+- `@awesome-claude--lua-developer` — Game scripting with Lua, Neovim plugin development, embedded Lua integration, an
+- `@awesome-claude--market-researcher` — Conducts market sizing, TAM/SAM/SOM analysis, competitive intelligence, survey d
+- `@awesome-claude--marketing-analyst` — Implements campaign analysis, attribution modeling, ROI tracking, and marketing 
+- `@awesome-claude--mcp-developer` — Develops MCP servers and tools following the Model Context Protocol specificatio
+- `@awesome-claude--media-streaming` — Builds video streaming platforms with HLS/DASH delivery, transcoding pipelines, 
+- `@awesome-claude--microservices-architect` — Distributed systems design with event-driven architecture, saga patterns, servic
+- `@awesome-claude--ml-engineer` — Machine learning pipeline development with training, evaluation, feature enginee
+- `@awesome-claude--mlops-engineer` — ML model lifecycle management with serving infrastructure, monitoring, A/B testi
+- `@awesome-claude--mobile-developer` — React Native and Flutter cross-platform specialist with native bridge patterns
+- `@awesome-claude--monorepo-architect` — Turborepo/Nx workspace strategies, dependency graphs, and monorepo build optimiz
+- `@awesome-claude--monorepo-tooling` — Manages monorepo infrastructure with changesets, workspace dependencies, version
+- `@awesome-claude--multi-agent-coordinator` — Coordinate parallel agent execution, manage dependencies, and merge outputs from
+- `@awesome-claude--network-engineer` — DNS management, load balancer configuration, CDN setup, and firewall rule design
+- `@awesome-claude--nextjs-developer` — Next.js 14+ App Router development with React Server Components, ISR, middleware
+- `@awesome-claude--nim-developer` — Nim metaprogramming, GC strategies, C/C++ interop, and cross-compilation
+- `@awesome-claude--nlp-engineer` — NLP pipeline development with text processing, embeddings, classification, NER, 
+- `@awesome-claude--ocaml-developer` — OCaml type inference, pattern matching, Dream web framework, and opam ecosystem
+- `@awesome-claude--patent-analyst` — Conducts patent searches, prior art analysis, IP landscape mapping, and freedom-
+- `@awesome-claude--payment-integration` — Integrates payment processors like Stripe with proper error handling, webhook ve
+- `@awesome-claude--penetration-tester` — Authorized security testing, OWASP Top 10 assessment, vulnerability reporting, a
+- `@awesome-claude--performance-engineer` — Profiling, benchmarking, memory analysis, load testing, and optimization pattern
+- `@awesome-claude--performance-monitor` — Monitor agent execution, track token usage, measure response quality, and optimi
+- `@awesome-claude--php-developer` — PHP 8.3+ and Laravel 11 development with Eloquent, queues, middleware, and Compo
+- `@awesome-claude--platform-engineer` — Internal developer platforms, service mesh, observability, and SLO/SLI managemen
+- `@awesome-claude--product-manager` — Creates PRDs, user stories, acceptance criteria, and prioritization frameworks f
+- `@awesome-claude--project-manager` — Manages sprint planning, task tracking, timeline estimation, and Agile ceremony 
+- `@awesome-claude--prompt-engineer` — Prompt optimization with chain-of-thought, structured outputs, few-shot learning
+- `@awesome-claude--python-engineer` — Python 3.12+ with typing, async/await, dataclasses, pydantic, and packaging
+- `@awesome-claude--qa-automation` — Test automation frameworks, CI integration, test data management, and reporting
+- `@awesome-claude--rails-expert` — Ruby on Rails 7+ development with Hotwire, ActiveRecord patterns, Turbo, and Sti
+- `@awesome-claude--react-specialist` — React 19 development with hooks, state management, concurrent features, and comp
+- `@awesome-claude--real-estate-tech` — Builds property technology platforms with MLS integration, geospatial search, pr
+- `@awesome-claude--recommendation-engine` — Designs recommendation systems using collaborative filtering, content-based meth
+- `@awesome-claude--refactoring-specialist` — Performs systematic code refactoring including dead code removal, abstraction ex
+- `@awesome-claude--research-analyst` — Conducts structured technical research with systematic literature review, eviden
+- `@awesome-claude--reviewer` — Senior engineer performing actionable code reviews focused on correctness, secur
+- `@awesome-claude--robotics-engineer` — Develops robotics systems with ROS2, sensor fusion, motion planning, SLAM, and r
+- `@awesome-claude--rust-systems` — Rust ownership, lifetimes, async runtime, FFI, unsafe patterns, and performance 
+- `@awesome-claude--sales-engineer` — Creates technical demos, proof-of-concept implementations, integration guides, a
+- `@awesome-claude--scala-developer` — Functional programming in Scala, Akka actors, Play Framework, and Cats Effect
+- `@awesome-claude--scrum-master` — Facilitates Scrum ceremonies, tracks team velocity, removes impediments, and dri
+- `@awesome-claude--search-specialist` — Performs advanced search, information retrieval, source evaluation, and knowledg
+- `@awesome-claude--security-auditor` — OWASP Top 10, dependency scanning, secrets detection, and penetration testing gu
+- `@awesome-claude--security-engineer` — Infrastructure security, IAM policies, mTLS, secrets management with Vault, and 
+- `@awesome-claude--security-researcher` — Conducts CVE analysis, vulnerability research, threat modeling, attack surface a
+- `@awesome-claude--seo-specialist` — Optimizes web applications for search engine visibility with structured data, me
+- `@awesome-claude--sre-engineer` — SLOs, error budgets, incident response, postmortems, and production reliability
+- `@awesome-claude--svelte-developer` — SvelteKit development with runes, server-side rendering, form actions, and fine-
+- `@awesome-claude--swift-developer` — SwiftUI, iOS 17+, Combine, structured concurrency, and Apple platform developmen
+- `@awesome-claude--task-coordinator` — Multi-agent task distribution, dependency management, and parallel execution
+- `@awesome-claude--technical-writer` — Produces polished technical documentation with consistent style, clear structure
+- `@awesome-claude--technology-scout` — Evaluates emerging technologies, conducts build-vs-buy analysis, assesses vendor
+- `@awesome-claude--terraform-engineer` — Infrastructure as Code with Terraform, module design, state management, and mult
+- `@awesome-claude--test-architect` — Testing strategy with unit/integration/e2e, TDD, property-based testing, and mut
+- `@awesome-claude--testing-infrastructure` — Designs test runners, CI test splitting, flaky test management, and test infrast
+- `@awesome-claude--tooling-engineer` — Configures and builds developer tooling including linters, formatters, type chec
+- `@awesome-claude--trend-analyst` — Analyzes technology trends, adoption curves, and ecosystem shifts to inform stra
+- `@awesome-claude--typescript-specialist` — Advanced TypeScript patterns including generics, conditional types, and module a
+- `@awesome-claude--ui-designer` — UI/UX implementation, design systems, Figma-to-code translation, and component l
+- `@awesome-claude--ux-researcher` — Designs and conducts user research studies including usability testing, surveys,
+- `@awesome-claude--vector-database-engineer` — Designs embedding pipelines and vector search systems using FAISS, Pinecone, Qdr
+- `@awesome-claude--voice-assistant` — Builds voice-enabled applications with speech-to-text, text-to-speech, dialog ma
+- `@awesome-claude--vscode-extension` — Develops VS Code extensions with Language Server Protocol integration, custom ed
+- `@awesome-claude--vue-specialist` — Vue 3 development with Composition API, Pinia state management, Nuxt 3, and VueU
+- `@awesome-claude--websocket-engineer` — Real-time communication with WebSockets, Socket.io, scaling strategies, and reco
+- `@awesome-claude--workflow-director` — End-to-end workflow orchestration, checkpoint management, and error recovery
+- `@awesome-claude--zig-developer` — Zig systems programming, comptime metaprogramming, allocator strategies, and C i
+- `@bash-expert` — Master of defensive Bash scripting for production automation, CI/CD pipelines, a
+- `@braintree-expert` — Braintree specialist focusing on payment gateways, integrations, and optimizatio
+- `@build-error-resolver` — Build and TypeScript error resolution specialist. Use PROACTIVELY when build fai
+- `@bullmq-expert` — Expert in BullMQ task queue library for Node.js, specializing in advanced queue 
+- `@bun-expert` — Expertise in Bun, focusing on high-performance JavaScript runtime, efficient mod
+- `@business-growth-cs-growth-strategist` — Growth Strategist agent for revenue operations, sales engineering, customer succ
+- `@c-expert` — C language expert specializing in efficient, reliable systems-level programming.
+- `@c-level-cs-ceo-advisor` — Strategic leadership advisor for CEOs covering vision, strategy, board managemen
+- `@c-level-cs-cto-advisor` — Technical leadership advisor for CTOs covering technology strategy, team scaling
+- `@cassandra-expert` — Master in Cassandra database design, optimization, and management. Provides expe
+- `@celery-expert` — Expert in Celery for distributed task queue management, optimizing task executio
+- `@chief-of-staff` — Personal communication chief of staff that triages email, Slack, LINE, and Messe
+- `@circleci-expert` — Expert in CircleCI configuration, optimization, and troubleshooting for seamless
+- `@claude-code-plu-README` — **Structured framework for session-based, agent-driven development with modular 
+- `@claude-code-plu-backdoor-detector` — You are a specialized AI safety agent that detects backdoors and malicious patte
+- `@claude-code-plu-code-auditor` — You are a human-in-the-loop code auditor who reviews code flagged by the safety 
+- `@claude-code-plu-control-protocol-enforcer` — You enforce AI control protocols to ensure safe deployment of untrusted LLMs.
+- `@claude-code-plu-feedback-analyzer` — You generate natural language feedback for GEPA optimization to improve monitor 
+- `@claude-code-plu-safety-classifier` — You are a fine-grained classification specialist that assigns precise suspicion 
+- `@claude-code-plu-vulnerability-scanner` — You scan code for known security vulnerabilities, CVEs, and common exploit patte
+- `@claude-trading--druckenmiller-strategy-planner` — >
+- `@claude-trading--ideation_loop` — Use this reference when generating hints before running auto detection.
+- `@claude-trading--market-news-analyzer`
+- `@claude-trading--pipeline_if_v1` — This reference summarizes the `edge-finder-candidate/v1` contract used by
+- `@claude-trading--research_ticket_schema` — Use this schema as input to `scripts/export_candidate.py`.
+- `@claude-trading--scenario-analyst` — >
+- `@claude-trading--signal_mapping` — Use this mapping to decide whether a research ticket can be exported to
+- `@claude-trading--strategy-reviewer` — >
+- `@claude-trading--technical-market-analyst`
+- `@claude-trading--us-market-analyst` — >
+- `@claude-trading--weekly-trade-blog-writer`
+- `@clojure-expert` — Master Clojure development with a focus on functional programming, immutability,
+- `@cockroachdb-expert` — Specializes in CockroachDB setup, optimization, and best practices. Handles depl
+- `@code-architect` — Designs feature architectures by analyzing existing codebase patterns and conven
+- `@code-explorer` — Deeply analyzes existing codebase features by tracing execution paths, mapping a
+- `@code-reviewer` — |
+- `@code-simplifier` — Simplifies and refines code for clarity, consistency, and maintainability while 
+- `@command-creator` — Expert at creating new Claude Code custom commands with proper structure and bes
+- `@cpp-expert` — Expert in writing high-quality, efficient, and modern C++ code.
+- `@csharp-expert` — Expert in C# programming focusing on best practices, performance optimization, a
+- `@css-expert` — Master CSS stylist with expertise in layouts, responsive design, animations, and
+- `@cypress-expert` — Expert in Cypress testing framework for end-to-end testing and automation. Handl
+- `@dart-expert` — Write idiomatic Dart code, optimize for Dart VM, and ensure cross-platform compa
+- `@data-flow-analyzer` — Analyzes data flow from source to vulnerability sink, mapping trust boundaries, 
+- `@database-reviewer` — PostgreSQL database specialist for query optimization, schema design, security, 
+- `@deep-reflector` — Comprehensive session analysis and learning capture specialist. Analyzes develop
+- `@deno-expert` — Expert in Deno for modern JavaScript and TypeScript runtime, security, performan
+- `@django-expert` — Write expert Django code with optimized models, views, and templates. Handles co
+- `@doc-updater` — Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and 
+- `@docker-expert` — Expert in all aspects of Docker, including containerization, image creation, and
+- `@dynamodb-expert` — Expert in DynamoDB optimization, best practices, and data modeling. Use PROACTIV
+- `@e2e-runner` — End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwr
+- `@elasticsearch-expert` — Master Elasticsearch operations, query optimizations, and cluster management. Ex
+- `@electron-expert` — Specializes in building cross-platform desktop applications using Electron. Focu
+- `@elixir-expert` — Expertise in Elixir programming, specializing in functional programming, concurr
+- `@elk-expert` — Expert in ELK stack management, optimization, and deployment. Specializes in Ela
+- `@engineering-cs-senior-engineer` — Senior Engineer agent for architecture decisions, code review, DevOps, and API d
+- `@engineering-team-cs-engineering-lead` — Engineering Team Lead agent for coordinating QA, security, data engineering, ML,
+- `@engineering-team-cs-workspace-admin` — Google Workspace administration agent using the gws CLI. Orchestrates workspace 
+- `@erlang-expert` — Expert in writing efficient, concurrent, and robust Erlang applications. Masters
+- `@exploitability-verifier` — Verifies whether a suspected vulnerability is actually exploitable by proving at
+- `@expo-expert` — Expert in developing, optimizing, and maintaining applications using the Expo fr
+- `@express-expert` — Specializes in building performant and scalable web applications using Express.j
+- `@fastapi-expert` — FastAPI development with an emphasis on best practices, optimization, and robust
+- `@fastify-expert` — Expert in building high-performance Node.js applications using Fastify framework
+- `@fde-engineer` — >
+- `@fde-experience-specialist` — >
+- `@fde-qa-engineer` — >
+- `@fde-release-engineer` — >
+- `@fde-strategist` — >
+- `@fiber-expert` — Master in fiber technology specializing in manufacturing, properties, applicatio
+- `@finance-cs-financial-analyst` — Financial Analyst agent for DCF valuation, financial modeling, budgeting, foreca
+- `@flask-expert` — Expert in developing and optimizing web applications using the Flask framework. 
+- `@flutter-expert` — Specialist in Flutter development, focusing on building high-quality, performant
+- `@flyway-expert` — Master Flyway for database migrations, versioning, and schema management. Optimi
+- `@function-analyzer` — Performs ultra-granular per-function deep analysis for security audit context bu
+- `@gin-expert` — Create a Claude Code Agent that is an expert in the Gin web framework for Go, fo
+- `@github-actions-expert` — Expert in GitHub Actions for automating workflows and CI/CD processes.
+- `@github-issue-fixer` — GitHub issue resolution specialist. Analyzes, plans, and implements fixes for Gi
+- `@gitlab-ci-expert` — Expert in configuring, optimizing, and maintaining GitLab CI/CD pipelines for ef
+- `@go-build-resolver` — Go build, vet, and compilation error resolution specialist. Fixes build errors, 
+- `@go-expert` — Go specialist focusing on idiomatic Go, concurrency, and performance optimizatio
+- `@go-reviewer` — Expert Go code reviewer specializing in idiomatic Go, concurrency patterns, erro
+- `@grafana-expert` — Expert in Grafana dashboard creation, visualization best practices, and alerting
+- `@graphql-expert` — Expert in GraphQL API design, query optimization, and implementation. Master int
+- `@grpc-expert` — Specialist in gRPC protocol, mastering streaming, services, and transport optimi
+- `@harness-optimizer` — Analyze and improve the local agent harness configuration for reliability, cost,
+- `@haskell-expert` — Write idiomatic Haskell code with advanced type system features, monads, and fun
+- `@html-expert` — Expert in HTML structure, semantics, and best practices for building clean, acce
+- `@insight-documenter` — Technical breakthrough documentation specialist. Captures and transforms signifi
+- `@instruction-reflector` — Analyzes and improves Claude Code instructions in CLAUDE.md. Reviews conversatio
+- `@ios-expert` — Write high-quality iOS applications using Swift and SwiftUI, ensuring optimal pe
+- `@jarvis` — Master skills concierge for Jarvis. Invoke when you want help choosing skills, a
+- `@jasmine-expert` — Master unit testing with the Jasmine framework, focusing on best practices for w
+- `@java-expert` — Master Java developer specializing in writing efficient, clean, and maintainable
+- `@javascript-expert` — Expert in modern JavaScript specializing in language features, optimization, and
+- `@jenkins-expert` — Jenkins expert specializing in continuous integration, delivery, and deployment 
+- `@jest-expert` — Expert in testing JavaScript applications using Jest, ensuring comprehensive tes
+- `@jquery-expert` — jQuery specialist focusing on efficient DOM manipulation, event handling, and AJ
+- `@jwt-expert` — Specializes in JSON Web Tokens (JWT) implementation, security, and optimization.
+- `@kafka-expert` — Write highly efficient, scalable, and fault-tolerant Kafka architectures. Handle
+- `@keycloak-expert` — Keycloak specialist for identity and access management, realm configuration, and
+- `@knex-expert` — Expertise in Knex.js for SQL database manipulation, migration handling, and quer
+- `@kotlin-build-resolver` — Kotlin/Gradle build, compilation, and dependency error resolution specialist. Fi
+- `@kotlin-expert` — Expert in Kotlin programming language, focusing on idiomatic Kotlin code, corout
+- `@kotlin-reviewer` — Kotlin and Android/KMP code reviewer. Reviews Kotlin code for idiomatic patterns
+- `@kubernetes-expert` — Master Kubernetes for container orchestration, pod management, and cluster optim
+- `@langchain-expert` — Expert in LangChain with focus on document processing, pipeline construction, an
+- `@laravel-expert` — Expert in Laravel framework, mastering modern Laravel features, Eloquent ORM, an
+- `@liquibase-expert` — Expert in Liquibase for database schema management, migrations, and version cont
+- `@local-life-mana-ai-llm-expert` — AI/LLM specialist. Use PROACTIVELY for model selection, prompt engineering, or R
+- `@local-life-mana-api-designer` — API design specialist. Use PROACTIVELY when designing new endpoints, API contrac
+- `@local-life-mana-aws-expert` — AWS Solutions Architect. Use PROACTIVELY for AWS service selection, architecture
+- `@local-life-mana-azure-expert` — Azure Solutions Architect. Use PROACTIVELY for Azure service selection, architec
+- `@local-life-mana-backend-specialist` — Backend development expert. Use PROACTIVELY for server-side logic, API implement
+- `@local-life-mana-brief-strategist` — Project brief creator. Use PROACTIVELY when starting any new idea. MUST BE USED 
+- `@local-life-mana-code-architect` — Software architect for system design. Use PROACTIVELY for architecture decisions
+- `@local-life-mana-code-reviewer` — Code quality reviewer. Use PROACTIVELY after implementing features or before PRs
+- `@local-life-mana-database-specialist` — Database architecture expert. Use PROACTIVELY for schema design, query optimizat
+- `@local-life-mana-devops-engineer` — DevOps and infrastructure expert. Use PROACTIVELY for CI/CD setup, containerizat
+- `@local-life-mana-frontend-specialist` — Frontend development expert. Use PROACTIVELY for React/Vue/Angular components, r
+- `@local-life-mana-gcp-expert` — GCP Solutions Architect. Use PROACTIVELY for GCP service selection, architecture
+- `@local-life-mana-idea-critic` — Skeptical VC evaluator. Use PROACTIVELY to challenge any product idea before sig
+- `@local-life-mana-ideation-orchestrator` — Multi-agent orchestrator for complex ideation. Use PROACTIVELY when work spans m
+- `@local-life-mana-implementation-advisor` — Implementation guidance orchestrator. Use when user wants to write code themselv
+- `@local-life-mana-market-researcher` — Competitive analysis specialist. Use PROACTIVELY for market research, competitor
+- `@local-life-mana-migration-specialist` — Migration and upgrade specialist. Use PROACTIVELY for framework upgrades, major 
+- `@local-life-mana-performance-optimizer` — Performance optimization expert. Use PROACTIVELY when response times exceed SLAs
+- `@local-life-mana-project-manager` — Multi-agent orchestrator. Use PROACTIVELY for complex features spanning multiple
+- `@local-life-mana-refactoring-specialist` — Code refactoring expert. Use PROACTIVELY for technical debt reduction, code clea
+- `@local-life-mana-research-specialist` — Deep research specialist. Use PROACTIVELY for any research task requiring multip
+- `@local-life-mana-security-auditor` — Security specialist. Use PROACTIVELY for auth implementation, sensitive data han
+- `@local-life-mana-technical-feasibility` — Technical feasibility assessor. Use PROACTIVELY before committing to build any i
+- `@local-life-mana-technical-writer` — Documentation specialist. Use PROACTIVELY for user guides, API docs, or architec
+- `@local-life-mana-test-engineer` — Test engineering specialist. Use PROACTIVELY for TDD/BDD, test suite creation, o
+- `@local-life-mana-ui-ux-designer` — UI/UX design specialist. Use PROACTIVELY for wireframes, prototypes, or design s
+- `@loki-expert` — Master in building, managing, and optimizing Loki for efficient log aggregation 
+- `@loop-operator` — Operate autonomous agent loops, monitor progress, and intervene safely when loop
+- `@lua-expert` — Write efficient and idiomatic Lua code, mastering the language features, pattern
+- `@mariadb-expert` — Expert in MariaDB database management, optimization, and best practices.
+- `@marketing-cs-content-creator` — AI-powered content creation specialist for brand voice consistency, SEO optimiza
+- `@marketing-cs-demand-gen-specialist` — Demand generation and customer acquisition specialist for lead generation, conve
+- `@mocha-expert` — Expertise in Mocha, the JavaScript test framework running on Node.js, focusing o
+- `@mongodb-expert` — Master MongoDB operations, schema design, performance optimization, and data mod
+- `@mongoose-expert` — Mongoose ODM specialist for MongoDB, proficient in schema design, query optimiza
+- `@mqtt-expert` — Master of MQTT protocol, focusing on message brokering, QoS levels, and efficien
+- `@mssql-expert` — Expert in Microsoft SQL Server handling query optimization, database design, and
+- `@mysql-expert` — Expert in MySQL database management, query optimization, and schema design. Prov
+- `@nats-expert` — Specialized in NATS, handling messaging patterns, scalability, and security feat
+- `@neo4j-expert` — Expert in Neo4j graph database specializing in Cypher queries, graph modeling, a
+- `@nestjs-expert` — Expert in building scalable and efficient applications using the NestJS framewor
+- `@nextjs-expert` — Expert in Next.js development, specializing in serverless architecture, static s
+- `@nodejs-expert` — Specializes in Node.js development, focusing on performance optimization, asynch
+- `@numpy-expert` — Expert in NumPy for scientific computing, data analysis, and numerical operation
+- `@oauth-oidc-expert` — Expert in OAuth 2.0 and OpenID Connect (OIDC) for secure authentication and auth
+- `@ocaml-expert` — Expert in OCaml programming, covering functional programming, type systems, and 
+- `@openai-api-expert` — Trained to expertly handle OpenAI API features, usage patterns, and best practic
+- `@openapi-expert` — Expert in designing, documenting, and optimizing APIs using OpenAPI specificatio
+- `@opensearch-expert` — Expert in OpenSearch cluster management, query optimization, indexing strategies
+- `@opentelemetry-expert` — Master in OpenTelemetry for observability, tracing, metrics, and logs.
+- `@owasp-top10-expert` — OWASP Top 10 expert specializing in identifying and mitigating the most critical
+- `@pandas-expert` — Expert in data manipulation and analysis using pandas library in Python.
+- `@perl-expert` — Master Perl scripting with regular expressions, data manipulation, CPAN modules,
+- `@personas-README` — Pre-configured agent personas with curated skill loadouts, workflows, and distin
+- `@personas-TEMPLATE` — One paragraph describing what this agent does, who it's for, and when to activat
+- `@personas-growth-marketer` — Growth marketing specialist for bootstrapped startups and indie hackers. Builds 
+- `@personas-solo-founder` — Your co-founder who doesn't exist yet. Covers product, engineering, marketing, a
+- `@personas-startup-cto` — Technical co-founder who's been through two startups and learned what actually m
+- `@phoenix-expert` — Expert in Phoenix framework, optimizing web applications, and ensuring best prac
+- `@php-expert` — Specialized in developing efficient, secure, and modern PHP applications adherin
+- `@planner` — Expert planning specialist for complex features and refactoring. Use PROACTIVELY
+- `@playwright-expert` — Expert in Playwright testing for modern web applications. Specializes in test au
+- `@plugin-validator` — |
+- `@poc-builder` — Creates proof-of-concept exploits (pseudocode, executable, and unit tests) demon
+- `@postgres-expert` — Expert in PostgreSQL database management and optimization, handling complex SQL 
+- `@pr-reviewer` — Expert code reviewer for GitHub pull requests. Provides thorough code analysis w
+- `@pr-testing-agent` — Identify and run tests affected by PR changes
+- `@prisma-expert` — Write efficient, type-safe, and maintainable database queries using Prisma. Mast
+- `@product-cs-agile-product-owner` — Agile product owner agent for epic breakdown, sprint planning, backlog refinemen
+- `@product-cs-product-analyst` — Product analytics agent for KPI definition, dashboard setup, experiment design, 
+- `@product-cs-product-manager` — Product management agent for feature prioritization, customer discovery, PRD dev
+- `@product-cs-product-strategist` — Product strategy agent for quarterly OKR planning, competitive landscape analysi
+- `@product-cs-ux-researcher` — UX research agent for research planning, persona generation, journey mapping, an
+- `@project-management-cs-project-manager` — Project Manager agent for sprint planning, Jira/Confluence workflows, Scrum cere
+- `@prometheus-expert` — Expert in Prometheus for monitoring, alerting, and performance optimization.
+- `@ps-solution-architect` — >
+- `@ps-technical-architect` — >
+- `@pulumi-expert` — Expert in Pulumi infrastructure as code for cloud resources
+- `@puppeteer-expert` — Expert in automating browser interactions using Puppeteer. Handles headless brow
+- `@python-expert` — Master advanced Python features, optimize performance, and ensure code quality. 
+- `@python-reviewer` — Expert Python code reviewer specializing in PEP 8 compliance, Pythonic idioms, t
+- `@pytorch-expert` — Expert in PyTorch for building and optimizing deep learning models.
+- `@ra-qm-team-cs-quality-regulatory` — Quality & Regulatory agent for ISO 13485 QMS, MDR compliance, FDA submissions, G
+- `@rabbitmq-expert` — Expert in RabbitMQ messaging, configuration, and optimization.
+- `@rails-expert` — Master Ruby on Rails for building scalable, maintainable, and performant web app
+- `@react-expert` — React development expert with deep understanding of component architecture, hook
+- `@react-native-expert` — Expert in React Native development focusing on cross-platform mobile application
+- `@redis-expert` — Expert in Redis for in-memory data storage, caching, and real-time analytics.
+- `@refactor-cleaner` — Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unu
+- `@remix-expert` — Expert in building performant, scalable web applications using the Remix framewo
+- `@rest-expert` — Master in designing and implementing RESTful APIs with focus on best practices, 
+- `@rollup-expert` — Expert in Rollup.js for bundling JavaScript projects with optimal performance an
+- `@ruby-expert` — Expert in Ruby programming language, focusing on idiomatic Ruby, performance opt
+- `@rust-expert` — Expert in writing idiomatic Rust code with focus on safety, concurrency, and per
+- `@scala-expert` — Scala expert specializing in functional programming, type safety, and performanc
+- `@scikit-learn-expert` — Master scikit-learn for machine learning, focusing on model selection, feature e
+- `@sec-bug-bounty-hunter` — Bug bounty hunting advisor for responsible vulnerability disclosure
+- `@sec-ctf-assistant` — CTF competition helper for solving security challenges
+- `@sec-pentest-advisor` — Expert penetration testing advisor for authorized security assessments
+- `@security-reviewer` — Security vulnerability detection and remediation specialist. Use PROACTIVELY aft
+- `@selenium-expert` — Expert in automated browser testing using Selenium. Specializes in writing robus
+- `@semgrep-scanner` — Executes Semgrep CLI scans for a specific language category and produces SARIF o
+- `@sequelize-expert` — Expert in Sequelize ORM, proficient in database modeling, querying, associations
+- `@sidekiq-expert` — Specialist in optimizing and managing Sidekiq for efficient job processing and b
+- `@skill-reviewer` — |
+- `@sns-expert` — Master of Amazon Simple Notification Service (SNS) for message management and no
+- `@solidjs-expert` — SolidJS expert specializing in creating efficient and reactive UI components usi
+- `@spec-compliance-checker` — Performs full specification-to-code compliance analysis for blockchain audits. U
+- `@spec-design-validator` — Design validation specialist. Use PROACTIVELY to validate design documents for t
+- `@spec-requirements-validator` — Requirements validation specialist. Use PROACTIVELY to validate requirements doc
+- `@spec-task-executor` — Implementation specialist for executing individual spec tasks. Use PROACTIVELY w
+- `@spec-task-validator` — Task validation specialist. Use PROACTIVELY to validate task breakdowns for atom
+- `@spring-boot-expert` — Expert in developing, optimizing, and maintaining Spring Boot applications with 
+- `@sql-expert` — Master complex SQL queries, optimize execution plans, and ensure database integr
+- `@sqlite-expert` — SQLite database optimization, query writing, indexing, and best practices specia
+- `@sqs-expert` — Expertise in Amazon SQS for reliable, scalable message queuing.
+- `@stripe-expert` — This agent specializes in managing and optimizing Stripe integrations, handling 
+- `@superpowers-code-reviewer` — |
+- `@svelte-expert` — Master Svelte.js development with a focus on building performant, maintainable, 
+- `@swift-expert` — Write efficient, idiomatic Swift code with a focus on safety, performance, and m
+- `@swiftui-expert` — Expert in SwiftUI development, focusing on building dynamic, responsive, and mai
+- `@tailwind-expert` — Expert in Tailwind CSS for efficient and responsive styling of web projects, uti
+- `@tauri-expert` — Expert in Tauri for building cross-platform desktop applications leveraging web 
+- `@tdd-guide` — Test-Driven Development specialist enforcing write-tests-first methodology. Use 
+- `@tensorflow-expert` — Expert in TensorFlow, specializing in developing, optimizing, and deploying mach
+- `@terraform-expert` — Expert in infrastructure-as-code using Terraform, specializing in efficient and 
+- `@testcafe-expert` — Expert in writing and optimizing TestCafe tests for reliable and maintainable UI
+- `@trpc-expert` — Expert in building reliable, efficient, and type-safe backend services using tRP
+- `@typeorm-expert` — Expertise in TypeORM for defining and managing data models with efficient databa
+- `@typescript-expert` — Expert in TypeScript specializing in type safety, async patterns, and modern ES 
+- `@ui-engineer` — Expert UI/frontend developer for creating, modifying, or reviewing frontend code
+- `@vector-db-expert` — Expert in Vector Databases, handling indexing, querying, and optimization of vec
+- `@vitest-expert` — Create organized, comprehensive, and efficient unit tests with Vitest, ensuring 
+- `@vue-expert` — Vue.js expert specializing in modern Vue applications, components, and state man
+- `@webpack-expert` — Expert in Webpack configuration, optimization, and troubleshooting for efficient
+- `@websocket-expert` — Specializes in WebSocket protocol, implementation, and application. Provides exp
+- `@workflow-skill-reviewer` — Reviews workflow-based Claude Code skills for structural quality, pattern adhere
+- `@wshobson-accessibility-expert` — Expert accessibility specialist ensuring WCAG compliance, inclusive design, and 
+- `@wshobson-ai-engineer` — Build production-ready LLM applications, advanced RAG systems, and intelligent a
+- `@wshobson-api-documenter` — Master API documentation with OpenAPI 3.1, AI-powered tools, and modern develope
+- `@wshobson-architect-review` — Master software architect specializing in modern architecture patterns, clean ar
+- `@wshobson-arm-cortex-expert` — >
+- `@wshobson-backend-architect` — Expert backend architect specializing in scalable API design, microservices arch
+- `@wshobson-backend-security-coder` — Expert in secure backend coding practices specializing in input validation, auth
+- `@wshobson-bash-pro` — Master of defensive Bash scripting for production automation, CI/CD pipelines, a
+- `@wshobson-blockchain-developer` — Build production-ready Web3 applications, smart contracts, and decentralized sys
+- `@wshobson-business-analyst` — Master modern business analysis with AI-powered analytics, real-time dashboards,
+- `@wshobson-c-pro` — Write efficient C code with proper memory management, pointer arithmetic, and sy
+- `@wshobson-c4-code` — Expert C4 Code-level documentation specialist. Analyzes code directories to crea
+- `@wshobson-c4-component` — Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level do
+- `@wshobson-c4-container` — Expert C4 Container-level documentation specialist. Synthesizes Component-level 
+- `@wshobson-c4-context` — Expert C4 Context-level documentation specialist. Creates high-level system cont
+- `@wshobson-cloud-architect` — Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure 
+- `@wshobson-code-reviewer` — Elite code review expert specializing in modern AI-powered code analysis, securi
+- `@wshobson-conductor-validator` — Validates Conductor project artifacts for completeness, consistency, and correct
+- `@wshobson-content-marketer` — Elite content marketing strategist specializing in AI-powered content creation, 
+- `@wshobson-context-manager` — Elite AI context engineering specialist mastering dynamic context management, ve
+- `@wshobson-cpp-pro` — Write idiomatic C++ code with modern features, RAII, smart pointers, and STL alg
+- `@wshobson-csharp-pro` — Write modern C# code with advanced features like records, pattern matching, and 
+- `@wshobson-customer-support` — Elite AI-powered customer support specialist mastering conversational AI, automa
+- `@wshobson-data-engineer` — Build scalable data pipelines, modern data warehouses, and real-time streaming a
+- `@wshobson-data-scientist` — Expert data scientist for advanced analytics, machine learning, and statistical 
+- `@wshobson-database-admin` — Expert database administrator specializing in modern cloud databases, automation
+- `@wshobson-database-architect` — Expert database architect specializing in data layer design from scratch, techno
+- `@wshobson-database-optimizer` — Expert database optimizer specializing in modern performance tuning, query optim
+- `@wshobson-debugger` — Debugging specialist for errors, test failures, and unexpected behavior. Use pro
+- `@wshobson-deployment-engineer` — Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workfl
+- `@wshobson-design-system-architect` — Expert design system architect specializing in design tokens, component librarie
+- `@wshobson-devops-troubleshooter` — Expert DevOps troubleshooter specializing in rapid incident response, advanced d
+- `@wshobson-django-pro` — Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scal
+- `@wshobson-docs-architect` — Creates comprehensive technical documentation from existing codebases. Analyzes 
+- `@wshobson-dotnet-architect` — Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework
+- `@wshobson-dx-optimizer` — Developer Experience specialist. Improves tooling, setup, and workflows. Use PRO
+- `@wshobson-elixir-pro` — Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix Li
+- `@wshobson-error-detective` — Analyzes error traces, logs, and observability data to identify error signatures
+- `@wshobson-event-sourcing-architect` — Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters 
+- `@wshobson-fastapi-pro` — Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2.
+- `@wshobson-firmware-analyst` — Expert firmware analyst specializing in embedded systems, IoT security, and hard
+- `@wshobson-flutter-expert` — Master Flutter development with Dart 3, advanced widgets, and multi-platform dep
+- `@wshobson-frontend-developer` — Build React components, implement responsive layouts, and handle client-side sta
+- `@wshobson-frontend-security-coder` — Expert in secure frontend coding practices specializing in XSS prevention, outpu
+- `@wshobson-golang-pro` — Master Go 1.21+ with modern patterns, advanced concurrency, performance optimiza
+- `@wshobson-graphql-architect` — Master modern GraphQL with federation, performance optimization, and enterprise 
+- `@wshobson-haskell-pro` — Expert Haskell engineer specializing in advanced type systems, pure functional d
+- `@wshobson-hr-pro` — Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and lea
+- `@wshobson-hybrid-cloud-architect` — Expert hybrid cloud architect specializing in complex multi-cloud solutions acro
+- `@wshobson-incident-responder` — Expert SRE incident responder specializing in rapid problem resolution, modern o
+- `@wshobson-ios-developer` — Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIK
+- `@wshobson-java-pro` — Master Java 21+ with modern features like virtual threads, pattern matching, and
+- `@wshobson-javascript-pro` — Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles pr
+- `@wshobson-julia-pro` — Master Julia 1.10+ with modern features, performance optimization, multiple disp
+- `@wshobson-kubernetes-architect` — Expert Kubernetes architect specializing in cloud-native infrastructure, advance
+- `@wshobson-legacy-modernizer` — Refactor legacy codebases, migrate outdated frameworks, and implement gradual mo
+- `@wshobson-legal-advisor` — Draft privacy policies, terms of service, disclaimers, and legal notices. Create
+- `@wshobson-malware-analyst` — Expert malware analyst specializing in defensive malware research, threat intell
+- `@wshobson-mermaid-expert` — Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Mast
+- `@wshobson-minecraft-bukkit-pro` — Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs. 
+- `@wshobson-ml-engineer` — Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML framewor
+- `@wshobson-mlops-engineer` — Build comprehensive ML pipelines, experiment tracking, and model registries with
+- `@wshobson-mobile-developer` — Develop React Native, Flutter, or native mobile apps with modern architecture pa
+- `@wshobson-mobile-security-coder` — Expert in secure mobile coding practices specializing in input validation, WebVi
+- `@wshobson-monorepo-architect` — Expert in monorepo architecture, build systems, and dependency management at sca
+- `@wshobson-network-engineer` — Expert network engineer specializing in modern cloud networking, security archit
+- `@wshobson-observability-engineer` — Build production-ready monitoring, logging, and tracing systems. Implements comp
+- `@wshobson-payment-integration` — Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscr
+- `@wshobson-performance-engineer` — Expert performance engineer specializing in modern observability, application op
+- `@wshobson-php-pro` — Write idiomatic PHP code with generators, iterators, SPL data structures, and mo
+- `@wshobson-posix-shell-pro` — Expert in strict POSIX sh scripting for maximum portability across Unix-like sys
+- `@wshobson-prompt-engineer` — Expert prompt engineer specializing in advanced prompting techniques, LLM optimi
+- `@wshobson-python-pro` — Master Python 3.12+ with modern features, async programming, performance optimiz
+- `@wshobson-quant-analyst` — Build financial models, backtest trading strategies, and analyze market data. Im
+- `@wshobson-reference-builder` — Creates exhaustive technical references and API documentation. Generates compreh
+- `@wshobson-reverse-engineer` — Expert reverse engineer specializing in binary analysis, disassembly, decompilat
+- `@wshobson-risk-manager` — Monitor portfolio risk, R-multiples, and position limits. Creates hedging strate
+- `@wshobson-ruby-pro` — Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance 
+- `@wshobson-rust-pro` — Master Rust 1.75+ with modern async patterns, advanced type system features, and
+- `@wshobson-sales-automator` — Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, ca
+- `@wshobson-scala-pro` — Master enterprise-grade Scala development with functional programming, distribut
+- `@wshobson-search-specialist` — Expert web researcher using advanced search techniques and synthesis. Masters se
+- `@wshobson-security-auditor` — Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, 
+- `@wshobson-seo-authority-builder` — Analyzes content for E-E-A-T signals and suggests improvements to build authorit
+- `@wshobson-seo-cannibalization-detector` — Analyzes multiple provided pages to identify keyword overlap and potential canni
+- `@wshobson-seo-content-auditor` — Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. 
+- `@wshobson-seo-content-planner` — Creates comprehensive content outlines and topic clusters for SEO. Plans content
+- `@wshobson-seo-content-refresher` — Identifies outdated elements in provided content and suggests updates to maintai
+- `@wshobson-seo-content-writer` — Writes SEO-optimized content based on provided keywords and topic briefs. Create
+- `@wshobson-seo-keyword-strategist` — Analyzes keyword usage in provided content, calculates density, suggests semanti
+- `@wshobson-seo-meta-optimizer` — Creates optimized meta titles, descriptions, and URL suggestions based on charac
+- `@wshobson-seo-snippet-hunter` — Formats content to be eligible for featured snippets and SERP features. Creates 
+- `@wshobson-seo-structure-architect` — Analyzes and optimizes content structure including header hierarchy, suggests sc
+- `@wshobson-service-mesh-expert` — Expert service mesh architect specializing in Istio, Linkerd, and cloud-native n
+- `@wshobson-sql-pro` — Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advan
+- `@wshobson-startup-analyst` — Expert startup business analyst specializing in market sizing, financial modelin
+- `@wshobson-tdd-orchestrator` — Master TDD orchestrator specializing in red-green-refactor discipline, multi-age
+- `@wshobson-team-debugger` — Hypothesis-driven debugging investigator that investigates one assigned hypothes
+- `@wshobson-team-implementer` — Parallel feature builder that implements components within strict file ownership
+- `@wshobson-team-lead` — Team orchestrator that decomposes work into parallel tasks with file ownership b
+- `@wshobson-team-reviewer` — Multi-dimensional code reviewer that operates on one assigned review dimension (
+- `@wshobson-temporal-python-pro` — Master Temporal workflow orchestration with Python SDK. Implements durable workf
+- `@wshobson-terraform-specialist` — Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state ma
+- `@wshobson-test-automator` — Master AI-powered test automation with modern frameworks, self-healing tests, an
+- `@wshobson-threat-modeling-expert` — Expert in threat modeling methodologies, security architecture review, and risk 
+- `@wshobson-tutorial-engineer` — Creates step-by-step tutorials and educational content from code. Transforms com
+- `@wshobson-typescript-pro` — Master TypeScript with advanced types, generics, and strict type safety. Handles
+- `@wshobson-ui-designer` — Expert UI designer specializing in component creation, layout systems, and visua
+- `@wshobson-ui-ux-designer` — Create interface designs, wireframes, and design systems. Masters user research,
+- `@wshobson-ui-visual-validator` — Rigorous visual validation expert specializing in UI testing, design system comp
+- `@wshobson-unity-developer` — Build Unity games with optimized C# scripts, efficient rendering, and proper ass
+- `@wshobson-vector-database-engineer` — Expert in vector databases, embedding strategies, and semantic search implementa
+
+---
+
+## COMMANDS (533)
+
+- `/Claude-Legal-brief` — Generate contextual briefings for legal work — daily summary, topic research, or
+- `/Claude-Legal-respond` — Generate a response to a common legal inquiry using configured templates
+- `/Claude-Legal-review-contract` — Review a contract against your organization's negotiation playbook — flag deviat
+- `/Claude-Legal-triage-nda` — Rapidly triage an incoming NDA — classify as standard approval, counsel review, 
+- `/Claude-Legal-vendor-check` — Check the status of existing agreements with a vendor across all connected syste
+- `/README` — An installable Vtiger extension which provides interface to perform command exec
+- `/SKILL` — Top username lists for enumeration: common usernames, default credentials, names
+- `/accessibility-audit` — You are an accessibility expert specializing in WCAG compliance, inclusive desig
+- `/address-review` — Fetch GitHub PR review comments and create todos to address them
+- `/affaan-tdd` — Enforce test-driven development workflow. Scaffold interfaces, generate tests FI
+- `/ai-assistant` — Build AI assistant application with NLU, dialog management, and integrations
+- `/ai-review` — You are an expert AI-powered code review specialist combining automated static a
+- `/api-keys` — Scan for exposed API keys and sensitive data patterns in code repositories
+- `/api-mock` — You are an API mocking expert specializing in creating realistic mock services f
+- `/aside` — Answer a quick side question without interrupting or losing context from the cur
+- `/audit-context` — Builds deep architectural context before vulnerability hunting
+- `/awesome-claude--a11y-scan` — Scan web application components for accessibility violations against WCAG guidel
+- `/awesome-claude--add-breakpoints` — Implement responsive design breakpoints for a component or page.
+- `/awesome-claude--add-endpoint` — Add a new API endpoint to an existing backend service with validation and tests.
+- `/awesome-claude--add-feature` — Add a new feature module to an existing project with all supporting files.
+- `/awesome-claude--add-index` — Add database indexes to improve query performance with migration safety.
+- `/awesome-claude--add-model` — Create a Swift data model with Codable conformance and validation.
+- `/awesome-claude--add-page` — Add a new page to a web application with routing, data fetching, and SEO metadat
+- `/awesome-claude--add-tool` — <what it does>
+- `/awesome-claude--add-types` — Add TypeScript type definitions to existing TypeScript files with weak typing.
+- `/awesome-claude--add-viewmodel` — Create an Android ViewModel with proper state management and data flow.
+- `/awesome-claude--adr` — Write an Architecture Decision Record documenting a significant technical decisi
+- `/awesome-claude--affected` — Detect which packages in a monorepo are affected by recent changes.
+- `/awesome-claude--amend` — Amend the most recent commit with additional changes or an updated message.
+- `/awesome-claude--analyze-bundle` — Analyze JavaScript bundle size and identify optimization opportunities.
+- `/awesome-claude--analyze-ci-failure` — Analyze and diagnose a CI/CD pipeline failure.
+- `/awesome-claude--analyze-complexity` — Calculate cyclomatic complexity and identify overly complex functions.
+- `/awesome-claude--analyze-failures` — Analyze test failures to identify root causes, patterns, and suggest targeted fi
+- `/awesome-claude--analyze-prompt` — Analyze an AI prompt for clarity, effectiveness, and potential issues.
+- `/awesome-claude--analyze-query` — Analyze database queries for performance issues using EXPLAIN plans and query pa
+- `/awesome-claude--analyze-screenshot` — Analyze a screenshot or UI image to identify elements, layout issues, and implem
+- `/awesome-claude--analyze-workflow` — Analyze the development workflow to identify bottlenecks, friction, and improvem
+- `/awesome-claude--annotate` — Add inline documentation (JSDoc, docstrings, comments) to under-documented code.
+- `/awesome-claude--anonymize` — Implement data anonymization and pseudonymization for PII protection.
+- `/awesome-claude--api-docs` — Generate API documentation from route definitions and handlers.
+- `/awesome-claude--approve-pr` — Approve a pull request after verifying it meets quality standards.
+- `/awesome-claude--architect` — Generate a comprehensive architecture document for a system or feature based on 
+- `/awesome-claude--aria-fix` — Fix ARIA attributes and accessibility issues in web components.
+- `/awesome-claude--audit-deps` — Audit all project dependencies for vulnerabilities, licensing issues, and mainte
+- `/awesome-claude--audit-infra` — Audit infrastructure for security issues, misconfigurations, and optimization op
+- `/awesome-claude--audit-pii` — Scan the codebase and data stores for personally identifiable information (PII) 
+- `/awesome-claude--audit` — Perform a security audit of the codebase covering common vulnerability categorie
+- `/awesome-claude--automate` — Create DevOps automation scripts for CI/CD pipelines, deployments, and infrastru
+- `/awesome-claude--benchmark` — Run performance benchmarks against API endpoints.
+- `/awesome-claude--bisect` — Use git bisect to find the exact commit that introduced a bug through binary sea
+- `/awesome-claude--build-image` — Build a Docker image with best practices for caching, security, and size optimiz
+- `/awesome-claude--build-regex` — Build a regular expression pattern from a natural language description.
+- `/awesome-claude--bump-version` — Bump the project version following semantic versioning rules based on changes si
+- `/awesome-claude--capture-baseline` — Capture baseline screenshots for visual regression testing.
+- `/awesome-claude--changelog` — Generate a changelog from git history since the last tag or a specified referenc
+- `/awesome-claude--check-contrast` — Check color contrast ratios against WCAG accessibility requirements.
+- `/awesome-claude--check-gdpr` — Verify GDPR compliance by checking data handling, consent management, and user r
+- `/awesome-claude--check-licenses` — Check all dependency licenses for compliance with project requirements.
+- `/awesome-claude--check-soc2` — Verify SOC 2 compliance by checking security controls, availability, and data in
+- `/awesome-claude--checkpoint` — Save a session checkpoint capturing current progress, decisions, and next steps.
+- `/awesome-claude--ci-pipeline` — Generate a CI pipeline configuration for GitHub Actions.
+- `/awesome-claude--cleanup` — Find and remove dead code, unused imports, and unreachable branches.
+- `/awesome-claude--code-migrate` — Migrate code from one framework version, library, or pattern to another.
+- `/awesome-claude--commit-push` — Stage, commit, and push changes with an auto-generated conventional commit messa
+- `/awesome-claude--commit` — Analyze the currently staged changes (`git diff --cached`) and generate a conven
+- `/awesome-claude--compare-models` — Compare multiple ML models to select the best performer.
+- `/awesome-claude--compare-tools` — Compare multiple developer tools side-by-side to make an informed selection deci
+- `/awesome-claude--compare` — Compare current screenshots against baselines to detect visual regressions.
+- `/awesome-claude--complete` — Complete a partially implemented feature by filling gaps and ensuring production
+- `/awesome-claude--configure-blob` — Create and configure an Azure Blob Storage account with security best practices.
+- `/awesome-claude--configure-gcs` — Create and configure a GCS bucket with proper security settings.
+- `/awesome-claude--configure-s3` — Create and configure an S3 bucket with security best practices.
+- `/awesome-claude--consolidate` — Merge and consolidate duplicate CSS rules and redundant stylesheets.
+- `/awesome-claude--create-activity` — Generate a Jetpack Compose screen with proper architecture.
+- `/awesome-claude--create-chart` — Generate a Helm chart for deploying an application to Kubernetes.
+- `/awesome-claude--create-component` — Create a frontend component with proper structure, types, and accessibility.
+- `/awesome-claude--create-contract` — Create a Pact contract definition for consumer-driven contract testing.
+- `/awesome-claude--create-cron` — Configure a cron job with proper scheduling and error handling.
+- `/awesome-claude--create-dashboard` — Create monitoring dashboards with key metrics for service observability.
+- `/awesome-claude--create-demo` — Create a technical demo that showcases product capabilities to prospective custo
+- `/awesome-claude--create-guide` — Create a comprehensive onboarding guide for new developers joining the project.
+- `/awesome-claude--create-issue` — Create a well-structured GitHub issue with proper metadata.
+- `/awesome-claude--create-migration` — Generate a database migration file for schema changes.
+- `/awesome-claude--create-module` — Create a reusable Terraform module for infrastructure provisioning.
+- `/awesome-claude--create-retriever` — Build a retrieval component for RAG pipeline with optimized search.
+- `/awesome-claude--create-screen` — Create a React Native screen with navigation, layout, and platform-specific hand
+- `/awesome-claude--create-server` — Scaffold a new MCP (Model Context Protocol) server with tools, resources, and pr
+- `/awesome-claude--create-thread` — Create a Slack thread for ongoing discussion about a topic.
+- `/awesome-claude--create-ticket` — Create a structured Linear issue with proper workflow configuration.
+- `/awesome-claude--create-view` — Generate a SwiftUI view with proper architecture and best practices.
+- `/awesome-claude--create-widget` — Create a Flutter widget with proper state management and Material/Cupertino desi
+- `/awesome-claude--create-workflow` — 2. Design the workflow node graph:
+- `/awesome-claude--csp` — Generate Content Security Policy headers for a web application.
+- `/awesome-claude--dashboard` — Generate a monitoring dashboard configuration for project metrics visualization.
+- `/awesome-claude--db-migrate` — Generate a database migration file for schema changes.
+- `/awesome-claude--dead-code` — Find and remove dead code from the codebase.
+- `/awesome-claude--debug-pod` — Debug a failing or unhealthy Kubernetes pod by analyzing events, logs, and confi
+- `/awesome-claude--debug` — Systematically debug an issue by analyzing symptoms, forming hypotheses, and tes
+- `/awesome-claude--dependency-audit` — Audit project dependencies for known vulnerabilities and outdated packages.
+- `/awesome-claude--deploy` — Deploy the application to a target environment with pre/post checks.
+- `/awesome-claude--design-api` — Design a RESTful or GraphQL API based on the project's domain model and requirem
+- `/awesome-claude--design-review` — Conduct a structured design review of a module, feature, or system component.
+- `/awesome-claude--design-schema` — Design a database schema based on application requirements.
+- `/awesome-claude--design-service` — Design a backend service architecture with clear boundaries, data models, and AP
+- `/awesome-claude--diagram` — Generate Mermaid diagrams from codebase analysis or description.
+- `/awesome-claude--diff-env` — Compare environment variables between two environments.
+- `/awesome-claude--discuss` — Debate implementation approaches by presenting structured arguments for multiple
+- `/awesome-claude--doc-gen` — Generate documentation from the codebase for the specified scope.
+- `/awesome-claude--dockerfile` — Generate an optimized Dockerfile for the current project.
+- `/awesome-claude--document-all` — Auto-document the entire codebase by generating module-level docs, function sign
+- `/awesome-claude--e2e` — Generate end-to-end tests using Playwright for critical user flows.
+- `/awesome-claude--env-setup` — Set up environment configuration files from templates with validation.
+- `/awesome-claude--env-validate` — Validate environment configuration against the template and runtime requirements
+- `/awesome-claude--estimate` — Estimate effort and time for development tasks using structured sizing methodolo
+- `/awesome-claude--evaluate-model` — Evaluate machine learning model performance with comprehensive metrics.
+- `/awesome-claude--evaluate` — Evaluate a developer tool against structured criteria to determine its fitness f
+- `/awesome-claude--explain-plan` — Generate and interpret a SQL query execution plan in plain language.
+- `/awesome-claude--explain` — Explain a code file, function, or concept in clear, structured language.
+- `/awesome-claude--explore` — Perform smart codebase exploration to understand project structure, patterns, an
+- `/awesome-claude--extract-fn` — Extract a block of code into a well-named, reusable function with proper typing.
+- `/awesome-claude--extract-text` — Extract text content from images, screenshots, or diagrams for processing and an
+- `/awesome-claude--extract` — Extract a function, component, or module from existing code into its own unit.
+- `/awesome-claude--fetch-docs` — Fetch up-to-date library documentation via Context7 to ensure accurate code gene
+- `/awesome-claude--find-dead-code` — Identify unused code across the codebase.
+- `/awesome-claude--find-leaks` — Detect and diagnose memory leaks in the application.
+- `/awesome-claude--find-unused-css` — Identify CSS rules that are not used by any component or page.
+- `/awesome-claude--fix-aria` — Fix incorrect or missing ARIA attributes for accessibility compliance.
+- `/awesome-claude--fix-comments` — Address PR review comments by implementing requested changes automatically.
+- `/awesome-claude--fix-issue` — Fix a GitHub issue by number: read the issue, create a branch, implement the fix
+- `/awesome-claude--fix-issues` — Apply fixes for Lighthouse audit failures to improve scores.
+- `/awesome-claude--fix-pipeline` — Apply fixes to a broken CI/CD pipeline configuration.
+- `/awesome-claude--fix-vulnerability` — Fix a specific security vulnerability with proper remediation and verification.
+- `/awesome-claude--flow-release` — Complete a feature/bugfix/hotfix flow by merging back to the target branch.
+- `/awesome-claude--flow-start` — Start a new feature, bugfix, or hotfix branch following git-flow conventions.
+- `/awesome-claude--generate-api-ref` — Generate API reference documentation from source code and route definitions.
+- `/awesome-claude--generate-changelog` — Generate a changelog from git history, grouping commits by type and version.
+- `/awesome-claude--generate-data` — Generate realistic test data based on schema definitions or models.
+- `/awesome-claude--generate-docs` — Generate comprehensive documentation for the current project or a specified modu
+- `/awesome-claude--generate-embeddings` — Generate vector embeddings for text data using embedding models.
+- `/awesome-claude--generate-erd` — Generate a visual ERD from the existing database schema.
+- `/awesome-claude--generate-manifest` — Generate production-ready Kubernetes manifests from application configuration.
+- `/awesome-claude--generate-notice` — Generate a NOTICE file with all third-party license attributions.
+- `/awesome-claude--generate-openapi` — Generate an OpenAPI 3.1 specification from the existing codebase or API design.
+- `/awesome-claude--generate-readme` — Generate a comprehensive README.md from project analysis.
+- `/awesome-claude--generate-report` — Generate a detailed performance report from load test results.
+- `/awesome-claude--generate-seeds` — Generate database seed scripts with realistic data for development.
+- `/awesome-claude--generate-spec` — Generate an OpenAPI 3.1 specification from existing API routes and handlers.
+- `/awesome-claude--generate-tests` — Generate comprehensive unit tests for a specified function, class, or module.
+- `/awesome-claude--hardening` — Apply security hardening measures to the codebase.
+- `/awesome-claude--health-check` — Create health check scripts to verify service and infrastructure availability.
+- `/awesome-claude--implement-design` — Implement a UI design from a specification, screenshot, or Figma description int
+- `/awesome-claude--implement` — Implement a feature from specification through a structured development workflow
+- `/awesome-claude--improve-prompt` — Analyze and improve an AI prompt for clarity, specificity, and effectiveness.
+- `/awesome-claude--index-docs` — Index documents into a vector store for retrieval-augmented generation.
+- `/awesome-claude--integration-test` — Generate integration tests for a module, testing real interactions between compo
+- `/awesome-claude--k8s-manifest` — Generate Kubernetes manifests for deploying the current application.
+- `/awesome-claude--launch-checklist` — Generate a comprehensive launch checklist for a feature or product release.
+- `/awesome-claude--list-adrs` — List and summarize all existing Architecture Decision Records.
+- `/awesome-claude--load-test` — Run a load test against an API endpoint to measure throughput and identify break
+- `/awesome-claude--map` — Generate a dependency map showing how modules and files relate to each other in 
+- `/awesome-claude--memory-bank` — Update the project's CLAUDE.md memory bank with current session learnings.
+- `/awesome-claude--migrate-file` — Convert a JavaScript file to TypeScript with proper type annotations.
+- `/awesome-claude--migrate` — Plan and execute a framework or library migration incrementally.
+- `/awesome-claude--mockup` — Generate UI mockups as HTML files with inline CSS for rapid visual prototyping.
+- `/awesome-claude--monitor` — Set up monitoring, alerting, and observability for the application.
+- `/awesome-claude--mutate` — Run mutation testing to evaluate test suite effectiveness.
+- `/awesome-claude--native-module` — Create a React Native native module to bridge platform-specific functionality.
+- `/awesome-claude--onboard` — Generate an onboarding guide for new developers joining the project.
+- `/awesome-claude--optimize-dockerfile` — Optimize an existing Dockerfile for smaller images, faster builds, and better se
+- `/awesome-claude--optimize-perf` — Analyze and optimize code for runtime performance with measurable improvements.
+- `/awesome-claude--optimize-prompt` — Rewrite and optimize an AI prompt for better performance and reliability.
+- `/awesome-claude--optimize-query` — Analyze and optimize a slow SQL query for better performance.
+- `/awesome-claude--optimize-size` — Analyze and reduce code bundle size, dependency bloat, and binary footprint.
+- `/awesome-claude--optimize` — Apply targeted performance optimizations to a specified file, function, or modul
+- `/awesome-claude--orchestrate` — Run a multi-step workflow by breaking a complex task into coordinated sub-tasks.
+- `/awesome-claude--organize` — Sort, group, and clean up import statements across the project.
+- `/awesome-claude--plan-apply` — Run Terraform plan, review changes, and apply infrastructure updates.
+- `/awesome-claude--plan-sprint` — Plan a development sprint with capacity allocation, task assignment, and milesto
+- `/awesome-claude--plan` — Create a structured implementation plan for the requested feature or change.
+- `/awesome-claude--platform-channel` — Create a Flutter platform channel for native iOS and Android communication.
+- `/awesome-claude--pr-create` — Create a pull request with a structured description based on the current branch'
+- `/awesome-claude--pr-review` — Review a pull request by number: fetch the diff, analyze changes, and post revie
+- `/awesome-claude--prioritize` — Prioritize a backlog of tasks using structured scoring and dependency analysis.
+- `/awesome-claude--profile-api` — Profile an API endpoint to identify performance bottlenecks and optimization opp
+- `/awesome-claude--profile-memory` — Capture and analyze memory usage of the application.
+- `/awesome-claude--profile` — Analyze the codebase for performance bottlenecks, resource inefficiencies, and s
+- `/awesome-claude--prototype` — Quickly scaffold a working prototype with minimal viable structure to validate a
+- `/awesome-claude--rebase` — Rebase the current feature branch onto the latest upstream branch and resolve co
+- `/awesome-claude--record-test` — Record user interactions to generate an end-to-end test file.
+- `/awesome-claude--refactor-py` — Refactor Python code for clarity, performance, and Pythonic idioms.
+- `/awesome-claude--refactor` — Perform a systematic refactoring of the specified code area.
+- `/awesome-claude--release` — Create a tagged release with auto-generated release notes from recent commits.
+- `/awesome-claude--remove-dead-code` — Safely remove identified dead code from the codebase.
+- `/awesome-claude--rename` — Rename a symbol (variable, function, class, file) across the entire codebase.
+- `/awesome-claude--report-cost` — Generate a development cost report with breakdowns, trends, and optimization rec
+- `/awesome-claude--report` — Generate a comprehensive performance report from benchmark results.
+- `/awesome-claude--review-pr` — Perform a thorough code review of a pull request with actionable feedback.
+- `/awesome-claude--review` — Perform a thorough code review of the current uncommitted changes or a specified
+- `/awesome-claude--rollback` — Roll back the most recent database migration or to a specific version.
+- `/awesome-claude--run-audit` — Execute a Lighthouse performance audit on web pages.
+- `/awesome-claude--run-e2e` — Run end-to-end tests against the application using Playwright or Cypress.
+- `/awesome-claude--run-load-test` — Run load and stress tests against API endpoints or web pages.
+- `/awesome-claude--scaffold-app` — Scaffold a full-stack web application with frontend, backend, and database setup
+- `/awesome-claude--scaffold-desktop` — Scaffold a desktop application using Electron or Tauri with proper project struc
+- `/awesome-claude--scaffold` — Scaffold a new project with a complete, production-ready structure.
+- `/awesome-claude--search-similar` — Find semantically similar items using vector similarity search.
+- `/awesome-claude--secrets-scan` — Scan the codebase for leaked secrets, API keys, tokens, and credentials.
+- `/awesome-claude--security-check` — Perform a security assessment of the codebase to identify vulnerabilities and ri
+- `/awesome-claude--security-scan` — Perform a security-focused scan of the codebase targeting OWASP Top 10 and commo
+- `/awesome-claude--seed-db` — Seed a database with generated test data.
+- `/awesome-claude--send-update` — Send a formatted status update to a Slack channel.
+- `/awesome-claude--setup-cloud-run` — Configure and deploy a Cloud Run service with best practices.
+- `/awesome-claude--setup-functions` — Configure and deploy an Azure Functions application.
+- `/awesome-claude--setup-lambda` — Configure and deploy an AWS Lambda function with proper settings.
+- `/awesome-claude--setup-monitoring` — Set up monitoring and alerting for application and infrastructure metrics.
+- `/awesome-claude--ship` — Execute a complete feature shipping workflow from code to production deployment.
+- `/awesome-claude--simplify-fn` — Refactor a complex function to reduce cyclomatic complexity.
+- `/awesome-claude--simplify` — Simplify code to improve readability and maintainability.
+- `/awesome-claude--snapshot-test` — Generate snapshot tests for UI components or serializable outputs.
+- `/awesome-claude--social-media` — Generate social media content for developer audiences across platforms.
+- `/awesome-claude--style` — Apply styling to a component using the project's design system and styling appro
+- `/awesome-claude--suggest-colors` — Suggest alternative colors that meet WCAG contrast requirements.
+- `/awesome-claude--suggest-improvements` — Suggest concrete development workflow improvements based on analysis findings.
+- `/awesome-claude--sync-env` — Synchronize environment variables across development, staging, and production.
+- `/awesome-claude--sync-versions` — Synchronize package versions across a monorepo for consistent releases.
+- `/awesome-claude--tdd` — Start a TDD (Test-Driven Development) cycle for the requested feature or functio
+- `/awesome-claude--test-coverage` — Analyze test coverage gaps and generate tests for uncovered code paths.
+- `/awesome-claude--test-endpoint` — Test an API endpoint with various request scenarios and validate responses.
+- `/awesome-claude--test-fix` — Diagnose and fix failing tests in the project.
+- `/awesome-claude--test-prompt` — Test an AI prompt against multiple scenarios to verify consistent, quality outpu
+- `/awesome-claude--test-regex` — Test a regular expression against sample inputs and edge cases.
+- `/awesome-claude--test-responsive` — Test responsive design across multiple device sizes and orientations.
+- `/awesome-claude--test-sr` — Test application compatibility with screen readers.
+- `/awesome-claude--think` — Activate deep analysis mode to reason through complex problems with extended mul
+- `/awesome-claude--trace` — Trace the execution path of a request or operation through the codebase.
+- `/awesome-claude--track-cost` — Track development costs by estimating time, compute, and resource expenses for a
+- `/awesome-claude--track` — Track an ML experiment by logging parameters, metrics, and artifacts for compari
+- `/awesome-claude--tree-shake` — Improve tree shaking effectiveness to reduce bundle size.
+- `/awesome-claude--triage-issues` — Analyze and triage open GitHub issues for prioritization.
+- `/awesome-claude--type-hints` — Add comprehensive type hints to Python code for better IDE support and type safe
+- `/awesome-claude--unit-test` — Generate unit tests for a module, covering all public functions and edge cases.
+- `/awesome-claude--update-codemap` — Update the project codemap to reflect the current state of the codebase.
+- `/awesome-claude--update-deps` — Safely update project dependencies with compatibility verification.
+- `/awesome-claude--update-infra` — Plan and execute infrastructure updates with safety checks and rollback procedur
+- `/awesome-claude--update-readme` — Update or create a README.md that accurately reflects the current state of the p
+- `/awesome-claude--update-status` — Update the status and progress of Linear tickets.
+- `/awesome-claude--upgrade-chart` — Upgrade an existing Helm release with new chart version or values.
+- `/awesome-claude--validate-schedule` — Validate and explain a cron schedule expression.
+- `/awesome-claude--validate-spec` — Validate an existing OpenAPI specification for correctness and completeness.
+- `/awesome-claude--verify-contract` — Verify that a provider service fulfills all consumer contracts.
+- `/awesome-claude--verify` — Perform a systematic second-pass verification of code changes to catch errors be
+- `/awesome-claude--worktree-clean` — Clean up finished git worktrees by removing directories and pruning references.
+- `/awesome-claude--worktree-create` — Create a git worktree for parallel development on a separate branch without stas
+- `/awesome-claude--worktree` — Set up git worktrees for parallel development on multiple branches simultaneousl
+- `/awesome-claude--wrap-up` — End the current session with a structured summary and memory update.
+- `/awesome-claude--write-adr` — Create a new Architecture Decision Record documenting a technical decision.
+- `/awesome-claude--write-changelog` — Generate a detailed changelog entry from git history and merged PRs.
+- `/awesome-claude--write-post` — Write a technical blog post with a clear structure, code examples, and actionabl
+- `/awesome-claude--write-proposal` — Write a technical proposal or proof-of-concept plan for a prospective customer.
+- `/brainstorm` — Deprecated - use the superpowers:brainstorming skill instead
+- `/bug-analyze` — Investigate and analyze the root cause of a reported bug.
+- `/bug-create` — Initialize a new bug fix workflow for tracking and resolving bugs.
+- `/bug-fix` — Implement the fix for the analyzed bug.
+- `/bug-status` — Show current status of all bug fixes or a specific bug fix.
+- `/bug-verify` — Verify that the bug fix works correctly and doesn't introduce regressions.
+- `/build-fix` — Incrementally fix build and type errors with minimal, safe changes.
+- `/burp-search` — Searches Burp Suite project files for security analysis
+- `/business-case` — Generate comprehensive investor-ready business case document with market, soluti
+- `/c4-architecture` — Generate comprehensive C4 architecture documentation for an existing repository/
+- `/cancel-skill-improver` — Stops, cancels, or aborts the active skill improvement loop while preserving all
+- `/changelog` — Generate changelogs from git history and validate conventional commits. Usage: /
+- `/checkpoint` — Create or verify a checkpoint in your workflow.
+- `/claude-code-plu-audit-flagged` — Review and audit code flagged as suspicious by the monitor.
+- `/claude-code-plu-export-monitor` — Export the optimized monitor as a reusable Claude Skill for integration with oth
+- `/claude-code-plu-finetune-monitor` — Bootstrap fine-tune the monitor after GEPA optimization to further improve perfo
+- `/claude-code-plu-load-control-arena` — Load datasets from Control Arena (APPS, ControlTax, AppsBackdoors) for training 
+- `/claude-code-plu-optimize-gepa` — Run GEPA (Genetic-Pareto) prompt optimization to improve monitor performance.
+- `/claude-code-plu-scan-code` — Scan code for backdoors, malicious patterns, and security vulnerabilities using 
+- `/claude-code-plu-train-monitor` — Train the DSPy monitor using comparative pairs of attack vs honest code.
+- `/claude-code-plu-validate-safety` — Compute safety scores and evaluate monitor performance across audit budgets.
+- `/claude-trading--scenario-analyzer` — ニュースヘッドラインから18ヶ月シナリオを分析。1次/2次/3次影響、推奨銘柄、セカンドオピニオンを含む包括的レポートを日本語で生成。
+- `/claw` — Start NanoClaw v2 — ECC's persistent, zero-dependency REPL with model routing, s
+- `/clean_gone` — Cleans up all git branches marked as [gone] (branches that have been deleted on 
+- `/code-explain` — You are a code education expert specializing in explaining complex code through 
+- `/code-migrate` — You are a code migration expert specializing in transitioning codebases between 
+- `/code-review` — Comprehensive security and quality review of uncommitted changes:
+- `/commit-push-pr` — Commit, push, and open a PR
+- `/commit` — Create a git commit
+- `/competitive-matrix` — Build competitive analysis matrices with scoring and gap analysis. Usage: /compe
+- `/compliance-check` — You are a compliance expert specializing in regulatory requirements for software
+- `/component-scaffold` — You are a React component architecture expert specializing in scaffolding produc
+- `/config-validate` — You are a configuration management expert specializing in validating, testing, a
+- `/context-restore` — Expert Context Restoration Specialist focused on intelligent, semantic-aware con
+- `/context-save` — An elite context engineering specialist focused on comprehensive, semantic, and 
+- `/cost-optimize` — You are a cloud cost optimization expert specializing in reducing infrastructure
+- `/create-component` — Guided component creation with proper patterns
+- `/create-plugin` — Guided end-to-end plugin creation workflow with component design, implementation
+- `/ct-check` — Detects timing side-channels in cryptographic code
+- `/data-driven-feature` — Build features guided by data insights, A/B testing, and continuous measurement
+- `/data-pipeline` — You are a data pipeline architecture expert specializing in scalable, reliable, 
+- `/debug-trace` — You are a debugging expert specializing in setting up comprehensive debugging en
+- `/deps-audit` — You are a dependency security expert specializing in vulnerability scanning, lic
+- `/deps-upgrade` — You are a dependency management expert specializing in safe, incremental upgrade
+- `/design-review` — Review existing UI for issues and improvements
+- `/design-system-setup` — Initialize a design system with tokens
+- `/diff-review` — Performs security-focused differential review of code changes
+- `/doc-generate` — You are a documentation expert specializing in creating comprehensive, maintaina
+- `/e2e` — Generate and run end-to-end tests with Playwright. Creates test journeys, runs t
+- `/entry-points` — Identifies state-changing entry points in smart contracts
+- `/error-analysis` — You are an expert error analysis specialist with deep expertise in debugging dis
+- `/error-trace` — You are an error tracking and observability expert specializing in implementing 
+- `/eval` — Manage eval-driven development workflow.
+- `/evolve` — Analyze instincts and suggest or generate evolved structures
+- `/execute-plan` — Deprecated - use the superpowers:executing-plans skill instead
+- `/feature-dev` — Guided feature development with codebase understanding and architecture focus
+- `/feature-development` — Orchestrate end-to-end feature development from requirements to deployment
+- `/file-by-file-review` — Review a massive PR file-by-file, looking for problems in each changed file
+- `/financial-health` — Run financial ratio analysis, DCF valuation, budget variance analysis, and rolli
+- `/financial-projections` — Create detailed 3-5 year financial model with revenue, costs, cash flow, and sce
+- `/full-review` — Orchestrate comprehensive multi-dimensional code review using specialized review
+- `/full-stack-feature` — Orchestrate end-to-end full-stack feature development across backend, frontend, 
+- `/git-workflow` — Orchestrate git workflow from code review through PR creation with quality gates
+- `/go-build` — Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes t
+- `/go-review` — Comprehensive Go code review for idiomatic patterns, concurrency safety, error h
+- `/go-test` — Enforce TDD workflow for Go. Write table-driven tests first, then implement. Ver
+- `/google-workspace` — Google Workspace CLI operations: setup diagnostics, security audit, recipe disco
+- `/gradle-build` — Fix Gradle build errors for Android and KMP projects
+- `/grepstrings-auditing-php` — `grep -Ri "echo" *`
+- `/harness-audit` — Audit the current repository's agent harness setup and return a prioritized scor
+- `/help` — Show everything available in Jarvis — all skills, agents, and slash commands org
+- `/implement` — Execute tasks from a track's implementation plan following TDD workflow
+- `/improve-agent` — Systematic improvement of existing agents through performance analysis, prompt e
+- `/incident-response` — Orchestrate multi-agent incident response with modern SRE practices for rapid re
+- `/instinct-export` — Export instincts from project/global scope to a file
+- `/instinct-import` — Import instincts from file or URL into project/global scope
+- `/instinct-status` — Show learned instincts (project + global) with confidence
+- `/issue` — You are a GitHub issue resolution expert specializing in systematic bug investig
+- `/jarvis` — Ask Jarvis which skills, agents, or commands to use for any task. Describe what 
+- `/jezweb-project-health` — Audit and manage project configuration — permissions, context, docs
+- `/kotlin-build` — Fix Kotlin/Gradle build errors, compiler warnings, and dependency issues increme
+- `/kotlin-review` — Comprehensive Kotlin code review for idiomatic patterns, null safety, coroutine 
+- `/kotlin-test` — Enforce TDD workflow for Kotlin. Write Kotest tests first, then implement. Verif
+- `/langchain-agent` — Create LangGraph-based agent with modern patterns
+- `/learn-eval` — Extract reusable patterns from the session, self-evaluate quality before saving,
+- `/learn` — Analyze the current session and extract any patterns worth saving as skills.
+- `/legacy-modernize` — Orchestrate legacy system modernization using the strangler fig pattern with gra
+- `/loop-start` — Start a managed autonomous loop pattern with safety defaults.
+- `/loop-status` — Inspect active loop state, progress, and failure signals.
+- `/manage` — Manage track lifecycle: archive, restore, delete, rename, and cleanup
+- `/market-opportunity` — Generate comprehensive market opportunity analysis with TAM/SAM/SOM calculations
+- `/merge-commit-msg` — Generate a structured merge commit message from PR changes
+- `/migration-observability` — Migration monitoring, CDC, and observability infrastructure
+- `/ml-pipeline` — Design and implement a complete ML pipeline for: $ARGUMENTS
+- `/model-route` — Recommend the best model tier for the current task by complexity and budget.
+- `/monitor-setup` — You are a monitoring and observability expert specializing in implementing compr
+- `/multi-agent-optimize` — The Multi-Agent Optimization Tool is an advanced AI-driven framework designed to
+- `/multi-agent-review` — A sophisticated AI-powered code review system designed to provide comprehensive,
+- `/multi-backend` — Backend-focused workflow (Research → Ideation → Plan → Execute → Optimize → Revi
+- `/multi-execute` — Multi-model collaborative execution - Get prototype from plan → Claude refactors
+- `/multi-frontend` — Frontend-focused workflow (Research → Ideation → Plan → Execute → Optimize → Rev
+- `/multi-plan` — Multi-model collaborative planning - Context retrieval + Dual-model analysis → G
+- `/multi-platform` — Orchestrate cross-platform feature development across web, mobile, and desktop w
+- `/multi-workflow` — Multi-model collaborative development workflow (Research → Ideation → Plan → Exe
+- `/new-track` — Create a new track with specification and phased implementation plan
+- `/okr` — Generate OKR cascades from company strategy to team objectives. Usage: /okr gene
+- `/onboard` — You are an **expert onboarding specialist and knowledge transfer architect** wit
+- `/optimize` — Analyze code for performance issues and suggest optimizations
+- `/orchestrate` — Sequential agent workflow for complex tasks.
+- `/performance-optimization` — Orchestrate end-to-end application performance optimization from profiling to mo
+- `/persona` — Generate data-driven user personas for UX research and product design. Usage: /p
+- `/pipeline` — Detect stack and generate CI/CD pipeline configs. Usage: /pipeline <detect|gener
+- `/plan` — Restate requirements, assess risks, and create step-by-step implementation plan.
+- `/pm-skills-analyze-cohorts` — Perform cohort analysis on user data — retention curves, feature adoption, and e
+- `/pm-skills-analyze-feedback` — Analyze user feedback at scale — sentiment analysis, theme extraction, and segme
+- `/pm-skills-analyze-test` — Analyze A/B test results — statistical significance, sample size validation, and
+- `/pm-skills-battlecard` — Create a sales-ready competitive battlecard — positioning, feature comparison, o
+- `/pm-skills-brainstorm` — Brainstorm product ideas or experiments from PM, Designer, and Engineer perspect
+- `/pm-skills-business-model` — Explore business models using Lean Canvas, Business Model Canvas, Startup Canvas
+- `/pm-skills-competitive-analysis` — Analyze the competitive landscape — identify competitors, compare strengths and 
+- `/pm-skills-discover` — Run a full product discovery cycle — from ideation through assumption mapping to
+- `/pm-skills-draft-nda` — Draft a Non-Disclosure Agreement between two parties with jurisdiction-appropria
+- `/pm-skills-generate-data` — Generate realistic dummy datasets for testing — CSV, JSON, SQL inserts, or Pytho
+- `/pm-skills-growth-strategy` — Design sustainable growth mechanisms — growth loops and GTM motions for product-
+- `/pm-skills-interview` — Prepare a customer interview script or summarize an interview transcript into st
+- `/pm-skills-market-product` — Brainstorm marketing ideas, positioning, value prop statements, and product name
+- `/pm-skills-market-scan` — Comprehensive macro environment analysis — SWOT, PESTLE, Porter's Five Forces, a
+- `/pm-skills-meeting-notes` — Summarize a meeting transcript into structured notes with decisions, action item
+- `/pm-skills-north-star` — Define your North Star Metric and supporting input metrics — classify the busine
+- `/pm-skills-plan-launch` — Create a full go-to-market strategy — beachhead segment, ICP, messaging, channel
+- `/pm-skills-plan-okrs` — Brainstorm team-level OKRs aligned with company objectives — qualitative objecti
+- `/pm-skills-pre-mortem` — Run a pre-mortem risk analysis on a PRD, launch plan, or feature — identify what
+- `/pm-skills-pricing` — Design a pricing strategy — models, competitive analysis, willingness-to-pay est
+- `/pm-skills-privacy-policy` — Draft a privacy policy covering data collection, usage, storage, and compliance 
+- `/pm-skills-proofread` — Check grammar, logic, and flow in any text — targeted fixes without rewriting
+- `/pm-skills-research-users` — Comprehensive user research — build personas, segment users, and map the custome
+- `/pm-skills-review-resume` — Comprehensive PM resume review against 10 best practices — structure, impact met
+- `/pm-skills-setup-metrics` — Design a product metrics dashboard with North Star metric, input metrics, health
+- `/pm-skills-sprint` — Sprint lifecycle — plan a sprint, run a retrospective, or generate release notes
+- `/pm-skills-stakeholder-map` — Map stakeholders on a Power × Interest grid and create a tailored communication 
+- `/pm-skills-strategy` — Create a comprehensive product strategy using the 9-section Strategy Canvas — fr
+- `/pm-skills-tailor-resume` — Tailor a PM resume to a specific job description — keyword alignment, experience
+- `/pm-skills-test-scenarios` — Generate comprehensive test scenarios from user stories or feature specs — happy
+- `/pm-skills-transform-roadmap` — Convert a feature-based roadmap into an outcome-focused roadmap that communicate
+- `/pm-skills-triage-requests` — Analyze, categorize, and prioritize a batch of feature requests from customers o
+- `/pm-skills-value-proposition` — Design a value proposition using the 6-part JTBD template — Who, Why, What befor
+- `/pm-skills-write-prd` — Create a comprehensive Product Requirements Document from a feature idea or prob
+- `/pm-skills-write-query` — Generate SQL queries from natural language — supports BigQuery, PostgreSQL, MySQ
+- `/pm-skills-write-stories` — Break a feature into backlog items — user stories, job stories, or WWA format wi
+- `/pm2` — Auto-analyze project and generate PM2 service commands.
+- `/pr-enhance` — You are a PR optimization expert specializing in creating high-quality pull requ
+- `/prd` — Quick PRD generation command. Usage: /prd <feature-or-problem>
+- `/project-health` — Portfolio health dashboard and risk matrix analysis. Usage: /project-health <das
+- `/projects` — List known projects and their instinct statistics
+- `/promote` — Promote project-scoped instincts to global scope
+- `/prompt-optimize` — Analyze a draft prompt and output an optimized, ECC-enriched version ready to pa
+- `/python-review` — Comprehensive Python code review for PEP 8 compliance, type hints, security, and
+- `/python-scaffold` — You are a Python project architecture expert specializing in scaffolding product
+- `/quality-gate` — Run the ECC quality pipeline on demand for a file or project scope.
+- `/refactor-clean` — Safely identify and remove dead code with test verification at every step.
+- `/release` — Prepare and publish a GitHub release
+- `/resume-session` — Load the most recent session file from ~/.claude/sessions/ and resume work with 
+- `/retro` — Analyze sprint retrospectives for patterns and action item tracking. Usage: /ret
+- `/revert` — Git-aware undo by logical work unit (track, phase, or task)
+- `/review-all-prs` — Review all open PRs or a specific PR with comprehensive code analysis
+- `/revise-claude-md` — Update CLAUDE.md with learnings from this session
+- `/rice` — RICE feature prioritization with scoring and capacity planning. Usage: /rice pri
+- `/rust-project` — You are a Rust project architecture expert specializing in scaffolding productio
+- `/saas-health` — Calculate SaaS health metrics (ARR, MRR, churn, CAC, LTV, NRR) and benchmark aga
+- `/save-session` — Save current session state to a dated file in ~/.claude/sessions/ so work can be
+- `/scan-apk` — Scans Android APKs for Firebase security misconfigurations
+- `/sec-README` — An installable Vtiger extension which provides interface to perform command exec
+- `/sec-SKILL` — Web shell samples for detection and analysis: PHP, ASP, ASPX, JSP, Python, Perl 
+- `/security-dependencies` — You are a security expert specializing in dependency vulnerability analysis, SBO
+- `/security-hardening` — Orchestrate comprehensive security hardening with defense-in-depth strategy acro
+- `/security-review` — Review code for security vulnerabilities (OWASP Top 10)
+- `/security-sast` — Static Application Security Testing (SAST) for code vulnerability analysis acros
+- `/self-review` — Comprehensive self-review of uncommitted changes before creating a PR
+- `/semgrep-rule` — Creates Semgrep rules with test-first methodology
+- `/session` — Manage development sessions — start, checkpoint, wrap, resume
+- `/sessions` — Manage Claude Code session history - list, load, alias, and edit sessions stored
+- `/setup-pm` — Configure your preferred package manager (npm/pnpm/yarn/bun)
+- `/setup` — Initialize project with Conductor artifacts (product definition, tech stack, wor
+- `/skill-create` — Analyze local git history to extract coding patterns and generate SKILL.md files
+- `/skill-improver` — Iteratively reviews and fixes a Claude Code skill until it meets quality standar
+- `/slo-implement` — You are an SLO (Service Level Objective) expert specializing in implementing rel
+- `/smart-debug` — You are an expert AI-assisted debugging specialist with deep knowledge of modern
+- `/smart-fix` — Intelligent issue resolution with multi-agent debugging, root cause analysis, an
+- `/spec-compliance` — Verifies code implements specification requirements
+- `/spec-create` — Create a new feature specification following the complete spec-driven workflow.
+- `/spec-execute` — Execute specific tasks from the approved task list.
+- `/spec-list` — List all specs in the current project.
+- `/spec-spec-create` — Create a new feature specification following the complete spec-driven workflow.
+- `/spec-spec-execute` — Execute specific tasks from the approved task list.
+- `/spec-status` — Show current status of all specs or a specific spec.
+- `/spec-steering-setup` — Create or update steering documents that provide persistent project context.
+- `/sprint-health` — Sprint health scoring and velocity analysis for agile teams. Usage: /sprint-heal
+- `/sprint-plan` — Sprint planning shortcut. Usage: /sprint-plan <goal> [capacity]
+- `/sql-migrations` — SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, SQL
+- `/sqli-test` — Generate SQL injection test payloads for authorized security testing
+- `/standup-notes` — You are an expert team communication specialist focused on async-first standup p
+- `/status` — Display project status, active tracks, and next actions
+- `/stratarts-brand-identity-designer` — Comprehensive brand identity system including brand strategy, visual identity (c
+- `/stratarts-business-idea-validator` — Systematically validate business ideas with proven scoring frameworks. Produces 
+- `/stratarts-business-model-designer` — Complete Business Model Canvas design with all 9 blocks analyzed. Transforms val
+- `/stratarts-community-building-strategist` — Comprehensive community building strategy including platform selection, channel 
+- `/stratarts-competitive-intelligence` — Porter's Five Forces, SWOT analysis, and competitive positioning matrix for stra
+- `/stratarts-content-marketing-strategist` — Comprehensive content marketing strategy including content pillars, 90-day edito
+- `/stratarts-customer-feedback-framework` — Comprehensive customer feedback framework including NPS, CSAT, CES surveys, exit
+- `/stratarts-customer-persona-builder` — Jobs-to-be-Done (JTBD) customer persona development with priority matrix, buying
+- `/stratarts-email-marketing-architect` — Comprehensive email marketing strategy including drip campaigns, segmentation, a
+- `/stratarts-feature-prioritization-framework` — RICE scoring framework for ruthless feature prioritization. Evaluates features a
+- `/stratarts-financial-model-architect` — Build comprehensive 3-5 year financial models projecting revenue, expenses, head
+- `/stratarts-fundraising-strategy-planner` — Create comprehensive fundraising playbook covering timeline, investor targeting,
+- `/stratarts-go-to-market-planner` — Comprehensive 90-day GTM strategy builder. Designs customer acquisition channels
+- `/stratarts-growth-hacking-playbook` — Comprehensive growth hacking strategy including growth loops, AARRR pirate metri
+- `/stratarts-investor-brief-writer` — Create compelling investor one-pagers and email briefs that capture attention an
+- `/stratarts-investor-pitch-deck-builder` — Create a compelling 10-15 slide investor pitch deck that tells your startup stor
+- `/stratarts-market-opportunity-analyzer` — TAM/SAM/SOM analysis and competitive landscape mapping. Identifies beachhead mar
+- `/stratarts-metrics-dashboard-designer` — Comprehensive metrics dashboard strategy including North Star Metric definition,
+- `/stratarts-onboarding-flow-optimizer` — Optimize user onboarding to reduce time-to-value and increase activation rates. 
+- `/stratarts-operational-playbook-creator` — Create comprehensive operational playbook documenting organizational structure, 
+- `/stratarts-pricing-strategy-architect` — Value-based pricing framework with Van Westendorp PSM analysis. Designs tier str
+- `/stratarts-product-positioning-expert` — April Dunford's positioning framework for clear market differentiation. Creates 
+- `/stratarts-retention-optimization-expert` — Reduce churn and improve retention through cohort analysis, at-risk user identif
+- `/stratarts-seo-content-planner` — Comprehensive SEO content strategy including keyword research, content cluster a
+- `/stratarts-social-media-strategist` — Comprehensive social media strategy including platform selection matrix, platfor
+- `/stratarts-strategic-roadmap-builder` — OKR-driven 18-month strategic roadmap with milestone-based execution plan. Trans
+- `/stratarts-value-proposition-crafter` — Jobs-to-be-Done framework for compelling value propositions. Creates customer-ce
+- `/superpowers-brainstorm` — Deprecated - use the superpowers:brainstorming skill instead
+- `/superpowers-execute-plan` — Deprecated - use the superpowers:executing-plans skill instead
+- `/superpowers-write-plan` — Deprecated - use the superpowers:writing-plans skill instead
+- `/tanstack-start` — Build a full-stack TanStack Start app on Cloudflare Workers from scratch
+- `/tdd-cycle` — Execute a comprehensive TDD workflow with strict red-green-refactor discipline
+- `/tdd-green` — Implement minimal code to make failing tests pass in TDD green phase
+- `/tdd-red` — Write comprehensive failing tests following TDD red phase principles
+- `/tdd-refactor` — Refactor code with confidence using comprehensive test safety net:
+- `/tdd` — Generate tests, analyze coverage, and run TDD workflows. Usage: /tdd <generate|c
+- `/team-debug` — Debug issues using competing hypotheses with parallel investigation by multiple 
+- `/team-delegate` — Task delegation dashboard for managing team workload, assignments, and rebalanci
+- `/team-feature` — Develop features in parallel with multiple agents using file ownership boundarie
+- `/team-review` — Launch a multi-reviewer parallel code review with specialized review dimensions
+- `/team-shutdown` — Gracefully shut down an agent team, collect final results, and clean up resource
+- `/team-spawn` — Spawn an agent team using presets (review, debug, feature, fullstack, research, 
+- `/team-status` — Display team members, task status, and progress for an active agent team
+- `/team-update` — Post project updates to team chat, gather and triage feedback
+- `/tech-debt` — Scan, prioritize, and report technical debt. Usage: /tech-debt <scan|prioritize|
+- `/test-coverage` — Analyze test coverage, identify gaps, and generate missing tests to reach 80%+ c
+- `/test-generate` — You are a test automation expert specializing in generating comprehensive, maint
+- `/typescript-scaffold` — You are a TypeScript project architecture expert specializing in scaffolding pro
+- `/update-codemaps` — Analyze the codebase structure and generate token-lean architecture documentatio
+- `/update-docs` — Sync documentation with the codebase, generating from source-of-truth files.
+- `/user-story` — Generate user stories with acceptance criteria and sprint planning. Usage: /user
+- `/ux-audit` — Run a UX walkthrough and QA sweep on a live web app
+- `/variants` — Finds similar vulnerabilities using pattern-based analysis
+- `/verify` — Run comprehensive verification on current codebase state.
+- `/webshell-detect` — Help detect and analyze web shells using reference samples for defensive securit
+- `/wordlist` — Access and filter SecLists wordlists for authorized security testing
+- `/workflow-automate` — You are a workflow automation expert specializing in creating efficient CI/CD pi
+- `/write-plan` — Deprecated - use the superpowers:writing-plans skill instead
+- `/wshobson-accessibility-audit` — Audit UI code for WCAG compliance
+- `/wshobson-context-restore` — Expert Context Restoration Specialist focused on intelligent, semantic-aware con
+- `/wshobson-deps-audit` — You are a dependency security expert specializing in vulnerability scanning, lic
+- `/wshobson-doc-generate` — You are a documentation expert specializing in creating comprehensive, maintaina
+- `/wshobson-error-analysis` — You are an expert error analysis specialist with deep expertise in debugging dis
+- `/wshobson-error-trace` — You are an error tracking and observability expert specializing in implementing 
+- `/wshobson-multi-agent-review` — A sophisticated AI-powered code review system designed to provide comprehensive,
+- `/wshobson-pr-enhance` — You are a PR optimization expert specializing in creating high-quality pull requ
+- `/wshobson-prompt-optimize` — Optimize prompts for production with CoT, few-shot, and constitutional AI patter
+- `/wshobson-refactor-clean` — You are a code refactoring expert specializing in clean code principles, SOLID d
+- `/wshobson-smart-debug` — You are an expert AI-assisted debugging specialist with deep knowledge of modern
+- `/wshobson-tech-debt` — You are a technical debt expert specializing in identifying, quantifying, and pr
+- `/xss-scan` — You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vu
+- `/xss-test` — Generate XSS payloads and test strategies for authorized web application securit
