@@ -1,0 +1,87 @@
+name: Release v12.1.0
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/release-v12.1.yml']
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create v12.1.0 \
+            --target master \
+            --title "v12.1.0 — macOS Fix (Working)" \
+            --notes "## Download v12.1.0
+
+          | Platform | File | Download |
+          |----------|------|----------|
+          | **Windows (Installer)** | DarkNite-Installer-12.1.0.exe | [Download for Windows](https://github.com/dfnine9/darknite/releases/download/v12.1.0/DarkNite-Installer-12.1.0.exe) |
+          | **Windows (Portable)** | DarkNite-12.1.0.exe | [Download for Windows (no install)](https://github.com/dfnine9/darknite/releases/download/v12.1.0/DarkNite-12.1.0.exe) |
+          | **macOS (Intel + Apple Silicon)** | DarkNite-12.1.0-mac.zip | [Download for Mac](https://github.com/dfnine9/darknite/releases/download/v12.1.0/DarkNite-12.1.0-mac.zip) |
+
+          > **macOS users:** Unzip, drag to Applications. If blocked: **System Settings > Privacy & Security > Open Anyway**
+
+          ---
+
+          ## What Changed (from v12.0.0)
+          - Uses \`original-fs\` to bypass Electron ASAR interception when reading data.b64
+          - Decodes data at app startup and writes JSON to temp file
+          - Renderer fetches data from temp file (avoids IPC size limits)
+          - Falls back to direct IPC if fetch fails
+          - Automatically skips Git LFS pointer files
+          - Prioritizes unpacked path over ASAR-internal path"
+
+  build-mac:
+    needs: create-release
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run build-mac
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Mac build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for f in dist/*.zip dist/*.dmg; do
+            [ -f "$f" ] && gh release upload v12.1.0 "$f" --clobber
+          done
+
+  build-windows:
+    needs: create-release
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Windows build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          for f in dist/*.exe dist/*.yml dist/*.yaml; do
+            [ -f "$f" ] && gh release upload v12.1.0 "$f" --clobber
+          done
