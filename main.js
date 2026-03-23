@@ -87,6 +87,7 @@ function prepareDataFile() {
     path.join(process.resourcesPath || '', 'app.asar.unpacked', 'src', 'data.b64'),
     path.join(__dirname, 'src', 'data.b64'),
     path.join(__dirname, '..', 'src', 'data.b64'),
+    path.join(process.resourcesPath || '', 'app', 'src', 'data.b64'),
     path.join(process.resourcesPath || '', 'src', 'data.b64')
   ];
 
@@ -114,7 +115,54 @@ function prepareDataFile() {
       console.log('[load-data] Skipped:', p, e.message);
     }
   }
-  console.error('[load-data] data.b64 not found in any expected location');
+  // Fallback: build JSON from jarvis/ folder
+  const jarvisPaths = [
+    path.join(__dirname, 'jarvis'),
+    path.join(__dirname, '..', 'jarvis'),
+    path.join(process.resourcesPath || '', 'app.asar.unpacked', 'jarvis'),
+  ];
+  for (const jarvisDir of jarvisPaths) {
+    try {
+      const skillsDir = path.join(jarvisDir, 'skills');
+      if (!fs.existsSync(skillsDir)) continue;
+      console.log('[load-data] Building from jarvis/ folder:', jarvisDir);
+      const data = { skills: [], agents: [], commands: [] };
+      const skillDirs = fs.readdirSync(skillsDir).filter(f => !f.startsWith('.'));
+      for (const sid of skillDirs) {
+        const sf = path.join(skillsDir, sid, 'SKILL.md');
+        if (fs.existsSync(sf)) {
+          const c = fs.readFileSync(sf, 'utf8');
+          const dm = c.match(/description:\s*"?([^"\n]+)"?/);
+          data.skills.push({ id: sid, d: dm ? dm[1] : sid, c });
+        }
+      }
+      const agentsDir = path.join(jarvisDir, 'agents');
+      if (fs.existsSync(agentsDir)) {
+        for (const af of fs.readdirSync(agentsDir).filter(f => f.endsWith('.md'))) {
+          const c = fs.readFileSync(path.join(agentsDir, af), 'utf8');
+          const dm = c.match(/description:\s*"?([^"\n]+)"?/);
+          data.agents.push({ id: af.replace('.md',''), d: dm ? dm[1] : af, c });
+        }
+      }
+      const cmdsDir = path.join(jarvisDir, 'commands');
+      if (fs.existsSync(cmdsDir)) {
+        for (const cf of fs.readdirSync(cmdsDir).filter(f => f.endsWith('.md'))) {
+          const c = fs.readFileSync(path.join(cmdsDir, cf), 'utf8');
+          const dm = c.match(/description:\s*"?([^"\n]+)"?/);
+          data.commands.push({ id: 'commands/' + cf.replace('.md',''), d: dm ? dm[1] : cf, c });
+        }
+      }
+      const json = JSON.stringify(data);
+      dataJsonPath = path.join(os.tmpdir(), 'darknite-data.json');
+      fs.writeFileSync(dataJsonPath, json, 'utf8');
+      console.log('[load-data] Built from jarvis/:', data.skills.length, 'skills,', data.agents.length, 'agents,', data.commands.length, 'commands');
+      return true;
+    } catch (e) {
+      console.log('[load-data] jarvis/ failed:', jarvisDir, e.message);
+    }
+  }
+
+  console.error('[load-data] No data source found (data.b64 or jarvis/ folder)');
   return false;
 }
 

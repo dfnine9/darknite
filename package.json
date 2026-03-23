@@ -68,11 +68,13 @@
     "files": [
       "main.js",
       "preload.js",
-      "src/**/*"
+      "src/**/*",
+      "jarvis/**/*"
     ],
     "asar": true,
     "asarUnpack": [
-      "src/data.b64"
+      "src/data.b64",
+      "jarvis/**/*"
     ]
   },
   "devDependencies": {

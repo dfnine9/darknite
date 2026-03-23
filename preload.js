@@ -6,8 +6,82 @@ const path = require('path');
 // This runs before the page loads and has full Node.js access
 let _preloadedData = null;
 
+function loadFromB64(filePath, fsModule) {
+  if (!fsModule.existsSync(filePath)) return null;
+  const raw = fsModule.readFileSync(filePath, 'utf8').trim();
+  if (raw.startsWith('version ')) {
+    console.log('[preload] Skipped LFS pointer:', filePath);
+    return null;
+  }
+  console.log('[preload] Reading from:', filePath, '(' + raw.length + ' chars)');
+  const json = Buffer.from(raw, 'base64').toString('utf8');
+  const data = JSON.parse(json);
+  console.log('[preload] Loaded:', data.skills?.length, 'skills,', data.agents?.length, 'agents,', data.commands?.length, 'commands');
+  return data;
+}
+
+// Fallback: load from jarvis/ folder (extracted markdown files)
+function loadFromJarvisFolder() {
+  const jarvisPaths = [
+    path.join(__dirname, 'jarvis'),
+    path.join(__dirname, '..', 'jarvis'),
+    path.join(process.resourcesPath || '', 'app.asar.unpacked', 'jarvis'),
+  ];
+
+  for (const jarvisDir of jarvisPaths) {
+    try {
+      const skillsDir = path.join(jarvisDir, 'skills');
+      const agentsDir = path.join(jarvisDir, 'agents');
+      const commandsDir = path.join(jarvisDir, 'commands');
+      if (!fs.existsSync(skillsDir)) continue;
+
+      console.log('[preload] Loading from jarvis/ folder:', jarvisDir);
+      const data = { skills: [], agents: [], commands: [] };
+
+      // Load skills
+      const skillDirs = fs.readdirSync(skillsDir).filter(f => !f.startsWith('.'));
+      for (const sid of skillDirs) {
+        const skillFile = path.join(skillsDir, sid, 'SKILL.md');
+        if (fs.existsSync(skillFile)) {
+          const content = fs.readFileSync(skillFile, 'utf8');
+          const descMatch = content.match(/description:\s*"?([^"\n]+)"?/);
+          data.skills.push({ id: sid, d: descMatch ? descMatch[1] : sid, c: content });
+        }
+      }
+
+      // Load agents
+      if (fs.existsSync(agentsDir)) {
+        const agentFiles = fs.readdirSync(agentsDir).filter(f => f.endsWith('.md'));
+        for (const af of agentFiles) {
+          const content = fs.readFileSync(path.join(agentsDir, af), 'utf8');
+          const id = af.replace('.md', '');
+          const descMatch = content.match(/description:\s*"?([^"\n]+)"?/);
+          data.agents.push({ id, d: descMatch ? descMatch[1] : id, c: content });
+        }
+      }
+
+      // Load commands
+      if (fs.existsSync(commandsDir)) {
+        const cmdFiles = fs.readdirSync(commandsDir).filter(f => f.endsWith('.md'));
+        for (const cf of cmdFiles) {
+          const content = fs.readFileSync(path.join(commandsDir, cf), 'utf8');
+          const id = 'commands/' + cf.replace('.md', '');
+          const descMatch = content.match(/description:\s*"?([^"\n]+)"?/);
+          data.commands.push({ id, d: descMatch ? descMatch[1] : id, c: content });
+        }
+      }
+
+      console.log('[preload] Loaded from jarvis/:', data.skills.length, 'skills,', data.agents.length, 'agents,', data.commands.length, 'commands');
+      return data;
+    } catch (e) {
+      console.log('[preload] jarvis/ folder failed:', jarvisDir, e.message);
+    }
+  }
+  return null;
+}
+
 function loadDataInPreload() {
-  // Try original-fs first (bypasses ASAR), then regular fs
+  // Try original-fs first (bypasses ASAR)
   let origFs;
   try { origFs = require('original-fs'); } catch(e) { origFs = fs; }
 
@@ -17,36 +91,32 @@ function loadDataInPreload() {
     // Dev mode paths
     path.join(__dirname, 'src', 'data.b64'),
     path.join(__dirname, '..', 'src', 'data.b64'),
+    // Inside ASAR (macOS packaged)
+    path.join(process.resourcesPath || '', 'app', 'src', 'data.b64'),
     // Fallback
     path.join(process.resourcesPath || '', 'src', 'data.b64'),
   ];
 
   console.log('[preload] Searching for data.b64...');
 
+  // Strategy 1: Load from data.b64
   for (const p of searchPaths) {
-    // Try with original-fs (bypasses ASAR)
     for (const mod of [origFs, fs]) {
       try {
-        if (mod.existsSync(p)) {
-          const raw = mod.readFileSync(p, 'utf8').trim();
-          // Skip Git LFS pointers
-          if (raw.startsWith('version ')) {
-            console.log('[preload] Skipped LFS pointer:', p);
-            continue;
-          }
-          console.log('[preload] Reading from:', p, '(' + raw.length + ' chars)');
-          const json = Buffer.from(raw, 'base64').toString('utf8');
-          const data = JSON.parse(json);
-          console.log('[preload] Loaded:', data.skills?.length, 'skills,', data.agents?.length, 'agents,', data.commands?.length, 'commands');
-          return data;
-        }
+        const data = loadFromB64(p, mod);
+        if (data) return data;
       } catch (e) {
         console.log('[preload] Failed:', p, e.message);
       }
     }
   }
 
-  console.error('[preload] data.b64 NOT FOUND in any location');
+  // Strategy 2: Load from jarvis/ folder (extracted markdown files)
+  console.log('[preload] data.b64 not found, trying jarvis/ folder...');
+  const jarvisData = loadFromJarvisFolder();
+  if (jarvisData) return jarvisData;
+
+  console.error('[preload] FATAL: No data source found (data.b64 or jarvis/ folder)');
   return null;
 }
 
