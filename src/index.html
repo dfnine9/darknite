@@ -1263,11 +1263,54 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<script src="dashboard-data.js"></script>
 <script>
-var JARVIS_DATA = { skills: [], agents: [], commands: [] };
+// Primary: script tag sets window._JARVIS_RAW via protocol handler
+// Fallback: preload.js loads via Node.js fs from data.b64
+var JARVIS_DATA = window._JARVIS_RAW || (window.darknite && window.darknite.getData ? window.darknite.getData() : null) || { skills: [], agents: [], commands: [] };
+if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
+  console.error('[DarkNite] No data loaded! Protocol and preload both failed.');
+}
 let allItems = [];
 
 const typeIcons = { skill: '&#9889;', agent: '&#9881;', command: '&#10095;' };
+
+// === MISSING GLOBALS (caused blank screen on every platform) ===
+const CATEGORIES = {};
+let currentTab = 'all';
+let currentCat = null;
+let searchQuery = '';
+let displayCount = 60;
+let searchTimeout = null;
+
+function categorize(id) {
+  if (!id) return 'Other';
+  // Extract category from skill ID (first meaningful segment)
+  const parts = id.toLowerCase().split('-');
+  const catMap = {
+    'ai': 'AI', 'ml': 'AI', 'llm': 'AI', 'rag': 'AI', 'agent': 'AI',
+    'cloud': 'Cloud', 'aws': 'Cloud', 'gcp': 'Cloud', 'azure': 'Cloud',
+    'security': 'Security', 'auth': 'Security', 'oauth': 'Security', 'pentest': 'Security',
+    'frontend': 'Frontend', 'react': 'Frontend', 'vue': 'Frontend', 'angular': 'Frontend', 'svelte': 'Frontend', 'nextjs': 'Frontend', 'css': 'Frontend', 'tailwind': 'Frontend',
+    'backend': 'Backend', 'api': 'Backend', 'graphql': 'Backend', 'grpc': 'Backend', 'rest': 'Backend',
+    'data': 'Data', 'database': 'Data', 'sql': 'Data', 'postgres': 'Data', 'mongo': 'Data', 'redis': 'Data', 'mysql': 'Data',
+    'devops': 'DevOps', 'docker': 'DevOps', 'kubernetes': 'DevOps', 'k8s': 'DevOps', 'terraform': 'DevOps', 'ci': 'DevOps', 'cd': 'DevOps', 'helm': 'DevOps', 'gitops': 'DevOps',
+    'mobile': 'Mobile', 'ios': 'Mobile', 'android': 'Mobile', 'flutter': 'Mobile', 'react-native': 'Mobile', 'expo': 'Mobile',
+    'testing': 'Testing', 'test': 'Testing', 'jest': 'Testing', 'playwright': 'Testing', 'cypress': 'Testing',
+    'web3': 'Web3', 'blockchain': 'Web3', 'solidity': 'Web3', 'defi': 'Web3', 'nft': 'Web3', 'ethereum': 'Web3',
+    'game': 'Game', 'unity': 'Game', 'unreal': 'Game', 'godot': 'Game',
+    'writing': 'Writing', 'seo': 'Marketing', 'marketing': 'Marketing',
+    'python': 'Python', 'typescript': 'TypeScript', 'javascript': 'JavaScript', 'rust': 'Rust', 'go': 'Go', 'java': 'Java', 'kotlin': 'Kotlin', 'swift': 'Swift',
+    'observability': 'Observability', 'monitoring': 'Observability', 'logging': 'Observability',
+    'performance': 'Performance', 'architecture': 'Architecture', 'compliance': 'Compliance',
+    'iot': 'IoT', 'workflow': 'Workflow', 'networking': 'Networking',
+  };
+  for (const p of parts) {
+    if (catMap[p]) { CATEGORIES[catMap[p]] = true; return catMap[p]; }
+  }
+  CATEGORIES['Other'] = true;
+  return 'Other';
+}
 
 function init() {
   allItems = [];
@@ -1883,50 +1926,23 @@ console.log("DarkNite API available:", !!window.darknite);
 if (window.darknite) console.log("Methods:", Object.keys(window.darknite));
 else console.warn("WARNING: window.darknite not found - preload.js may not have loaded");
 
-// Load data — Strategy 1: preload.js already decoded it (fastest, no IPC)
-// Strategy 2: IPC fallback
-async function loadDataAndInit() {
-  runBootSequence();
-
-  // Strategy 1: getData() — preload.js read data.b64 directly via Node.js (no IPC)
+// Source 1: script tag (window._JARVIS_RAW) — already assigned above
+// Source 2: preload (Node.js fs) — backup if script tag failed on Mac
+if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
   if (window.darknite && window.darknite.getData) {
     try {
       const data = window.darknite.getData();
       if (data && data.skills && data.skills.length > 0) {
         JARVIS_DATA = data;
-        console.log('[Init] Loaded via preload getData():', JARVIS_DATA.skills.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
-      } else {
-        console.warn('[Init] getData() returned empty data');
+        console.log('[Preload backup] loaded:', JARVIS_DATA.skills.length, 'skills');
       }
-    } catch (e) {
-      console.warn('[Init] getData() failed:', e.message);
-    }
+    } catch(e) { console.warn('[Preload backup] failed:', e.message); }
   }
-
-  // Strategy 2: IPC fallback (main process reads data.b64)
-  if ((!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) && window.darknite && window.darknite.loadData) {
-    try {
-      console.log('[Init] Trying IPC fallback...');
-      const result = await window.darknite.loadData();
-      if (result.success && result.data) {
-        JARVIS_DATA = result.data;
-        console.log('[Init] Loaded via IPC:', JARVIS_DATA.skills?.length, 'skills');
-      } else {
-        console.error('[Init] IPC failed:', result.error);
-      }
-    } catch (e) {
-      console.error('[Init] IPC error:', e.message);
-    }
-  }
-
-  if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
-    console.error('[Init] FATAL: No data loaded! Check DevTools console (Cmd+Shift+I) for errors.');
-  }
-
-  console.log('[Init] Final:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
-  init();
 }
-loadDataAndInit();
+console.log('[Init] JARVIS_DATA:', JARVIS_DATA.skills?.length, 'skills,', JARVIS_DATA.agents?.length, 'agents,', JARVIS_DATA.commands?.length, 'commands');
+runBootSequence();
+init();
+
 
 </script>
 </body>

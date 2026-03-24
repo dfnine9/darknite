@@ -1,9 +1,10 @@
-const { app, BrowserWindow, Menu, ipcMain, dialog } = require('electron');
+const { app, BrowserWindow, Menu, ipcMain, dialog, protocol, net } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const https = require('https');
+const { pathToFileURL } = require('url');
 
 let mainWindow;
 
@@ -154,7 +155,28 @@ ipcMain.handle('get-app-version', () => {
   return app.getVersion();
 });
 
+// === CUSTOM PROTOCOL: serve data files from app directory ===
+// This bypasses ALL asar/atob/IPC size limits
+protocol.registerSchemesAsPrivileged([{
+  scheme: 'darknite',
+  privileges: { standard: true, secure: true, supportFetchAPI: true, corsEnabled: true }
+}]);
+
 function createWindow() {
+  // Register protocol handler BEFORE creating window
+  protocol.handle('darknite', (request) => {
+    const url = new URL(request.url);
+    // Serve files from src/ directory inside the app
+    const filePath = path.join(__dirname, 'src', url.pathname);
+    try {
+      const fileUrl = pathToFileURL(filePath).href;
+      return net.fetch(fileUrl);
+    } catch (e) {
+      console.error('[Protocol] Failed to serve:', filePath, e.message);
+      return new Response('Not found', { status: 404 });
+    }
+  });
+
   const preloadPath = path.join(__dirname, 'preload.js');
 
   mainWindow = new BrowserWindow({
@@ -175,9 +197,11 @@ function createWindow() {
   });
 
   Menu.setApplicationMenu(null);
-  mainWindow.loadFile(path.join(__dirname, 'src', 'index.html'));
 
-  // Data is embedded inline in index.html — no external file loading needed
+  // Load the app via our custom protocol — this ensures ALL resources
+  // (including dashboard-data.js) are served through the protocol handler
+  // which reads from the asar transparently on all platforms
+  mainWindow.loadURL('darknite:///index.html');
 }
 
 // HTTPS GET with redirect following
