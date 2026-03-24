@@ -1263,14 +1263,11 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
-<script src="dashboard-data.js"></script>
 <script>
-// Primary: script tag sets window._JARVIS_RAW via protocol handler
-// Fallback: preload.js loads via Node.js fs from data.b64
-var JARVIS_DATA = window._JARVIS_RAW || (window.darknite && window.darknite.getData ? window.darknite.getData() : null) || { skills: [], agents: [], commands: [] };
-if (!JARVIS_DATA.skills || JARVIS_DATA.skills.length === 0) {
-  console.error('[DarkNite] No data loaded! Protocol and preload both failed.');
-}
+// PRIMARY: preload.js loads data via Node.js fs (works on ALL platforms)
+// FALLBACK: script tag may set window._JARVIS_RAW
+var JARVIS_DATA = (window.darknite && window.darknite.getData ? window.darknite.getData() : null) || window._JARVIS_RAW || { skills: [], agents: [], commands: [] };
+console.log('[DarkNite] Data loaded:', JARVIS_DATA.skills ? JARVIS_DATA.skills.length : 0, 'skills');
 let allItems = [];
 
 const typeIcons = { skill: '&#9889;', agent: '&#9881;', command: '&#10095;' };
@@ -1461,7 +1458,6 @@ function syncCatPills() {
 
 function loadMore() { displayCount += 60; render(); }
 
-let searchTimeout;
 document.getElementById('search').addEventListener('input', e => {
   clearTimeout(searchTimeout);
   searchTimeout = setTimeout(() => { searchQuery = e.target.value.trim(); displayCount = 60; render(); }, 200);

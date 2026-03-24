@@ -155,28 +155,7 @@ ipcMain.handle('get-app-version', () => {
   return app.getVersion();
 });
 
-// === CUSTOM PROTOCOL: serve data files from app directory ===
-// This bypasses ALL asar/atob/IPC size limits
-protocol.registerSchemesAsPrivileged([{
-  scheme: 'darknite',
-  privileges: { standard: true, secure: true, supportFetchAPI: true, corsEnabled: true }
-}]);
-
 function createWindow() {
-  // Register protocol handler BEFORE creating window
-  protocol.handle('darknite', (request) => {
-    const url = new URL(request.url);
-    // Serve files from src/ directory inside the app
-    const filePath = path.join(__dirname, 'src', url.pathname);
-    try {
-      const fileUrl = pathToFileURL(filePath).href;
-      return net.fetch(fileUrl);
-    } catch (e) {
-      console.error('[Protocol] Failed to serve:', filePath, e.message);
-      return new Response('Not found', { status: 404 });
-    }
-  });
-
   const preloadPath = path.join(__dirname, 'preload.js');
 
   mainWindow = new BrowserWindow({
@@ -192,16 +171,13 @@ function createWindow() {
       preload: preloadPath,
       nodeIntegration: false,
       contextIsolation: true,
+      sandbox: false,
       backgroundThrottling: false
     }
   });
 
   Menu.setApplicationMenu(null);
-
-  // Load the app via our custom protocol — this ensures ALL resources
-  // (including dashboard-data.js) are served through the protocol handler
-  // which reads from the asar transparently on all platforms
-  mainWindow.loadURL('darknite:///index.html');
+  mainWindow.loadFile(path.join(__dirname, 'src', 'index.html'));
 }
 
 // HTTPS GET with redirect following

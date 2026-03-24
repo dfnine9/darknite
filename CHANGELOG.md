@@ -1,5 +1,27 @@
 # DarkNite Changelog
 
+## v13.1 (2026-03-24)
+- **FIXED: Black screen on Windows AND Mac** — app now displays all 6,428 capabilities
+- Root cause: missing `categorize()` function + undefined global variables crashed JS before rendering
+- Root cause #2: `darknite://` protocol failed, preload crashed (sandbox blocked `require('fs')`)
+- Fix: `sandbox: false` in webPreferences allows preload to use Node.js fs
+- Fix: `loadFile()` instead of broken custom protocol
+- Fix: preload loads dashboard-data.js directly via fs.readFileSync (bulletproof)
+- Fix: removed duplicate `let searchTimeout` declaration
+- Fix: added 40+ category mappings for skill filtering (AI, Cloud, Security, Frontend, etc)
+- Triple data loading: preload fs → data.b64 fallback → empty data safety net
+- Unpacked dashboard-data.js from asar for Mac compatibility
+- Verified: 4,957 skills, 903 agents, 568 commands all loading correctly
+
+## v13.0 (2026-03-24)
+- Added categorize() function and global state variables
+- Still had black screen due to protocol/sandbox issues (fixed in v13.1)
+
+## v12.0 (2026-03-23)
+- Mac-side fixes: original-fs for asar bypass, data.b64 decoding to temp file
+- Updated README with download links
+- Preload data loading via Node.js fs
+
 ## v11.0 (2026-03-21)
 - 54 new skills: AI, Cloud, Security, Frontend, Backend, Data, Mobile, Testing, DevOps, Web3, Architecture
 - 12 new agents: AI pair programmer, architecture reviewer, chaos engineer, etc
