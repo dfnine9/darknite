@@ -1,5 +1,10 @@
 # DarkNite Changelog
 
+## v13.2 (2026-03-24)
+- Verified working on Windows — all 6,428 capabilities display correctly
+- Removed debug DevTools from production build
+- Clean release build for Mac and Windows
+
 ## v13.1 (2026-03-24)
 - **FIXED: Black screen on Windows AND Mac** — app now displays all 6,428 capabilities
 - Root cause: missing `categorize()` function + undefined global variables crashed JS before rendering
