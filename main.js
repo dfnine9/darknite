@@ -284,9 +284,19 @@ ipcMain.handle('github-scan-repo', async (event, repoUrl) => {
       } catch(e) {}
     }
 
+    // Scan multiple directory patterns — repos use different structures
     await scanDir('.claude/skills', 'skill', true);
     await scanDir('.claude/agents', 'agent', false);
     await scanDir('.claude/commands', 'command', false);
+    await scanDir('skills', 'skill', true);
+    await scanDir('agents', 'agent', false);
+    await scanDir('commands', 'command', false);
+    await scanDir('claude/skills', 'skill', true);
+    await scanDir('claude/agents', 'agent', false);
+    await scanDir('claude/commands', 'command', false);
+    await scanDir('src/skills', 'skill', true);
+    await scanDir('src/agents', 'agent', false);
+    await scanDir('src/commands', 'command', false);
 
     return { success: true, items, repo: `${owner}/${repo}` };
   } catch (err) {

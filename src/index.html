@@ -1183,11 +1183,11 @@
   <div class="modal gh-modal">
     <button class="modal-close" onclick="document.getElementById('update-overlay').classList.remove('show')">&times;</button>
     <div class="modal-top">
-      <h2 id="update-modal-title">Sync Capabilities</h2>
-      <span class="modal-type-tag skill">UPDATE SYSTEM</span>
+      <h2 id="update-modal-title">Update All</h2>
+      <span class="modal-type-tag skill">UPDATE</span>
     </div>
     <div class="modal-body">
-      <div class="modal-desc" id="update-modal-desc">Install or update all DarkNite capabilities directly into Claude Code (<code style="color:var(--yellow)">~/.claude/</code>) or Cursor (<code style="color:#7c3aed">~/.cursor/</code>)</div>
+      <div class="modal-desc" id="update-modal-desc">Pulling latest skills, agents, and commands from source repos...</div>
       <div class="update-stats" id="update-stats">
         <div class="update-stat">Skills: <strong id="us-skills">0</strong></div>
         <div class="update-stat">Agents: <strong id="us-agents">0</strong></div>
@@ -1197,9 +1197,6 @@
       <div class="update-progress"><div class="update-bar" id="update-bar"></div></div>
       <div id="update-status" style="font-size:13px;color:var(--text-dim);margin-bottom:12px;">Ready to sync</div>
       <div class="modal-btn-row">
-        <button class="modal-action-btn" id="sync-all-btn" style="background:#2563eb;" onclick="runSyncTo('claude')">Sync All to Claude</button>
-        <button class="modal-action-btn" id="sync-cursor-btn" style="background:#7c3aed;" onclick="runSyncTo('cursor')">Sync All to Cursor</button>
-        <button class="modal-action-btn" id="sync-both-btn" style="background:#059669;" onclick="runSyncTo('both')">Sync All to Both</button>
         <button class="modal-close-btn" onclick="document.getElementById('update-overlay').classList.remove('show')">Close</button>
       </div>
       <div class="update-log" id="update-log" style="display:none"></div>
