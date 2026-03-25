@@ -1,5 +1,12 @@
 # DarkNite Changelog
 
+## v14.0 (2026-03-25)
+- Update All now scans 4x more directory patterns per repo (skills/, .claude/skills/, claude/skills/, src/skills/)
+- Cleaned update overlay: removed sync buttons, just progress bar + log + close
+- Title changed from "Sync Capabilities" to "Update All"
+- Total: 6,428 capabilities (4,957 skills, 903 agents, 568 commands)
+- Works on Windows and Mac
+
 ## v13.2 (2026-03-24)
 - Verified working on Windows — all 6,428 capabilities display correctly
 - Removed debug DevTools from production build
