@@ -1,5 +1,13 @@
 # DarkNite Changelog
 
+## v15.0 (2026-03-25)
+- Scraped 12 new GitHub repos adding 1,531 new capabilities
+- Total: 7,959 capabilities (5,900 skills, 1,038 agents, 1,021 commands)
+- New repos: alirezarezvani/claude-skills, rohitg00/awesome-claude-code-toolkit, VoltAgent/awesome-claude-code-subagents, levnikolaevich/claude-code-skills, wshobson/agents, affaan-m/everything-claude-code, davepoon/buildwithclaude, hesreallyhim/awesome-claude-code, sohzm/cheating-daddy
+- SOURCE_REPOS expanded from 16 to 28 repos for Update All
+- All items deduplicated and sanitized
+- Works on Windows and Mac
+
 ## v14.0 (2026-03-25)
 - Update All now scans 4x more directory patterns per repo (skills/, .claude/skills/, claude/skills/, src/skills/)
 - Cleaned update overlay: removed sync buttons, just progress bar + log + close
