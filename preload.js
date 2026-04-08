@@ -22,8 +22,11 @@ function loadData() {
         const src = fs.readFileSync(p, 'utf8');
         // Skip Git LFS pointers
         if (src.startsWith('version ')) continue;
-        // Extract JSON from "window._JARVIS_RAW = {...};"
-        const json = src.replace(/^window\._JARVIS_RAW\s*=\s*/, '').replace(/;\s*$/, '');
+        // Extract JSON from various formats:
+        // "window._JARVIS_RAW = {...};" or "const JARVIS_DATA = {...};" or just "{...}"
+        let json = src;
+        json = json.replace(/^(?:window\._JARVIS_RAW|const\s+JARVIS_DATA|var\s+JARVIS_DATA)\s*=\s*/, '');
+        json = json.replace(/;\s*$/, '');
         const data = JSON.parse(json);
         console.log('[preload] Loaded from:', p);
         console.log('[preload] Skills:', data.skills?.length, 'Agents:', data.agents?.length, 'Commands:', data.commands?.length);
