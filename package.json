@@ -1,7 +1,7 @@
 {
   "name": "darknite",
-  "version": "15.0.0",
-  "description": "DarkNite Command Center - Powered by JARVIS. 7,959 AI skills, agents, and commands.",
+  "version": "17.0.0",
+  "description": "DarkNite Command Center - Powered by JARVIS. 8,333 AI skills, agents, and commands. Includes Claude Code Source + Ruflo v3.5 Orchestration.",
   "main": "main.js",
   "author": "DarkNite",
   "license": "MIT",

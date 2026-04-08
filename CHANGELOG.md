@@ -1,5 +1,28 @@
 # DarkNite Changelog
 
+## v17.0 (2026-04-08)
+- Integrated Ruflo v3.5 (ruvnet/ruflo) - Enterprise AI Orchestration Platform
+- Added 148 new skills from Ruflo (21 packages + 80+ agent skills + 47 framework/integration skills)
+- Added 20 new agents from Ruflo (coordinator, architect, coder, reviewer, tester, security, SONA, Byzantine, HNSW, etc.)
+- Added 26 new commands for Ruflo CLI orchestration
+- New source repo: ruvnet/ruflo (SOURCE_REPOS expanded from 29 to 30)
+- Total: 8,333 capabilities (6,502 skills, 942 agents, 966 commands)
+- Ruflo highlights: Byzantine fault-tolerant swarms, SONA adaptive learning, HNSW vector memory, 9 RL algorithms, multi-LLM providers, WASM governance kernel
+- Auto-activate rules added for multi-agent orchestration, agent memory/learning, and MCP integration tasks
+- Works on Windows and Mac
+
+## v16.0 (2026-03-31)
+- Integrated Claude Code leaked source (dfnine9/claude-code) — 1,884 TypeScript files, 512K+ lines
+- Added 87 new skills from Claude Code internals (tools, services, bundled skills)
+- Added 13 new agents from Claude Code coordinator and agent systems
+- Added 80 new commands from Claude Code slash command system
+- New source repo: dfnine9/claude-code (SOURCE_REPOS expanded from 28 to 29)
+- Total: 8,139 capabilities (6,354 skills, 922 agents, 940 commands) -- updated counts based on directory scan; some items may have been recategorized or deduplicated from v15
+- Includes full Claude Code architecture: QueryEngine, multi-agent coordinator, MCP service, bridge system, plugin architecture, voice input, Vim mode, and more
+- Claude Code source preserved at claude-code-source/ for reference
+- All items installed to both project and global .claude directories
+- Works on Windows and Mac
+
 ## v15.0 (2026-03-25)
 - Scraped 12 new GitHub repos adding 1,531 new capabilities
 - Total: 7,959 capabilities (5,900 skills, 1,038 agents, 1,021 commands)
