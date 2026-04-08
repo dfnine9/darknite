@@ -1,6 +1,6 @@
 {
   "name": "darknite",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "description": "DarkNite Command Center - Powered by JARVIS. 8,333 AI skills, agents, and commands. Includes Claude Code Source + Ruflo v3.5 Orchestration.",
   "main": "main.js",
   "author": "DarkNite",

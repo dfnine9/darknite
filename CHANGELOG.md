@@ -1,5 +1,11 @@
 # DarkNite Changelog
 
+## v20.0 (2026-04-08)
+- Added dfnine9/claude-code and ruvnet/ruflo to SOURCE_REPOS (now 30 repos)
+- Update All now pulls from ALL 30 integrated repos
+- Fixed all .filter(s => s.c) references that showed 0 counts after content stripping
+- Counters now show full 8,399 items in Sync and Update overlays
+
 ## v19.0 (2026-04-08)
 - NUCLEAR REBUILD: 81 categories, all 8,399 items categorized and described
 - Every item now has a description (0 empty)

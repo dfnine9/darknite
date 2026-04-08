@@ -1656,7 +1656,8 @@ const SOURCE_REPOS = [
   'alirezarezvani/claude-skills','rohitg00/awesome-claude-code-toolkit','VoltAgent/awesome-claude-code-subagents',
   'sickn33/antigravity-awesome-skills','ComposioHQ/awesome-claude-skills','levnikolaevich/claude-code-skills',
   'daymade/claude-code-skills','wshobson/agents','affaan-m/everything-claude-code','davepoon/buildwithclaude',
-  'hesreallyhim/awesome-claude-code','sohzm/cheating-daddy'
+  'hesreallyhim/awesome-claude-code','sohzm/cheating-daddy',
+  'dfnine9/claude-code','ruvnet/ruflo'
 ];
 
 async function runUpdateAll() {
@@ -1675,9 +1676,9 @@ async function runUpdateAll() {
   log.style.display = 'block';
   log.innerHTML = '';
 
-  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
-  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
-  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
+  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.length : 0;
+  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.length : 0;
+  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.length : 0;
   document.getElementById('us-skills').textContent = sc;
   document.getElementById('us-agents').textContent = ac;
   document.getElementById('us-commands').textContent = cc;
@@ -1747,9 +1748,9 @@ async function runUpdateAll() {
 
 // Legacy wrappers (kept for compatibility)
 function openUpdateModal() {
-  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
-  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
-  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
+  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.length : 0;
+  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.length : 0;
+  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.length : 0;
   document.getElementById('us-skills').textContent = sc;
   document.getElementById('us-agents').textContent = ac;
   document.getElementById('us-commands').textContent = cc;
