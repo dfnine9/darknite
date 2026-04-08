@@ -6,13 +6,13 @@ A sleek, Batman-themed desktop command center with 8,333+ AI skills, agents, and
 
 ---
 
-## Download v17.0.0
+## Download v18.0.0
 
 | Platform | Download | Notes |
 |----------|----------|-------|
-| **Windows** | [DarkNite-Installer-17.0.0.exe](../../releases/download/v17.0.0/DarkNite-Installer-17.0.0.exe) | One-click installer |
-| **Windows (Portable)** | [DarkNite-17.0.0.exe](../../releases/download/v17.0.0/DarkNite-17.0.0.exe) | No install needed, just run |
-| **macOS** | [DarkNite-17.0.0-mac.zip](../../releases/download/v17.0.0/DarkNite-17.0.0-mac.zip) | Universal (Intel + Apple Silicon) |
+| **Windows** | [DarkNite-Installer-18.0.0.exe](../../releases/download/v18.0.0/DarkNite-Installer-18.0.0.exe) | One-click installer |
+| **Windows (Portable)** | [DarkNite-18.0.0.exe](../../releases/download/v18.0.0/DarkNite-18.0.0.exe) | No install needed, just run |
+| **macOS** | [DarkNite-18.0.0-mac.zip](../../releases/download/v18.0.0/DarkNite-18.0.0-mac.zip) | Universal (Intel + Apple Silicon) |
 
 > **macOS users:** After downloading, unzip and drag DarkNite to Applications. If macOS blocks it, go to **System Settings > Privacy & Security** and click **Open Anyway**.
 
@@ -92,6 +92,11 @@ Capabilities are curated from 30 GitHub repositories including:
 DarkNite installs skills to `~/.claude/skills/`, agents to `~/.claude/agents/`, and commands to `~/.claude/commands/`. Works with both Claude Code and Cursor. After installing, restart your editor to use them.
 
 ## What's New
+
+### v18.0.0 (2026-04-08)
+- Dashboard fully regenerated from all .claude directories (8,399 items)
+- Fixed data loading for packaged builds
+- Auto-updater latest.yml included
 
 ### v17.0.0 (2026-04-08)
 - Integrated **Ruflo v3.5** (ruvnet/ruflo) - Enterprise AI Orchestration Platform

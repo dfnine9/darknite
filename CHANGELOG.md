@@ -1,5 +1,14 @@
 # DarkNite Changelog
 
+## v18.0 (2026-04-08)
+- Dashboard fully regenerated from all .claude directories (6,502 skills + 931 agents + 966 commands)
+- Total: 8,399 capabilities from 30 source repos
+- Fixed preload.js to handle const JARVIS_DATA format
+- Fixed data.b64 to encode pure JSON (not JS wrapper)
+- Auto-updater latest.yml now included in releases
+- All Ruflo v3.5 + Claude Code Source capabilities verified in dashboard
+- Works on Windows and Mac
+
 ## v17.0 (2026-04-08)
 - Integrated Ruflo v3.5 (ruvnet/ruflo) - Enterprise AI Orchestration Platform
 - Added 148 new skills from Ruflo (21 packages + 80+ agent skills + 47 framework/integration skills)
