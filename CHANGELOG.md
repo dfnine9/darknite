@@ -1,5 +1,17 @@
 # DarkNite Changelog
 
+## v19.0 (2026-04-08)
+- NUCLEAR REBUILD: 81 categories, all 8,399 items categorized and described
+- Every item now has a description (0 empty)
+- Every item installable to Claude or Cursor with one click
+- Install reads content from disk via IPC (no more 50MB+ data files)
+- Dashboard data is lightweight (1.5MB) for fast app startup
+- New categories: AI Orchestration, Trading Skills, Washin Patterns, Life Management, Expert Patterns, Code Quality, Claude Code Skills, Thought Leaders, and 70+ more
+- Pre-computed categories in data (no more runtime regex matching)
+- Sync All loads content on-demand from ~/.claude/ directories
+- Copy button loads content on-demand
+- Works on Windows and Mac
+
 ## v18.0 (2026-04-08)
 - Dashboard fully regenerated from all .claude directories (6,502 skills + 931 agents + 966 commands)
 - Total: 8,399 capabilities from 30 source repos

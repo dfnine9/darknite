@@ -71,6 +71,7 @@ try {
 
 contextBridge.exposeInMainWorld('darknite', {
   getData: () => _preloadedData,
+  loadContent: (type, id) => ipcRenderer.invoke('load-content', { type, id }),
   install: (type, id, content, target) => ipcRenderer.invoke('install-capability', { type, id, content, target: target || 'claude' }),
   scanRepo: (repoUrl) => ipcRenderer.invoke('github-scan-repo', repoUrl),
   fetchFile: (owner, repo, filePath) => ipcRenderer.invoke('github-fetch-file', { owner, repo, filePath }),

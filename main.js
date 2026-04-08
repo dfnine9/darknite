@@ -119,6 +119,49 @@ function prepareDataFile() {
   return false;
 }
 
+// IPC: Load content from .claude directories for install
+ipcMain.handle('load-content', async (event, { type, id }) => {
+  try {
+    const homedir = os.homedir();
+    const searchPaths = [];
+    if (type === 'skill') {
+      searchPaths.push(
+        path.join(homedir, '.claude', 'skills', id, 'SKILL.md'),
+        path.join(homedir, '.claude', 'skills', id, 'skill.md'),
+      );
+      // Also check for any .md in the skill dir
+      const skillDir = path.join(homedir, '.claude', 'skills', id);
+      if (fs.existsSync(skillDir)) {
+        try {
+          const files = fs.readdirSync(skillDir).filter(f => f.endsWith('.md'));
+          files.forEach(f => searchPaths.push(path.join(skillDir, f)));
+        } catch(e) {}
+      }
+    } else if (type === 'agent') {
+      searchPaths.push(
+        path.join(homedir, '.claude', 'agents', id + '.md'),
+      );
+    } else if (type === 'command') {
+      searchPaths.push(
+        path.join(homedir, '.claude', 'commands', id + '.md'),
+      );
+    }
+    for (const p of searchPaths) {
+      try {
+        if (fs.existsSync(p)) {
+          const content = fs.readFileSync(p, 'utf8');
+          if (!content.startsWith('version ')) { // skip LFS pointers
+            return { success: true, content };
+          }
+        }
+      } catch(e) {}
+    }
+    return { success: false, error: 'File not found for ' + type + '/' + id };
+  } catch(e) {
+    return { success: false, error: e.message };
+  }
+});
+
 // IPC: Get path to decoded data JSON (renderer fetches it directly)
 ipcMain.handle('get-data-path', async () => {
   if (!dataJsonPath) prepareDataFile();

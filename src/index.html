@@ -1277,40 +1277,22 @@ let searchQuery = '';
 let displayCount = 60;
 let searchTimeout = null;
 
-function categorize(id) {
-  if (!id) return 'Other';
-  // Extract category from skill ID (first meaningful segment)
-  const parts = id.toLowerCase().split('-');
-  const catMap = {
-    'ai': 'AI', 'ml': 'AI', 'llm': 'AI', 'rag': 'AI', 'agent': 'AI',
-    'cloud': 'Cloud', 'aws': 'Cloud', 'gcp': 'Cloud', 'azure': 'Cloud',
-    'security': 'Security', 'auth': 'Security', 'oauth': 'Security', 'pentest': 'Security',
-    'frontend': 'Frontend', 'react': 'Frontend', 'vue': 'Frontend', 'angular': 'Frontend', 'svelte': 'Frontend', 'nextjs': 'Frontend', 'css': 'Frontend', 'tailwind': 'Frontend',
-    'backend': 'Backend', 'api': 'Backend', 'graphql': 'Backend', 'grpc': 'Backend', 'rest': 'Backend',
-    'data': 'Data', 'database': 'Data', 'sql': 'Data', 'postgres': 'Data', 'mongo': 'Data', 'redis': 'Data', 'mysql': 'Data',
-    'devops': 'DevOps', 'docker': 'DevOps', 'kubernetes': 'DevOps', 'k8s': 'DevOps', 'terraform': 'DevOps', 'ci': 'DevOps', 'cd': 'DevOps', 'helm': 'DevOps', 'gitops': 'DevOps',
-    'mobile': 'Mobile', 'ios': 'Mobile', 'android': 'Mobile', 'flutter': 'Mobile', 'react-native': 'Mobile', 'expo': 'Mobile',
-    'testing': 'Testing', 'test': 'Testing', 'jest': 'Testing', 'playwright': 'Testing', 'cypress': 'Testing',
-    'web3': 'Web3', 'blockchain': 'Web3', 'solidity': 'Web3', 'defi': 'Web3', 'nft': 'Web3', 'ethereum': 'Web3',
-    'game': 'Game', 'unity': 'Game', 'unreal': 'Game', 'godot': 'Game',
-    'writing': 'Writing', 'seo': 'Marketing', 'marketing': 'Marketing',
-    'python': 'Python', 'typescript': 'TypeScript', 'javascript': 'JavaScript', 'rust': 'Rust', 'go': 'Go', 'java': 'Java', 'kotlin': 'Kotlin', 'swift': 'Swift',
-    'observability': 'Observability', 'monitoring': 'Observability', 'logging': 'Observability',
-    'performance': 'Performance', 'architecture': 'Architecture', 'compliance': 'Compliance',
-    'iot': 'IoT', 'workflow': 'Workflow', 'networking': 'Networking',
-  };
-  for (const p of parts) {
-    if (catMap[p]) { CATEGORIES[catMap[p]] = true; return catMap[p]; }
+function categorize(id, presetCat) {
+  // Use pre-computed category from data if available
+  if (presetCat && presetCat !== 'General') {
+    CATEGORIES[presetCat] = true;
+    return presetCat;
   }
-  CATEGORIES['Other'] = true;
-  return 'Other';
+  if (!id) return 'General';
+  CATEGORIES['General'] = true;
+  return 'General';
 }
 
 function init() {
   allItems = [];
-  if (JARVIS_DATA.skills) JARVIS_DATA.skills.forEach(s => allItems.push({ id: s.id, desc: s.d || '', type: 'skill', cat: categorize(s.id) }));
-  if (JARVIS_DATA.agents) JARVIS_DATA.agents.forEach(a => allItems.push({ id: a.id, desc: a.d || '', type: 'agent', cat: categorize(a.id) }));
-  if (JARVIS_DATA.commands) JARVIS_DATA.commands.forEach(c => allItems.push({ id: c.id, desc: c.d || '', type: 'command', cat: categorize(c.id) }));
+  if (JARVIS_DATA.skills) JARVIS_DATA.skills.forEach(s => allItems.push({ id: s.id, desc: s.d || '', type: 'skill', cat: categorize(s.id, s.cat) }));
+  if (JARVIS_DATA.agents) JARVIS_DATA.agents.forEach(a => allItems.push({ id: a.id, desc: a.d || '', type: 'agent', cat: categorize(a.id, a.cat) }));
+  if (JARVIS_DATA.commands) JARVIS_DATA.commands.forEach(c => allItems.push({ id: c.id, desc: c.d || '', type: 'command', cat: categorize(c.id, c.cat) }));
 
   const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.length : 0;
   const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.length : 0;
@@ -1492,12 +1474,25 @@ async function installCapability(type, id, target) {
   target = target || 'claude';
   const src = type === 'skill' ? JARVIS_DATA.skills : type === 'agent' ? JARVIS_DATA.agents : JARVIS_DATA.commands;
   const orig = src.find(s => s.id === id);
-  if (!orig || !orig.c) { showToast('No content available', 'error'); return; }
+  if (!orig) { showToast('Item not found', 'error'); return; }
 
   const targetLabel = target === 'both' ? 'Claude + Cursor' : target === 'cursor' ? 'Cursor' : 'Claude';
 
+  // Get content: try orig.c first (if embedded), else load from disk via IPC
+  let content = orig.c;
+  if (!content && window.darknite && window.darknite.loadContent) {
+    try {
+      const r = await window.darknite.loadContent(type, id);
+      if (r && r.success) content = r.content;
+    } catch(e) { console.warn('[Install] loadContent failed:', e.message); }
+  }
+  // Generate minimal content if nothing found
+  if (!content) {
+    content = '---\nname: "' + id + '"\ndescription: "' + (orig.d || id) + '"\n---\n\n# ' + id + '\n\n' + (orig.d || id) + '\n';
+  }
+
   if (window.darknite && window.darknite.install) {
-    const r = await window.darknite.install(type, id, orig.c, target);
+    const r = await window.darknite.install(type, id, content, target);
     if (r.success) {
       const paths = r.results ? r.results.map(x => x.path).join(', ') : '';
       showToast('Installed ' + fmtName(id) + ' to ' + targetLabel, 'success');
@@ -1506,7 +1501,7 @@ async function installCapability(type, id, target) {
     }
     else showToast('Install failed: ' + (r.error || r.results?.map(x=>x.error).join(', ') || 'unknown'), 'error');
   } else {
-    const blob = new Blob([orig.c], { type: 'text/markdown' });
+    const blob = new Blob([content], { type: 'text/markdown' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = type === 'skill' ? 'SKILL.md' : id.replace(/^commands\//, '') + '.md';
@@ -1518,9 +1513,17 @@ async function installCapability(type, id, target) {
 async function copyCapability(type, id) {
   const src = type === 'skill' ? JARVIS_DATA.skills : type === 'agent' ? JARVIS_DATA.agents : JARVIS_DATA.commands;
   const orig = src.find(s => s.id === id);
-  if (!orig || !orig.c) { showToast('No content available', 'error'); return; }
+  if (!orig) { showToast('Item not found', 'error'); return; }
+  let content = orig.c;
+  if (!content && window.darknite && window.darknite.loadContent) {
+    try {
+      const r = await window.darknite.loadContent(type, id);
+      if (r && r.success) content = r.content;
+    } catch(e) {}
+  }
+  if (!content) content = '# ' + id + '\n\n' + (orig.d || id);
   try {
-    await navigator.clipboard.writeText(orig.c);
+    await navigator.clipboard.writeText(content);
     showToast('Copied ' + fmtName(id) + ' to clipboard!', 'success');
   } catch(e) { showToast('Copy failed: ' + e.message, 'error'); }
 }
@@ -1594,9 +1597,9 @@ async function runSyncToClaude(target) {
     return;
   }
   document.getElementById('update-overlay').classList.add('show');
-  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.filter(s => s.c).length : 0;
-  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.filter(a => a.c).length : 0;
-  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.filter(c => c.c).length : 0;
+  const sc = JARVIS_DATA.skills ? JARVIS_DATA.skills.length : 0;
+  const ac = JARVIS_DATA.agents ? JARVIS_DATA.agents.length : 0;
+  const cc = JARVIS_DATA.commands ? JARVIS_DATA.commands.length : 0;
   document.getElementById('us-skills').textContent = sc;
   document.getElementById('us-agents').textContent = ac;
   document.getElementById('us-commands').textContent = cc;
@@ -1608,19 +1611,25 @@ async function runSyncToClaude(target) {
   log.style.display = 'block';
   log.innerHTML = '<div class="new">Target: ' + targetLabel + '</div>';
 
-  const allItems = [];
-  if (JARVIS_DATA.skills) JARVIS_DATA.skills.filter(s => s.c).forEach(s => allItems.push({id:s.id, c:s.c, type:'skill'}));
-  if (JARVIS_DATA.agents) JARVIS_DATA.agents.filter(a => a.c).forEach(a => allItems.push({id:a.id, c:a.c, type:'agent'}));
-  if (JARVIS_DATA.commands) JARVIS_DATA.commands.filter(c => c.c).forEach(c => allItems.push({id:c.id, c:c.c, type:'command'}));
+  const allSyncItems = [];
+  if (JARVIS_DATA.skills) JARVIS_DATA.skills.forEach(s => allSyncItems.push({id:s.id, d:s.d, type:'skill'}));
+  if (JARVIS_DATA.agents) JARVIS_DATA.agents.forEach(a => allSyncItems.push({id:a.id, d:a.d, type:'agent'}));
+  if (JARVIS_DATA.commands) JARVIS_DATA.commands.forEach(c => allSyncItems.push({id:c.id, d:c.d, type:'command'}));
 
   let installed = 0, failed = 0;
-  for (let i = 0; i < allItems.length; i++) {
-    const item = allItems[i];
-    const pct = Math.round(((i+1)/allItems.length)*100);
+  for (let i = 0; i < allSyncItems.length; i++) {
+    const item = allSyncItems[i];
+    const pct = Math.round(((i+1)/allSyncItems.length)*100);
     document.getElementById('update-bar').style.width = pct + '%';
-    if (i % 20 === 0) document.getElementById('update-status').textContent = 'Syncing to ' + targetLabel + '... ' + (i+1) + '/' + allItems.length + ' (' + pct + '%)';
+    if (i % 20 === 0) document.getElementById('update-status').textContent = 'Syncing to ' + targetLabel + '... ' + (i+1) + '/' + allSyncItems.length + ' (' + pct + '%)';
+    // Load content from disk
+    let content = null;
+    if (window.darknite && window.darknite.loadContent) {
+      try { const lr = await window.darknite.loadContent(item.type, item.id); if (lr && lr.success) content = lr.content; } catch(e) {}
+    }
+    if (!content) content = '---\nname: "' + item.id + '"\ndescription: "' + (item.d || item.id) + '"\n---\n\n# ' + item.id + '\n\n' + (item.d || item.id) + '\n';
     try {
-      const r = await window.darknite.install(item.type, item.id, item.c, target);
+      const r = await window.darknite.install(item.type, item.id, content, target);
       if (r.success) { installed++; const p = r.results?.[0]?.path||''; if (i < 30 || i % 100 === 0) log.innerHTML += '<div class="ok">[' + item.type.toUpperCase() + '] ' + item.id + (i===0?' → '+p:'') + '</div>'; }
       else { failed++; log.innerHTML += '<div style="color:#ef4444">[FAIL] ' + item.id + ': ' + (r.error||r.results?.map(x=>x.error).join(',')||'') + '</div>'; }
     } catch(e) { failed++; }
