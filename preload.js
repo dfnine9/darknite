@@ -80,27 +80,52 @@ function loadFromJarvisFolder() {
   return null;
 }
 
+function loadFromJson(filePath, fsModule) {
+  try {
+    if (!fsModule.existsSync(filePath)) return null;
+    const raw = fsModule.readFileSync(filePath, 'utf8');
+    if (raw.startsWith('version ')) return null;
+    const data = JSON.parse(raw);
+    if (data && data.skills && data.skills.length > 0) {
+      console.log('[preload] Loaded JSON:', filePath, '-', data.skills.length, 'skills,', data.agents?.length, 'agents,', data.commands?.length, 'commands');
+      return data;
+    }
+  } catch (e) {
+    console.log('[preload] JSON failed:', filePath, e.message);
+  }
+  return null;
+}
+
 function loadDataInPreload() {
-  // Try original-fs first (bypasses ASAR)
   let origFs;
   try { origFs = require('original-fs'); } catch(e) { origFs = fs; }
 
-  const searchPaths = [
-    // Unpacked path (outside ASAR) — preferred for packaged apps
+  // Strategy 1: Load from jarvis/data.json (pre-built, most reliable)
+  const jsonPaths = [
+    path.join(process.resourcesPath || '', 'app.asar.unpacked', 'jarvis', 'data.json'),
+    path.join(__dirname, 'jarvis', 'data.json'),
+    path.join(__dirname, '..', 'jarvis', 'data.json'),
+  ];
+
+  console.log('[preload] Searching for jarvis/data.json...');
+  for (const p of jsonPaths) {
+    for (const mod of [origFs, fs]) {
+      const data = loadFromJson(p, mod);
+      if (data) return data;
+    }
+  }
+
+  // Strategy 2: Load from data.b64 (legacy)
+  const b64Paths = [
     path.join(process.resourcesPath || '', 'app.asar.unpacked', 'src', 'data.b64'),
-    // Dev mode paths
     path.join(__dirname, 'src', 'data.b64'),
     path.join(__dirname, '..', 'src', 'data.b64'),
-    // Inside ASAR (macOS packaged)
     path.join(process.resourcesPath || '', 'app', 'src', 'data.b64'),
-    // Fallback
     path.join(process.resourcesPath || '', 'src', 'data.b64'),
   ];
 
-  console.log('[preload] Searching for data.b64...');
-
-  // Strategy 1: Load from data.b64
-  for (const p of searchPaths) {
+  console.log('[preload] Trying data.b64...');
+  for (const p of b64Paths) {
     for (const mod of [origFs, fs]) {
       try {
         const data = loadFromB64(p, mod);
@@ -111,12 +136,12 @@ function loadDataInPreload() {
     }
   }
 
-  // Strategy 2: Load from jarvis/ folder (extracted markdown files)
-  console.log('[preload] data.b64 not found, trying jarvis/ folder...');
+  // Strategy 3: Load from jarvis/ folder (individual markdown files)
+  console.log('[preload] Trying jarvis/ folder...');
   const jarvisData = loadFromJarvisFolder();
   if (jarvisData) return jarvisData;
 
-  console.error('[preload] FATAL: No data source found (data.b64 or jarvis/ folder)');
+  console.error('[preload] FATAL: No data source found');
   return null;
 }
 

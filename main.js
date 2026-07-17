@@ -83,7 +83,33 @@ const origFs = require('original-fs');
 let dataJsonPath = null;
 
 function prepareDataFile() {
-  const possiblePaths = [
+  // Strategy 1: jarvis/data.json (pre-built, most reliable)
+  const jsonPaths = [
+    path.join(process.resourcesPath || '', 'app.asar.unpacked', 'jarvis', 'data.json'),
+    path.join(__dirname, 'jarvis', 'data.json'),
+    path.join(__dirname, '..', 'jarvis', 'data.json'),
+  ];
+
+  console.log('[load-data] Searching for jarvis/data.json...');
+  for (const p of jsonPaths) {
+    try {
+      const isUnpacked = p.includes('app.asar.unpacked');
+      const fsModule = isUnpacked ? origFs : fs;
+      if (fsModule.existsSync(p)) {
+        const raw = fsModule.readFileSync(p, 'utf8');
+        if (raw.startsWith('version ')) continue;
+        dataJsonPath = path.join(os.tmpdir(), 'darknite-data.json');
+        fs.writeFileSync(dataJsonPath, raw, 'utf8');
+        console.log('[load-data] Loaded jarvis/data.json from:', p, '(' + raw.length + ' bytes)');
+        return true;
+      }
+    } catch (e) {
+      console.log('[load-data] JSON skipped:', p, e.message);
+    }
+  }
+
+  // Strategy 2: data.b64 (legacy base64)
+  const b64Paths = [
     path.join(process.resourcesPath || '', 'app.asar.unpacked', 'src', 'data.b64'),
     path.join(__dirname, 'src', 'data.b64'),
     path.join(__dirname, '..', 'src', 'data.b64'),
@@ -91,9 +117,8 @@ function prepareDataFile() {
     path.join(process.resourcesPath || '', 'src', 'data.b64')
   ];
 
-  console.log('[load-data] Searching paths:', possiblePaths);
-
-  for (const p of possiblePaths) {
+  console.log('[load-data] Trying data.b64...');
+  for (const p of b64Paths) {
     try {
       const isUnpacked = p.includes('app.asar.unpacked');
       const fsModule = isUnpacked ? origFs : fs;
@@ -105,7 +130,6 @@ function prepareDataFile() {
         }
         console.log('[load-data] Read from:', p, '(' + b64.length + ' chars)');
         const json = Buffer.from(b64, 'base64').toString('utf8');
-        // Write decoded JSON to temp file so renderer can fetch it without IPC size limits
         dataJsonPath = path.join(os.tmpdir(), 'darknite-data.json');
         fs.writeFileSync(dataJsonPath, json, 'utf8');
         console.log('[load-data] Wrote temp JSON:', dataJsonPath, '(' + json.length + ' bytes)');

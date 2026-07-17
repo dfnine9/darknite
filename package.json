@@ -69,12 +69,12 @@
       "main.js",
       "preload.js",
       "src/**/*",
-      "jarvis/**/*"
+      "jarvis/data.json"
     ],
     "asar": true,
     "asarUnpack": [
       "src/data.b64",
-      "jarvis/**/*"
+      "jarvis/data.json"
     ]
   },
   "devDependencies": {
